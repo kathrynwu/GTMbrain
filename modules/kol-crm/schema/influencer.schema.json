@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "KOL CRM Influencer Record",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "name",
+    "platform",
+    "owner",
+    "status"
+  ],
+  "properties": {
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Human-readable influencer or channel name."
+    },
+    "handle": {
+      "type": "string",
+      "description": "Platform handle or URL."
+    },
+    "platform": {
+      "type": "string",
+      "enum": [
+        "Twitter",
+        "YouTube"
+      ]
+    },
+    "followers": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "niche": {
+      "type": "string"
+    },
+    "owner": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "Not Contacted",
+        "Contacted",
+        "Replied",
+        "In Negotiation",
+        "Partnered",
+        "Closed"
+      ]
+    },
+    "pricing": {
+      "oneOf": [
+        {
+          "type": "number",
+          "minimum": 0
+        },
+        {
+          "type": "string",
+          "maxLength": 32
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "description": "Quoted rate if known."
+    },
+    "last_contact": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date",
+      "description": "Date of latest meaningful outreach or negotiation touch."
+    }
+  }
+}

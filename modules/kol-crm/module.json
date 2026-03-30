@@ -13,6 +13,14 @@
   ],
   "primary_action": "Fork template",
   "status": "first-release",
+  "primary_entity": "influencer",
+  "required_paths": [
+    "schema/influencer.schema.json",
+    "WORKFLOW.md",
+    "BUILDING.md",
+    "sample-data/influencers.csv",
+    "template/README.md"
+  ],
   "inputs": [
     "influencer list",
     "platform",
@@ -27,6 +35,21 @@
     "status transitions",
     "pricing visibility",
     "next-action visibility"
+  ],
+  "status_model": [
+    "Not Contacted",
+    "Contacted",
+    "Replied",
+    "In Negotiation",
+    "Partnered",
+    "Closed"
+  ],
+  "extension_points": [
+    "new fields on influencer record",
+    "custom views and filters",
+    "platform-specific metadata",
+    "follow-up automation",
+    "agent adapters"
   ],
   "not_included_yet": [
     "email sending",

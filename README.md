@@ -11,6 +11,12 @@ Forkable GTM modules for internal tooling.
 
 The first serious module is `KOL CRM`.
 
+## Why trust this
+
+`GTMbrain` comes from operating experience building Openmart (YC W24) and spending a lot of time inside GTM, outbound, prospecting, and sales-tool workflows.
+
+The goal is not to publish abstract growth theory. The goal is to capture workflow shapes that are actually useful to builders.
+
 ## Why this repo exists
 
 Most GTM repos fall into one of three bad buckets:
@@ -38,6 +44,9 @@ That is the first complete module shape:
 
 - template-first
 - sample data included
+- schema included
+- workflow contract included
+- extension guide included
 - clear workflow states
 - easy to understand without platform context
 
