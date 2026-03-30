@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KOL CRM Starter</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div class="brand-block">
+          <span class="eyebrow">GTMbrain / Template</span>
+          <h1>KOL CRM Starter</h1>
+          <p>
+            Track influencer sourcing, outreach, pricing, owners, and status in
+            one boring browser app starter you can adapt.
+          </p>
+        </div>
+        <div class="action-row">
+          <button class="button button-primary" id="new-record-button" type="button">
+            New Influencer
+          </button>
+          <button class="button" id="import-button" type="button">Import CSV</button>
+          <button class="button" id="export-button" type="button">Export CSV</button>
+          <button class="button button-danger" id="restore-button" type="button">
+            Restore Sample Data
+          </button>
+          <input id="csv-input" type="file" accept=".csv,text/csv" hidden>
+        </div>
+      </header>
+
+      <main class="workspace">
+        <section class="hero panel">
+          <div class="hero-copy">
+            <div class="badge-row">
+              <span class="surface-badge">Template</span>
+              <span class="surface-badge surface-badge-muted">Local-first</span>
+              <span class="surface-badge surface-badge-muted">CSV import/export</span>
+            </div>
+            <h2>Use this as the reference implementation for your influencer CRM.</h2>
+            <p>
+              Changes persist in your browser with <code>localStorage</code>.
+              Open the file directly, or host the folder anywhere static files
+              can run.
+            </p>
+          </div>
+          <div class="stats-grid" id="stats-grid"></div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-header">
+            <div>
+              <span class="eyebrow">Pipeline</span>
+              <h2>Status Overview</h2>
+            </div>
+            <p class="panel-copy">
+              Click a status to filter the table. The state model stays explicit.
+            </p>
+          </div>
+          <div class="status-lane" id="status-lane"></div>
+        </section>
+
+        <section class="controls panel">
+          <div class="panel-header">
+            <div>
+              <span class="eyebrow">Browse</span>
+              <h2>Influencer Table</h2>
+            </div>
+            <button class="button button-ghost" id="clear-filters-button" type="button">
+              Clear Filters
+            </button>
+          </div>
+          <div class="control-grid">
+            <label class="field">
+              <span>Search</span>
+              <input id="search-input" type="search" placeholder="Name, handle, niche, owner">
+            </label>
+            <label class="field">
+              <span>Platform</span>
+              <select id="platform-filter"></select>
+            </label>
+            <label class="field">
+              <span>Status</span>
+              <select id="status-filter"></select>
+            </label>
+            <label class="field">
+              <span>Owner</span>
+              <select id="owner-filter"></select>
+            </label>
+            <label class="field">
+              <span>Pricing</span>
+              <select id="pricing-filter">
+                <option value="all">All records</option>
+                <option value="known">Has pricing</option>
+                <option value="missing">Missing pricing</option>
+              </select>
+            </label>
+            <label class="field">
+              <span>Sort</span>
+              <select id="sort-select">
+                <option value="last_contact_desc">Latest contact</option>
+                <option value="status_flow">Status flow</option>
+                <option value="followers_desc">Followers, high to low</option>
+                <option value="followers_asc">Followers, low to high</option>
+                <option value="pricing_desc">Pricing, high to low</option>
+                <option value="pricing_asc">Pricing, low to high</option>
+                <option value="name_asc">Name, A to Z</option>
+              </select>
+            </label>
+          </div>
+        </section>
+
+        <section class="content-grid">
+          <section class="panel table-panel">
+            <div class="panel-header">
+              <div>
+                <span class="eyebrow">Records</span>
+                <h2 id="table-heading">0 Influencers</h2>
+              </div>
+              <p class="panel-copy" id="table-copy">
+                Click a row to edit it.
+              </p>
+            </div>
+
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Platform</th>
+                    <th>Niche</th>
+                    <th>Followers</th>
+                    <th>Owner</th>
+                    <th>Status</th>
+                    <th>Pricing</th>
+                    <th>Last Contact</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody id="records-body"></tbody>
+              </table>
+            </div>
+          </section>
+
+          <aside class="panel editor-panel">
+            <div class="panel-header">
+              <div>
+                <span class="eyebrow">Editor</span>
+                <h2 id="form-title">New Influencer</h2>
+              </div>
+              <p class="panel-copy" id="form-copy">
+                Fill in the workflow fields and save.
+              </p>
+            </div>
+
+            <form id="record-form" class="record-form">
+              <div class="field-grid">
+                <label class="field">
+                  <span>Name</span>
+                  <input id="name-input" name="name" type="text" required>
+                </label>
+                <label class="field">
+                  <span>Handle or URL</span>
+                  <input id="handle-input" name="handle" type="text">
+                </label>
+                <label class="field">
+                  <span>Platform</span>
+                  <select id="platform-input" name="platform" required></select>
+                </label>
+                <label class="field">
+                  <span>Followers</span>
+                  <input id="followers-input" name="followers" type="number" min="0" step="1">
+                </label>
+                <label class="field">
+                  <span>Niche</span>
+                  <input id="niche-input" name="niche" type="text">
+                </label>
+                <label class="field">
+                  <span>Owner</span>
+                  <input id="owner-input" name="owner" type="text" required>
+                </label>
+                <label class="field">
+                  <span>Status</span>
+                  <select id="status-input" name="status" required></select>
+                </label>
+                <label class="field">
+                  <span>Pricing</span>
+                  <input
+                    id="pricing-input"
+                    name="pricing"
+                    type="text"
+                    placeholder="160 or package deal"
+                  >
+                </label>
+                <label class="field">
+                  <span>Last Contact</span>
+                  <input id="last-contact-input" name="last_contact" type="date">
+                </label>
+              </div>
+
+              <div class="form-note">
+                One row equals one influencer record. Keep status explicit. Keep imports simple.
+              </div>
+
+              <div class="form-actions">
+                <button class="button button-primary" type="submit">Save Record</button>
+                <button class="button" id="duplicate-button" type="button">Duplicate</button>
+                <button class="button button-ghost" id="reset-form-button" type="button">
+                  Clear Form
+                </button>
+                <button class="button button-danger" id="delete-button" type="button">
+                  Delete
+                </button>
+              </div>
+            </form>
+          </aside>
+        </section>
+      </main>
+    </div>
+
+    <div class="toast" id="toast" aria-live="polite"></div>
+  </body>
+</html>

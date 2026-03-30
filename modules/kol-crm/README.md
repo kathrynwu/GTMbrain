@@ -6,7 +6,7 @@ Track influencer sourcing, outreach, pricing, owner, and status.
 
 - **Surface:** `Template`
 - **Audience:** founder, growth operator, partnerships owner, RevOps builder
-- **Primary action:** fork the workflow and adapt it to your own influencer pipeline
+- **Primary action:** fork or clone `GTMbrain`, then adapt this module to your own influencer pipeline
 - **Status:** first release
 
 ## What this module covers
@@ -45,6 +45,25 @@ Track influencer sourcing, outreach, pricing, owner, and status.
 - [`BUILDING.md`](./BUILDING.md)
 - [`sample-data/influencers.csv`](./sample-data/influencers.csv)
 - [`template/`](./template/)
+- runnable starter inside [`template/index.html`](./template/index.html)
+
+## Try it locally
+
+This module lives inside `GTMbrain`, so the action is to fork or clone the repo,
+then start here.
+
+From your machine:
+
+```bash
+git clone https://github.com/kathrynwu/GTMbrain.git
+cd GTMbrain/modules/kol-crm/template
+python3 -m http.server 4321
+```
+
+Then open `http://localhost:4321`.
+
+You can also open [`template/index.html`](./template/index.html) directly in a
+browser if you want the fastest path.
 
 ## Not included yet
 
@@ -57,6 +76,13 @@ Track influencer sourcing, outreach, pricing, owner, and status.
 
 This module is template-first on purpose. The job is to make the workflow easy to copy before layering on more automation.
 
+Today this is usable as a single-user local CRM starter. It is not yet a synced
+team product.
+
+If you describe this module publicly, the clean wording is:
+
+> Fork or clone `GTMbrain`, then start with `modules/kol-crm/`.
+
 ## Build on top of this
 
 If you want to adapt this CRM, start in this order:
@@ -65,5 +91,6 @@ If you want to adapt this CRM, start in this order:
 2. Read [`schema/influencer.schema.json`](./schema/influencer.schema.json) to see the required record shape.
 3. Read [`BUILDING.md`](./BUILDING.md) to understand what can change safely.
 4. Use [`sample-data/influencers.csv`](./sample-data/influencers.csv) as your first import fixture.
+5. Open [`template/index.html`](./template/index.html) to see the reference implementation.
 
 The important thing is not the exact UI. It is the workflow contract.

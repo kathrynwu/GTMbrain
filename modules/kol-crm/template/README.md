@@ -1,16 +1,34 @@
 # KOL CRM Template
 
-This directory is the placeholder for the forkable template implementation.
+This directory now includes a runnable browser starter:
 
-For v1, the important thing is the workflow contract:
+- [`index.html`](./index.html)
+- [`styles.css`](./styles.css)
+- [`app.js`](./app.js)
 
-- one record per influencer
-- explicit status states
-- pricing and last-contact fields
-- owner assignment
-- import-friendly shape
+Open [`index.html`](./index.html) directly in a browser, or serve the folder with
+any static file server.
 
-The actual UI or storage layer can vary. The workflow should not.
+This template is part of the `GTMbrain` repo. It is not a standalone repository.
+
+## Clone and run
+
+```bash
+git clone https://github.com/kathrynwu/GTMbrain.git
+cd GTMbrain/modules/kol-crm/template
+python3 -m http.server 4321
+```
+
+Then open `http://localhost:4321`.
+
+The starter is intentionally boring:
+
+- no build step
+- no framework
+- sample data seeded from the module fixture
+- `localStorage` persistence
+- CSV import/export
+- filter, sort, create, edit, duplicate, delete
 
 ## Minimum template contract
 
@@ -51,3 +69,27 @@ Any implementation should expose:
 Keep the template implementation boring.
 
 The workflow clarity matters more than the framework. A builder should be able to port this to Airtable, Notion, Supabase, Rails, Next.js, or a spreadsheet-backed tool without losing the shape.
+
+## What this starter is good for
+
+- proving the workflow works before choosing a stack
+- giving contributors a real reference implementation
+- letting operators use the CRM immediately, then port it into their own stack later
+
+## Current scope
+
+This is usable now for one operator working locally in the browser.
+
+It is not yet:
+
+- multi-user
+- backed by a database
+- connected to email sending
+- built for shared team permissions
+
+## What to customize next
+
+- add notes or campaign linkage
+- add platform-specific metadata
+- add reminders or follow-up views
+- replace `localStorage` with your own backend once the workflow feels right

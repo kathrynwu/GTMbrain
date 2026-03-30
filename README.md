@@ -4,7 +4,7 @@ Forkable GTM modules for internal tooling.
 
 `GTMbrain` is a registry of GTM workflow modules. Each module can include one or more of:
 
-- `Template`: something you can fork and adapt
+- `Template`: a runnable starter inside the repo that you can fork or clone and adapt
 - `Playbook`: the operating judgment behind the workflow
 - `Connector`: a thin package for an external service
 - `Skill`: optional agent wrapper, only when the workflow is stable
@@ -29,7 +29,8 @@ This repo is trying to be more useful than that.
 
 The unit of value is a **module**. A builder should land here, understand the workflow in one line, and know exactly what to do next:
 
-- fork it
+- fork or clone the repo
+- start in the right module
 - read it
 - call it
 - maybe run it through an agent later
@@ -47,14 +48,48 @@ That is the first complete module shape:
 - schema included
 - workflow contract included
 - extension guide included
+- runnable browser starter included
 - clear workflow states
 - easy to understand without platform context
+
+## Quick start
+
+Clone the repo:
+
+```bash
+git clone https://github.com/kathrynwu/GTMbrain.git
+cd GTMbrain
+```
+
+Try the CRM starter:
+
+```bash
+cd modules/kol-crm/template
+python3 -m http.server 4321
+```
+
+Then open `http://localhost:4321`.
+
+If you do not want to run a local server, you can also open
+[`modules/kol-crm/template/index.html`](./modules/kol-crm/template/index.html)
+directly in a browser.
+
+## What "forkable" means here
+
+`kol-crm` is not a standalone repo yet. It lives inside `GTMbrain`.
+
+So the clear action is:
+
+1. fork or clone `GTMbrain`
+2. start in [`modules/kol-crm/`](./modules/kol-crm/)
+3. run the starter in [`modules/kol-crm/template/`](./modules/kol-crm/template/)
+4. adapt the workflow, schema, and UI to your own stack
 
 ## Module catalog
 
 | Module | Job | Surfaces | Primary action | Status |
 |--------|-----|----------|----------------|--------|
-| [`kol-crm`](./modules/kol-crm/) | Track influencer sourcing, outreach, pricing, owner, and status | `Template` | Fork template | First release |
+| [`kol-crm`](./modules/kol-crm/) | Track influencer sourcing, outreach, pricing, owner, and status | `Template` | Fork repo, start here | First release |
 | [`openmart-prospecting`](./modules/openmart-prospecting/) | Define ICPs, build lists, and document prospecting workflows | `Playbook`, `Connector` | Read playbook | Coming next |
 | [`seo`](./modules/seo/) | Capture repeatable SEO workflow judgment and briefs | `Playbook` | Read playbook | Planned |
 | [`cold-call`](./modules/cold-call/) | Capture scripts, review criteria, and outbound heuristics | `Playbook` | Read playbook | Planned |
@@ -85,9 +120,20 @@ The first release is intentionally narrow:
 
 - YouTube + Twitter influencer tracking
 - import CSV
+- export CSV
+- local-first browser starter
 - pricing and last-contact tracking
 - owner and status workflow
 - sample data
+
+This is usable today as a single-operator local CRM starter.
+
+It is not yet:
+
+- a multi-user product
+- a synced backend
+- an email-sending system
+- a polished SaaS app
 
 Core states:
 
@@ -120,5 +166,5 @@ The right way is:
 This repo is still early. The goal right now is simple:
 
 - make the registry shape obvious
-- make `KOL CRM` real enough to fork
+- make `KOL CRM` real enough to clone and adapt
 - add thinner follow-on modules without overbuilding

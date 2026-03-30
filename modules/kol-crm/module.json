@@ -11,7 +11,7 @@
   "surfaces": [
     "Template"
   ],
-  "primary_action": "Fork template",
+  "primary_action": "Fork repo, start in modules/kol-crm",
   "status": "first-release",
   "primary_entity": "influencer",
   "required_paths": [
@@ -19,7 +19,10 @@
     "WORKFLOW.md",
     "BUILDING.md",
     "sample-data/influencers.csv",
-    "template/README.md"
+    "template/README.md",
+    "template/index.html",
+    "template/styles.css",
+    "template/app.js"
   ],
   "inputs": [
     "influencer list",
