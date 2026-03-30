@@ -1,0 +1,36 @@
+{
+  "name": "KOL CRM",
+  "slug": "kol-crm",
+  "job": "Track influencer sourcing, outreach, pricing, owner, and status.",
+  "audience": [
+    "growth engineer",
+    "revops builder",
+    "founder",
+    "partnerships owner"
+  ],
+  "surfaces": [
+    "Template"
+  ],
+  "primary_action": "Fork template",
+  "status": "first-release",
+  "inputs": [
+    "influencer list",
+    "platform",
+    "follower count",
+    "niche",
+    "owner",
+    "pricing",
+    "last contact"
+  ],
+  "outputs": [
+    "tracked influencer pipeline",
+    "status transitions",
+    "pricing visibility",
+    "next-action visibility"
+  ],
+  "not_included_yet": [
+    "email sending",
+    "outreach automation",
+    "agent wrapper"
+  ]
+}

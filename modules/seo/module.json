@@ -1,0 +1,15 @@
+{
+  "name": "SEO",
+  "slug": "seo",
+  "job": "Capture repeatable SEO workflow judgment and reusable operating notes.",
+  "audience": [
+    "growth engineer",
+    "content lead",
+    "solo operator"
+  ],
+  "surfaces": [
+    "Playbook"
+  ],
+  "primary_action": "Read playbook",
+  "status": "planned"
+}

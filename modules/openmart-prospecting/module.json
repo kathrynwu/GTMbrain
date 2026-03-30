@@ -1,0 +1,16 @@
+{
+  "name": "Openmart Prospecting",
+  "slug": "openmart-prospecting",
+  "job": "Define ICPs, build lists, and document repeatable prospecting workflows.",
+  "audience": [
+    "growth engineer",
+    "revops builder",
+    "outbound operator"
+  ],
+  "surfaces": [
+    "Playbook",
+    "Connector"
+  ],
+  "primary_action": "Read playbook",
+  "status": "planned-next"
+}

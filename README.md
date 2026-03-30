@@ -1,1 +1,115 @@
 # GTMbrain
+
+Forkable GTM modules for internal tooling.
+
+`GTMbrain` is a registry of GTM workflow modules. Each module can include one or more of:
+
+- `Template`: something you can fork and adapt
+- `Playbook`: the operating judgment behind the workflow
+- `Connector`: a thin package for an external service
+- `Skill`: optional agent wrapper, only when the workflow is stable
+
+The first serious module is `KOL CRM`.
+
+## Why this repo exists
+
+Most GTM repos fall into one of three bad buckets:
+
+- random docs
+- random prompts
+- random automations
+
+This repo is trying to be more useful than that.
+
+The unit of value is a **module**. A builder should land here, understand the workflow in one line, and know exactly what to do next:
+
+- fork it
+- read it
+- call it
+- maybe run it through an agent later
+
+## Start here
+
+If you only look at one thing, start with:
+
+- [`modules/kol-crm/`](./modules/kol-crm/)
+
+That is the first complete module shape:
+
+- template-first
+- sample data included
+- clear workflow states
+- easy to understand without platform context
+
+## Module catalog
+
+| Module | Job | Surfaces | Primary action | Status |
+|--------|-----|----------|----------------|--------|
+| [`kol-crm`](./modules/kol-crm/) | Track influencer sourcing, outreach, pricing, owner, and status | `Template` | Fork template | First release |
+| [`openmart-prospecting`](./modules/openmart-prospecting/) | Define ICPs, build lists, and document prospecting workflows | `Playbook`, `Connector` | Read playbook | Coming next |
+| [`seo`](./modules/seo/) | Capture repeatable SEO workflow judgment and briefs | `Playbook` | Read playbook | Planned |
+| [`cold-call`](./modules/cold-call/) | Capture scripts, review criteria, and outbound heuristics | `Playbook` | Read playbook | Planned |
+
+## Repo shape
+
+```text
+modules/
+  kol-crm/
+  openmart-prospecting/
+  seo/
+  cold-call/
+packages/
+  openmart/
+```
+
+## Principles
+
+- Templates first. The repo should be useful to a human before it is useful to an agent.
+- Playbooks hold the judgment. Skills come later.
+- Connectors should stay boring.
+- Do not build a fake platform before the modules earn it.
+- Design for stealability. The reaction should be: "I want that workflow shape."
+
+## KOL CRM v1
+
+The first release is intentionally narrow:
+
+- YouTube + Twitter influencer tracking
+- import CSV
+- pricing and last-contact tracking
+- owner and status workflow
+- sample data
+
+Core states:
+
+- `Not Contacted`
+- `Contacted`
+- `Replied`
+- `In Negotiation`
+- `Partnered`
+- `Closed`
+
+## What is not here yet
+
+- polished website marketing
+- generic agent marketplace framing
+- full connector platform
+- automated outreach product
+
+## Contributing
+
+The right way to add to `GTMbrain` is not "add more stuff."
+
+The right way is:
+
+1. Define one clear GTM workflow.
+2. Decide whether it should start as a `Template`, `Playbook`, `Connector`, or some mix.
+3. Make it legible enough that another builder can use it without a meeting.
+
+## Current state
+
+This repo is still early. The goal right now is simple:
+
+- make the registry shape obvious
+- make `KOL CRM` real enough to fork
+- add thinner follow-on modules without overbuilding

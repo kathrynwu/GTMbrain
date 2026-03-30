@@ -1,0 +1,15 @@
+{
+  "name": "Cold Call",
+  "slug": "cold-call",
+  "job": "Capture scripts, review criteria, and tactical outbound heuristics.",
+  "audience": [
+    "outbound operator",
+    "gtm lead",
+    "growth engineer"
+  ],
+  "surfaces": [
+    "Playbook"
+  ],
+  "primary_action": "Read playbook",
+  "status": "planned"
+}
