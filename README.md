@@ -74,6 +74,35 @@ If you do not want to run a local server, you can also open
 [`modules/kol-crm/template/index.html`](./modules/kol-crm/template/index.html)
 directly in a browser.
 
+## Ask Questions After Clone
+
+This repo is meant to work well with an AI assistant after you clone it.
+
+If you use Claude Code, Codex, or a similar repo-aware assistant:
+
+- start at the repo root
+- let it read [`CLAUDE.md`](./CLAUDE.md)
+- ask concrete workflow questions, not just coding questions
+
+Good examples:
+
+- "How should I adapt `kol-crm` for my own influencer workflow?"
+- "What parts of `kol-crm` are stable versus safe to customize?"
+- "How should I use `openmart-prospecting` to build a local-business prospect list?"
+- "How do I move Openmart data into my CRM or internal enrichment tool?"
+- "Which Openmart endpoint fits search versus decision-maker enrichment?"
+- "What should my outbound flow look like after I have a clean local-business list?"
+
+The repo should answer those questions from its own module docs, not just from
+generic GTM advice.
+
+Repo-local skills live in [`.agents/skills/`](/Users/kathrynwu/Work/GTMbrain/.agents/skills):
+
+- `openmart-prospecting`
+- `local-list-enriching`
+- `local-emailing`
+- `local-cold-calling`
+
 ## What "forkable" means here
 
 `kol-crm` is not a standalone repo yet. It lives inside `GTMbrain`.
@@ -90,7 +119,7 @@ So the clear action is:
 | Module | Job | Surfaces | Primary action | Status |
 |--------|-----|----------|----------------|--------|
 | [`kol-crm`](./modules/kol-crm/) | Track influencer sourcing, outreach, pricing, owner, and status | `Template` | Fork repo, start here | First release |
-| [`openmart-prospecting`](./modules/openmart-prospecting/) | Define ICPs, build lists, and document prospecting workflows | `Playbook`, `Connector` | Read playbook | Coming next |
+| [`openmart-prospecting`](./modules/openmart-prospecting/) | Define ICPs, build lists, and document prospecting workflows | `Playbook`, `Connector` | Read playbook | First release |
 | [`seo`](./modules/seo/) | Capture repeatable SEO workflow judgment and briefs | `Playbook` | Read playbook | Planned |
 | [`cold-call`](./modules/cold-call/) | Capture scripts, review criteria, and outbound heuristics | `Playbook` | Read playbook | Planned |
 
@@ -167,4 +196,5 @@ This repo is still early. The goal right now is simple:
 
 - make the registry shape obvious
 - make `KOL CRM` real enough to clone and adapt
+- make `openmart-prospecting` real enough to run as a playbook
 - add thinner follow-on modules without overbuilding

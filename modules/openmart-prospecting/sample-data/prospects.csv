@@ -1,0 +1,6 @@
+company_name,website,city,state,category,subcategory,employee_band,owner_name,phone,source_query,fit_score,routing_status,routing_notes
+North Ridge Roofing,https://northridgeroofing.example,Dallas,TX,Home Services,Roofing,11-50,Marco Ruiz,214-555-0110,Dallas roofing with website and phone,5,Approved,Matches ICP cleanly
+Metro Gutter Works,https://metrogutterworks.example,Dallas,TX,Home Services,Gutters,11-50,Alicia Tran,214-555-0148,Dallas roofing adjacent expansion,4,To Review,Adjacent category but same buyer
+Peak Dental Care,https://peakdentalcare.example,Austin,TX,Healthcare,Dental Practice,11-50,Dr. Evan Hall,512-555-0194,Texas dental practices with website and phone,4,Sent to CRM,Approved and routed for outbound
+Bayline Siding Co,https://baylinesiding.example,Houston,TX,Home Services,Siding,1-10,,713-555-0172,Houston siding with website and phone,3,To Review,Owner signal missing
+Prairie Family Dental,,San Antonio,TX,Healthcare,Dental Practice,11-50,Dr. Maya Flores,210-555-0126,Texas dental practices with website and phone,1,Rejected,Missing website which is required for this ICP

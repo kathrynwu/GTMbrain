@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Openmart Prospect Record",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "company_name",
+    "city",
+    "state",
+    "category",
+    "source_query",
+    "fit_score",
+    "routing_status"
+  ],
+  "properties": {
+    "company_name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "website": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string",
+      "minLength": 1
+    },
+    "state": {
+      "type": "string",
+      "minLength": 1
+    },
+    "category": {
+      "type": "string",
+      "minLength": 1
+    },
+    "subcategory": {
+      "type": "string"
+    },
+    "employee_band": {
+      "type": "string"
+    },
+    "owner_name": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "source_query": {
+      "type": "string",
+      "minLength": 1
+    },
+    "fit_score": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5
+    },
+    "routing_status": {
+      "type": "string",
+      "enum": [
+        "To Review",
+        "Approved",
+        "Rejected",
+        "Sent to CRM"
+      ]
+    },
+    "routing_notes": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "label": "San Francisco hair salons with website and contact info",
+  "query": "hair salons",
+  "location": [
+    {
+      "country": "USA",
+      "state": "CA",
+      "city": "San Francisco"
+    }
+  ],
+  "has_website": true,
+  "has_valid_website": true,
+  "has_contact_info": true,
+  "limit": 25
+}

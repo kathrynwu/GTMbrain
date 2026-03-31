@@ -12,5 +12,54 @@
     "Connector"
   ],
   "primary_action": "Read playbook",
-  "status": "planned-next"
+  "status": "first-release",
+  "primary_entity": "prospect",
+  "required_paths": [
+    "PLAYBOOK.md",
+    "QUERY-RECIPES.md",
+    "INTEGRATIONS.md",
+    "SELLING-LOCAL-BUSINESSES.md",
+    "BUILDING.md",
+    "schema/prospect.schema.json",
+    "sample-data/prospects.csv"
+  ],
+  "source_material": [
+    "https://www.openmart.com/blogs/how-to-build-a-high-quality-smb-prospect-list",
+    "https://www.openmart.com/blogs/how-to-sell-to-local-business",
+    "https://www.openmart.com/blogs/how-to-sell-to-local-businesses-part-2"
+  ],
+  "inputs": [
+    "ICP definition",
+    "geography",
+    "category filters",
+    "fit signals",
+    "result limit"
+  ],
+  "outputs": [
+    "normalized prospect list",
+    "query notes",
+    "fit score",
+    "CRM-ready handoff rows"
+  ],
+  "workflow_stages": [
+    "Define ICP",
+    "Run broad query",
+    "Inspect first page",
+    "Tighten or widen",
+    "Export and score",
+    "Route to CRM"
+  ],
+  "extension_points": [
+    "additional fit signals",
+    "vertical-specific query recipes",
+    "custom scoring logic",
+    "CRM routing automations",
+    "agent adapters"
+  ],
+  "related_playbooks": [
+    "high-quality smb prospect lists",
+    "local-business outbound",
+    "channel selection",
+    "call-to-demo process"
+  ]
 }
