@@ -11,5 +11,33 @@
     "Playbook"
   ],
   "primary_action": "Read playbook",
-  "status": "planned"
+  "status": "first-release",
+  "required_paths": [
+    "PLAYBOOK.md",
+    "REVIEW-RUBRIC.md"
+  ],
+  "source_material": [
+    "internal cold call playbook",
+    "https://www.loom.com/share/90e0a8ef61bc4f179c8299a111711787?sid=6a9cd470-106f-4ec2-bdae-8499a679f6f5"
+  ],
+  "inputs": [
+    "segment",
+    "buyer title",
+    "pain hypothesis",
+    "phone quality",
+    "offer"
+  ],
+  "outputs": [
+    "call-first or email-first decision",
+    "call opener",
+    "qualification prompts",
+    "objection handling notes",
+    "meeting close",
+    "call review rubric"
+  ],
+  "workflow_stages": [
+    "Build credibility",
+    "Build value",
+    "Book meeting"
+  ]
 }

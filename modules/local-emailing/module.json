@@ -1,0 +1,44 @@
+{
+  "name": "Local Emailing",
+  "slug": "local-emailing",
+  "job": "Capture local-business email strategy, personalization rules, and follow-up structure.",
+  "audience": [
+    "outbound operator",
+    "gtm lead",
+    "growth engineer"
+  ],
+  "surfaces": [
+    "Playbook"
+  ],
+  "primary_action": "Read playbook",
+  "status": "first-release",
+  "required_paths": [
+    "PLAYBOOK.md",
+    "EXAMPLES.md"
+  ],
+  "source_material": [
+    "internal Openmart outbound guidance",
+    "observed patterns from Openmart customers",
+    "NewsBreak-inspired local-business email patterns"
+  ],
+  "inputs": [
+    "segment",
+    "buyer",
+    "problem hypothesis",
+    "personalization fields",
+    "upfront offer"
+  ],
+  "outputs": [
+    "email-first or call-first decision",
+    "personalized subject lines",
+    "first-touch email",
+    "follow-up cadence"
+  ],
+  "workflow_stages": [
+    "Choose segment",
+    "Check list quality",
+    "Choose offer",
+    "Write short email",
+    "Run follow-up cadence"
+  ]
+}

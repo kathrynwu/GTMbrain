@@ -38,13 +38,24 @@ If the question touches implementation:
    - CRM
    - outbound tool
    - internal admin tool
+2. Ask what the user actually wants to enrich:
+   - owner name
+   - general manager
+   - decision-maker email
+   - personal email
+   - technology context
 2. Separate:
    - search data
    - approval logic
    - enrichment data
    - CRM sync fields
-3. Recommend enriching approved rows first, not the entire raw list.
-4. Preserve the workflow fields that make the list usable later.
+3. Apply the first-pass filters before enrichment:
+   - number of locations
+   - has website
+   - Google review rating if relevant
+   - technology signals if relevant
+4. Recommend enriching approved rows first, not the entire raw list.
+5. Preserve the workflow fields that make the list usable later.
 
 ## What to preserve
 
@@ -53,6 +64,14 @@ If the question touches implementation:
 - routing status
 - rejection reason
 - Openmart or source IDs
+
+High-priority enrichment fields:
+
+- owner name
+- general manager
+- decision-maker email
+- personal email
+- technology context
 
 Without those, enriched data becomes harder to trust.
 
@@ -70,6 +89,9 @@ Default to giving:
 ## Rules
 
 - do not enrich everything by default
+- do not use enrichment as an excuse for mass email
+- enrich the personal contact path, not just the company shell
+- use location count, website presence, reviews, and tech signals to filter first
 - explain why each field matters to the outbound workflow
 - keep the integration inspectable
 - prefer explicit routing over hidden scoring

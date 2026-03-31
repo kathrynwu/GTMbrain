@@ -79,6 +79,21 @@ Read in this order:
 6. `modules/openmart-prospecting/schema/prospect.schema.json`
 7. `packages/openmart/`
 
+### `local-emailing`
+
+Job:
+
+- write short local-business outbound emails
+- choose personalization fields that are real
+- decide when email-first beats call-first
+
+Read in this order:
+
+1. `modules/local-emailing/README.md`
+2. `modules/local-emailing/PLAYBOOK.md`
+3. `modules/local-emailing/EXAMPLES.md`
+4. `modules/openmart-prospecting/SELLING-LOCAL-BUSINESSES.md`
+
 ## Current Repo Skills
 
 Use these when the question matches:
@@ -87,6 +102,33 @@ Use these when the question matches:
 - `.agents/skills/local-list-enriching/`
 - `.agents/skills/local-emailing/`
 - `.agents/skills/local-cold-calling/`
+
+For `local-cold-calling`, use the repo's 3-step framework:
+
+1. build credibility
+2. build value
+3. book the meeting
+
+If the user has not specified the segment well enough, ask for location,
+industry, buyer, pain point, and phone quality before writing a script.
+
+For `local-emailing`, use the repo's short-email, value-first framework:
+
+1. ask for segment, buyer, and offer if missing
+2. prefer `2-3` sentence emails
+3. keep subject lines personalized
+4. lead with help before pushing the meeting
+
+For `local-list-enriching`, ask what contact path the user actually needs:
+
+1. owner name
+2. general manager
+3. decision-maker email
+4. personal email
+5. technology context
+
+Filter with location count, website presence, review quality, and technology
+signals before recommending deeper enrichment.
 
 ## Openmart Guidance
 

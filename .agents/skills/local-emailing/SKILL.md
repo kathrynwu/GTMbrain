@@ -19,9 +19,12 @@ Use this skill when the user is asking about:
 
 ## Read first
 
-1. `modules/openmart-prospecting/SELLING-LOCAL-BUSINESSES.md`
-2. `modules/openmart-prospecting/PLAYBOOK.md`
-3. `modules/openmart-prospecting/INTEGRATIONS.md`
+1. `modules/local-emailing/PLAYBOOK.md`
+2. `modules/local-emailing/EXAMPLES.md`
+3. `modules/local-emailing/README.md`
+4. `modules/openmart-prospecting/SELLING-LOCAL-BUSINESSES.md`
+5. `modules/openmart-prospecting/PLAYBOOK.md`
+6. `modules/openmart-prospecting/INTEGRATIONS.md`
 
 ## Workflow
 
@@ -30,34 +33,48 @@ Use this skill when the user is asking about:
    - buyer
    - problem
    - why now
-2. Check whether the list has enough signal for email personalization.
-3. Recommend email-first only when the segment and data quality support it.
-4. Write short, plain outbound copy.
+   - upfront offer
+2. If the segment is still fuzzy, ask for:
+   - location range
+   - industry or business type
+   - buyer title
+   - what benefit you can offer first
+   - what personalization fields are actually available
+3. Check whether the list has enough signal for email personalization.
+4. Decide the motion:
+   - `A` email-first now
+   - `B` enrich the list first
+   - `C` call-first
+5. Write short, plain outbound copy.
 
 ## Output shape
 
 Default to giving:
 
 - target segment summary
+- recommended motion: `A`, `B`, or `C`
 - personalization fields to use
 - 3 subject lines
 - one first-touch email
-- 2 short follow-ups
+- 2-3 short follow-ups
 - CTA
 - success metrics
 
 ## Rules
 
-- keep emails short
+- keep emails very short, usually `2-3` sentences
+- subject lines should usually be personalized
 - use plain language
+- lead with something helpful before asking for a meeting
 - do not invent fake personalization
 - tie the message to the actual segment and data available
+- SMBs care about revenue, time savings, and concrete benefits up front
+- avoid mass-blast behavior
 - optimize for reply and meeting rates, not just opens
 
 ## Important
 
-The repo does not yet have a dedicated local-email module.
+This repo now has a first local-emailing module, but it should still stay narrow.
 
-So this skill should use the existing local-business selling guidance plus the
-user's segment and enrichment context, rather than pretending there is already a
-finished email doctrine in the repo.
+Ground answers in the repo's short-email, value-first pattern. Do not write
+long generic SaaS emails.

@@ -120,8 +120,9 @@ So the clear action is:
 |--------|-----|----------|----------------|--------|
 | [`kol-crm`](./modules/kol-crm/) | Track influencer sourcing, outreach, pricing, owner, and status | `Template` | Fork repo, start here | First release |
 | [`openmart-prospecting`](./modules/openmart-prospecting/) | Define ICPs, build lists, and document prospecting workflows | `Playbook`, `Connector` | Read playbook | First release |
+| [`local-emailing`](./modules/local-emailing/) | Capture local-business email strategy, subject-line rules, and follow-up cadence | `Playbook` | Read playbook | First release |
 | [`seo`](./modules/seo/) | Capture repeatable SEO workflow judgment and briefs | `Playbook` | Read playbook | Planned |
-| [`cold-call`](./modules/cold-call/) | Capture scripts, review criteria, and outbound heuristics | `Playbook` | Read playbook | Planned |
+| [`cold-call`](./modules/cold-call/) | Capture scripts, review criteria, and outbound heuristics | `Playbook` | Read playbook | First release |
 
 ## Repo shape
 
@@ -129,6 +130,7 @@ So the clear action is:
 modules/
   kol-crm/
   openmart-prospecting/
+  local-emailing/
   seo/
   cold-call/
 packages/
@@ -197,4 +199,5 @@ This repo is still early. The goal right now is simple:
 - make the registry shape obvious
 - make `KOL CRM` real enough to clone and adapt
 - make `openmart-prospecting` real enough to run as a playbook
+- make `local-emailing` real enough to use as an outbound playbook
 - add thinner follow-on modules without overbuilding
