@@ -90,12 +90,14 @@ Without those, enriched data becomes harder to trust.
 Default to giving:
 
 - target system
+- `RECOMMENDATION: Choose X because ...`
 - recommended motion: `A`, `B`, or `C`
 - input fields
 - enrichment fields
 - approval gate
 - sync rule
 - notes on what not to automate yet
+- `Reply with A, B, or C.`
 
 ## Rules
 
@@ -106,3 +108,4 @@ Default to giving:
 - explain why each field matters to the outbound workflow
 - keep the integration inspectable
 - prefer explicit routing over hidden scoring
+- end with `Reply with A, B, or C.` when giving next-step options

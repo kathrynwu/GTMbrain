@@ -51,14 +51,16 @@ Then route into the matching module:
 Default to giving:
 
 - current bottleneck
-- recommendation
+- `RECOMMENDATION: Choose X because ...`
 - `A/B/C` choices
 - the exact module path to open
 - one sentence on why that module is the right next step
+- `Reply with A, B, or C.`
 
 ## Rules
 
 - always recommend one option
 - keep the choice set to `A/B/C`
+- end with `Reply with A, B, or C.`
 - route to the smallest useful module, not the broadest one
 - do not dump the whole repo tree if one module is enough

@@ -168,6 +168,12 @@ signals before recommending deeper enrichment.
 
 Prefer `A/B/C` recommendation-style answers when routing users across modules.
 
+For repo-local skills, prefer the full pattern:
+
+1. `RECOMMENDATION: Choose X because ...`
+2. `A/B/C` options
+3. `Reply with A, B, or C.`
+
 ## Openmart Guidance
 
 The Openmart module is playbook-first, connector-second.

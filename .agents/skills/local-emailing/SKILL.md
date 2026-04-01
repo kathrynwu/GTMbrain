@@ -52,6 +52,7 @@ Use this skill when the user is asking about:
 Default to giving:
 
 - target segment summary
+- `RECOMMENDATION: Choose X because ...`
 - recommended motion: `A`, `B`, or `C`
 - personalization fields to use
 - 3 subject lines
@@ -59,6 +60,7 @@ Default to giving:
 - 2-3 short follow-ups
 - CTA
 - success metrics
+- `Reply with A, B, or C.`
 
 ## Rules
 
@@ -71,6 +73,7 @@ Default to giving:
 - SMBs care about revenue, time savings, and concrete benefits up front
 - avoid mass-blast behavior
 - optimize for reply and meeting rates, not just opens
+- end with `Reply with A, B, or C.` when giving next-step options
 
 ## Important
 

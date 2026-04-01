@@ -5,6 +5,7 @@ const path = require("path");
 
 const repoRoot = path.resolve(__dirname, "..");
 const modulesRoot = path.join(repoRoot, "modules");
+const skillsRoot = path.join(repoRoot, ".agents", "skills");
 
 const allowedStatuses = new Set(["planned", "first-release"]);
 const allowedSurfaces = new Set(["Template", "Playbook", "Connector", "Skill"]);
@@ -132,8 +133,39 @@ for (const dirName of moduleDirs) {
   }
 }
 
+if (!fs.existsSync(skillsRoot)) {
+  fail(`missing skills directory: ${skillsRoot}`);
+}
+
+const skillDirs = fs.existsSync(skillsRoot)
+  ? fs
+      .readdirSync(skillsRoot, { withFileTypes: true })
+      .filter((entry) => entry.isDirectory())
+      .map((entry) => entry.name)
+      .sort()
+  : [];
+
+for (const dirName of skillDirs) {
+  const skillPath = path.join(skillsRoot, dirName, "SKILL.md");
+
+  if (!fs.existsSync(skillPath)) {
+    fail(`missing ${skillPath}`);
+    continue;
+  }
+
+  const contents = fs.readFileSync(skillPath, "utf8");
+
+  if (!contents.includes("RECOMMENDATION: Choose X because")) {
+    fail(`${skillPath} must include the recommendation pattern`);
+  }
+
+  if (!contents.includes("Reply with A, B, or C.")) {
+    fail(`${skillPath} must include the A/B/C reply pattern`);
+  }
+}
+
 if (process.exitCode) {
   process.exit(process.exitCode);
 }
 
-console.log(`Validated ${moduleDirs.length} modules.`);
+console.log(`Validated ${moduleDirs.length} modules and ${skillDirs.length} skills.`);

@@ -59,6 +59,7 @@ Use this skill when the user is asking about:
 Default to giving:
 
 - target segment summary
+- `RECOMMENDATION: Choose X because ...`
 - recommended motion: `A`, `B`, or `C`
 - 15-second opener
 - 3-5 qualification questions
@@ -68,6 +69,7 @@ Default to giving:
 - next steps the prospect should expect
 - metrics to track
 - review notes if the user asked for critique
+- `Reply with A, B, or C.`
 
 ## Rules
 
@@ -87,6 +89,7 @@ Default to giving:
 - do not write fake bravado or hype
 - tie the call plan to the segment and list quality
 - track connection, meeting, show, and close rates, not vanity metrics
+- end with `Reply with A, B, or C.` when giving next-step options
 
 ## Important
 

@@ -49,9 +49,13 @@ Treat this source as the main list-building guide:
    - rejection rules if they already know them
 3. Write the ICP in one sentence.
 4. Recommend the simplest query recipe that proves the market exists.
-5. Tell the user whether they should start with the Openmart UX or the API.
-6. Explain how to normalize, score, and route rows before they hit the CRM.
-7. Only then explain which Openmart endpoint fits where.
+5. Decide the motion:
+   - `A` use Openmart UX first for the initial list
+   - `B` use the API first for CRM or internal-tool integration
+   - `C` tighten ICP and filters before touching either one
+6. Tell the user whether they should start with the Openmart UX or the API.
+7. Explain how to normalize, score, and route rows before they hit the CRM.
+8. Only then explain which Openmart endpoint fits where.
 
 ## Intake questions
 
@@ -91,14 +95,17 @@ Do not recommend people enrich everything upfront.
 Default to giving:
 
 - one-sentence ICP
+- `RECOMMENDATION: Choose X because ...`
 - location range
 - industry
 - must-have filters
 - recommended query recipe
+- recommended motion: `A`, `B`, or `C`
 - whether to use Openmart UX or API first
 - fields to preserve
 - approval/rejection rules
 - integration or handoff step
+- `Reply with A, B, or C.`
 
 ## Rules
 
@@ -108,3 +115,4 @@ Default to giving:
 - do not pretend the Openmart API replaces human judgment
 - if the user has not provided location range and industry, ask first
 - if the user has no account yet, point them to `https://app.openmart.com/register`
+- end with `Reply with A, B, or C.` when giving next-step options
