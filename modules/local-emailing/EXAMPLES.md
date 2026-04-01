@@ -172,3 +172,73 @@ Useful defaults:
 - one CTA is usually enough
 - if the message cannot be understood quickly on a phone screen, it is
   probably doing too much
+
+## Buyer and problem examples
+
+### Software-company buyer fit
+
+Bad fit:
+
+- SDR or other non-owner replies with polite interest
+- engagement exists, but no one can actually buy
+
+Better fit:
+
+- `VP Sales`
+- `Head of Outbound`
+- `RevOps`
+
+What tends to work:
+
+- name the exact sales-data bottleneck
+- describe the work being removed
+- support with one operational result
+
+Example shape:
+
+`Hi {name}, a lot of outbound teams still lose time to stale contacts, bounced emails, and manual CSV cleanup. We help clean and route account + contact data before it hits the CRM so reps spend time selling instead of fixing exports. Worth a short compare next week?`
+
+### KPI-owner buyer fit
+
+Sometimes the best buyer is the person who owns the outcome directly, not the
+obvious ops title.
+
+Example:
+
+- audience: `VP Customer Success`
+- product: front-office workflow automation
+- working pain cluster:
+  - long wait times
+  - poor customer or patient experience
+  - overloaded front desk
+  - lower satisfaction outcomes
+- clearest result metrics:
+  - faster response time
+  - higher CSAT
+
+What tends to work:
+
+- pitch the workflow problem hurting the KPI
+- show that the buyer already owns the metric
+- avoid broad efficiency language when the customer experience angle is stronger
+
+## Credibility-first opener
+
+Use this when the sale needs more trust before a direct meeting ask will land.
+
+Example shape:
+
+`Hi {name}, I spend a lot of time talking with teams dealing with {problem}, and I wanted to learn how your team handles it today. Open to a quick virtual coffee sometime next week?`
+
+This works best when you can support it with some trust signal:
+
+- recognizable customers
+- strong market reputation
+- fundraising or equivalent proof
+- founder credibility when customer proof is still early
+
+It works badly when:
+
+- the email is too long
+- there is no visible proof
+- the note still reads like a disguised hard sell

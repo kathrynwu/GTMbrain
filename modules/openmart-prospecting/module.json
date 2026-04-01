@@ -17,6 +17,7 @@
   "required_paths": [
     "PLAYBOOK.md",
     "STANDARD-PRACTICE.md",
+    "SMB-PROSPECTING.md",
     "LEAD-SOURCES.md",
     "QUERY-RECIPES.md",
     "INTEGRATIONS.md",

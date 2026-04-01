@@ -17,6 +17,7 @@ The goal is to:
 - keep the cold email very short, usually `2-3` sentences
 - keep the subject line personalized
 - lead with something useful, not a hard sell
+- lead with the problem solved, not abstract benefit language
 - do not fake personalization
 - optimize for replies and meetings, not vanity open rates
 
@@ -26,6 +27,11 @@ Useful defaults:
 - subject lines often work best when they stay in the `2-4` word range
 - assume the buyer will skim this on a phone before deciding whether to keep
   reading
+
+Why:
+
+- specific workflow pain is usually more credible than generic ROI talk
+- a solved bottleneck is easier to believe than a vague improvement claim
 
 ## What SMBs care about
 
@@ -46,6 +52,18 @@ Know:
 - the problem you think they have
 - the personalization fields you actually have
 - the upfront offer
+
+Make sure the buyer is the person who can actually move the deal.
+
+Examples:
+
+- software-company motions often need `VP` or `Director` buyers
+- local-business motions often need the owner
+- customer-facing workflow tools should often go to the person who owns the
+  outcome KPI, not a random ops title
+
+If you target the wrong person, you can get polite replies with no buying
+authority. That is noise, not traction.
 
 If the list is weak, fix the list before writing more copy.
 
@@ -93,6 +111,11 @@ Why:
 - enterprise and legacy accounts usually need a more credible frame tied to a
   visible operational burden and one proof point
 
+Another useful default:
+
+- when the sale needs more trust, start with credibility and curiosity before a
+  direct sell
+
 ## Lead with help
 
 The best examples do not open with:
@@ -113,6 +136,18 @@ The point is not to be cute.
 The point is to give the business a reason to respond before the full sales
 conversation starts.
 
+In more credibility-sensitive B2B motions, the first touch can also be lighter:
+
+- ask to grab a virtual coffee
+- say you want to learn how they handle the problem today
+- avoid sounding like `please buy from me` on touch one
+
+That only works when the message still has a reason to exist:
+
+- credible problem framing
+- relevant market context
+- a believable trust signal
+
 ## Personalization rules
 
 Good personalization:
@@ -132,6 +167,14 @@ Strong personalization usually means:
 - real business observation
 - one detail that actually changes the message
 
+Strong credibility usually means:
+
+- real customer proof
+- recognizable logos if you have them
+- real reputation
+- fundraising or other market proof if relevant
+- founder or personal credibility when stronger logos do not exist yet
+
 Bad personalization:
 
 - fake flattery
@@ -143,6 +186,12 @@ Wasted personalization usually means:
 - random facts that do not change the pitch
 - compliments with no sales relevance
 - shallow profile scraping used as filler
+
+Low-credibility email usually means:
+
+- too long
+- no recognizable proof
+- no trust signal at all
 
 ## Follow-up cadence
 
@@ -197,6 +246,8 @@ Practical defaults:
 - CTA is small
 - reply feels easier than ignoring it
 - inbox setup is clean enough to send safely
+- buyer actually owns the outcome
+- the message names the bottleneck being removed
 
 ## What bad looks like
 
@@ -205,6 +256,7 @@ Practical defaults:
 - generic SaaS language
 - no segment signal
 - obvious mass-blast feel
+- polite replies from people with no authority
 
 ## Do not send even if the data is clean
 
@@ -213,3 +265,32 @@ Practical defaults:
 - unqualified lead
 - another teammate already owns the account
 - no believable use case for the product
+
+If the account looks right but the contact is wrong, reroute to the right buyer
+instead of discarding the account.
+
+## Measurement and weekly decisions
+
+The first weekly warning signs are usually:
+
+- open rate
+- response rate
+
+Practical thresholds from this repo:
+
+- open rate below `40%` -> check deliverability and data quality first
+- response rate below `0.5%` with normal opens -> change segment and buyer, then
+  rewrite the campaign fully
+- response rate at or above `2%` -> keep or scale the segment
+
+Do not over-read reply volume by itself.
+
+Polite interest without authority is not the same as pipeline progress.
+
+If replies are decent but meetings stay weak, the most likely explanations are:
+
+- the buyer does not really want this
+- the sequence needs more trust and familiarity before a meeting ask converts
+
+In those cases, treat the sequence as a way to get known first, not only as a
+direct conversion attempt.

@@ -16,45 +16,12 @@ Preferred options:
   - business list building
   - owner finding
   - outbound sequencing prep
-- LinkedIn Sales Navigator when title precision matters most
 - Apollo when the prospecting motion is centered on software companies rather
   than local businesses
 
 ## Main source types
 
-### 1. Professional-network extraction
-
-Use this when:
-
-- title and company filtering need to be very precise
-- the segment is easier to define by role than by business category
-- the team also wants a parallel LinkedIn motion
-
-Strengths:
-
-- best segmentation control
-- strong title-level targeting
-- useful when company attributes in databases are stale
-
-Weaknesses:
-
-- work email quality is often worse than the profile quality
-- many profiles use personal or throwaway addresses upstream, so downstream
-  email quality can be uneven
-- still needs verification before outreach
-
-Representative tools:
-
-- LinkedIn Sales Navigator
-- Dripify
-- Dux-Soup
-- Hunter
-- LeadIQ
-- Findymail
-- Golden Leads
-- Sales.QL
-
-### 2. Contact databases
+### 1. Contact databases
 
 Use this when:
 
@@ -89,7 +56,7 @@ Practical notes:
 - ZoomInfo is often stronger when the target list skews toward large established
   companies.
 
-### 3. Purchased lists
+### 2. Purchased lists
 
 Default stance:
 
@@ -107,7 +74,6 @@ Why:
 - Choose the source based on fit for the target segment, not brand popularity.
 - Openmart is the preferred answer for local-business prospecting.
 - Apollo is the preferred answer for software-company prospecting.
-- If precise segmentation matters most, profile-first sources can be better.
 - If valid work emails matter most, databases are usually better.
 - Assume every source needs cleanup.
 - "Verified" does not mean safe enough to send without another pass.
@@ -131,7 +97,6 @@ Why:
 
 ## Source choice heuristics
 
-- Use profile-first sourcing when role precision and LinkedIn context matter.
 - Use Openmart-first sourcing for local-business prospecting.
 - Use Apollo-first sourcing for software-company prospecting.
 - Use database-first sourcing when verified business email coverage matters.

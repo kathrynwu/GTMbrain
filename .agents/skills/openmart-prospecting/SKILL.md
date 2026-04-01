@@ -22,16 +22,17 @@ Use this skill when the user is asking about:
 1. `modules/openmart-prospecting/README.md`
 2. `modules/openmart-prospecting/PLAYBOOK.md`
 3. `modules/openmart-prospecting/STANDARD-PRACTICE.md`
-4. `modules/openmart-prospecting/LEAD-SOURCES.md`
-5. `modules/openmart-prospecting/QUERY-RECIPES.md`
-6. `modules/openmart-prospecting/INTEGRATIONS.md`
-7. `modules/openmart-prospecting/SELLING-LOCAL-BUSINESSES.md`
+4. `modules/openmart-prospecting/SMB-PROSPECTING.md` for SMB or local-business motions
+5. `modules/openmart-prospecting/LEAD-SOURCES.md`
+6. `modules/openmart-prospecting/QUERY-RECIPES.md`
+7. `modules/openmart-prospecting/INTEGRATIONS.md`
+8. `modules/openmart-prospecting/SELLING-LOCAL-BUSINESSES.md`
 
 If the question touches implementation:
 
-8. `modules/openmart-prospecting/schema/prospect.schema.json`
-9. `packages/openmart/README.md`
-10. `packages/openmart/client.example.js`
+9. `modules/openmart-prospecting/schema/prospect.schema.json`
+10. `packages/openmart/README.md`
+11. `packages/openmart/client.example.js`
 
 Treat this source as the main list-building guide:
 
@@ -71,7 +72,7 @@ Treat this source as the main list-building guide:
    hit the CRM.
 9. Only then explain which Openmart endpoint fits where.
 
-When helpful, use this checklist for a strong SMB row:
+When helpful for SMB or local-business motions, use this checklist for a strong row:
 
 - correct business match
 - verified contact path
@@ -142,6 +143,7 @@ Default to giving:
 
 - explain the workflow before API trivia
 - use `Source -> Merge -> Qualify -> Enrich -> Segment -> Prioritize -> Route -> Handoff -> Review` as the backbone
+- keep generic prospecting mechanics separate from SMB-specific quality rules
 - if the user is choosing between Openmart and Apollo:
   - prefer `Openmart` for local-business prospecting
   - prefer `Apollo` for software-company prospecting

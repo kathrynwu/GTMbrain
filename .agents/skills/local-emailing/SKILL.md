@@ -43,6 +43,7 @@ Use this skill when the user is asking about:
    - what benefit you can offer first
    - what personalization fields are actually available
 3. Check whether the list has enough signal for email personalization.
+4. Make sure the buyer has real authority or clearly owns the KPI.
 4. Decide the motion:
    - `A` email-first now
    - `B` enrich the list first
@@ -70,6 +71,7 @@ Default to giving:
 - subject lines should usually be personalized
 - use plain language
 - lead with something helpful before asking for a meeting
+- lead with the problem solved and the work removed, not generic benefit copy
 - do not invent fake personalization
 - tie the message to the actual segment and data available
 - SMBs care about revenue, time savings, and concrete benefits up front
@@ -86,13 +88,25 @@ Default to giving:
   - local SMB -> helpful-offer first
   - B2B software -> trigger-based opener
   - enterprise or legacy -> observation plus proof
+- if the sale requires more trust first, a credibility-building opener is valid:
+  - ask to learn from them
+  - suggest a virtual coffee
+  - avoid pushing the buy on touch one
 - strong personalization means a real trigger, real company context, or a real
   business observation that changes the message
+- strong credibility means recognizable proof, customer reputation, fundraising,
+  or some other believable trust signal
 - weak personalization means fake compliments, filler facts, or random details
   that do not improve relevance
+- low-credibility outbound is usually too long or missing proof entirely
 - if the segment supports it, email and LinkedIn can run in parallel
 - avoid mass-blast behavior
 - optimize for reply and meeting rates, not just opens
+- polite interest from a non-buyer is not success; reroute to the right buyer
+- if open rate is below `40%`, check deliverability and data quality first
+- if opens are acceptable but response rate is below `0.5%`, fix segment and
+  buyer first, then rewrite the campaign
+- treat response rate around `2%` or higher as a keep-or-scale signal
 - end with `Reply with A, B, or C.` when giving next-step options
 
 ## Important

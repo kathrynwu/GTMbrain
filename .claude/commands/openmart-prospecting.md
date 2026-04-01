@@ -10,6 +10,7 @@ Use the matching module files:
 - @modules/openmart-prospecting/README.md
 - @modules/openmart-prospecting/PLAYBOOK.md
 - @modules/openmart-prospecting/STANDARD-PRACTICE.md
+- @modules/openmart-prospecting/SMB-PROSPECTING.md
 - @modules/openmart-prospecting/LEAD-SOURCES.md
 - @modules/openmart-prospecting/QUERY-RECIPES.md
 - @modules/openmart-prospecting/INTEGRATIONS.md
