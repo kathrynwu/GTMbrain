@@ -10,6 +10,7 @@ Before choosing a recipe, collect:
 - industry or business type
 - must-have filters
 - obvious rejection rules
+- whether `independent` or `non-chain` is mandatory
 
 ## Recipe 1: Geographic Seed Query
 
@@ -117,6 +118,90 @@ Example rule:
 - mark them `Approved`
 - then route them into the CRM
 
+## Vertical recipes
+
+### Restaurants
+
+Use:
+
+- `restaurant`
+- `cafe`
+- `bistro`
+
+Then tighten with:
+
+- rating above `4.0`
+- review count above `50`
+- manual chain rejection
+
+Why:
+
+- avoids dead or weak-quality places
+
+### Home services
+
+Use:
+
+- `HVAC`
+- `heating`
+- `air conditioning`
+- `plumbing`
+
+Then tighten with:
+
+- `has website = true`
+
+Why:
+
+- real operators in these categories usually have a site
+- cuts junk listings fast
+
+### Med spas and salons
+
+Use multiple synonyms:
+
+- `med spa`
+- `aesthetic clinic`
+- `skin care clinic`
+
+Then tighten with:
+
+- higher-end signals like strong reviews or better branding
+
+Why:
+
+- category naming is inconsistent
+
+### Dental and medical
+
+Use:
+
+- `dental`
+- `dentist`
+- `orthodontist`
+
+Then tighten with:
+
+- exclude large groups or DSOs where needed
+
+Why:
+
+- enterprise clinics are often the wrong ICP
+
+### Retail and niche shops
+
+Start broader:
+
+- `gift shop`
+- `boutique`
+- similar store keywords
+
+Then manually filter harder after export.
+
+Why:
+
+- taxonomy is messy and filters are weaker here
+
 ## Notes
 
 If a recipe starts feeling too custom, split it into:
@@ -126,3 +211,11 @@ If a recipe starts feeling too custom, split it into:
 - rejection rule
 
 That makes it easier to port into code later.
+
+Reality:
+
+1. start broad
+2. inspect the first results
+3. tighten non-chain, website, rating, or contactability
+4. export
+5. QA or enrich

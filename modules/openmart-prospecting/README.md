@@ -13,6 +13,7 @@ Define ICPs, build lists, and document repeatable prospecting workflows.
 
 - ICP definition workflow
 - query loop for broad-to-tight search
+- real ICP patterns and approval logic
 - list quality rules
 - normalized prospect export shape
 - sample prospect output
@@ -96,6 +97,24 @@ If you want the shortest path:
 6. Read [`INTEGRATIONS.md`](./INTEGRATIONS.md) if you want to plug Openmart into a sales tool or internal enrichment app.
 7. Read [`SELLING-LOCAL-BUSINESSES.md`](./SELLING-LOCAL-BUSINESSES.md) if the goal is outbound to local businesses.
 8. Use [`sample-data/prospects.csv`](./sample-data/prospects.csv) as the normalized output shape.
+
+## Real usage patterns
+
+This module now includes real ICP shapes and filtering logic for:
+
+- SMB SaaS selling into local operators
+- marketplaces pulling local supply
+- lead gen agencies and outbound teams
+- vertical SaaS with stricter niche targeting
+- growth teams doing fast geo-based GTM tests
+
+It also captures the common reality:
+
+1. start broad
+2. inspect the results
+3. tighten non-chain, website, rating, or contactability
+4. export
+5. QA or enrich
 
 ## Notes
 

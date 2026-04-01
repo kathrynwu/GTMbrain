@@ -15,6 +15,26 @@ The goal is not "run a search."
 The goal is to turn a rough ICP into a list that is clean enough to route into a
 CRM or outbound workflow without a human cleanup project later.
 
+## Who actually uses this
+
+Real ICP patterns:
+
+- SMB SaaS:
+  - POS, payments, and tooling that sell into restaurants, salons, and med spas
+  - usually want the owner or operator, not corporate
+- Marketplaces:
+  - local supply acquisition with high volume and decent accuracy
+  - often pull broad first, then filter later
+- Lead gen agencies and outbound teams:
+  - plumbers, HVAC, dentists, and similar verticals
+  - usually care more about contactability than perfect precision
+- Vertical SaaS:
+  - very specific niches like independent HVAC companies or dental practices
+  - much stricter filtering
+- Growth teams and scrappy founders:
+  - broad geo-based SMB tests
+  - messy queries, then iterate fast
+
 ## Inputs
 
 You should have these before you start:
@@ -62,6 +82,15 @@ Bad first-query behavior:
 - stacking ten filters immediately
 - trying to encode every edge case up front
 - assuming the first result set is already clean
+
+What users usually apply first:
+
+1. location
+2. category or keyword
+3. size or type filters like independent or non-chain
+4. optional qualifiers like website, phone, or active status
+
+Most people start broad, then narrow after seeing the results.
 
 ### 3. Inspect the first page before exporting anything
 
@@ -134,6 +163,37 @@ Use an explicit routing status:
 
 This matters because list-building and CRM handoff are not the same job.
 
+## Approve and reject logic
+
+Hard rejects:
+
+- chain or franchise
+- duplicate listing
+- permanently closed or inactive
+- no real decision-maker path when that is required
+
+Soft rejects, depending on the motion:
+
+- weak contact info
+- no website
+- wrong category due to listing noise
+- too small, too random, or too weakly matched
+
+Strong approvals:
+
+- owner or decision maker identified
+- direct email or good phone
+- business looks real, active, and reachable
+- tight ICP match
+
+Gold-standard row:
+
+- owner name
+- personal or work email, not just `info@`
+- phone number
+- website
+- clear category match
+
 ## List quality rules
 
 - One row should represent one business.
@@ -141,6 +201,7 @@ This matters because list-building and CRM handoff are not the same job.
 - Reject rows with missing core contact signals when those signals are part of the ICP.
 - Keep fit scoring human-readable.
 - Add notes when a row is borderline instead of pretending the score explains everything.
+- The real filter is usually `independent + reachable human`, not just `business exists`.
 
 ## High-signal views
 
@@ -179,3 +240,13 @@ sales playbooks:
 - when email-first beats call-first
 - which metrics matter more than opens and clicks
 - how to structure a repeatable call-to-demo process
+
+## The actual loop
+
+Most users do this:
+
+1. start broad
+2. inspect results
+3. realize the data is messy
+4. add constraints like non-chain, website, or rating
+5. export, QA, and enrich

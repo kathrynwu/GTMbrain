@@ -46,6 +46,7 @@ Treat this source as the main list-building guide:
    - location range
    - industry or business type
    - must-have filters
+   - whether non-chain or independent is required
    - rejection rules if they already know them
 3. Write the ICP in one sentence.
 4. Recommend the simplest query recipe that proves the market exists.
@@ -99,6 +100,7 @@ Default to giving:
 - location range
 - industry
 - must-have filters
+- reject logic
 - recommended query recipe
 - recommended motion: `A`, `B`, or `C`
 - whether to use Openmart UX or API first
@@ -110,6 +112,7 @@ Default to giving:
 ## Rules
 
 - explain the workflow before API trivia
+- default to broad-first, then tighten after inspecting results
 - keep `source_query`, fit score, and routing status visible
 - prefer boring integrations over clever ones
 - do not pretend the Openmart API replaces human judgment
