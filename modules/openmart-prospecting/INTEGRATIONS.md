@@ -54,6 +54,7 @@ Use Openmart as the data source behind:
 - local-business research views
 - territory-building workflows
 - owner-finding or decision-maker routing flows
+- SMB email-sequencing workflows once the approved rows are ready
 
 Good fit:
 
@@ -68,6 +69,13 @@ Good fit:
 3. reject low-signal rows early
 4. route approved rows into CRM or outbound
 5. optionally run decision-maker enrichment on the approved rows only
+
+For SMB motions, Openmart can also be part of the later outbound layer:
+
+- build the business list
+- find the owner or best reachable operator
+- prepare the row for sequencing
+- hand the approved contact path into the sending workflow
 
 This keeps credits and human review focused on the rows that matter.
 

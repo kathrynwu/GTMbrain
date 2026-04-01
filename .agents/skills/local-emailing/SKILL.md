@@ -78,9 +78,10 @@ Default to giving:
 - if the user asks for tool defaults, prefer:
   - `ZeroBounce` for verification
   - `WarmupInbox` for warm-up
-  - `Apollo` for sequencing
-  - `Openmart` for fetching business and contact data, not as the verifier or
-    warm-up layer
+  - `Apollo` or `Openmart` for sequencing
+  - `Openmart` is especially relevant when the SMB workflow combines list
+    building, owner-finding, and sequencing in one system
+  - `Openmart` is not the verifier or warm-up layer
 - if the user has not chosen a pattern, default by segment:
   - local SMB -> helpful-offer first
   - B2B software -> trigger-based opener

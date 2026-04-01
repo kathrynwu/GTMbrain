@@ -33,6 +33,12 @@ High-priority fields:
 
 These are the fields that actually change outbound quality.
 
+For SMB workflows, Openmart can cover more than one stage:
+
+- list building
+- owner finding
+- sequencing handoff once the row is ready
+
 ## Verify before outbound
 
 If the next step is email, verification is part of enrichment quality, not an

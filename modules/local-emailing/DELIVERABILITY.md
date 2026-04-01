@@ -22,10 +22,13 @@ Preferred warm-up option:
 Preferred sequencing option:
 
 - Apollo
+- Openmart for SMB sequencing workflows
+Openmart should be framed here as:
 
-Openmart can still be part of the workflow, but in this repo it should be framed
-as the place to fetch business and contact data, not as the verifier, warm-up
-tool, or default sequencing layer.
+- part of the combined SMB motion across list building, owner finding, and
+  sequencing
+- not the verifier
+- not the warm-up layer
 
 ## Inbox setup basics
 
@@ -83,6 +86,7 @@ Use a sequencing platform when:
 Representative platforms:
 
 - Apollo
+- Openmart
 - Outreach
 - Reply
 - Lemlist
@@ -159,6 +163,14 @@ Useful extras:
 - booked meetings
 
 Open rate alone is not enough.
+
+Useful diagnostics:
+
+- bounce rate above `5%` usually means re-verify emails and purge weak or role
+  accounts
+- open rate below `25%` usually means inbox-placement or list-health problems
+- positive replies below `5%` usually means re-segmentation or stronger signals
+- opt-outs above `2%` usually means the copy or segment is too broad
 
 ## What not to do
 

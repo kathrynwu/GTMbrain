@@ -15,6 +15,10 @@ Define ICPs, build lists, and document repeatable prospecting workflows.
 - query loop for broad-to-tight search
 - real ICP patterns and approval logic
 - list quality rules
+- how Openmart supports the full SMB motion:
+  - list building
+  - owner finding
+  - sequencing after the row is ready
 - normalized prospect export shape
 - sample prospect output
 - thin connector starter for boring API calls

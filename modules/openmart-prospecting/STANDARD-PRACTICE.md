@@ -56,6 +56,7 @@ The rule is simple:
 
 - new leads should enter through a repeatable intake path
 - source should always be preserved
+- list freshness should be treated as part of source quality
 
 ## 2. Merge
 
@@ -91,6 +92,11 @@ Qualification should answer:
 
 Qualify before spending enrichment effort.
 
+Must-have versus nice-to-have is a useful working pattern:
+
+- if a row misses a must-have, discard it early
+- nice-to-haves should influence prioritization, not basic eligibility
+
 ## 4. Enrich
 
 Only enrich the fields needed to decide motion or enable contact.
@@ -103,8 +109,17 @@ High-value routing enrichments usually include:
 - phone quality
 - email presence
 - owner or decision-maker path
+- activity or business-health signals
 
 Do not fully enrich every row upfront.
+
+Useful SMB health signals:
+
+- recent reviews
+- paid-ad activity
+- updated hours
+- active website or social presence
+- visible promotions
 
 ## 5. Segment
 
@@ -189,6 +204,13 @@ Ask:
 
 Reporting should change next week's targeting.
 
+List freshness rule:
+
+- refresh actively worked lists at least every `60` days
+- stale SMB lists decay fast enough that old data quietly lowers response rates
+
+If fields can be refreshed by API or CSV sync, do it.
+
 ## Core Rules
 
 - preserve company identity during merges
@@ -199,6 +221,7 @@ Reporting should change next week's targeting.
 - use contact path to determine channel
 - keep channel lists separate
 - review weekly and adjust
+- refresh the list before blaming copy
 
 ## What Is Specific Versus Reusable
 

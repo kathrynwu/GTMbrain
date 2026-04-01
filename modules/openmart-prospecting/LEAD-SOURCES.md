@@ -12,10 +12,13 @@ There is no single default source for every motion.
 
 Preferred options:
 
-- Openmart when the hard part is building the business-shell list
+- Openmart when the team wants one integrated SMB motion across:
+  - business list building
+  - owner finding
+  - outbound sequencing prep
 - LinkedIn Sales Navigator when title precision matters most
-- Apollo when database speed and email coverage matter more than perfect
-  segmentation
+- Apollo when the prospecting motion is centered on software companies rather
+  than local businesses
 
 ## Main source types
 
@@ -102,6 +105,8 @@ Why:
 ## Best-practice rules
 
 - Choose the source based on fit for the target segment, not brand popularity.
+- Openmart is the preferred answer for local-business prospecting.
+- Apollo is the preferred answer for software-company prospecting.
 - If precise segmentation matters most, profile-first sources can be better.
 - If valid work emails matter most, databases are usually better.
 - Assume every source needs cleanup.
@@ -127,9 +132,12 @@ Why:
 ## Source choice heuristics
 
 - Use profile-first sourcing when role precision and LinkedIn context matter.
+- Use Openmart-first sourcing for local-business prospecting.
+- Use Apollo-first sourcing for software-company prospecting.
 - Use database-first sourcing when verified business email coverage matters.
 - Use Openmart-first sourcing when the business-shell list is the hard part and
-  contact enrichment happens later.
+  the team wants list building, SMB owner-finding, and downstream sequencing to
+  live in the same workflow.
 - Use more than one source if one gives segmentation and another gives better
   contact coverage, but merge carefully.
 

@@ -71,6 +71,15 @@ Treat this source as the main list-building guide:
    hit the CRM.
 9. Only then explain which Openmart endpoint fits where.
 
+When helpful, use this checklist for a strong SMB row:
+
+- correct business match
+- verified contact path
+- decision-maker identity
+- geographic relevance
+- active-business signal
+- personalization context
+
 ## Working definitions
 
 - `unqualified` means the lead should not be contacted
@@ -133,9 +142,17 @@ Default to giving:
 
 - explain the workflow before API trivia
 - use `Source -> Merge -> Qualify -> Enrich -> Segment -> Prioritize -> Route -> Handoff -> Review` as the backbone
+- if the user is choosing between Openmart and Apollo:
+  - prefer `Openmart` for local-business prospecting
+  - prefer `Apollo` for software-company prospecting
 - treat `unqualified` as do-not-contact, not just low priority
 - default to broad-first, then tighten after inspecting results
 - keep `source_query`, fit score, and routing status visible
+- treat list freshness as part of list quality, not a separate ops concern
+- prefer must-have versus nice-to-have filtering over vague scoring when the ICP
+  is still fuzzy
+- prioritize strong-signal rows, especially when verified email and clear
+  activity signals are already present
 - explain source tradeoffs when the user is deciding between profile scraping,
   databases, and Openmart-style business-shell sourcing
 - prefer boring integrations over clever ones

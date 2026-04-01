@@ -58,6 +58,11 @@ Useful threshold:
 - if roughly `30%` or more of the file fails, treat that as a source-quality
   problem, not normal list loss
 
+Additional hygiene rule:
+
+- purge generic role accounts like `info@` when the motion requires a real
+  decision-maker path
+
 ## Practical rule for weak files
 
 If a meaningful chunk of the list fails verification, do not force the launch.
@@ -125,6 +130,8 @@ Representative tools:
   forcing email
 - use the cleaned list for any manual research so time is not wasted on leads
   that will never be contacted
+- if the row already has strong signal and verified email, move it faster
+  instead of burying it in a giant review queue
 
 ## What not to do
 
