@@ -64,7 +64,11 @@ Raw SMB lists are risky because they often contain:
 
 ## Signal priorities for SMB prospecting
 
-- recent reviews
+- newly opened business
+- Google Maps reviews
+- Google Maps ratings
+- surge in recent Google reviews
+- location count
 - paid social ads
 - updated business hours
 - active website or social presence

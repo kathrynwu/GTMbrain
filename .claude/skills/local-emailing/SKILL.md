@@ -1,9 +1,9 @@
 ---
 name: local-emailing
 description: |
-  Use when someone wants a local-business outbound email plan, subject lines,
-  first-touch copy, follow-ups, personalization fields, or guidance on when
-  email should beat calling for a local-business segment.
+  Use when someone wants a short outbound email plan, subject lines,
+  first-touch copy, follow-ups, personalization fields, or guidance on buyer
+  fit, sequencing, and when email should beat calling.
 ---
 
 # Local Emailing

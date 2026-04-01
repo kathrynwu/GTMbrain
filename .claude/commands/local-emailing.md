@@ -1,5 +1,5 @@
 ---
-description: Generate or review local-business outbound emails using GTMbrain
+description: Generate or review short outbound emails using GTMbrain
 ---
 
 Use the project skill at @.claude/skills/local-emailing/SKILL.md and the

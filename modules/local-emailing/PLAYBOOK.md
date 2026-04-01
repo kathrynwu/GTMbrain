@@ -1,13 +1,14 @@
 # Local Emailing Playbook
 
 Use this playbook when the segment is clear enough and the list has enough
-signal to send short, relevant emails to local businesses.
+signal to send short, relevant outbound emails.
 
 The goal is not to blast a generic campaign.
 
 The goal is to:
 
-- save the SMB time
+- solve a visible workflow problem
+- save the buyer time
 - offer something useful up front
 - start a real conversation
 - create a clean handoff to a meeting or follow-up call
@@ -33,12 +34,14 @@ Why:
 - specific workflow pain is usually more credible than generic ROI talk
 - a solved bottleneck is easier to believe than a vague improvement claim
 
-## What SMBs care about
+## What buyers care about
 
-In this motion, local businesses usually care about:
+Common outcomes in this repo:
 
-- revenue amplification
+- revenue impact
 - saving time
+- higher response or connect quality
+- customer-facing KPI improvement
 - concrete help up front
 
 If your email does not clearly connect to one of those, it is probably weak.
@@ -107,7 +110,7 @@ Why:
 
 - local SMB buyers respond better when the first message already feels useful
 - B2B software buyers often have clearer intent signals such as hiring,
-  expansion, tooling shifts, or workflow changes
+  expansion, funding, CRM changes, team build-out, or workflow changes
 - enterprise and legacy accounts usually need a more credible frame tied to a
   visible operational burden and one proof point
 
@@ -174,6 +177,8 @@ Strong credibility usually means:
 - real reputation
 - fundraising or other market proof if relevant
 - founder or personal credibility when stronger logos do not exist yet
+- school, prior employers, or another believable background signal when that is
+  the strongest proof available
 
 Bad personalization:
 
@@ -282,6 +287,20 @@ Practical thresholds from this repo:
 - response rate below `0.5%` with normal opens -> change segment and buyer, then
   rewrite the campaign fully
 - response rate at or above `2%` -> keep or scale the segment
+
+When a campaign underperforms, check all four:
+
+- list quality
+- data quality
+- segment quality
+- deliverability
+
+In practice, segment and data are often the first suspects.
+
+Bad data in this repo usually means:
+
+- bad phone
+- bounced email
 
 Do not over-read reply volume by itself.
 

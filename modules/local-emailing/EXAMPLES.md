@@ -104,6 +104,10 @@ Body:
 
 `Hi {name}, saw that {observation}. I imagine {operational_burden} is a lot to manage. We built {solution_type} for teams in that position, and it usually helps with {benefit_1} and {benefit_2}. Open to a quick look?`
 
+Stronger version:
+
+`Hi {name}, saw that {observation}. I imagine {operational_burden} is creating extra manual work. We help teams remove {specific_work_removed}, which usually leads to {specific_result}. Open to a quick compare?`
+
 ## Pattern 6: Different-angle follow-up
 
 Good when the follow-up should feel fresh instead of sounding like another bump.
@@ -188,6 +192,14 @@ Better fit:
 - `Head of Outbound`
 - `RevOps`
 
+Useful triggers:
+
+- hiring
+- new outbound ramp
+- CRM migration or cleanup
+- team build-out
+- funding or expansion
+
 What tends to work:
 
 - name the exact sales-data bottleneck
@@ -222,6 +234,33 @@ What tends to work:
 - show that the buyer already owns the metric
 - avoid broad efficiency language when the customer experience angle is stronger
 
+### Front-office workflow sequence
+
+Core buyer:
+
+- `VP Customer Success`
+- or another leader who directly owns service quality
+
+Core problem:
+
+- front-office teams burn time on scheduling, rescheduling, intake, or similar
+  repetitive work
+- slow responses hurt customer experience directly
+
+Working first-touch shape:
+
+`Hi {name}, front-office teams often lose hours to scheduling changes, intake, and other routine requests. We automate that work so the team can respond faster and focus on higher-value interactions. Open to a short call to compare how your team handles those bottlenecks today?`
+
+Working follow-up shape:
+
+`Quick follow-up here, teams using this approach have cut front-desk call volume significantly while improving response times. The main win is smoother customer experience without burying staff in repetitive work. Worth a short compare next week?`
+
+Why this works:
+
+- starts from the actual bottleneck
+- names the work being removed
+- ties the pitch to faster response time and higher CSAT
+
 ## Credibility-first opener
 
 Use this when the sale needs more trust before a direct meeting ask will land.
@@ -236,6 +275,8 @@ This works best when you can support it with some trust signal:
 - strong market reputation
 - fundraising or equivalent proof
 - founder credibility when customer proof is still early
+- personal background such as school or prior experience when that is the
+  strongest proof available
 
 It works badly when:
 

@@ -63,6 +63,13 @@ Additional hygiene rule:
 - purge generic role accounts like `info@` when the motion requires a real
   decision-maker path
 
+Bad data in this repo usually means:
+
+- bad phone
+- bounced email
+
+Treat those as routing problems, not small cleanup details.
+
 ## Practical rule for weak files
 
 If a meaningful chunk of the list fails verification, do not force the launch.
@@ -73,6 +80,8 @@ The likely problem is one of:
 - stale data
 - bad merge logic
 - wrong segment
+- bad phone coverage
+- bounced-email clusters
 
 At that point, either:
 

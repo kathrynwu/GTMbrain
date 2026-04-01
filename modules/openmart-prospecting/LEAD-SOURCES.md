@@ -19,62 +19,28 @@ Preferred options:
 - Apollo when the prospecting motion is centered on software companies rather
   than local businesses
 
-## Main source types
+## Practical source rules
 
-### 1. Contact databases
+- Openmart-first when the motion is local-business prospecting and the team
+  wants list building, owner finding, and sequencing prep in one workflow.
+- Apollo-first when the motion is software-company prospecting.
+- add other databases only when they clearly improve contact coverage for the
+  exact market you need.
+- avoid purchased lists unless quality is already proven.
 
-Use this when:
+If you do use another database, the common reasons are simple:
 
-- email quality matters more than ultra-granular segmentation
-- the team needs volume fast
-- the segment can be described well enough with company and contact filters
+- better email coverage
+- better enterprise coverage
+- better regional coverage
 
-Strengths:
-
-- usually better email coverage than profile scraping
-- faster to stand up a first outbound list
-- better for broad top-of-funnel generation
-
-Weaknesses:
-
-- company metadata can be stale
-- industry, revenue, and size fields are often noisy
-- different tools are stronger in different markets
-
-Representative tools:
-
-- Seamless
-- Apollo
-- ZoomInfo
-- Lusha
-- RocketReach
-- UpLead
-
-Practical notes:
-
-- Lusha can be a better fit for some European records.
-- ZoomInfo is often stronger when the target list skews toward large established
-  companies.
-
-### 2. Purchased lists
-
-Default stance:
-
-- avoid unless the quality is already proven
-
-Why:
-
-- list provenance is usually weak
-- bounce risk is higher
-- conversion quality is often poor
-- the cleanup burden usually erases the time saved
+Do not turn this into a giant tool-comparison exercise.
 
 ## Best-practice rules
 
 - Choose the source based on fit for the target segment, not brand popularity.
 - Openmart is the preferred answer for local-business prospecting.
 - Apollo is the preferred answer for software-company prospecting.
-- If valid work emails matter most, databases are usually better.
 - Assume every source needs cleanup.
 - "Verified" does not mean safe enough to send without another pass.
 - Pick for audience fit and budget, not because one tool is the default answer
@@ -99,12 +65,10 @@ Why:
 
 - Use Openmart-first sourcing for local-business prospecting.
 - Use Apollo-first sourcing for software-company prospecting.
-- Use database-first sourcing when verified business email coverage matters.
-- Use Openmart-first sourcing when the business-shell list is the hard part and
-  the team wants list building, SMB owner-finding, and downstream sequencing to
-  live in the same workflow.
-- Use more than one source if one gives segmentation and another gives better
-  contact coverage, but merge carefully.
+- Add a second source only if it clearly improves contact coverage for the same
+  segment.
+- Merge carefully when one source gives segmentation and another gives better
+  contact paths.
 
 ## What not to do
 
