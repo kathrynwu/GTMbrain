@@ -15,6 +15,9 @@ The goal is not "run a search."
 The goal is to turn a rough ICP into a list that is clean enough to route into a
 CRM or outbound workflow without a human cleanup project later.
 
+If you need the broader operating model behind this module, read
+[`STANDARD-PRACTICE.md`](./STANDARD-PRACTICE.md).
+
 ## Who actually uses this
 
 Real ICP patterns:
@@ -49,6 +52,26 @@ If you are helping someone interactively and these are missing, ask for them
 before proposing a query.
 
 ## Workflow
+
+This module sits inside a bigger system:
+
+- `Source`
+- `Merge`
+- `Qualify`
+- `Enrich`
+- `Segment`
+- `Prioritize`
+- `Route`
+- `Handoff`
+- `Review`
+
+Inside this module, the main responsibility is:
+
+- define ICP
+- run the first clean search
+- merge and normalize the list
+- qualify obvious bad-fit rows
+- preserve enough context for enrichment and outbound later
 
 ### 1. Define the ICP in plain English
 
@@ -138,6 +161,17 @@ At minimum each row should preserve:
 Use [`schema/prospect.schema.json`](./schema/prospect.schema.json) as the stable
 shape.
 
+Treat export and merge as the point where company identity becomes sacred.
+
+At minimum, preserve:
+
+- company name
+- website or domain
+- source
+- source query
+
+If these are lost, enrichment and outbound get harder to trust later.
+
 ### 6. Score before CRM handoff
 
 Not every exported row should go straight into the CRM.
@@ -165,6 +199,11 @@ This matters because list-building and CRM handoff are not the same job.
 
 ## Approve and reject logic
 
+Working definition:
+
+- `unqualified` means do not contact the lead
+- it should not move into enrichment, CRM handoff, or outbound
+
 Hard rejects:
 
 - chain or franchise
@@ -178,6 +217,11 @@ Soft rejects, depending on the motion:
 - no website
 - wrong category due to listing noise
 - too small, too random, or too weakly matched
+
+If the team calls a row `unqualified`, the default action is:
+
+- reject it from outreach
+- keep it only for audit, learning, or source QA if needed
 
 Strong approvals:
 
@@ -222,6 +266,18 @@ Stop iterating the query when:
 - the next bottleneck is outreach, not search quality
 
 At that point, move into the outbound playbooks, not more list fiddling.
+
+## Standard handoff from this module
+
+The normal exit from this module is not "done."
+
+The normal exit is:
+
+1. clean merged list
+2. obvious junk removed
+3. stable identity fields preserved
+4. fit score and routing status present
+5. ready for enrichment, prioritization, or outbound handoff
 
 ## What not to bake into v1
 

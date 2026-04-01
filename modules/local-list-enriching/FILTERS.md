@@ -48,3 +48,8 @@ Use this when:
 Use these filters to reduce waste before enrichment.
 
 Do not stack every filter up front unless the segment is already proven.
+
+If a row is already marked `unqualified`, stop here.
+
+`Unqualified` means the lead should not be contacted, so it should not move into
+the normal enrichment queue.

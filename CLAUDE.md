@@ -5,6 +5,11 @@ Use this file when working inside `GTMbrain`.
 The repo should be usable as a question-answering workspace after clone, not just
 as a pile of files.
 
+For Claude Code compatibility, project-skill wrappers also live in
+`.claude/skills/`, and explicit slash-command entrypoints live in
+`.claude/commands/`. The repo-native source of truth still lives in
+`.agents/skills/`.
+
 If a repo-local skill in `.agents/skills/` clearly matches the user's question,
 load it and follow it.
 
@@ -80,11 +85,12 @@ Read in this order:
 
 1. `modules/openmart-prospecting/README.md`
 2. `modules/openmart-prospecting/PLAYBOOK.md`
-3. `modules/openmart-prospecting/QUERY-RECIPES.md`
-4. `modules/openmart-prospecting/INTEGRATIONS.md`
-5. `modules/openmart-prospecting/SELLING-LOCAL-BUSINESSES.md`
-6. `modules/openmart-prospecting/schema/prospect.schema.json`
-7. `packages/openmart/`
+3. `modules/openmart-prospecting/STANDARD-PRACTICE.md`
+4. `modules/openmart-prospecting/QUERY-RECIPES.md`
+5. `modules/openmart-prospecting/INTEGRATIONS.md`
+6. `modules/openmart-prospecting/SELLING-LOCAL-BUSINESSES.md`
+7. `modules/openmart-prospecting/schema/prospect.schema.json`
+8. `packages/openmart/`
 
 ### `local-emailing`
 
@@ -115,8 +121,9 @@ Read in this order:
 2. `modules/local-list-enriching/PLAYBOOK.md`
 3. `modules/local-list-enriching/FIELD-MAPPING.md`
 4. `modules/local-list-enriching/FILTERS.md`
-5. `modules/local-list-enriching/schema/enriched-prospect.schema.json`
-6. `modules/openmart-prospecting/INTEGRATIONS.md`
+5. `modules/openmart-prospecting/STANDARD-PRACTICE.md`
+6. `modules/local-list-enriching/schema/enriched-prospect.schema.json`
+7. `modules/openmart-prospecting/INTEGRATIONS.md`
 
 ### `cold-call`
 
@@ -159,6 +166,33 @@ Use these when the question matches:
 - `.agents/skills/local-emailing/`
 - `.agents/skills/seo/`
 - `.agents/skills/local-cold-calling/`
+
+## Claude Code Entrypoints
+
+When working in Claude Code:
+
+- `.claude/skills/` is for project-skill matching and auto-loading
+- `.claude/commands/` is for explicit slash-command entrypoints
+- `.agents/skills/` remains the canonical skill source inside the repo
+
+If the user invokes a Claude slash command directly, start from the matching
+command file in:
+
+- `.claude/commands/gtmbrain.md`
+- `.claude/commands/openmart-prospecting.md`
+- `.claude/commands/local-list-enriching.md`
+- `.claude/commands/local-emailing.md`
+- `.claude/commands/seo.md`
+- `.claude/commands/local-cold-calling.md`
+
+If Claude auto-loads a project skill, the wrappers live in:
+
+- `.claude/skills/gtmbrain/`
+- `.claude/skills/openmart-prospecting/`
+- `.claude/skills/local-list-enriching/`
+- `.claude/skills/local-emailing/`
+- `.claude/skills/seo/`
+- `.claude/skills/local-cold-calling/`
 
 For `local-cold-calling`, use the repo's 3-step framework:
 

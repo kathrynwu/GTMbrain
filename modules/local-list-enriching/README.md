@@ -12,6 +12,7 @@ field mapping.
 
 ## Start here
 
+- [`../openmart-prospecting/STANDARD-PRACTICE.md`](../openmart-prospecting/STANDARD-PRACTICE.md)
 - [`PLAYBOOK.md`](./PLAYBOOK.md)
 - [`FIELD-MAPPING.md`](./FIELD-MAPPING.md)
 - [`FILTERS.md`](./FILTERS.md)
@@ -35,3 +36,11 @@ field mapping.
 
 - internal Openmart outbound and enrichment guidance
 - patterns from Openmart customers using enrichment inside Clay, CRM, and sales tools
+
+## What comes next
+
+The normal next step after this module is:
+
+- [`../local-emailing/`](../local-emailing/) if the row is email-ready
+- [`../cold-call/`](../cold-call/) if the row is phone-ready
+- back to review if the row still lacks a clear contact path

@@ -22,21 +22,22 @@ Use this skill when the user is asking about:
 2. `modules/local-list-enriching/PLAYBOOK.md`
 3. `modules/local-list-enriching/FIELD-MAPPING.md`
 4. `modules/local-list-enriching/FILTERS.md`
-5. `modules/openmart-prospecting/INTEGRATIONS.md`
-6. `modules/openmart-prospecting/PLAYBOOK.md`
-7. `modules/openmart-prospecting/SELLING-LOCAL-BUSINESSES.md`
+5. `modules/openmart-prospecting/STANDARD-PRACTICE.md`
+6. `modules/openmart-prospecting/INTEGRATIONS.md`
+7. `modules/openmart-prospecting/PLAYBOOK.md`
+8. `modules/openmart-prospecting/SELLING-LOCAL-BUSINESSES.md`
 
 If the question touches data shape:
 
-8. `modules/local-list-enriching/schema/enriched-prospect.schema.json`
-9. `modules/local-list-enriching/sample-data/enriched-prospects.csv`
-10. `modules/openmart-prospecting/schema/prospect.schema.json`
-11. `modules/openmart-prospecting/sample-data/prospects.csv`
+9. `modules/local-list-enriching/schema/enriched-prospect.schema.json`
+10. `modules/local-list-enriching/sample-data/enriched-prospects.csv`
+11. `modules/openmart-prospecting/schema/prospect.schema.json`
+12. `modules/openmart-prospecting/sample-data/prospects.csv`
 
 If the question touches implementation:
 
-12. `packages/openmart/README.md`
-13. `packages/openmart/client.example.js`
+13. `packages/openmart/README.md`
+14. `packages/openmart/client.example.js`
 
 ## Workflow
 
@@ -55,17 +56,27 @@ If the question touches implementation:
    - approval logic
    - enrichment data
    - CRM sync fields
-4. Apply the first-pass filters before enrichment:
+4. Place this step inside the broader operating sequence:
+   - `Source`
+   - `Merge`
+   - `Qualify`
+   - `Enrich`
+   - `Segment`
+   - `Prioritize`
+   - `Route`
+   - `Handoff`
+   - `Review`
+5. Apply the first-pass filters before enrichment:
    - number of locations
    - has website
    - Google review rating if relevant
    - technology signals if relevant
-5. Recommend enriching approved rows first, not the entire raw list.
-6. Decide the motion:
+6. Recommend enriching approved rows first, not the entire raw list.
+7. Decide the motion:
    - `A` enrich approved rows now
    - `B` tighten filters first
    - `C` route the row back for human review
-7. Preserve the workflow fields that make the list usable later.
+8. Preserve the workflow fields that make the list usable later.
 
 ## What to preserve
 
@@ -85,6 +96,12 @@ High-priority enrichment fields:
 
 Without those, enriched data becomes harder to trust.
 
+## Working definitions
+
+- `unqualified` means the lead should not be contacted
+- if a row is already unqualified, default to stopping enrichment rather than
+  pushing it downstream
+
 ## Output shape
 
 Default to giving:
@@ -92,6 +109,7 @@ Default to giving:
 - target system
 - `RECOMMENDATION: Choose X because ...`
 - recommended motion: `A`, `B`, or `C`
+- current workflow stage
 - input fields
 - enrichment fields
 - approval gate
@@ -102,6 +120,8 @@ Default to giving:
 ## Rules
 
 - do not enrich everything by default
+- use the broader list-ops system as context, not just one row in isolation
+- treat `unqualified` as a stop signal for normal outbound prep
 - do not use enrichment as an excuse for mass email
 - enrich the personal contact path, not just the company shell
 - use location count, website presence, reviews, and tech signals to filter first

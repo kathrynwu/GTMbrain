@@ -2,6 +2,9 @@
 
 Use this playbook after you already have a decent local-business list.
 
+For the broader operating model around this step, read
+[`../openmart-prospecting/STANDARD-PRACTICE.md`](../openmart-prospecting/STANDARD-PRACTICE.md).
+
 The goal is not to enrich everything.
 
 The goal is to:
@@ -52,6 +55,12 @@ more time or credits.
 
 This is the whole game.
 
+Inside the broader operating system, this module is mainly responsible for:
+
+- `Enrich`
+- part of `Route`
+- part of `Handoff`
+
 ## Keep search and enrichment separate
 
 Separate these layers:
@@ -82,6 +91,7 @@ Without these, the enriched row looks useful for one day and confusing forever.
 - inspectable field mapping
 - explicit approval gate before enrichment
 - CRM receives context, not just contact trivia
+- outbound can tell why the row belongs in this motion
 
 ## What bad looks like
 
@@ -90,3 +100,13 @@ Without these, the enriched row looks useful for one day and confusing forever.
 - no distinction between business shell and personal contact path
 - no preserved source query
 - mass-blast behavior after enrichment
+
+## Exit criteria
+
+This module is done when:
+
+- the row passed the approval gate
+- the contact path is clear
+- preserved workflow fields are still visible
+- the next owner can tell whether this belongs in cold call, cold email,
+  LinkedIn, or warm intro

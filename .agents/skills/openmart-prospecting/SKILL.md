@@ -21,15 +21,16 @@ Use this skill when the user is asking about:
 
 1. `modules/openmart-prospecting/README.md`
 2. `modules/openmart-prospecting/PLAYBOOK.md`
-3. `modules/openmart-prospecting/QUERY-RECIPES.md`
-4. `modules/openmart-prospecting/INTEGRATIONS.md`
-5. `modules/openmart-prospecting/SELLING-LOCAL-BUSINESSES.md`
+3. `modules/openmart-prospecting/STANDARD-PRACTICE.md`
+4. `modules/openmart-prospecting/QUERY-RECIPES.md`
+5. `modules/openmart-prospecting/INTEGRATIONS.md`
+6. `modules/openmart-prospecting/SELLING-LOCAL-BUSINESSES.md`
 
 If the question touches implementation:
 
-6. `modules/openmart-prospecting/schema/prospect.schema.json`
-7. `packages/openmart/README.md`
-8. `packages/openmart/client.example.js`
+7. `modules/openmart-prospecting/schema/prospect.schema.json`
+8. `packages/openmart/README.md`
+9. `packages/openmart/client.example.js`
 
 Treat this source as the main list-building guide:
 
@@ -48,15 +49,32 @@ Treat this source as the main list-building guide:
    - must-have filters
    - whether non-chain or independent is required
    - rejection rules if they already know them
-3. Write the ICP in one sentence.
-4. Recommend the simplest query recipe that proves the market exists.
-5. Decide the motion:
+3. Place the request in the operating sequence:
+   - `Source`
+   - `Merge`
+   - `Qualify`
+   - `Enrich`
+   - `Segment`
+   - `Prioritize`
+   - `Route`
+   - `Handoff`
+   - `Review`
+4. Write the ICP in one sentence.
+5. Recommend the simplest query recipe that proves the market exists.
+6. Decide the motion:
    - `A` use Openmart UX first for the initial list
    - `B` use the API first for CRM or internal-tool integration
    - `C` tighten ICP and filters before touching either one
-6. Tell the user whether they should start with the Openmart UX or the API.
-7. Explain how to normalize, score, and route rows before they hit the CRM.
-8. Only then explain which Openmart endpoint fits where.
+7. Tell the user whether they should start with the Openmart UX or the API.
+8. Explain how to merge, qualify, normalize, score, and route rows before they
+   hit the CRM.
+9. Only then explain which Openmart endpoint fits where.
+
+## Working definitions
+
+- `unqualified` means the lead should not be contacted
+- `legacy` means established incumbent-style accounts such as traditional
+  software and Fortune 500 companies
 
 ## Intake questions
 
@@ -102,6 +120,7 @@ Default to giving:
 - must-have filters
 - reject logic
 - recommended query recipe
+- current workflow stage
 - recommended motion: `A`, `B`, or `C`
 - whether to use Openmart UX or API first
 - fields to preserve
@@ -112,6 +131,8 @@ Default to giving:
 ## Rules
 
 - explain the workflow before API trivia
+- use `Source -> Merge -> Qualify -> Enrich -> Segment -> Prioritize -> Route -> Handoff -> Review` as the backbone
+- treat `unqualified` as do-not-contact, not just low priority
 - default to broad-first, then tighten after inspecting results
 - keep `source_query`, fit score, and routing status visible
 - prefer boring integrations over clever ones

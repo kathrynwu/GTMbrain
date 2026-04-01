@@ -6,6 +6,8 @@ const path = require("path");
 const repoRoot = path.resolve(__dirname, "..");
 const modulesRoot = path.join(repoRoot, "modules");
 const skillsRoot = path.join(repoRoot, ".agents", "skills");
+const claudeSkillsRoot = path.join(repoRoot, ".claude", "skills");
+const claudeCommandsRoot = path.join(repoRoot, ".claude", "commands");
 
 const allowedStatuses = new Set(["planned", "first-release"]);
 const allowedSurfaces = new Set(["Template", "Playbook", "Connector", "Skill"]);
@@ -147,6 +149,8 @@ const skillDirs = fs.existsSync(skillsRoot)
 
 for (const dirName of skillDirs) {
   const skillPath = path.join(skillsRoot, dirName, "SKILL.md");
+  const claudeSkillPath = path.join(claudeSkillsRoot, dirName, "SKILL.md");
+  const claudeCommandPath = path.join(claudeCommandsRoot, `${dirName}.md`);
 
   if (!fs.existsSync(skillPath)) {
     fail(`missing ${skillPath}`);
@@ -162,10 +166,39 @@ for (const dirName of skillDirs) {
   if (!contents.includes("Reply with A, B, or C.")) {
     fail(`${skillPath} must include the A/B/C reply pattern`);
   }
+
+  if (!fs.existsSync(claudeSkillPath)) {
+    fail(`missing Claude project skill wrapper ${claudeSkillPath}`);
+  } else {
+    const claudeSkillContents = fs.readFileSync(claudeSkillPath, "utf8");
+    const canonicalSkillReference = `.agents/skills/${dirName}/SKILL.md`;
+
+    if (!claudeSkillContents.includes(canonicalSkillReference)) {
+      fail(`${claudeSkillPath} must reference ${canonicalSkillReference}`);
+    }
+  }
+
+  if (!fs.existsSync(claudeCommandPath)) {
+    fail(`missing Claude slash command ${claudeCommandPath}`);
+  } else {
+    const claudeCommandContents = fs.readFileSync(claudeCommandPath, "utf8");
+    const claudeSkillReference = `@.claude/skills/${dirName}/SKILL.md`;
+    const canonicalSkillReference = `@.agents/skills/${dirName}/SKILL.md`;
+
+    if (!claudeCommandContents.includes(claudeSkillReference)) {
+      fail(`${claudeCommandPath} must reference ${claudeSkillReference}`);
+    }
+
+    if (!claudeCommandContents.includes(canonicalSkillReference)) {
+      fail(`${claudeCommandPath} must reference ${canonicalSkillReference}`);
+    }
+  }
 }
 
 if (process.exitCode) {
   process.exit(process.exitCode);
 }
 
-console.log(`Validated ${moduleDirs.length} modules and ${skillDirs.length} skills.`);
+console.log(
+  `Validated ${moduleDirs.length} modules, ${skillDirs.length} repo skills, ${skillDirs.length} Claude project skill wrappers, and ${skillDirs.length} Claude slash commands.`
+);

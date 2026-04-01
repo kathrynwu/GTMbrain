@@ -16,6 +16,7 @@
   "primary_entity": "prospect",
   "required_paths": [
     "PLAYBOOK.md",
+    "STANDARD-PRACTICE.md",
     "QUERY-RECIPES.md",
     "INTEGRATIONS.md",
     "SELLING-LOCAL-BUSINESSES.md",
@@ -42,12 +43,13 @@
     "CRM-ready handoff rows"
   ],
   "workflow_stages": [
+    "Source and merge",
     "Define ICP",
     "Run broad query",
     "Inspect first page",
     "Tighten or widen",
-    "Export and score",
-    "Route to CRM"
+    "Qualify and export",
+    "Preserve identity and route"
   ],
   "extension_points": [
     "additional fit signals",
