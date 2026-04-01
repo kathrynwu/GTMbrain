@@ -21,10 +21,12 @@ Use this skill when the user is asking about:
 
 1. `modules/local-emailing/PLAYBOOK.md`
 2. `modules/local-emailing/EXAMPLES.md`
-3. `modules/local-emailing/README.md`
-4. `modules/openmart-prospecting/SELLING-LOCAL-BUSINESSES.md`
-5. `modules/openmart-prospecting/PLAYBOOK.md`
-6. `modules/openmart-prospecting/INTEGRATIONS.md`
+3. `modules/local-emailing/DELIVERABILITY.md`
+4. `modules/local-emailing/README.md`
+5. `modules/local-list-enriching/EMAIL-VERIFICATION.md`
+6. `modules/openmart-prospecting/SELLING-LOCAL-BUSINESSES.md`
+7. `modules/openmart-prospecting/PLAYBOOK.md`
+8. `modules/openmart-prospecting/INTEGRATIONS.md`
 
 ## Workflow
 
@@ -71,6 +73,9 @@ Default to giving:
 - do not invent fake personalization
 - tie the message to the actual segment and data available
 - SMBs care about revenue, time savings, and concrete benefits up front
+- protect deliverability with separate sending setup, proper authentication, and
+  warm-up before scale
+- if the segment supports it, email and LinkedIn can run in parallel
 - avoid mass-blast behavior
 - optimize for reply and meeting rates, not just opens
 - end with `Reply with A, B, or C.` when giving next-step options

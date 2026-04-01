@@ -22,15 +22,16 @@ Use this skill when the user is asking about:
 1. `modules/openmart-prospecting/README.md`
 2. `modules/openmart-prospecting/PLAYBOOK.md`
 3. `modules/openmart-prospecting/STANDARD-PRACTICE.md`
-4. `modules/openmart-prospecting/QUERY-RECIPES.md`
-5. `modules/openmart-prospecting/INTEGRATIONS.md`
-6. `modules/openmart-prospecting/SELLING-LOCAL-BUSINESSES.md`
+4. `modules/openmart-prospecting/LEAD-SOURCES.md`
+5. `modules/openmart-prospecting/QUERY-RECIPES.md`
+6. `modules/openmart-prospecting/INTEGRATIONS.md`
+7. `modules/openmart-prospecting/SELLING-LOCAL-BUSINESSES.md`
 
 If the question touches implementation:
 
-7. `modules/openmart-prospecting/schema/prospect.schema.json`
-8. `packages/openmart/README.md`
-9. `packages/openmart/client.example.js`
+8. `modules/openmart-prospecting/schema/prospect.schema.json`
+9. `packages/openmart/README.md`
+10. `packages/openmart/client.example.js`
 
 Treat this source as the main list-building guide:
 
@@ -135,6 +136,8 @@ Default to giving:
 - treat `unqualified` as do-not-contact, not just low priority
 - default to broad-first, then tighten after inspecting results
 - keep `source_query`, fit score, and routing status visible
+- explain source tradeoffs when the user is deciding between profile scraping,
+  databases, and Openmart-style business-shell sourcing
 - prefer boring integrations over clever ones
 - do not pretend the Openmart API replaces human judgment
 - if the user has not provided location range and industry, ask first

@@ -14,6 +14,7 @@ follow-up structure.
 
 - [`PLAYBOOK.md`](./PLAYBOOK.md)
 - [`EXAMPLES.md`](./EXAMPLES.md)
+- [`DELIVERABILITY.md`](./DELIVERABILITY.md)
 
 ## Focus
 
@@ -22,6 +23,7 @@ follow-up structure.
 - lead-with-value offers
 - follow-up cadence
 - when email-first beats call-first
+- sending setup and inbox health rules
 
 ## What this module covers
 
@@ -29,6 +31,7 @@ follow-up structure.
 - what personalization is worth using
 - when to offer help before asking for a meeting
 - how to structure a `3-4` touch cadence
+- how to protect deliverability before scaling volume
 - concrete email shapes based on local-business selling patterns
 
 ## Source material

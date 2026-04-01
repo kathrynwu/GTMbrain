@@ -33,6 +33,19 @@ High-priority fields:
 
 These are the fields that actually change outbound quality.
 
+## Verify before outbound
+
+If the next step is email, verification is part of enrichment quality, not an
+afterthought.
+
+Use [`EMAIL-VERIFICATION.md`](./EMAIL-VERIFICATION.md) for the detailed rule,
+but the short version is:
+
+- verify every email before launch
+- keep verification status visible on the row
+- if email quality is weak, route the row back for review or use another
+  channel
+
 ## Filter before enrichment
 
 Before you enrich, check:
@@ -90,6 +103,7 @@ Without these, the enriched row looks useful for one day and confusing forever.
 - clear owner or manager path
 - inspectable field mapping
 - explicit approval gate before enrichment
+- verified email status when email is the next motion
 - CRM receives context, not just contact trivia
 - outbound can tell why the row belongs in this motion
 

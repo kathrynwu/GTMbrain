@@ -17,6 +17,7 @@
     "PLAYBOOK.md",
     "FIELD-MAPPING.md",
     "FILTERS.md",
+    "EMAIL-VERIFICATION.md",
     "schema/enriched-prospect.schema.json",
     "sample-data/enriched-prospects.csv"
   ],

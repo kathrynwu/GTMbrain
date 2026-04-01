@@ -17,3 +17,4 @@ Use the repo-native module docs after that:
 1. `modules/local-emailing/README.md`
 2. `modules/local-emailing/PLAYBOOK.md`
 3. `modules/local-emailing/EXAMPLES.md`
+4. `modules/local-emailing/DELIVERABILITY.md`

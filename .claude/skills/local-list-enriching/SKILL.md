@@ -18,4 +18,5 @@ Use the repo-native module docs after that:
 2. `modules/local-list-enriching/PLAYBOOK.md`
 3. `modules/local-list-enriching/FIELD-MAPPING.md`
 4. `modules/local-list-enriching/FILTERS.md`
-5. `modules/openmart-prospecting/STANDARD-PRACTICE.md`
+5. `modules/local-list-enriching/EMAIL-VERIFICATION.md`
+6. `modules/openmart-prospecting/STANDARD-PRACTICE.md`

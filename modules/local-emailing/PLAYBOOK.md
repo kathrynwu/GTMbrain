@@ -42,6 +42,16 @@ Know:
 
 If the list is weak, fix the list before writing more copy.
 
+If the inbox setup is weak, fix that before scaling the campaign.
+
+Read [`DELIVERABILITY.md`](./DELIVERABILITY.md) when the real bottleneck is:
+
+- sender reputation
+- sending-domain setup
+- warm-up
+- sequencing platform choice
+- whether email should run alongside LinkedIn
+
 ## The right shape
 
 The best local-business emails in this repo follow a simple pattern:
@@ -104,6 +114,11 @@ That is usually `3-4` total touches.
 
 Each follow-up should stay short and should not repeat the entire first email.
 
+If the segment supports it, email does not need to work alone.
+
+Parallel email and LinkedIn is often stronger than forcing one channel to carry
+the whole motion.
+
 Good follow-up moves:
 
 - reframe the value
@@ -126,6 +141,7 @@ Use this rule:
 - offer is concrete
 - CTA is small
 - reply feels easier than ignoring it
+- inbox setup is clean enough to send safely
 
 ## What bad looks like
 

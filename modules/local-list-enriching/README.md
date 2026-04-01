@@ -16,6 +16,7 @@ field mapping.
 - [`PLAYBOOK.md`](./PLAYBOOK.md)
 - [`FIELD-MAPPING.md`](./FIELD-MAPPING.md)
 - [`FILTERS.md`](./FILTERS.md)
+- [`EMAIL-VERIFICATION.md`](./EMAIL-VERIFICATION.md)
 
 ## Focus
 
@@ -29,6 +30,7 @@ field mapping.
 
 - what fields matter most for local-business outbound
 - how to filter based on location count, website, reviews, and tech signals
+- how email verification should gate outbound readiness
 - how to separate raw search data from enriched decision-maker data
 - how to sync approved rows into CRM or an internal tool without losing context
 

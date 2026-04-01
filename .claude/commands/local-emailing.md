@@ -10,6 +10,7 @@ Use the matching module files:
 - @modules/local-emailing/README.md
 - @modules/local-emailing/PLAYBOOK.md
 - @modules/local-emailing/EXAMPLES.md
+- @modules/local-emailing/DELIVERABILITY.md
 
 If key inputs are missing, ask for:
 

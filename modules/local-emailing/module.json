@@ -14,7 +14,8 @@
   "status": "first-release",
   "required_paths": [
     "PLAYBOOK.md",
-    "EXAMPLES.md"
+    "EXAMPLES.md",
+    "DELIVERABILITY.md"
   ],
   "source_material": [
     "internal Openmart outbound guidance",
@@ -37,6 +38,7 @@
   "workflow_stages": [
     "Choose segment",
     "Check list quality",
+    "Check deliverability setup",
     "Choose offer",
     "Write short email",
     "Run follow-up cadence"
