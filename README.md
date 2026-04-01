@@ -90,6 +90,7 @@ Good examples:
 - "What parts of `kol-crm` are stable versus safe to customize?"
 - "How should I use `openmart-prospecting` to build a local-business prospect list?"
 - "How do I move Openmart data into my CRM or internal enrichment tool?"
+- "How should I enrich approved rows before sending them into my CRM?"
 - "Which Openmart endpoint fits search versus decision-maker enrichment?"
 - "What should my outbound flow look like after I have a clean local-business list?"
 
@@ -98,10 +99,14 @@ generic GTM advice.
 
 Repo-local skills live in [`.agents/skills/`](/Users/kathrynwu/Work/GTMbrain/.agents/skills):
 
+- `gtmbrain`
 - `openmart-prospecting`
 - `local-list-enriching`
 - `local-emailing`
 - `local-cold-calling`
+
+If you do not know where to start, ask for `gtmbrain` first. It should route
+you to the right module with `A/B/C` options.
 
 ## What "forkable" means here
 
@@ -120,6 +125,7 @@ So the clear action is:
 |--------|-----|----------|----------------|--------|
 | [`kol-crm`](./modules/kol-crm/) | Track influencer sourcing, outreach, pricing, owner, and status | `Template` | Fork repo, start here | First release |
 | [`openmart-prospecting`](./modules/openmart-prospecting/) | Define ICPs, build lists, and document prospecting workflows | `Playbook`, `Connector` | Read playbook | First release |
+| [`local-list-enriching`](./modules/local-list-enriching/) | Capture approval-first enrichment logic, field mapping, and CRM sync rules | `Playbook` | Read playbook | First release |
 | [`local-emailing`](./modules/local-emailing/) | Capture local-business email strategy, subject-line rules, and follow-up cadence | `Playbook` | Read playbook | First release |
 | [`seo`](./modules/seo/) | Capture repeatable SEO workflow judgment and briefs | `Playbook` | Read playbook | Planned |
 | [`cold-call`](./modules/cold-call/) | Capture scripts, review criteria, and outbound heuristics | `Playbook` | Read playbook | First release |
@@ -130,6 +136,7 @@ So the clear action is:
 modules/
   kol-crm/
   openmart-prospecting/
+  local-list-enriching/
   local-emailing/
   seo/
   cold-call/
@@ -192,6 +199,13 @@ The right way is:
 2. Decide whether it should start as a `Template`, `Playbook`, `Connector`, or some mix.
 3. Make it legible enough that another builder can use it without a meeting.
 
+Module contracts are validated in CI by [`scripts/validate-modules.js`](./scripts/validate-modules.js).
+
+If you want to request a new module or report what worked in the real world:
+
+- open a `Module request`
+- or open `Workflow feedback`
+
 ## Current state
 
 This repo is still early. The goal right now is simple:
@@ -199,5 +213,7 @@ This repo is still early. The goal right now is simple:
 - make the registry shape obvious
 - make `KOL CRM` real enough to clone and adapt
 - make `openmart-prospecting` real enough to run as a playbook
+- make `local-list-enriching` real enough to use before CRM sync
 - make `local-emailing` real enough to use as an outbound playbook
+- make `cold-call` real enough to coach or review scripts
 - add thinner follow-on modules without overbuilding

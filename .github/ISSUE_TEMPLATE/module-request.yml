@@ -1,0 +1,37 @@
+name: Module request
+description: Request a new GTMbrain module or a stronger version of an existing one.
+title: "[module] "
+labels:
+  - module-request
+body:
+  - type: textarea
+    id: workflow
+    attributes:
+      label: Workflow
+      description: What real GTM workflow should this module help with?
+      placeholder: Example: Enrich approved restaurant leads with owner contact paths before CRM sync.
+    validations:
+      required: true
+  - type: textarea
+    id: audience
+    attributes:
+      label: Audience
+      description: Who is this module for?
+      placeholder: Growth engineer, founder, RevOps builder, outbound operator...
+    validations:
+      required: true
+  - type: textarea
+    id: artifacts
+    attributes:
+      label: What should exist
+      description: What surfaces should this module include?
+      placeholder: Playbook, sample data, schema, template, connector...
+    validations:
+      required: true
+  - type: textarea
+    id: source_material
+    attributes:
+      label: Source material
+      description: Link docs, Looms, notes, or examples that should ground the module.
+    validations:
+      required: true

@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Enriched Prospect",
+  "type": "object",
+  "required": [
+    "company_name",
+    "source_query",
+    "fit_score",
+    "routing_status"
+  ],
+  "properties": {
+    "company_name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "website": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "source_query": {
+      "type": "string",
+      "minLength": 1
+    },
+    "fit_score": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5
+    },
+    "routing_status": {
+      "type": "string",
+      "enum": [
+        "To Review",
+        "Approved",
+        "Rejected",
+        "Sent to CRM"
+      ]
+    },
+    "rejection_reason": {
+      "type": "string"
+    },
+    "owner_name": {
+      "type": "string"
+    },
+    "general_manager_name": {
+      "type": "string"
+    },
+    "decision_maker_email": {
+      "type": "string"
+    },
+    "personal_email": {
+      "type": "string"
+    },
+    "tech_stack": {
+      "type": "string"
+    },
+    "location_count": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "google_review_rating": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 5
+    }
+  },
+  "additionalProperties": true
+}

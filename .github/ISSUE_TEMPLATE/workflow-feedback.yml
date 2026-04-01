@@ -1,0 +1,35 @@
+name: Workflow feedback
+description: Report what worked or broke when you actually used a GTMbrain module.
+title: "[feedback] "
+labels:
+  - feedback
+body:
+  - type: input
+    id: module
+    attributes:
+      label: Module
+      description: Which module did you use?
+      placeholder: kol-crm, openmart-prospecting, local-emailing...
+    validations:
+      required: true
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+      description: What were you trying to do?
+    validations:
+      required: true
+  - type: textarea
+    id: worked
+    attributes:
+      label: What worked
+      description: What was useful?
+    validations:
+      required: true
+  - type: textarea
+    id: missing
+    attributes:
+      label: What was missing or confusing
+      description: Be concrete. What should be stronger?
+    validations:
+      required: true

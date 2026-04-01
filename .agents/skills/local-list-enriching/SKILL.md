@@ -18,19 +18,25 @@ Use this skill when the user is asking about:
 
 ## Read first
 
-1. `modules/openmart-prospecting/INTEGRATIONS.md`
-2. `modules/openmart-prospecting/PLAYBOOK.md`
-3. `modules/openmart-prospecting/SELLING-LOCAL-BUSINESSES.md`
+1. `modules/local-list-enriching/README.md`
+2. `modules/local-list-enriching/PLAYBOOK.md`
+3. `modules/local-list-enriching/FIELD-MAPPING.md`
+4. `modules/local-list-enriching/FILTERS.md`
+5. `modules/openmart-prospecting/INTEGRATIONS.md`
+6. `modules/openmart-prospecting/PLAYBOOK.md`
+7. `modules/openmart-prospecting/SELLING-LOCAL-BUSINESSES.md`
 
 If the question touches data shape:
 
-4. `modules/openmart-prospecting/schema/prospect.schema.json`
-5. `modules/openmart-prospecting/sample-data/prospects.csv`
+8. `modules/local-list-enriching/schema/enriched-prospect.schema.json`
+9. `modules/local-list-enriching/sample-data/enriched-prospects.csv`
+10. `modules/openmart-prospecting/schema/prospect.schema.json`
+11. `modules/openmart-prospecting/sample-data/prospects.csv`
 
 If the question touches implementation:
 
-6. `packages/openmart/README.md`
-7. `packages/openmart/client.example.js`
+12. `packages/openmart/README.md`
+13. `packages/openmart/client.example.js`
 
 ## Workflow
 
@@ -44,18 +50,22 @@ If the question touches implementation:
    - decision-maker email
    - personal email
    - technology context
-2. Separate:
+3. Separate:
    - search data
    - approval logic
    - enrichment data
    - CRM sync fields
-3. Apply the first-pass filters before enrichment:
+4. Apply the first-pass filters before enrichment:
    - number of locations
    - has website
    - Google review rating if relevant
    - technology signals if relevant
-4. Recommend enriching approved rows first, not the entire raw list.
-5. Preserve the workflow fields that make the list usable later.
+5. Recommend enriching approved rows first, not the entire raw list.
+6. Decide the motion:
+   - `A` enrich approved rows now
+   - `B` tighten filters first
+   - `C` route the row back for human review
+7. Preserve the workflow fields that make the list usable later.
 
 ## What to preserve
 
@@ -80,6 +90,7 @@ Without those, enriched data becomes harder to trust.
 Default to giving:
 
 - target system
+- recommended motion: `A`, `B`, or `C`
 - input fields
 - enrichment fields
 - approval gate

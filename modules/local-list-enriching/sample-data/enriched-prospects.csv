@@ -1,0 +1,4 @@
+company_name,website,city,state,category,source_query,fit_score,routing_status,rejection_reason,owner_name,general_manager_name,decision_maker_email,personal_email,tech_stack,location_count,google_review_rating
+Ridgeview Dental,https://ridgeviewdental.example,Austin,TX,Dentist,Austin dental with website and owner signal,5,Approved,,Dr. Maya Chen,,maya@ridgeviewdental.example,,Doordash Storefront,1,4.8
+North Loop BBQ,https://northloopbbq.example,Houston,TX,Restaurant,Houston BBQ with website and good reviews,4,To Review,,Luis Ramirez,Jamie Park,jamie@northloopbbq.example,,Square POS,2,4.5
+Bayline Siding Co,https://baylinesiding.example,Houston,TX,Home Services,Houston siding with website and phone,3,Rejected,Owner signal missing,,,,HubSpot Forms,1,3.9

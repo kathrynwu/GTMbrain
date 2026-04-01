@@ -1,0 +1,53 @@
+{
+  "name": "Local List Enriching",
+  "slug": "local-list-enriching",
+  "job": "Capture local-business enrichment logic, approval-first filters, and CRM-ready field mapping.",
+  "audience": [
+    "growth engineer",
+    "revops builder",
+    "outbound operator"
+  ],
+  "surfaces": [
+    "Playbook"
+  ],
+  "primary_action": "Read playbook",
+  "status": "first-release",
+  "primary_entity": "enriched_prospect",
+  "required_paths": [
+    "PLAYBOOK.md",
+    "FIELD-MAPPING.md",
+    "FILTERS.md",
+    "schema/enriched-prospect.schema.json",
+    "sample-data/enriched-prospects.csv"
+  ],
+  "source_material": [
+    "internal Openmart enrichment guidance",
+    "observed enrichment workflows from Openmart customers"
+  ],
+  "inputs": [
+    "raw prospect list",
+    "target system",
+    "filter criteria",
+    "approval status"
+  ],
+  "outputs": [
+    "approved enrichment queue",
+    "owner and manager fields",
+    "decision-maker contact path",
+    "CRM-ready sync row"
+  ],
+  "workflow_stages": [
+    "Filter raw rows",
+    "Approve rows",
+    "Enrich contact path",
+    "Preserve workflow context",
+    "Sync to CRM"
+  ],
+  "extension_points": [
+    "custom scoring logic",
+    "additional review filters",
+    "vertical-specific field mapping",
+    "CRM routing automations",
+    "agent adapters"
+  ]
+}

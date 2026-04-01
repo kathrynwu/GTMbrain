@@ -8,6 +8,9 @@ as a pile of files.
 If a repo-local skill in `.agents/skills/` clearly matches the user's question,
 load it and follow it.
 
+If the user is broad or does not know where to start, use the `gtmbrain` skill
+first and route them with `A/B/C` options.
+
 ## What GTMbrain Is
 
 `GTMbrain` is a registry of forkable GTM workflow modules.
@@ -94,10 +97,43 @@ Read in this order:
 3. `modules/local-emailing/EXAMPLES.md`
 4. `modules/openmart-prospecting/SELLING-LOCAL-BUSINESSES.md`
 
+### `local-list-enriching`
+
+Job:
+
+- enrich approved local-business rows
+- preserve workflow context before CRM sync
+- filter rows before spending credits or effort
+
+Read in this order:
+
+1. `modules/local-list-enriching/README.md`
+2. `modules/local-list-enriching/PLAYBOOK.md`
+3. `modules/local-list-enriching/FIELD-MAPPING.md`
+4. `modules/local-list-enriching/FILTERS.md`
+5. `modules/local-list-enriching/schema/enriched-prospect.schema.json`
+6. `modules/openmart-prospecting/INTEGRATIONS.md`
+
+### `cold-call`
+
+Job:
+
+- write or review local-business cold-call scripts
+- decide when calling beats email
+- improve meeting-booking discipline
+
+Read in this order:
+
+1. `modules/cold-call/README.md`
+2. `modules/cold-call/PLAYBOOK.md`
+3. `modules/cold-call/REVIEW-RUBRIC.md`
+4. `modules/openmart-prospecting/SELLING-LOCAL-BUSINESSES.md`
+
 ## Current Repo Skills
 
 Use these when the question matches:
 
+- `.agents/skills/gtmbrain/`
 - `.agents/skills/openmart-prospecting/`
 - `.agents/skills/local-list-enriching/`
 - `.agents/skills/local-emailing/`
@@ -129,6 +165,8 @@ For `local-list-enriching`, ask what contact path the user actually needs:
 
 Filter with location count, website presence, review quality, and technology
 signals before recommending deeper enrichment.
+
+Prefer `A/B/C` recommendation-style answers when routing users across modules.
 
 ## Openmart Guidance
 
