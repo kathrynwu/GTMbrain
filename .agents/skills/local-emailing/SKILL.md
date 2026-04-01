@@ -75,6 +75,20 @@ Default to giving:
 - SMBs care about revenue, time savings, and concrete benefits up front
 - protect deliverability with separate sending setup, proper authentication, and
   warm-up before scale
+- if the user asks for tool defaults, prefer:
+  - `ZeroBounce` for verification
+  - `WarmupInbox` for warm-up
+  - `Apollo` for sequencing
+  - `Openmart` for fetching business and contact data, not as the verifier or
+    warm-up layer
+- if the user has not chosen a pattern, default by segment:
+  - local SMB -> helpful-offer first
+  - B2B software -> trigger-based opener
+  - enterprise or legacy -> observation plus proof
+- strong personalization means a real trigger, real company context, or a real
+  business observation that changes the message
+- weak personalization means fake compliments, filler facts, or random details
+  that do not improve relevance
 - if the segment supports it, email and LinkedIn can run in parallel
 - avoid mass-blast behavior
 - optimize for reply and meeting rates, not just opens

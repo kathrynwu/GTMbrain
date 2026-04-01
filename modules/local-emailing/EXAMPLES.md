@@ -2,6 +2,17 @@
 
 These are pattern examples, not scripts to spray unchanged.
 
+## Pattern choice defaults
+
+Use these defaults before inventing something new:
+
+- local SMB -> helpful-offer first
+- B2B software -> trigger-based opener
+- enterprise or legacy -> observation plus proof
+
+Question-led emails are still useful, but they are usually a secondary pattern
+when you want a lower-pressure start rather than the default.
+
 ## Pattern 1: News angle
 
 This pattern is inspired by teams like NewsBreak.
@@ -56,6 +67,61 @@ Body:
 
 `Hi {owner_name}, quick question, what is your current catering price point for a {size} order? Asking because we are mapping how {category} operators in {city} position premium offers, and I may have one idea that could help you increase volume without adding much work. Open to it?`
 
+## Pattern 4: Trigger-based opener
+
+Good when the account shows a live signal such as hiring, expansion, or a new
+initiative.
+
+What makes it work:
+
+- starts from something current
+- connects the signal to one likely problem
+- uses one proof point and one small CTA
+
+Example shape:
+
+Subject: `{business_name} hiring`
+
+Body:
+
+`Hi {name}, noticed {business_name} is hiring for {role}. Have you already solved for {outcome}? We helped {peer_company} improve {kpi} in {timeframe}. Worth checking whether that is relevant for you too?`
+
+## Pattern 5: Observation plus relief
+
+Good when one visible business fact already implies the operational pain.
+
+What makes it work:
+
+- opens from a true account detail
+- translates that into a workload or coordination problem
+- keeps the solution description plain
+
+Example shape:
+
+Subject: `{short_observation}`
+
+Body:
+
+`Hi {name}, saw that {observation}. I imagine {operational_burden} is a lot to manage. We built {solution_type} for teams in that position, and it usually helps with {benefit_1} and {benefit_2}. Open to a quick look?`
+
+## Pattern 6: Different-angle follow-up
+
+Good when the follow-up should feel fresh instead of sounding like another bump.
+
+What makes it work:
+
+- introduces a new path, not the same claim again
+- uses a concrete before-and-after signal
+- keeps personalization short
+
+Example shape:
+
+Subject: `another angle`
+
+Body:
+
+`Hi {name}, have you tried approaching {problem} through {different_method}? A similar team moved {kpi} from {before} to {after} that way. PS. {short_personalization}.`
+
 ## Subject-line rules
 
 Good subject lines:
@@ -78,6 +144,12 @@ Avoid:
 - all-lowercase mass-email style if it feels fake
 - broad benefit statements with no business context
 
+Useful defaults:
+
+- `2-4` words is a strong target range
+- account, place, or trigger usually works better than abstract benefit language
+- do not chase curiosity if relevance gets weaker
+
 ## Follow-up examples
 
 ### Follow-up 1
@@ -91,3 +163,12 @@ Avoid:
 ### Follow-up 3
 
 `Last nudge from me. If this is not relevant right now, I can close the loop, but if you want one useful idea for {business_name}, I am happy to send it.`
+
+## Pattern rules that usually help
+
+- shorter usually beats longer
+- one real trigger beats generic persona copy
+- one proof point is usually enough
+- one CTA is usually enough
+- if the message cannot be understood quickly on a phone screen, it is
+  probably doing too much

@@ -16,6 +16,15 @@ It protects:
 - sender reputation
 - campaign efficiency
 
+## Preferred option in this repo
+
+Default verifier:
+
+- ZeroBounce
+
+Other tools can still be used, but ZeroBounce is the current default
+recommendation unless the user has a strong reason to do something else.
+
 ## What to verify
 
 At minimum:
@@ -43,6 +52,11 @@ Those fields improve personalization and help route the row if email is weak.
    scaling.
 6. If the file still matters, run a second verification pass with another tool
    or send the rows to manual review.
+
+Useful threshold:
+
+- if roughly `30%` or more of the file fails, treat that as a source-quality
+  problem, not normal list loss
 
 ## Practical rule for weak files
 
@@ -81,6 +95,14 @@ In those cases:
 
 This can be done manually or with a contractor if the rules are explicit.
 
+One practical setup:
+
+- write the research playbook first
+- give the contractor the cleaned list, not the raw file
+- use a marketplace like Upwork or Fiverr if the task is repetitive
+- pay more for truly confirmed high-signal rows than for weak or inconclusive
+  rows
+
 ## Useful tool categories
 
 - first-pass email verifiers
@@ -91,8 +113,8 @@ Representative tools:
 
 - NeverBounce
 - ZeroBounce
+- BulkEmailChecker
 - MillionVerifier
-- Scrubby
 
 ## Best-practice rules
 

@@ -6,6 +6,17 @@ Use this note when the question is not just "how do I query Openmart?" but
 The right answer depends on segmentation quality, contact quality, and how much
 cleanup work the team can absorb downstream.
 
+## Preferred options in this repo
+
+There is no single default source for every motion.
+
+Preferred options:
+
+- Openmart when the hard part is building the business-shell list
+- LinkedIn Sales Navigator when title precision matters most
+- Apollo when database speed and email coverage matter more than perfect
+  segmentation
+
 ## Main source types
 
 ### 1. Professional-network extraction
@@ -34,8 +45,11 @@ Representative tools:
 - LinkedIn Sales Navigator
 - Dripify
 - Dux-Soup
+- Hunter
 - LeadIQ
 - Findymail
+- Golden Leads
+- Sales.QL
 
 ### 2. Contact databases
 
@@ -59,11 +73,18 @@ Weaknesses:
 
 Representative tools:
 
+- Seamless
 - Apollo
 - ZoomInfo
 - Lusha
 - RocketReach
 - UpLead
+
+Practical notes:
+
+- Lusha can be a better fit for some European records.
+- ZoomInfo is often stronger when the target list skews toward large established
+  companies.
 
 ### 3. Purchased lists
 
@@ -85,6 +106,10 @@ Why:
 - If valid work emails matter most, databases are usually better.
 - Assume every source needs cleanup.
 - "Verified" does not mean safe enough to send without another pass.
+- Pick for audience fit and budget, not because one tool is the default answer
+  for everyone.
+- This repo should present a short preferred list, not pretend one lead source
+  wins every situation.
 - Protect company identity fields at merge time:
   - company name
   - website or domain
