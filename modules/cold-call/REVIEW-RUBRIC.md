@@ -70,6 +70,7 @@ Check:
 - vague `I'll follow up`
 - no firm meeting time
 - no calendar discipline
+- engaged prospect, but the rep still leaks the meeting
 
 ## What good looks like overall
 
@@ -77,9 +78,16 @@ Check:
 - qualification happens before deep pitching
 - the prospect understands why the rep called
 - the next step is explicit
+- the rep uses the problem as the hook before the value prop
+- follow-up touches add new information
 
 ## Recommended score interpretation
 
 - `5-6`: usable, keep refining
 - `3-4`: partial, but likely leaking meetings
 - `0-2`: rewrite the opener, value section, and close
+
+## Coaching notes
+
+- if the prospect is engaged and talking, but the meeting is not booked, treat that as a close failure
+- if the meeting is booked but the prospect is clearly weak-fit, treat that as a qualification failure

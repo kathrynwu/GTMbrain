@@ -21,9 +21,12 @@ Use this skill when the user is asking about:
 
 1. `modules/cold-call/PLAYBOOK.md`
 2. `modules/cold-call/REVIEW-RUBRIC.md`
-3. `modules/cold-call/README.md`
-4. `modules/openmart-prospecting/SELLING-LOCAL-BUSINESSES.md`
-5. `modules/openmart-prospecting/PLAYBOOK.md`
+3. `modules/cold-call/CALL-FRAMEWORKS.md`
+4. `modules/cold-call/OBJECTION-LIBRARY.md`
+5. `modules/cold-call/TALK-TRACKS.md`
+6. `modules/cold-call/README.md`
+7. `modules/openmart-prospecting/SELLING-LOCAL-BUSINESSES.md`
+8. `modules/openmart-prospecting/PLAYBOOK.md`
 
 ## Workflow
 
@@ -48,8 +51,14 @@ Use this skill when the user is asking about:
    - build credibility in the first 6 seconds
    - build value by showing business understanding and asking short pain questions
    - book the meeting with a concrete day and time
-6. Write a script that sounds like a human, not an SDR content factory.
-7. If the user wants feedback on a script or call, score it with the repo rubric:
+6. Use the companion assets when needed:
+   - first-touch call flow
+   - follow-up call flow
+   - gatekeeper route
+   - objection library
+   - talk-track references
+7. Write a script that sounds like a human, not an SDR content factory.
+8. If the user wants feedback on a script or call, score it with the repo rubric:
    - credibility
    - value
    - close
@@ -65,6 +74,8 @@ Default to giving:
 - 3-5 qualification questions
 - value bridge
 - likely objections and responses
+- follow-up call shape if relevant
+- gatekeeper route if relevant
 - meeting close
 - next steps the prospect should expect
 - metrics to track
@@ -85,6 +96,9 @@ Default to giving:
 - make it clear why the product is meaningfully better, not just cheaper
 - push for a specific day and time, ideally same day or within 24 hours
 - send the calendar invite and tell the user to get acceptance while still on the phone
+- use the problem as the hook before the value prop
+- follow-up touches must add new information
+- gatekeeper handling should stay respectful, not deceptive
 - keep scripts short
 - do not write fake bravado or hype
 - tie the call plan to the segment and list quality

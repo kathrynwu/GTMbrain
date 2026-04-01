@@ -11,6 +11,10 @@ load it and follow it.
 If the user is broad or does not know where to start, use the `gtmbrain` skill
 first and route them with `A/B/C` options.
 
+The repo skills are also meant to help the user iterate with the playbooks and
+figure out their GTM motion over multiple turns, not just answer one static
+question.
+
 ## What GTMbrain Is
 
 `GTMbrain` is a registry of forkable GTM workflow modules.
@@ -127,7 +131,23 @@ Read in this order:
 1. `modules/cold-call/README.md`
 2. `modules/cold-call/PLAYBOOK.md`
 3. `modules/cold-call/REVIEW-RUBRIC.md`
-4. `modules/openmart-prospecting/SELLING-LOCAL-BUSINESSES.md`
+4. `modules/cold-call/CALL-FRAMEWORKS.md`
+5. `modules/cold-call/OBJECTION-LIBRARY.md`
+6. `modules/cold-call/TALK-TRACKS.md`
+7. `modules/openmart-prospecting/SELLING-LOCAL-BUSINESSES.md`
+
+### `seo`
+
+Job:
+
+- improve pages that already have traction
+- decide between new-page creation and existing-page improvement
+- choose keywords that are both relevant and ICP-fit
+
+Read in this order:
+
+1. `modules/seo/README.md`
+2. `modules/seo/PLAYBOOK.md`
 
 ## Current Repo Skills
 
@@ -137,6 +157,7 @@ Use these when the question matches:
 - `.agents/skills/openmart-prospecting/`
 - `.agents/skills/local-list-enriching/`
 - `.agents/skills/local-emailing/`
+- `.agents/skills/seo/`
 - `.agents/skills/local-cold-calling/`
 
 For `local-cold-calling`, use the repo's 3-step framework:
@@ -148,12 +169,27 @@ For `local-cold-calling`, use the repo's 3-step framework:
 If the user has not specified the segment well enough, ask for location,
 industry, buyer, pain point, and phone quality before writing a script.
 
+Also use:
+
+- problem hook before value prop
+- follow-up calls that add new information
+- respectful gatekeeper handling
+- the objection library when pushback is concrete
+
 For `local-emailing`, use the repo's short-email, value-first framework:
 
 1. ask for segment, buyer, and offer if missing
 2. prefer `2-3` sentence emails
 3. keep subject lines personalized
 4. lead with help before pushing the meeting
+
+For `seo`, use the repo's GSC-first workflow:
+
+1. start from real impressions and queries
+2. diagnose `CTR` versus `position` first
+3. validate volume and intent in Semrush
+4. decide between improving an existing page and creating a new one
+5. use PostHog after the click to see whether the page promise matches the product
 
 For `local-list-enriching`, ask what contact path the user actually needs:
 

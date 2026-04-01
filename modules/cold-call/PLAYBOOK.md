@@ -8,6 +8,7 @@ walkthrough used to train local-business outbound.
 - internal cold call playbook
 - Loom walkthrough:
   - `https://www.loom.com/share/90e0a8ef61bc4f179c8299a111711787?sid=6a9cd470-106f-4ec2-bdae-8499a679f6f5`
+- reference talk tracks and call-review notes
 
 Use this playbook when the list is clean enough to call and the segment is
 specific enough that a short phone conversation can create urgency.
@@ -134,6 +135,22 @@ Tell the prospect what happens next and what you need from them, if anything.
 
 Once they choose, send the invite immediately.
 
+## Framework assets
+
+Use these companion files:
+
+- [`CALL-FRAMEWORKS.md`](./CALL-FRAMEWORKS.md)
+- [`OBJECTION-LIBRARY.md`](./OBJECTION-LIBRARY.md)
+- [`TALK-TRACKS.md`](./TALK-TRACKS.md)
+
+They cover:
+
+- first-touch call flow
+- follow-up call flow
+- gatekeeper route
+- objection rebuttals
+- talk-track examples
+
 ## Call length
 
 A strong cold call is usually 4-6 minutes.
@@ -153,14 +170,26 @@ Stay calm and short.
 Good pattern:
 
 1. acknowledge
-2. ask one clarifying question
-3. tie back to the business problem
-4. re-close
+2. re-frame
+3. ask permission or one clarifying question
+4. tie back to the business problem
+5. re-close
 
 Example:
 
 - objection: `Send me something`
 - response: `Happy to. Usually when someone asks that, it means either the timing is bad or it isn't a priority yet. Which one is it for you?`
+
+See [`OBJECTION-LIBRARY.md`](./OBJECTION-LIBRARY.md) for common rebuttals.
+
+## Follow-up and gatekeeper handling
+
+Two patterns matter a lot:
+
+- follow-up calls must add new information each time
+- gatekeeper handling should stay respectful and direct
+
+See [`CALL-FRAMEWORKS.md`](./CALL-FRAMEWORKS.md).
 
 ## Metrics to watch
 
@@ -192,6 +221,7 @@ Use this rule:
 - definite meeting close
 - clear next-step expectation
 - calendar invite discipline
+- clear problem hook before the value prop
 
 ## What bad looks like
 
@@ -201,3 +231,4 @@ Use this rule:
 - pitching before qualification
 - no concrete next step
 - soft close with no calendar invite
+- great discovery but no booked meeting

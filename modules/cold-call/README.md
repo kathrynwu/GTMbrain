@@ -13,6 +13,9 @@ Capture scripts, review criteria, and tactical outbound heuristics.
 
 - [`PLAYBOOK.md`](./PLAYBOOK.md)
 - [`REVIEW-RUBRIC.md`](./REVIEW-RUBRIC.md)
+- [`CALL-FRAMEWORKS.md`](./CALL-FRAMEWORKS.md)
+- [`OBJECTION-LIBRARY.md`](./OBJECTION-LIBRARY.md)
+- [`TALK-TRACKS.md`](./TALK-TRACKS.md)
 
 ## Focus
 
@@ -29,10 +32,15 @@ Capture scripts, review criteria, and tactical outbound heuristics.
   - build value
   - book the meeting
 - a call review rubric
+- step-by-step call frameworks
+- objection library
+- talk-track references
 - opener rules for the first 6 seconds
 - qualification prompts
 - objection-handling pattern
 - close and calendar-invite discipline
+- follow-up call guidance
+- gatekeeper handling
 - when to choose:
   - call-first
   - enrich-first

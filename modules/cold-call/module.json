@@ -14,7 +14,10 @@
   "status": "first-release",
   "required_paths": [
     "PLAYBOOK.md",
-    "REVIEW-RUBRIC.md"
+    "REVIEW-RUBRIC.md",
+    "CALL-FRAMEWORKS.md",
+    "OBJECTION-LIBRARY.md",
+    "TALK-TRACKS.md"
   ],
   "source_material": [
     "internal cold call playbook",
@@ -33,7 +36,10 @@
     "qualification prompts",
     "objection handling notes",
     "meeting close",
-    "call review rubric"
+    "call review rubric",
+    "follow-up call shape",
+    "gatekeeper route",
+    "talk-track examples"
   ],
   "workflow_stages": [
     "Build credibility",

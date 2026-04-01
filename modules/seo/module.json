@@ -1,7 +1,7 @@
 {
   "name": "SEO",
   "slug": "seo",
-  "job": "Capture repeatable SEO workflow judgment and reusable operating notes.",
+  "job": "Capture repeatable SEO workflow judgment for page prioritization, keyword choice, and on-page improvement.",
   "audience": [
     "growth engineer",
     "content lead",
@@ -11,5 +11,42 @@
     "Playbook"
   ],
   "primary_action": "Read playbook",
-  "status": "planned"
+  "status": "first-release",
+  "required_paths": [
+    "PLAYBOOK.md",
+    "EXAMPLES.md"
+  ],
+  "source_material": [
+    "internal GSC to Semrush SEO workflow",
+    "internal PostHog-based landing-page analysis",
+    "competitor review patterns across Artisan, Outscraper, and D7 Leads"
+  ],
+  "inputs": [
+    "GSC impressions and queries",
+    "page with traction",
+    "CTR or position diagnosis",
+    "Semrush keyword and SERP checks",
+    "PostHog entry and drop-off context"
+  ],
+  "outputs": [
+    "new-page or improve-page decision",
+    "keyword cluster",
+    "page brief",
+    "refresh actions",
+    "internal linking and CTA plan"
+  ],
+  "workflow_stages": [
+    "Pull GSC traction",
+    "Diagnose CTR versus position",
+    "Validate in Semrush",
+    "Choose page action",
+    "Strengthen page structure",
+    "Refresh and measure"
+  ],
+  "related_playbooks": [
+    "search-intent checks",
+    "page refresh cadence",
+    "keyword clustering",
+    "content structure"
+  ]
 }

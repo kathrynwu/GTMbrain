@@ -2,32 +2,30 @@
 
 Forkable GTM modules for internal tooling.
 
-`GTMbrain` is a registry of GTM workflow modules. Each module can include one or more of:
+`GTMbrain` is a repo of GTM workflow modules. Each module can include one or more of:
 
-- `Template`: a runnable starter inside the repo that you can fork or clone and adapt
-- `Playbook`: the operating judgment behind the workflow
-- `Connector`: a thin package for an external service
-- `Skill`: optional agent wrapper, only when the workflow is stable
-
-The first serious module is `KOL CRM`.
+- `Template`: something you can run and adapt
+- `Playbook`: the workflow and judgment behind it
+- `Connector`: a simple package for an outside service
+- `Skill`: an assistant wrapper for using the module step by step
 
 ## Why trust this
 
 `GTMbrain` comes from operating experience building Openmart (YC W24) and spending a lot of time inside GTM, outbound, prospecting, and sales-tool workflows.
 
-The goal is not to publish abstract growth theory. The goal is to capture workflow shapes that are actually useful to builders.
+The goal is not to publish vague growth advice. The goal is to capture workflows that are actually useful to builders.
 
 ## Why this repo exists
 
-Most GTM repos fall into one of three bad buckets:
+Most GTM repos fall into one of three buckets:
 
 - random docs
 - random prompts
 - random automations
 
-This repo is trying to be more useful than that.
+This repo is trying to be more practical than that.
 
-The unit of value is a **module**. A builder should land here, understand the workflow in one line, and know exactly what to do next:
+The basic unit here is a **module**. You should be able to land here, understand what a module does, and know what to do next:
 
 - fork or clone the repo
 - start in the right module
@@ -37,20 +35,14 @@ The unit of value is a **module**. A builder should land here, understand the wo
 
 ## Start here
 
-If you only look at one thing, start with:
+Pick the module that matches your bottleneck:
 
-- [`modules/kol-crm/`](./modules/kol-crm/)
-
-That is the first complete module shape:
-
-- template-first
-- sample data included
-- schema included
-- workflow contract included
-- extension guide included
-- runnable browser starter included
-- clear workflow states
-- easy to understand without platform context
+- [`modules/kol-crm/`](./modules/kol-crm/) if you want a local CRM starter for influencer workflows
+- [`modules/openmart-prospecting/`](./modules/openmart-prospecting/) if you want to build a local-business prospect list
+- [`modules/local-list-enriching/`](./modules/local-list-enriching/) if you already have a list and need better owner or decision-maker data
+- [`modules/local-emailing/`](./modules/local-emailing/) if you want short local-business outbound email playbooks
+- [`modules/seo/`](./modules/seo/) if you want a repeatable SEO workflow for keywords, page improvement, and refresh rules
+- [`modules/cold-call/`](./modules/cold-call/) if you want cold-call frameworks, objections, and review notes
 
 ## Quick start
 
@@ -61,7 +53,9 @@ git clone https://github.com/kathrynwu/GTMbrain.git
 cd GTMbrain
 ```
 
-Try the CRM starter:
+Then choose one path:
+
+### Run the CRM starter
 
 ```bash
 cd modules/kol-crm/template
@@ -73,6 +67,16 @@ Then open `http://localhost:4321`.
 If you do not want to run a local server, you can also open
 [`modules/kol-crm/template/index.html`](./modules/kol-crm/template/index.html)
 directly in a browser.
+
+### Read a playbook module
+
+Start with one of these:
+
+- [`modules/openmart-prospecting/PLAYBOOK.md`](./modules/openmart-prospecting/PLAYBOOK.md)
+- [`modules/local-list-enriching/PLAYBOOK.md`](./modules/local-list-enriching/PLAYBOOK.md)
+- [`modules/local-emailing/PLAYBOOK.md`](./modules/local-emailing/PLAYBOOK.md)
+- [`modules/seo/PLAYBOOK.md`](./modules/seo/PLAYBOOK.md)
+- [`modules/cold-call/PLAYBOOK.md`](./modules/cold-call/PLAYBOOK.md)
 
 ## Ask Questions After Clone
 
@@ -93,9 +97,11 @@ Good examples:
 - "How should I enrich approved rows before sending them into my CRM?"
 - "Which Openmart endpoint fits search versus decision-maker enrichment?"
 - "What should my outbound flow look like after I have a clean local-business list?"
+- "How should I decide whether to improve an existing SEO page or create a new one?"
+- "What should I fix first when impressions exist but CTR is low?"
+- "Help me iterate on the playbooks and figure out my GTM motion."
 
-The repo should answer those questions from its own module docs, not just from
-generic GTM advice.
+The repo should answer those questions from its own module docs, not just from generic GTM advice.
 
 Repo-local skills live in [`.agents/skills/`](/Users/kathrynwu/Work/GTMbrain/.agents/skills):
 
@@ -103,21 +109,33 @@ Repo-local skills live in [`.agents/skills/`](/Users/kathrynwu/Work/GTMbrain/.ag
 - `openmart-prospecting`
 - `local-list-enriching`
 - `local-emailing`
+- `seo`
 - `local-cold-calling`
 
-If you do not know where to start, ask for `gtmbrain` first. It should route
-you to the right module with `A/B/C` options.
+If you do not know where to start, ask for `gtmbrain` first. It should route you to the right module with `A/B/C` options.
 
-## What "forkable" means here
+You can use the skills to work through your GTM motion step by step.
 
-`kol-crm` is not a standalone repo yet. It lives inside `GTMbrain`.
+That means you can:
 
-So the clear action is:
+- test different prospecting approaches
+- figure out what to enrich before sending leads into a CRM
+- shape your email sequence
+- shape your cold-call playbook
+- compare different outbound motions
+- keep iterating until the workflow makes sense for your segment
+
+## How to use this repo
+
+The modules live inside one repo right now.
+
+That means:
 
 1. fork or clone `GTMbrain`
-2. start in [`modules/kol-crm/`](./modules/kol-crm/)
-3. run the starter in [`modules/kol-crm/template/`](./modules/kol-crm/template/)
-4. adapt the workflow, schema, and UI to your own stack
+2. pick the module you need
+3. if it is a `Template`, run it and adapt it
+4. if it is a `Playbook`, use it with the skill and iterate on your GTM motion
+5. if it is a `Connector`, plug it into your own app or tool
 
 ## Module catalog
 
@@ -127,7 +145,7 @@ So the clear action is:
 | [`openmart-prospecting`](./modules/openmart-prospecting/) | Define ICPs, build lists, and document prospecting workflows | `Playbook`, `Connector` | Read playbook | First release |
 | [`local-list-enriching`](./modules/local-list-enriching/) | Capture approval-first enrichment logic, field mapping, and CRM sync rules | `Playbook` | Read playbook | First release |
 | [`local-emailing`](./modules/local-emailing/) | Capture local-business email strategy, subject-line rules, and follow-up cadence | `Playbook` | Read playbook | First release |
-| [`seo`](./modules/seo/) | Capture repeatable SEO workflow judgment and briefs | `Playbook` | Read playbook | Planned |
+| [`seo`](./modules/seo/) | Capture repeatable SEO workflow judgment for page prioritization, keyword choice, and on-page improvement | `Playbook` | Read playbook | First release |
 | [`cold-call`](./modules/cold-call/) | Capture scripts, review criteria, and outbound heuristics | `Playbook` | Read playbook | First release |
 
 ## Repo shape
@@ -146,15 +164,15 @@ packages/
 
 ## Principles
 
-- Templates first. The repo should be useful to a human before it is useful to an agent.
-- Playbooks hold the judgment. Skills come later.
-- Connectors should stay boring.
-- Do not build a fake platform before the modules earn it.
-- Design for stealability. The reaction should be: "I want that workflow shape."
+- Start with something a person can use.
+- Keep the real workflow in the playbook.
+- Keep connectors simple.
+- Do not build a big fake platform too early.
+- Make the modules easy to copy and adapt.
 
-## KOL CRM v1
+## What each module gives you today
 
-The first release is intentionally narrow:
+### `kol-crm`
 
 - YouTube + Twitter influencer tracking
 - import CSV
@@ -164,30 +182,52 @@ The first release is intentionally narrow:
 - owner and status workflow
 - sample data
 
-This is usable today as a single-operator local CRM starter.
+This is usable today as a single-user local CRM starter.
 
-It is not yet:
+### `openmart-prospecting`
 
-- a multi-user product
-- a synced backend
-- an email-sending system
-- a polished SaaS app
+- ICP workflow
+- broad-to-tight query loop
+- approve and reject logic
+- connector starter for the Openmart API
+- sample prospect shape
 
-Core states:
+### `local-list-enriching`
 
-- `Not Contacted`
-- `Contacted`
-- `Replied`
-- `In Negotiation`
-- `Partnered`
-- `Closed`
+- field mapping for CRM sync
+- filtering rules before enrichment
+- owner / manager / decision-maker enrichment logic
+- sample enriched row shape
 
-## What is not here yet
+### `local-emailing`
 
+- short local-business email playbooks
+- value-first email examples
+- follow-up cadence
+- subject-line patterns
+
+### `cold-call`
+
+- 3-step cold-call framework
+- first-touch and follow-up call structure
+- objection library
+- gatekeeper handling
+- review rubric
+
+### `seo`
+
+- GSC to Semrush workflow
+- CTR versus position diagnosis
+- keyword quality rules
+- page structure guidance
+- internal linking and refresh rules
+
+### Not here yet
+
+- a multi-user backend
+- email sending
 - polished website marketing
-- generic agent marketplace framing
 - full connector platform
-- automated outreach product
 
 ## Contributing
 
@@ -197,7 +237,7 @@ The right way is:
 
 1. Define one clear GTM workflow.
 2. Decide whether it should start as a `Template`, `Playbook`, `Connector`, or some mix.
-3. Make it legible enough that another builder can use it without a meeting.
+3. Make it clear enough that another builder can use it without a meeting.
 
 Module contracts are validated in CI by [`scripts/validate-modules.js`](./scripts/validate-modules.js).
 
@@ -208,12 +248,9 @@ If you want to request a new module or report what worked in the real world:
 
 ## Current state
 
-This repo is still early. The goal right now is simple:
+This repo is still early. Right now the goal is:
 
 - make the registry shape obvious
-- make `KOL CRM` real enough to clone and adapt
-- make `openmart-prospecting` real enough to run as a playbook
-- make `local-list-enriching` real enough to use before CRM sync
-- make `local-emailing` real enough to use as an outbound playbook
-- make `cold-call` real enough to coach or review scripts
+- make each core module useful enough to try right away
+- let people use skills and playbooks together to figure out their GTM motion
 - add thinner follow-on modules without overbuilding
