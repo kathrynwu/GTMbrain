@@ -1,0 +1,45 @@
+{
+  "name": "B2B Prospecting",
+  "slug": "b2b-prospecting",
+  "job": "Define ICPs, choose the right buyer, and build B2B prospect lists without mixing in local-business workflows.",
+  "audience": [
+    "growth engineer",
+    "revops builder",
+    "outbound operator"
+  ],
+  "surfaces": [
+    "Playbook"
+  ],
+  "primary_action": "Read playbook",
+  "status": "first-release",
+  "required_paths": [
+    "PLAYBOOK.md",
+    "LEAD-SOURCES.md"
+  ],
+  "source_material": [
+    "real outbound operating guidance from GTMbrain",
+    "software-company buyer-fit and trigger rules"
+  ],
+  "inputs": [
+    "ICP definition",
+    "target buyer",
+    "company filters",
+    "buying signals",
+    "result limit"
+  ],
+  "outputs": [
+    "normalized B2B prospect list",
+    "buyer-fit notes",
+    "signal notes",
+    "approved handoff rows"
+  ],
+  "workflow_stages": [
+    "Define ICP",
+    "Choose buyer",
+    "Choose source",
+    "Run broad search",
+    "Inspect results",
+    "Tighten filters",
+    "Approve and hand off"
+  ]
+}

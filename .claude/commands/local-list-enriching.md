@@ -21,3 +21,6 @@ If key inputs are missing, ask for:
 - whether the list is already approved or still needs filtering
 
 Then answer in the repo's A/B/C recommendation style.
+
+If the motion is software-company enrichment, use
+@.claude/commands/b2b-enriching.md instead.

@@ -1,7 +1,7 @@
 {
-  "name": "Openmart Prospecting",
+  "name": "Local List Prospecting",
   "slug": "openmart-prospecting",
-  "job": "Define ICPs, build lists, and document repeatable prospecting workflows.",
+  "job": "Define ICPs, build local-business lists, and document repeatable local prospecting workflows.",
   "audience": [
     "growth engineer",
     "revops builder",

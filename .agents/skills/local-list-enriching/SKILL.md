@@ -16,6 +16,9 @@ Use this skill when the user is asking about:
 - building an internal enrichment job
 - avoiding junk enrichment and wasted credits
 
+If the motion is software-company or B2B enrichment, route to `b2b-enriching`
+instead.
+
 ## Read first
 
 1. `modules/local-list-enriching/README.md`
@@ -121,6 +124,8 @@ Default to giving:
 ## Rules
 
 - do not enrich everything by default
+- if the motion is software-company enrichment rather than local-business
+  enrichment, route to `modules/b2b-enriching/`
 - use the broader list-ops system as context, not just one row in isolation
 - treat `unqualified` as a stop signal for normal outbound prep
 - verification status should stay visible if email is part of the next motion

@@ -1,6 +1,7 @@
 # Openmart Prospecting
 
-Define ICPs, build lists, and document repeatable prospecting workflows.
+Define ICPs, build local-business lists, and document repeatable local
+prospecting workflows.
 
 ## Module summary
 
@@ -11,6 +12,7 @@ Define ICPs, build lists, and document repeatable prospecting workflows.
 
 ## What this module covers
 
+- local-business prospecting specifically
 - ICP definition workflow
 - query loop for broad-to-tight search
 - real ICP patterns and approval logic
@@ -22,6 +24,9 @@ Define ICPs, build lists, and document repeatable prospecting workflows.
 - normalized prospect export shape
 - sample prospect output
 - thin connector starter for boring API calls
+
+If the motion is software-company or B2B prospecting, use
+[`../b2b-prospecting/`](../b2b-prospecting/) instead.
 
 ## Included now
 

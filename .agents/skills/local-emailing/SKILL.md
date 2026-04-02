@@ -25,9 +25,11 @@ Use this skill when the user is asking about:
 3. `modules/local-emailing/DELIVERABILITY.md`
 4. `modules/local-emailing/README.md`
 5. `modules/local-list-enriching/EMAIL-VERIFICATION.md`
-6. `modules/openmart-prospecting/SELLING-LOCAL-BUSINESSES.md`
-7. `modules/openmart-prospecting/PLAYBOOK.md`
-8. `modules/openmart-prospecting/INTEGRATIONS.md`
+6. `modules/b2b-prospecting/PLAYBOOK.md`
+7. `modules/b2b-enriching/FIELD-MAPPING.md`
+8. `modules/openmart-prospecting/SELLING-LOCAL-BUSINESSES.md`
+9. `modules/openmart-prospecting/PLAYBOOK.md`
+10. `modules/openmart-prospecting/INTEGRATIONS.md`
 
 ## Workflow
 

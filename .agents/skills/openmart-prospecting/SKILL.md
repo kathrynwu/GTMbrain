@@ -17,6 +17,9 @@ Use this skill when the user is asking about:
 - deciding which Openmart endpoint fits which step
 - connecting search, approval, enrichment, and handoff
 
+If the motion is software-company or B2B prospecting, route to
+`b2b-prospecting` instead.
+
 ## Read first
 
 1. `modules/openmart-prospecting/README.md`
@@ -147,6 +150,8 @@ Default to giving:
 - if the user is choosing between Openmart and Apollo:
   - prefer `Openmart` for local-business prospecting
   - prefer `Apollo` for software-company prospecting
+- if the motion is software-company prospecting rather than local-business
+  prospecting, route to `modules/b2b-prospecting/`
 - treat `unqualified` as do-not-contact, not just low priority
 - default to broad-first, then tighten after inspecting results
 - keep `source_query`, fit score, and routing status visible

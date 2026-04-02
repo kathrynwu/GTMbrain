@@ -28,11 +28,15 @@ field mapping.
 
 ## What this module covers
 
+- local-business enrichment specifically
 - what fields matter most for local-business outbound
 - how to filter based on location count, website, reviews, and tech signals
 - how email verification should gate outbound readiness
 - how to separate raw search data from enriched decision-maker data
 - how to sync approved rows into CRM or an internal tool without losing context
+
+If the motion is software-company or B2B enrichment, use
+[`../b2b-enriching/`](../b2b-enriching/) instead.
 
 ## Source material
 

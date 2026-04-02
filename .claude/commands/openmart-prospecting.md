@@ -1,5 +1,5 @@
 ---
-description: Run the GTMbrain Openmart prospecting workflow
+description: Run the GTMbrain local-business prospecting workflow with Openmart
 ---
 
 Use the project skill at @.claude/skills/openmart-prospecting/SKILL.md and the
@@ -23,3 +23,6 @@ If key inputs are missing, ask for:
 - must-have filters
 
 Then answer in the repo's A/B/C recommendation style.
+
+If the motion is software-company prospecting, use
+@.claude/commands/b2b-prospecting.md instead.

@@ -15,6 +15,10 @@ follow-up structure.
 - [`PLAYBOOK.md`](./PLAYBOOK.md)
 - [`EXAMPLES.md`](./EXAMPLES.md)
 - [`DELIVERABILITY.md`](./DELIVERABILITY.md)
+- [`../openmart-prospecting/README.md`](../openmart-prospecting/README.md) for the
+  local-business upstream path
+- [`../b2b-prospecting/README.md`](../b2b-prospecting/README.md) for the B2B
+  upstream path
 
 ## Focus
 

@@ -92,11 +92,32 @@ Read in this order:
 7. `modules/openmart-prospecting/schema/prospect.schema.json`
 8. `packages/openmart/`
 
+Use this as the local-business path.
+
+If the motion is software-company or B2B prospecting, use `b2b-prospecting`
+instead.
+
+### `b2b-prospecting`
+
+Job:
+
+- define B2B ICPs
+- choose the right buyer
+- build software-company or company-buyer prospect lists
+- keep trigger and authority context before handoff
+
+Read in this order:
+
+1. `modules/b2b-prospecting/README.md`
+2. `modules/b2b-prospecting/PLAYBOOK.md`
+3. `modules/b2b-prospecting/LEAD-SOURCES.md`
+4. `modules/openmart-prospecting/STANDARD-PRACTICE.md`
+
 ### `local-emailing`
 
 Job:
 
-- write short local-business outbound emails
+- write short outbound emails
 - choose personalization fields that are real
 - decide when email-first beats call-first
 
@@ -105,7 +126,8 @@ Read in this order:
 1. `modules/local-emailing/README.md`
 2. `modules/local-emailing/PLAYBOOK.md`
 3. `modules/local-emailing/EXAMPLES.md`
-4. `modules/openmart-prospecting/SELLING-LOCAL-BUSINESSES.md`
+4. `modules/b2b-prospecting/PLAYBOOK.md`
+5. `modules/openmart-prospecting/SELLING-LOCAL-BUSINESSES.md`
 
 ### `local-list-enriching`
 
@@ -124,6 +146,27 @@ Read in this order:
 5. `modules/openmart-prospecting/STANDARD-PRACTICE.md`
 6. `modules/local-list-enriching/schema/enriched-prospect.schema.json`
 7. `modules/openmart-prospecting/INTEGRATIONS.md`
+
+Use this as the local-business enrichment path.
+
+If the motion is software-company or B2B enrichment, use `b2b-enriching`
+instead.
+
+### `b2b-enriching`
+
+Job:
+
+- enrich approved B2B rows
+- reroute from the wrong buyer to the right buyer
+- preserve context before CRM sync or outbound
+
+Read in this order:
+
+1. `modules/b2b-enriching/README.md`
+2. `modules/b2b-enriching/PLAYBOOK.md`
+3. `modules/b2b-enriching/FIELD-MAPPING.md`
+4. `modules/b2b-prospecting/PLAYBOOK.md`
+5. `modules/local-list-enriching/EMAIL-VERIFICATION.md`
 
 ### `cold-call`
 
@@ -161,6 +204,8 @@ Read in this order:
 Use these when the question matches:
 
 - `.agents/skills/gtmbrain/`
+- `.agents/skills/b2b-prospecting/`
+- `.agents/skills/b2b-enriching/`
 - `.agents/skills/openmart-prospecting/`
 - `.agents/skills/local-list-enriching/`
 - `.agents/skills/local-emailing/`
@@ -179,6 +224,8 @@ If the user invokes a Claude slash command directly, start from the matching
 command file in:
 
 - `.claude/commands/gtmbrain.md`
+- `.claude/commands/b2b-prospecting.md`
+- `.claude/commands/b2b-enriching.md`
 - `.claude/commands/openmart-prospecting.md`
 - `.claude/commands/local-list-enriching.md`
 - `.claude/commands/local-emailing.md`
@@ -188,6 +235,8 @@ command file in:
 If Claude auto-loads a project skill, the wrappers live in:
 
 - `.claude/skills/gtmbrain/`
+- `.claude/skills/b2b-prospecting/`
+- `.claude/skills/b2b-enriching/`
 - `.claude/skills/openmart-prospecting/`
 - `.claude/skills/local-list-enriching/`
 - `.claude/skills/local-emailing/`
@@ -236,6 +285,20 @@ For `local-list-enriching`, ask what contact path the user actually needs:
 Filter with location count, website presence, review quality, and technology
 signals before recommending deeper enrichment.
 
+For `b2b-prospecting`, make buyer fit explicit:
+
+1. ask for ICP, buyer, and why-now signal if missing
+2. avoid junior or entry-level buyers as the default
+3. use product-specific triggers such as hiring, funding, CRM changes, team build-out, or outbound ramp when relevant
+4. route to `b2b-enriching` once the company list is approved
+
+For `b2b-enriching`, preserve the buyer handoff:
+
+1. enrich approved rows, not the whole export
+2. keep title, email, phone, LinkedIn, company summary, and context visible
+3. reroute from the wrong contact to the right buyer instead of discarding the account
+4. keep the row inspectable before sequencing, calling, or CRM sync
+
 Prefer `A/B/C` recommendation-style answers when routing users across modules.
 
 For repo-local skills, prefer the full pattern:
@@ -266,6 +329,10 @@ When the user asks how to use Openmart:
 - ask for location range, industry, and key filters if they are missing
 - then explain which endpoint fits where
 - avoid turning the answer into API trivia without a business workflow
+
+If the motion is software-company or B2B prospecting rather than local-business
+prospecting, route to `b2b-prospecting` instead of forcing Openmart into the
+answer.
 
 ## What To Optimize For
 

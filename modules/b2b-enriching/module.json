@@ -1,0 +1,42 @@
+{
+  "name": "B2B Enriching",
+  "slug": "b2b-enriching",
+  "job": "Enrich approved B2B rows with the right buyer, contact path, and context before outbound or CRM handoff.",
+  "audience": [
+    "growth engineer",
+    "revops builder",
+    "outbound operator"
+  ],
+  "surfaces": [
+    "Playbook"
+  ],
+  "primary_action": "Read playbook",
+  "status": "first-release",
+  "required_paths": [
+    "PLAYBOOK.md",
+    "FIELD-MAPPING.md"
+  ],
+  "source_material": [
+    "real outbound operating guidance from GTMbrain",
+    "B2B buyer-fit and outbound handoff rules"
+  ],
+  "inputs": [
+    "approved B2B list",
+    "target system",
+    "buyer rules",
+    "contact-path requirements"
+  ],
+  "outputs": [
+    "enriched buyer rows",
+    "sequencing-ready rows",
+    "call-ready rows",
+    "CRM-ready rows"
+  ],
+  "workflow_stages": [
+    "Approve rows",
+    "Enrich buyer",
+    "Verify contact path",
+    "Preserve context",
+    "Route into outbound or CRM"
+  ]
+}

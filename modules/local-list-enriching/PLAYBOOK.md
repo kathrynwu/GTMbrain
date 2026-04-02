@@ -2,6 +2,9 @@
 
 Use this playbook after you already have a decent local-business list.
 
+If the motion is software-company or B2B enrichment, use
+[`../b2b-enriching/`](../b2b-enriching/) instead.
+
 For the broader operating model around this step, read
 [`../openmart-prospecting/STANDARD-PRACTICE.md`](../openmart-prospecting/STANDARD-PRACTICE.md).
 

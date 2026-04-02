@@ -21,6 +21,9 @@ If you need the broader operating model behind this module, read
 For SMB-specific quality rules, signals, and owner-finder guidance, read
 [`SMB-PROSPECTING.md`](./SMB-PROSPECTING.md).
 
+If the motion is software-company or B2B prospecting, use
+[`../b2b-prospecting/`](../b2b-prospecting/) instead.
+
 ## Who actually uses this
 
 Real ICP patterns:
