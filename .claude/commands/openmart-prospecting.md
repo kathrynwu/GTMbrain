@@ -1,5 +1,5 @@
 ---
-description: Run the GTMbrain local-business prospecting workflow with Openmart
+description: Run the GTMbrain local-business prospecting workflow
 ---
 
 Use the project skill at @.claude/skills/openmart-prospecting/SKILL.md and the

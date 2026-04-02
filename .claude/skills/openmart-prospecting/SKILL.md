@@ -1,15 +1,16 @@
 ---
 name: openmart-prospecting
 description: |
-  Use when someone wants to build a local-business prospect list with Openmart,
-  adapt Openmart data into a CRM or internal enrichment tool, choose between
-  search and decision-maker endpoints, or understand the repo's Openmart
+  Use when someone wants to build a local-business prospect list, adapt
+  Openmart data into a CRM or internal enrichment tool, choose between search
+  and decision-maker endpoints, or understand the repo's local-business
   prospecting workflow.
 ---
 
-# Openmart Prospecting
+# Local Business Prospecting
 
-This is the Claude Code project-skill wrapper for the Openmart module.
+This is the Claude Code project-skill wrapper for the local-business
+prospecting module.
 
 Read `.agents/skills/openmart-prospecting/SKILL.md` first, then follow it.
 

@@ -27,7 +27,7 @@ Start here.
 
 | Job | Start here | Then go to |
 | --- | --- | --- |
-| local-business prospecting | [`openmart-prospecting`](./modules/openmart-prospecting/) | [`local-list-enriching`](./modules/local-list-enriching/) |
+| local-business prospecting | [`local-business prospecting`](./modules/openmart-prospecting/) | [`local-list-enriching`](./modules/local-list-enriching/) |
 | B2B / software-company prospecting | [`b2b-prospecting`](./modules/b2b-prospecting/) | [`b2b-enriching`](./modules/b2b-enriching/) |
 | local-business outbound email | [`local-emailing`](./modules/local-emailing/) | [`cold-call`](./modules/cold-call/) if phone should run too |
 | B2B outbound email | [`b2b-emailing`](./modules/b2b-emailing/) | [`b2b-cold-calling`](./modules/b2b-cold-calling/) if phone should run too |
@@ -46,7 +46,7 @@ Current naming quirk:
 
 ### Local-business path
 
-1. [`openmart-prospecting`](./modules/openmart-prospecting/)
+1. [`local-business prospecting`](./modules/openmart-prospecting/)
 2. [`local-list-enriching`](./modules/local-list-enriching/)
 3. [`local-emailing`](./modules/local-emailing/) and/or
    [`cold-call`](./modules/cold-call/)
@@ -129,7 +129,7 @@ Claude Code can use:
 Good slash-command starts:
 
 - `/gtmbrain`
-- `/openmart-prospecting`
+- `/openmart-prospecting` for local-business prospecting
 - `/b2b-prospecting`
 - `/local-list-enriching`
 - `/b2b-enriching`
@@ -159,7 +159,7 @@ Codex should start with:
 Canonical repo skills live in [`.agents/skills/`](./.agents/skills/):
 
 - [`gtmbrain`](./.agents/skills/gtmbrain/SKILL.md)
-- [`openmart-prospecting`](./.agents/skills/openmart-prospecting/SKILL.md)
+- [`local-business prospecting`](./.agents/skills/openmart-prospecting/SKILL.md)
 - [`b2b-prospecting`](./.agents/skills/b2b-prospecting/SKILL.md)
 - [`local-list-enriching`](./.agents/skills/local-list-enriching/SKILL.md)
 - [`b2b-enriching`](./.agents/skills/b2b-enriching/SKILL.md)
@@ -180,7 +180,7 @@ Why there seem to be duplicate `SKILL.md` files:
 | Module | What it does | Primary use |
 | --- | --- | --- |
 | [`kol-crm`](./modules/kol-crm/) | runnable lightweight CRM starter | run and adapt |
-| [`openmart-prospecting`](./modules/openmart-prospecting/) | local-business ICPs, list building, local prospect workflows | start local prospecting |
+| [`local-business prospecting`](./modules/openmart-prospecting/) | local-business ICPs, list building, local prospect workflows | start local prospecting |
 | [`local-list-enriching`](./modules/local-list-enriching/) | local-business enrichment, filtering, and CRM handoff | enrich approved local rows |
 | [`b2b-prospecting`](./modules/b2b-prospecting/) | B2B ICPs, buyer choice, trigger-based list building, and discovery framing | start B2B prospecting |
 | [`b2b-enriching`](./modules/b2b-enriching/) | B2B buyer enrichment and outbound handoff shape | enrich approved B2B rows |

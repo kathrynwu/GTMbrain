@@ -1,6 +1,6 @@
-# Openmart Prospecting
+# Local Business Prospecting
 
-Define ICPs, build local-business lists, and document repeatable local
+Define ICPs, build local-business lists, and document repeatable local-business
 prospecting workflows.
 
 ## Module summary

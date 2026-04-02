@@ -72,7 +72,7 @@ Read in this order:
 4. `modules/kol-crm/BUILDING.md`
 5. `modules/kol-crm/template/`
 
-### `openmart-prospecting`
+### `openmart-prospecting` (local-business prospecting)
 
 Job:
 

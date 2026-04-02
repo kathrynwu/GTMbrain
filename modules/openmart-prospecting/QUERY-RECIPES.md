@@ -1,4 +1,4 @@
-# Openmart Prospecting Query Recipes
+# Local Business Prospecting Query Recipes
 
 Use these as workflow shapes, not universal laws.
 

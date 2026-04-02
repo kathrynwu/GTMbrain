@@ -1,4 +1,4 @@
-# Building On Top Of Openmart Prospecting
+# Building On Top Of Local Business Prospecting
 
 The point of this module is to preserve prospecting judgment in a way that is
 easy to port into scripts, connectors, or CRM handoffs later.

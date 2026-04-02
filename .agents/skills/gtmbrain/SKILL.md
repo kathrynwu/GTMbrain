@@ -15,7 +15,7 @@ Use this skill when the user is asking broad questions like:
 - where should I start
 - which module should I use
 - what should I do next
-- should I use the CRM, Openmart, enrichment, emailing, or cold calling
+- should I use the CRM, local-business prospecting, enrichment, emailing, or cold calling
 - should I focus on SEO or outbound first
 - help me figure out my GTM motion
 - help me iterate on the playbooks
@@ -53,7 +53,7 @@ Then route into the matching module:
    - improve search pages or keyword workflow
 2. If the user is still broad, recommend one of:
    - `A` start with `kol-crm` if they need a working starter they can adapt now
-   - `B` start with `openmart-prospecting` if they need better local-business lists
+   - `B` start with `openmart-prospecting` for local-business prospecting
    - `C` start with `b2b-prospecting` if they need software-company or company-buyer lists
 3. If the user already has approved rows and needs enrichment:
    - `A` `local-list-enriching` for local-business rows
@@ -70,7 +70,7 @@ Then route into the matching module:
      - `C` both
 5. If the user is asking about organic traffic or content:
    - `A` `seo` if they need keyword workflow, page structure, or page refresh rules
-   - `B` `openmart-prospecting` or `b2b-prospecting` if they still do not know the ICP or use case they should write for
+   - `B` `openmart-prospecting` for local-business prospecting or `b2b-prospecting` for software-company prospecting if they still do not know the ICP or use case they should write for
    - `C` `local-emailing` or `b2b-emailing` if traffic is not the current bottleneck and they need outbound now
 6. Route them to the smallest module that solves the current bottleneck.
 7. If the user is still figuring out the motion, use the modules as iterative

@@ -1,18 +1,18 @@
 ---
 name: openmart-prospecting
 description: |
-  Use when someone wants to build a local-business prospect list with Openmart,
-  adapt Openmart data into a CRM or internal enrichment tool, choose between
-  search and decision-maker endpoints, or understand the repo's Openmart
+  Use when someone wants to build a local-business prospect list, adapt
+  Openmart data into a CRM or internal enrichment tool, choose between search
+  and decision-maker endpoints, or understand the repo's local-business
   prospecting workflow.
 ---
 
-# Openmart Prospecting
+# Local Business Prospecting
 
 Use this skill when the user is asking about:
 
 - building a local-business list
-- defining an ICP for Openmart search
+- defining an ICP for local-business search
 - moving Openmart data into a CRM or internal app
 - deciding which Openmart endpoint fits which step
 - connecting search, approval, enrichment, and handoff

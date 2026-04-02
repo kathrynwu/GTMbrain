@@ -1,4 +1,4 @@
-# Openmart Prospecting Playbook
+# Local Business Prospecting Playbook
 
 This module tracks one primary object: a prospect row.
 
