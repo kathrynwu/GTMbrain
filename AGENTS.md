@@ -1,34 +1,34 @@
 # GTMbrain Agent Guide
 
-If you are an AI coding or research assistant working in this repo, read
-[`CLAUDE.md`](./CLAUDE.md) first.
+Read [`CLAUDE.md`](./CLAUDE.md) first.
 
-Short version:
+Use this repo as an iterative GTM system, not a pile of notes.
 
-- `GTMbrain` is a registry of forkable GTM workflow modules
-- if the user is broad, start with `.agents/skills/gtmbrain/`
-- Claude Code project-skill wrappers also live in `.claude/skills/`
-- Claude Code slash-command entrypoints live in `.claude/commands/`
-- for Codex, `.agents/skills/` is the main skill layer
-- answer questions from repo-native module docs before inventing abstractions
-- for `kol-crm`, start with `modules/kol-crm/`
-- for local-business prospecting, start with `modules/openmart-prospecting/`
-- for B2B prospecting, start with `modules/b2b-prospecting/`
-- for local-business enriching, start with `modules/local-list-enriching/`
-- for B2B enriching, start with `modules/b2b-enriching/`
-- for local-business emailing, start with `modules/local-emailing/`
-- for B2B emailing, start with `modules/b2b-emailing/`
-- for local-business calling, start with `modules/cold-call/`
-- for B2B calling, start with `modules/b2b-cold-calling/`
-- for Openmart questions, connect the business workflow to the real API docs
-- optimize for clarity and adaptability, not fake platform complexity
+## Routing
 
-Codex-friendly starts:
+- broad question: start with `.agents/skills/gtmbrain/`
+- local-business prospecting: `modules/openmart-prospecting/`
+- local-business enrichment: `modules/local-list-enriching/`
+- local-business emailing: `modules/local-emailing/`
+- local-business calling: `modules/cold-call/`
+- B2B prospecting: `modules/b2b-prospecting/`
+- B2B enrichment: `modules/b2b-enriching/`
+- B2B emailing: `modules/b2b-emailing/`
+- B2B calling: `modules/b2b-cold-calling/`
+- SEO: `modules/seo/`
+- CRM starter: `modules/kol-crm/`
+
+## Rules
+
+- answer from repo-native module docs before inventing abstractions
+- keep the user moving through a clean loop:
+  prospect -> enrich -> email/call -> report -> repeat
+- route to the smallest useful module, not the whole repo
+- keep local-business and B2B paths separate
+
+## Good Codex Starts
 
 - `Read AGENTS.md and use the gtmbrain skill to route me.`
-- `Use the seo skill in .agents/skills/seo/SKILL.md on this page.`
 - `Use the local-emailing skill in .agents/skills/local-emailing/SKILL.md.`
-- `Use the b2b-emailing skill in .agents/skills/b2b-emailing/SKILL.md.`
-- `Use the local-cold-calling skill in .agents/skills/local-cold-calling/SKILL.md.`
-- `Use the b2b-cold-calling skill in .agents/skills/b2b-cold-calling/SKILL.md.`
 - `Use the b2b-prospecting skill in .agents/skills/b2b-prospecting/SKILL.md.`
+- `Use the seo skill in .agents/skills/seo/SKILL.md on this page.`

@@ -2,59 +2,27 @@
 
 Use this file when working inside `GTMbrain`.
 
-The repo should be usable as a question-answering workspace after clone, not just
-as a pile of files.
+Source of truth:
 
-For Claude Code compatibility, project-skill wrappers also live in
-`.claude/skills/`, and explicit slash-command entrypoints live in
-`.claude/commands/`. The repo-native source of truth still lives in
-`.agents/skills/`.
+- repo-native skills: `.agents/skills/`
+- Claude wrappers: `.claude/skills/`
+- Claude slash commands: `.claude/commands/`
 
-If a repo-local skill in `.agents/skills/` clearly matches the user's question,
-load it and follow it.
+If the user is broad, start with `gtmbrain` and route with `A/B/C`.
 
-If the user is broad or does not know where to start, use the `gtmbrain` skill
-first and route them with `A/B/C` options.
+Keep the repo iterative:
 
-The repo skills are also meant to help the user iterate with the playbooks and
-figure out their GTM motion over multiple turns, not just answer one static
-question.
+`prospect -> enrich -> email/call or SEO -> report -> repeat`
 
-## What GTMbrain Is
+When answering module questions:
 
-`GTMbrain` is a registry of forkable GTM workflow modules.
-
-Each module can expose one or more surfaces:
-
-- `Template`
-- `Playbook`
-- `Connector`
-- `Skill`
-
-The main audience is:
-
-- growth engineers
-- RevOps builders
-- founders or operators who want to adapt working GTM workflows
-
-## How To Answer Questions
-
-When the user asks a question about a module:
-
-1. start from the module README
-2. read the repo-native playbook or workflow file
-3. read the schema or sample data if the question touches implementation
+1. start from the module `README.md`
+2. read the playbook or workflow file
+3. read schema or sample data only if implementation matters
 4. answer in plain English first
-5. only then point at files and code
+5. then point at files
 
-Do not answer in generic startup language if the repo already contains a concrete
-workflow shape.
-
-The job is to help the builder:
-
-- understand the workflow
-- adapt it to their own stack
-- know what is stable versus customizable
+Do not answer generically if the repo already has a concrete workflow.
 
 ## Current Modules
 
