@@ -13,6 +13,7 @@ mixing them into the local-business path.
 ## Start here
 
 - [`PLAYBOOK.md`](./PLAYBOOK.md)
+- [`ICP-AND-DISCOVERY.md`](./ICP-AND-DISCOVERY.md)
 - [`LEAD-SOURCES.md`](./LEAD-SOURCES.md)
 - [`../openmart-prospecting/STANDARD-PRACTICE.md`](../openmart-prospecting/STANDARD-PRACTICE.md)
 
@@ -23,6 +24,7 @@ mixing them into the local-business path.
 - right-buyer versus noisy-buyer rules
 - trigger-based prioritization
 - source choice for software and B2B prospecting
+- one concrete ICP and discovery pattern for selling data into B2B teams
 - clean handoff into enrichment, email, or calling
 
 ## Use this module when
@@ -45,6 +47,7 @@ The normal next step after this module is:
 
 - [`../b2b-enriching/`](../b2b-enriching/) if the list is approved and needs
   better buyer/contact data
-- [`../local-emailing/`](../local-emailing/) if the B2B segment is already
+- [`../b2b-emailing/`](../b2b-emailing/) if the B2B segment is already
   clear enough for outbound
-- [`../cold-call/`](../cold-call/) if the motion should be phone-first
+- [`../b2b-cold-calling/`](../b2b-cold-calling/) if the motion should be
+  phone-first

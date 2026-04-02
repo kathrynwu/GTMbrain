@@ -110,24 +110,47 @@ Read in this order:
 
 1. `modules/b2b-prospecting/README.md`
 2. `modules/b2b-prospecting/PLAYBOOK.md`
-3. `modules/b2b-prospecting/LEAD-SOURCES.md`
-4. `modules/openmart-prospecting/STANDARD-PRACTICE.md`
+3. `modules/b2b-prospecting/ICP-AND-DISCOVERY.md`
+4. `modules/b2b-prospecting/LEAD-SOURCES.md`
+5. `modules/openmart-prospecting/STANDARD-PRACTICE.md`
 
 ### `local-emailing`
 
 Job:
 
-- write short outbound emails
+- write short local-business outbound emails
 - choose personalization fields that are real
-- decide when email-first beats call-first
+- decide when local email-first beats local call-first
 
 Read in this order:
 
 1. `modules/local-emailing/README.md`
 2. `modules/local-emailing/PLAYBOOK.md`
 3. `modules/local-emailing/EXAMPLES.md`
-4. `modules/b2b-prospecting/PLAYBOOK.md`
+4. `modules/local-emailing/REPORTING.md`
 5. `modules/openmart-prospecting/SELLING-LOCAL-BUSINESSES.md`
+6. `modules/openmart-prospecting/PLAYBOOK.md`
+
+Use this as the local-business emailing path.
+
+If the motion is software-company or B2B outbound, use `b2b-emailing` instead.
+
+### `b2b-emailing`
+
+Job:
+
+- write short B2B outbound emails
+- choose the right buyer before polishing copy
+- decide when B2B email-first beats B2B call-first
+
+Read in this order:
+
+1. `modules/b2b-emailing/README.md`
+2. `modules/b2b-emailing/PLAYBOOK.md`
+3. `modules/b2b-emailing/EXAMPLES.md`
+4. `modules/b2b-emailing/REPORTING.md`
+5. `modules/b2b-prospecting/PLAYBOOK.md`
+6. `modules/b2b-prospecting/ICP-AND-DISCOVERY.md`
 
 ### `local-list-enriching`
 
@@ -186,6 +209,29 @@ Read in this order:
 6. `modules/cold-call/TALK-TRACKS.md`
 7. `modules/openmart-prospecting/SELLING-LOCAL-BUSINESSES.md`
 
+Use this as the local-business calling path.
+
+If the motion is software-company or B2B calling, use `b2b-cold-calling`
+instead.
+
+### `b2b-cold-calling`
+
+Job:
+
+- write or review B2B cold-call scripts
+- decide when B2B calling beats B2B email
+- improve meeting-booking discipline with the right buyer
+
+Read in this order:
+
+1. `modules/b2b-cold-calling/README.md`
+2. `modules/b2b-cold-calling/PLAYBOOK.md`
+3. `modules/b2b-cold-calling/REVIEW-RUBRIC.md`
+4. `modules/b2b-cold-calling/CALL-FRAMEWORKS.md`
+5. `modules/b2b-cold-calling/OBJECTION-LIBRARY.md`
+6. `modules/b2b-cold-calling/TALK-TRACKS.md`
+7. `modules/b2b-prospecting/ICP-AND-DISCOVERY.md`
+
 ### `seo`
 
 Job:
@@ -209,8 +255,10 @@ Use these when the question matches:
 - `.agents/skills/openmart-prospecting/`
 - `.agents/skills/local-list-enriching/`
 - `.agents/skills/local-emailing/`
+- `.agents/skills/b2b-emailing/`
 - `.agents/skills/seo/`
 - `.agents/skills/local-cold-calling/`
+- `.agents/skills/b2b-cold-calling/`
 
 ## Claude Code Entrypoints
 
@@ -229,8 +277,10 @@ command file in:
 - `.claude/commands/openmart-prospecting.md`
 - `.claude/commands/local-list-enriching.md`
 - `.claude/commands/local-emailing.md`
+- `.claude/commands/b2b-emailing.md`
 - `.claude/commands/seo.md`
 - `.claude/commands/local-cold-calling.md`
+- `.claude/commands/b2b-cold-calling.md`
 
 If Claude auto-loads a project skill, the wrappers live in:
 
@@ -240,8 +290,10 @@ If Claude auto-loads a project skill, the wrappers live in:
 - `.claude/skills/openmart-prospecting/`
 - `.claude/skills/local-list-enriching/`
 - `.claude/skills/local-emailing/`
+- `.claude/skills/b2b-emailing/`
 - `.claude/skills/seo/`
 - `.claude/skills/local-cold-calling/`
+- `.claude/skills/b2b-cold-calling/`
 
 For `local-cold-calling`, use the repo's 3-step framework:
 
@@ -265,6 +317,13 @@ For `local-emailing`, use the repo's short-email, value-first framework:
 2. prefer `2-3` sentence emails
 3. keep subject lines personalized
 4. lead with help before pushing the meeting
+
+For `b2b-emailing`, use the repo's short-email, buyer-fit framework:
+
+1. make buyer authority explicit
+2. lead with the problem solved and the work removed
+3. use a real trigger when possible
+4. treat polite interest without authority as noise
 
 For `seo`, use the repo's GSC-first workflow:
 
@@ -298,6 +357,15 @@ For `b2b-enriching`, preserve the buyer handoff:
 2. keep title, email, phone, LinkedIn, company summary, and context visible
 3. reroute from the wrong contact to the right buyer instead of discarding the account
 4. keep the row inspectable before sequencing, calling, or CRM sync
+
+For `b2b-cold-calling`, use the repo's 3-step framework with the right buyer:
+
+1. build credibility
+2. build value
+3. book the meeting
+
+Make sure the buyer can actually move the deal before treating the segment as
+working.
 
 Prefer `A/B/C` recommendation-style answers when routing users across modules.
 

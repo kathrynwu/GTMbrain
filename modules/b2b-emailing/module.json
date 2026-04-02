@@ -1,7 +1,7 @@
 {
-  "name": "Local Emailing",
-  "slug": "local-emailing",
-  "job": "Capture short local-business outbound email strategy, buyer-fit rules, personalization logic, and follow-up structure.",
+  "name": "B2B Emailing",
+  "slug": "b2b-emailing",
+  "job": "Capture short B2B outbound email strategy, buyer-fit rules, personalization logic, and follow-up structure.",
   "audience": [
     "outbound operator",
     "gtm lead",
@@ -19,13 +19,13 @@
     "REPORTING.md"
   ],
   "source_material": [
-    "internal Openmart outbound guidance",
-    "observed patterns from Openmart customers",
-    "NewsBreak-inspired local-business email patterns"
+    "real workflow-automation outbound lessons",
+    "B2B buyer-fit and authority rules",
+    "internal discovery guidance for data and ops products"
   ],
   "inputs": [
     "segment",
-    "owner or manager buyer",
+    "buyer",
     "problem hypothesis",
     "personalization fields",
     "upfront offer"
@@ -40,6 +40,7 @@
   ],
   "workflow_stages": [
     "Choose segment",
+    "Choose buyer",
     "Check list quality",
     "Check deliverability setup",
     "Choose offer",

@@ -1,7 +1,7 @@
 # Local Emailing
 
-Capture short outbound email strategy, buyer-fit rules, and lightweight
-follow-up structure.
+Capture short local-business outbound email strategy, buyer-fit rules, and
+lightweight follow-up structure.
 
 ## Module summary
 
@@ -15,19 +15,20 @@ follow-up structure.
 - [`PLAYBOOK.md`](./PLAYBOOK.md)
 - [`EXAMPLES.md`](./EXAMPLES.md)
 - [`DELIVERABILITY.md`](./DELIVERABILITY.md)
-- [`../openmart-prospecting/README.md`](../openmart-prospecting/README.md) for the
-  local-business upstream path
-- [`../b2b-prospecting/README.md`](../b2b-prospecting/README.md) for the B2B
-  upstream path
+- [`REPORTING.md`](./REPORTING.md)
+- [`../openmart-prospecting/README.md`](../openmart-prospecting/README.md) for
+  the upstream local-business path
+- use [`../b2b-emailing/`](../b2b-emailing/) instead if the motion is
+  software-company or B2B outbound
 
 ## Focus
 
 - short first-touch emails
-- highly personalized subject lines
-- lead-with-value offers
-- buyer-fit before copy polish
+- local-business personalization
+- lead-with-help offers
+- owner or manager buyer-fit before copy polish
 - follow-up cadence
-- when email-first beats call-first
+- when email-first beats local calling
 - sending setup and inbox health rules
 
 ## What this module covers
@@ -37,11 +38,11 @@ follow-up structure.
 - when to offer help before asking for a meeting
 - how to structure a `3-4` touch cadence
 - how to protect deliverability before scaling volume
-- concrete email shapes for local-business, software, and KPI-owner motions
+- concrete email shapes for local-business motions
+- weekly reporting and campaign diagnosis
 
 ## Source material
 
 - internal operating guidance from Openmart
 - patterns seen from Openmart customers using local-business data in outbound
-- software and workflow-automation outbound lessons from real campaigns
 - examples inspired by teams like NewsBreak and operators selling workflow tools

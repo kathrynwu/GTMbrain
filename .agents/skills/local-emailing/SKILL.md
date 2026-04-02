@@ -1,35 +1,34 @@
 ---
 name: local-emailing
 description: |
-  Use when someone wants a short outbound email plan, subject lines,
-  first-touch copy, follow-ups, personalization fields, or guidance on buyer
-  fit, sequencing, and when email should beat calling.
+  Use when someone wants a short local-business outbound email plan, subject
+  lines, first-touch copy, follow-ups, personalization fields, or guidance on
+  buyer fit, sequencing, and when email should beat calling.
 ---
 
 # Local Emailing
 
 Use this skill when the user is asking about:
 
-- short outbound email plans
+- short local-business outbound email plans
 - first-touch email copy
 - follow-up sequences
 - personalization logic
 - email-first versus call-first decisions
-- how better list quality should change outbound email
-- how buyer fit should change outbound email
+- how better list quality should change local outbound email
+- how buyer fit should change local outbound email
 
 ## Read first
 
 1. `modules/local-emailing/PLAYBOOK.md`
 2. `modules/local-emailing/EXAMPLES.md`
 3. `modules/local-emailing/DELIVERABILITY.md`
-4. `modules/local-emailing/README.md`
-5. `modules/local-list-enriching/EMAIL-VERIFICATION.md`
-6. `modules/b2b-prospecting/PLAYBOOK.md`
-7. `modules/b2b-enriching/FIELD-MAPPING.md`
-8. `modules/openmart-prospecting/SELLING-LOCAL-BUSINESSES.md`
-9. `modules/openmart-prospecting/PLAYBOOK.md`
-10. `modules/openmart-prospecting/INTEGRATIONS.md`
+4. `modules/local-emailing/REPORTING.md`
+5. `modules/local-emailing/README.md`
+6. `modules/local-list-enriching/EMAIL-VERIFICATION.md`
+7. `modules/openmart-prospecting/SELLING-LOCAL-BUSINESSES.md`
+8. `modules/openmart-prospecting/PLAYBOOK.md`
+9. `modules/openmart-prospecting/INTEGRATIONS.md`
 
 ## Workflow
 
@@ -46,7 +45,7 @@ Use this skill when the user is asking about:
    - what benefit you can offer first
    - what personalization fields are actually available
 3. Check whether the list has enough signal for email personalization.
-4. Make sure the buyer has real authority or clearly owns the KPI.
+4. Make sure the buyer has real authority at the local business.
 5. Decide the motion:
    - `A` email-first now
    - `B` enrich the list first
@@ -76,8 +75,9 @@ Default to giving:
 - lead with something helpful before asking for a meeting
 - lead with the problem solved and the work removed, not generic benefit copy
 - do not invent fake personalization
-- tie the message to the actual segment and data available
+- tie the message to the actual local segment and data available
 - SMBs care about revenue, time savings, and concrete benefits up front
+- if the motion is software-company or B2B outbound, route to `b2b-emailing`
 - protect deliverability with separate sending setup, proper authentication, and
   warm-up before scale
 - if the user asks for tool defaults, prefer:
@@ -89,17 +89,9 @@ Default to giving:
   - `Openmart` is not the verifier or warm-up layer
 - if the user has not chosen a pattern, default by segment:
   - local SMB -> helpful-offer first
-  - B2B software -> trigger-based opener
-  - enterprise or legacy -> observation plus proof
-- if the sale requires more trust first, a credibility-building opener is valid:
-  - ask to learn from them
-  - suggest a virtual coffee
-  - avoid pushing the buy on touch one
 - strong personalization means a real trigger, real company context, or a real
   business observation that changes the message
-- strong credibility means recognizable proof, customer reputation, fundraising,
-  or some other believable trust signal such as school, prior employers, or
-  founder background
+- strong credibility means recognizable proof or one believable trust signal
 - weak personalization means fake compliments, filler facts, or random details
   that do not improve relevance
 - low-credibility outbound is usually too long or missing proof entirely
@@ -117,7 +109,7 @@ Default to giving:
 
 ## Important
 
-This repo now has a first local-emailing module, but it should still stay narrow.
+This repo's local-emailing path should stay local.
 
-Ground answers in the repo's short-email, value-first pattern. Do not write
-long generic SaaS emails.
+Ground answers in the repo's short-email, value-first local pattern. Do not
+write long generic SaaS emails here.

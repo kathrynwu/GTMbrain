@@ -6,6 +6,9 @@ than local-business prospecting.
 For the reusable operating backbone, read
 [`../openmart-prospecting/STANDARD-PRACTICE.md`](../openmart-prospecting/STANDARD-PRACTICE.md).
 
+For one concrete ICP and discovery pattern, read
+[`ICP-AND-DISCOVERY.md`](./ICP-AND-DISCOVERY.md).
+
 The goal is not to collect a giant list.
 
 The goal is to:

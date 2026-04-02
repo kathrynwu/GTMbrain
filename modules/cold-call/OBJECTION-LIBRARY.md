@@ -12,25 +12,25 @@ Stay calm. Keep it short. Re-close.
 
 Recommended rebuttal:
 
-`Happy to, so I send the best sample, which data headache tops your priority right now?`
+`Happy to. So I send something useful, what is the main growth or lead problem you are trying to fix right now?`
 
-## `Already have ZoomInfo`
+## `Already working with someone`
 
 Recommended rebuttal:
 
-`Many of our clients keep ZoomInfo for >1k FTE firms and layer us for long-tail tech where ZoomInfo coverage dips below 50%.`
+`Makes sense. Usually the question is whether the current setup is already getting you the result you want, or whether there is still a gap worth fixing. Which is it?`
 
 ## `No budget`
 
 Recommended rebuttal:
 
-`Understood. Most teams work with us out of time saved plus extra meetings within 60 days, open to a low-risk pilot?`
+`Understood. Usually local teams work with us when the result is worth more than the monthly cost. If the economics worked, would it still be worth a look?`
 
 ## `Not interested`
 
 Recommended rebuttal:
 
-`Fair enough. If I could prove 20% higher connect rates versus your current lists, would 10 minutes next quarter be valuable?`
+`Fair enough. If I could show one practical way to improve {{lead_or_booking_problem}}, would a quick look next week be worth it?`
 
 ## Notes
 

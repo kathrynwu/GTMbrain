@@ -1,7 +1,10 @@
-# Cold Call Playbook
+# Local Cold Calling Playbook
 
 This is a distilled repo-native version of the internal cold call playbook and
 walkthrough used to train local-business outbound.
+
+If the motion is software-company or B2B calling, use
+[`../b2b-cold-calling/`](../b2b-cold-calling/).
 
 ## Source material
 
@@ -10,8 +13,8 @@ walkthrough used to train local-business outbound.
   - `https://www.loom.com/share/90e0a8ef61bc4f179c8299a111711787?sid=6a9cd470-106f-4ec2-bdae-8499a679f6f5`
 - reference talk tracks and call-review notes
 
-Use this playbook when the list is clean enough to call and the segment is
-specific enough that a short phone conversation can create urgency.
+Use this playbook when the list is clean enough to call and the local-business
+segment is specific enough that a short phone conversation can create urgency.
 
 The goal of the cold call is not to fully sell. The goal is to:
 
@@ -27,7 +30,7 @@ Know:
 
 - geography
 - business type
-- buyer title
+- owner or manager title
 - pain hypothesis
 - why your offer is better
 - whether phone numbers are verified
@@ -110,7 +113,7 @@ Use short questions like:
 - `How are you handling {problem} today?`
 - `Is that working the way you want?`
 - `What usually slows this down for your team?`
-- `Who usually owns this on your side?`
+- `Who usually owns this at the business?`
 
 Do not interrogate. The call is not discovery theater.
 
@@ -207,7 +210,7 @@ Do not obsess over raw dial count without segment quality.
 
 Use this rule:
 
-- `A` call-first when the segment is tight, phones are good, and pain is urgent
+- `A` call-first when the local segment is tight, phones are good, and pain is urgent
 - `B` enrich first when the list is broad or missing key data
 - `C` email first when the segment needs more context before a call makes sense
 

@@ -1,5 +1,5 @@
 ---
-description: Generate or review short outbound emails using GTMbrain
+description: Generate or review short local-business outbound emails using GTMbrain
 ---
 
 Use the project skill at @.claude/skills/local-emailing/SKILL.md and the
@@ -11,10 +11,12 @@ Use the matching module files:
 - @modules/local-emailing/PLAYBOOK.md
 - @modules/local-emailing/EXAMPLES.md
 - @modules/local-emailing/DELIVERABILITY.md
+- @modules/local-emailing/REPORTING.md
 
 If key inputs are missing, ask for:
 
-- segment
+- location
+- business type
 - buyer
 - offer
 - personalization fields

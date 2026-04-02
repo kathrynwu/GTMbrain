@@ -1,4 +1,4 @@
-# Cold Call Frameworks
+# B2B Cold Call Frameworks
 
 Use these as framework shapes, not scripts to repeat word for word.
 
@@ -13,12 +13,10 @@ The rule:
 
 Before dialing:
 
-- check the website if it exists
-- check Google reviews if relevant
-- check basic business context
+- check news if relevant
+- check LinkedIn
+- check Crunchbase if relevant
 - open the CRM page
-
-Do not freestyle the first 30 seconds with zero context.
 
 ### Pattern-interrupt opener
 
@@ -26,15 +24,15 @@ Ask for a short window immediately.
 
 Example:
 
-`Hi {{Name}}, it's {{Rep}} with {{Company}}, quick question about bringing in more {{jobs_or_bookings}}?`
+`Hi {{Name}}, it's {{Rep}} at {{Company}}, can I steal 30 seconds to explain why I'm calling?`
 
 ### Persona hook
 
-State the business problem.
+State the peer challenge.
 
 Example:
 
-`A lot of {{category}} owners tell me they want more qualified local demand without adding a lot more admin work.`
+`I talk to RevOps leads drowning in bounced emails and stale contacts.`
 
 ### Value statement
 
@@ -42,7 +40,7 @@ Deliver the outcome metric.
 
 Example:
 
-`We help local teams get more qualified leads and respond faster without creating extra busywork for the owner or front desk.`
+`We push phone-verified contacts plus intent scores into Salesforce, cutting list-build time by 10 hours a week.`
 
 ### Discovery question
 
@@ -50,7 +48,7 @@ Probe current state.
 
 Example:
 
-`How are you bringing in new {{jobs_or_customers}} today?`
+`How are you handling contact accuracy today?`
 
 ### Handle objection
 
@@ -84,16 +82,16 @@ Use this shape:
 
 Example:
 
-1. `Following up on the voicemail about bringing in more {{jobs_or_bookings}}.`
-2. `Had one idea specific to {{business_name}} that could be worth testing.`
-3. `Ten minutes tomorrow to walk through it?`
+1. `Following up on the voicemail about your SDR list-build time.`
+2. `Pulled a free 200-contact sample in your exact ICP.`
+3. `Ten minutes tomorrow to review it?`
 
 ## 3. Gatekeeper route
 
 If you hit a gatekeeper:
 
-- ask confidently for the owner or manager by name
-- if questioned, give brief value for the business
+- ask confidently for the target by name
+- if questioned, give brief value for the target's department
 - politely ask for the best time or voicemail if blocked
 
 Rule:

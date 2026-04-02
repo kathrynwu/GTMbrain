@@ -1,6 +1,6 @@
-# Local Cold Calling
+# B2B Cold Calling
 
-Capture local-business scripts, review criteria, and tactical outbound
+Capture B2B cold-call scripts, review criteria, and tactical calling
 heuristics.
 
 ## Module summary
@@ -17,40 +17,32 @@ heuristics.
 - [`CALL-FRAMEWORKS.md`](./CALL-FRAMEWORKS.md)
 - [`OBJECTION-LIBRARY.md`](./OBJECTION-LIBRARY.md)
 - [`TALK-TRACKS.md`](./TALK-TRACKS.md)
-- use [`../b2b-cold-calling/`](../b2b-cold-calling/) instead if the motion is
-  software-company or B2B calling
+- use [`../cold-call/`](../cold-call/) instead if the motion is local-business
+  calling
 
 ## Focus
 
-- script patterns
-- review criteria
-- objection handling notes
+- B2B script patterns
+- buyer authority
+- objection handling
 - practical benchmarks
 - meeting-booking discipline
 
-## What this module now covers
+## What this module covers
 
-- the 3-step cold-call framework:
-  - build credibility
-  - build value
-  - book the meeting
+- the 3-step B2B cold-call framework
 - a call review rubric
 - step-by-step call frameworks
 - objection library
 - talk-track references
 - opener rules for the first 6 seconds
 - qualification prompts
-- objection-handling pattern
 - close and calendar-invite discipline
 - follow-up call guidance
 - gatekeeper handling
-- when to choose:
-  - call-first
-  - enrich-first
-  - email-first
+- when to choose call-first, enrich-first, or email-first
 
 ## Source material
 
 - internal cold call playbook
-- Loom walkthrough:
-  - `https://www.loom.com/share/90e0a8ef61bc4f179c8299a111711787?sid=6a9cd470-106f-4ec2-bdae-8499a679f6f5`
+- B2B RevOps and outbound talk tracks

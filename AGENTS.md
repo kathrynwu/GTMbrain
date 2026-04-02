@@ -16,6 +16,10 @@ Short version:
 - for B2B prospecting, start with `modules/b2b-prospecting/`
 - for local-business enriching, start with `modules/local-list-enriching/`
 - for B2B enriching, start with `modules/b2b-enriching/`
+- for local-business emailing, start with `modules/local-emailing/`
+- for B2B emailing, start with `modules/b2b-emailing/`
+- for local-business calling, start with `modules/cold-call/`
+- for B2B calling, start with `modules/b2b-cold-calling/`
 - for Openmart questions, connect the business workflow to the real API docs
 - optimize for clarity and adaptability, not fake platform complexity
 
@@ -24,4 +28,7 @@ Codex-friendly starts:
 - `Read AGENTS.md and use the gtmbrain skill to route me.`
 - `Use the seo skill in .agents/skills/seo/SKILL.md on this page.`
 - `Use the local-emailing skill in .agents/skills/local-emailing/SKILL.md.`
+- `Use the b2b-emailing skill in .agents/skills/b2b-emailing/SKILL.md.`
+- `Use the local-cold-calling skill in .agents/skills/local-cold-calling/SKILL.md.`
+- `Use the b2b-cold-calling skill in .agents/skills/b2b-cold-calling/SKILL.md.`
 - `Use the b2b-prospecting skill in .agents/skills/b2b-prospecting/SKILL.md.`

@@ -2,16 +2,10 @@
 
 These are pattern examples, not scripts to spray unchanged.
 
-## Pattern choice defaults
+Use these examples for local-business motions only.
 
-Use these defaults before inventing something new:
-
-- local SMB -> helpful-offer first
-- B2B software -> trigger-based opener
-- enterprise or legacy -> observation plus proof
-
-Question-led emails are still useful, but they are usually a secondary pattern
-when you want a lower-pressure start rather than the default.
+If the motion is software-company or B2B outbound, use
+[`../b2b-emailing/EXAMPLES.md`](../b2b-emailing/EXAMPLES.md).
 
 ## Pattern 1: News angle
 
@@ -67,26 +61,7 @@ Body:
 
 `Hi {owner_name}, quick question, what is your current catering price point for a {size} order? Asking because we are mapping how {category} operators in {city} position premium offers, and I may have one idea that could help you increase volume without adding much work. Open to it?`
 
-## Pattern 4: Trigger-based opener
-
-Good when the account shows a live signal such as hiring, expansion, or a new
-initiative.
-
-What makes it work:
-
-- starts from something current
-- connects the signal to one likely problem
-- uses one proof point and one small CTA
-
-Example shape:
-
-Subject: `{business_name} hiring`
-
-Body:
-
-`Hi {name}, noticed {business_name} is hiring for {role}. Have you already solved for {outcome}? We helped {peer_company} improve {kpi} in {timeframe}. Worth checking whether that is relevant for you too?`
-
-## Pattern 5: Observation plus relief
+## Pattern 4: Observation plus relief
 
 Good when one visible business fact already implies the operational pain.
 
@@ -108,7 +83,7 @@ Stronger version:
 
 `Hi {name}, saw that {observation}. I imagine {operational_burden} is creating extra manual work. We help teams remove {specific_work_removed}, which usually leads to {specific_result}. Open to a quick compare?`
 
-## Pattern 6: Different-angle follow-up
+## Pattern 5: Different-angle follow-up
 
 Good when the follow-up should feel fresh instead of sounding like another bump.
 
@@ -179,107 +154,21 @@ Useful defaults:
 
 ## Buyer and problem examples
 
-### Software-company buyer fit
+### Local buyer fit
 
 Bad fit:
 
-- SDR or other non-owner replies with polite interest
-- engagement exists, but no one can actually buy
+- someone with no ability to make the decision
+- polite engagement with no buying authority
 
 Better fit:
 
-- `VP Sales`
-- `Head of Outbound`
-- `RevOps`
-
-Useful triggers:
-
-- hiring
-- new outbound ramp
-- CRM migration or cleanup
-- team build-out
-- funding or expansion
+- owner
+- operator
+- general manager
 
 What tends to work:
 
-- name the exact sales-data bottleneck
-- describe the work being removed
-- support with one operational result
-
-Example shape:
-
-`Hi {name}, a lot of outbound teams still lose time to stale contacts, bounced emails, and manual CSV cleanup. We help clean and route account + contact data before it hits the CRM so reps spend time selling instead of fixing exports. Worth a short compare next week?`
-
-### KPI-owner buyer fit
-
-Sometimes the best buyer is the person who owns the outcome directly, not the
-obvious ops title.
-
-Example:
-
-- audience: `VP Customer Success`
-- product: front-office workflow automation
-- working pain cluster:
-  - long wait times
-  - poor customer or patient experience
-  - overloaded front desk
-  - lower satisfaction outcomes
-- clearest result metrics:
-  - faster response time
-  - higher CSAT
-
-What tends to work:
-
-- pitch the workflow problem hurting the KPI
-- show that the buyer already owns the metric
-- avoid broad efficiency language when the customer experience angle is stronger
-
-### Front-office workflow sequence
-
-Core buyer:
-
-- `VP Customer Success`
-- or another leader who directly owns service quality
-
-Core problem:
-
-- front-office teams burn time on scheduling, rescheduling, intake, or similar
-  repetitive work
-- slow responses hurt customer experience directly
-
-Working first-touch shape:
-
-`Hi {name}, front-office teams often lose hours to scheduling changes, intake, and other routine requests. We automate that work so the team can respond faster and focus on higher-value interactions. Open to a short call to compare how your team handles those bottlenecks today?`
-
-Working follow-up shape:
-
-`Quick follow-up here, teams using this approach have cut front-desk call volume significantly while improving response times. The main win is smoother customer experience without burying staff in repetitive work. Worth a short compare next week?`
-
-Why this works:
-
-- starts from the actual bottleneck
-- names the work being removed
-- ties the pitch to faster response time and higher CSAT
-
-## Credibility-first opener
-
-Use this when the sale needs more trust before a direct meeting ask will land.
-
-Example shape:
-
-`Hi {name}, I spend a lot of time talking with teams dealing with {problem}, and I wanted to learn how your team handles it today. Open to a quick virtual coffee sometime next week?`
-
-This works best when you can support it with some trust signal:
-
-- recognizable customers
-- strong market reputation
-- fundraising or equivalent proof
-- founder credibility when customer proof is still early
-- personal background such as school or prior experience when that is the
-  strongest proof available
-
-It works badly when:
-
-- the email is too long
-- there is no visible proof
-- the note still reads like a disguised hard sell
+- one clear business problem
+- one useful offer
+- one easy reply path

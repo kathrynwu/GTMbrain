@@ -84,6 +84,7 @@ Default to giving:
 
 ## Rules
 
+- if the motion is software-company or B2B calling, route to `b2b-cold-calling`
 - if location, industry, or buyer are missing, ask first
 - the first 6 seconds matter most
 - get to the point immediately and say why you are calling
@@ -107,7 +108,7 @@ Default to giving:
 
 ## Important
 
-This repo now has a first cold-call playbook, but it is still narrow.
+This repo's local-cold-calling path should stay local.
 
 Ground answers in the repo's 3-step framework and the user's segment. Do not
 pretend there is one universal script for every local-business segment.

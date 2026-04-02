@@ -11,17 +11,17 @@ Mention problems as the hook, then move into the value prop.
 ## Sample live talk track, `~90s`
 
 1. Opener:
-   - `Hi {name}, it's {rep} with Openmart, quick 30 seconds?`
+   - `Hi {name}, it's {rep} with {company}, quick 30 seconds?`
 2. Hook:
-   - `The reason for my call is that most sales leaders have told me that incomplete and dirty data is killing rep productivity.`
+   - `The reason for my call is that a lot of local owners tell me they want more qualified demand without adding more admin or wasted follow-up time.`
 3. Value:
-   - `Openmart auto-enriches every account and pushes phone-verified contacts into Salesforce in 60 seconds.`
+   - `We help local businesses improve lead flow and response speed without creating more manual work for the owner or front desk.`
 4. Discovery:
-   - `How much time did your team spend calling unqualified leads this week?`
+   - `How are you bringing in new jobs or customers today?`
 5. Proof:
-   - `DoorDash's sales team saved 10 analyst hours a week and hit 95% contact coverage in 30 days.`
+   - `A lot of the owners we talk to are really looking for one predictable way to drive more qualified business without adding more chaos.`
 6. CTA:
-   - `Worth 15 minutes tomorrow at 10 or 2 PT to see if we could replicate that?`
+   - `Worth 15 minutes tomorrow at 10 or 2 to see if one of those ideas fits your business?`
 7. Close phrase:
    - `Great, I'll send the calendar invite now. Appreciate the candor.`
 

@@ -14,11 +14,13 @@
   "status": "first-release",
   "required_paths": [
     "PLAYBOOK.md",
+    "ICP-AND-DISCOVERY.md",
     "LEAD-SOURCES.md"
   ],
   "source_material": [
     "real outbound operating guidance from GTMbrain",
-    "software-company buyer-fit and trigger rules"
+    "software-company buyer-fit and trigger rules",
+    "internal ICP and discovery guidance for selling data into B2B teams"
   ],
   "inputs": [
     "ICP definition",

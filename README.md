@@ -1,133 +1,132 @@
 # GTMbrain
 
-**Forkable GTM modules for builders working on prospecting, enrichment,
-outbound, SEO, and lightweight CRM workflows.**
+Forkable GTM modules for prospecting, enrichment, outbound, SEO, and
+lightweight CRM workflows.
 
-Built from real operating experience around Openmart, B2B outbound, and
-local-business GTM.
-This repo is not a prompt dump. It is a set of reusable workflow modules:
-playbooks, templates, connectors, and repo-local skills you can clone and
-adapt.
+This repo is built from real operating experience. It is not a prompt dump and
+it is not a generic sales wiki. It is a set of reusable workflow modules:
 
----
+- playbooks
+- templates
+- connectors
+- repo-local skills for Claude Code and Codex
 
-## Categories
+## What This Repo Is For
 
-| Category | What It Does | Included Modules | Repo Skills |
-|----------|---------------|------------------|-------------|
-| **CRM Starter** | Gives you a runnable starter for a simple GTM workflow app | [`kol-crm`](./modules/kol-crm/) | routed by [`gtmbrain`](./.agents/skills/gtmbrain/SKILL.md) |
-| **Local List Ops** | Defines ICPs, builds local-business lists, and enriches approved rows | [`openmart-prospecting`](./modules/openmart-prospecting/), [`local-list-enriching`](./modules/local-list-enriching/) | [`openmart-prospecting`](./.agents/skills/openmart-prospecting/SKILL.md), [`local-list-enriching`](./.agents/skills/local-list-enriching/SKILL.md) |
-| **B2B List Ops** | Defines B2B ICPs, chooses the right buyer, and enriches approved B2B rows | [`b2b-prospecting`](./modules/b2b-prospecting/), [`b2b-enriching`](./modules/b2b-enriching/) | [`b2b-prospecting`](./.agents/skills/b2b-prospecting/SKILL.md), [`b2b-enriching`](./.agents/skills/b2b-enriching/SKILL.md) |
-| **Outbound Ops** | Turns clean rows into short emails and practical cold-call workflows | [`local-emailing`](./modules/local-emailing/), [`cold-call`](./modules/cold-call/) | [`local-emailing`](./.agents/skills/local-emailing/SKILL.md), [`local-cold-calling`](./.agents/skills/local-cold-calling/SKILL.md) |
-| **SEO Ops** | Improves pages that already show traction and helps choose the next page action | [`seo`](./modules/seo/) | [`seo`](./.agents/skills/seo/SKILL.md) |
-| **Routing** | Helps you choose the right module and iterate on the GTM motion | repo root + module docs | [`gtmbrain`](./.agents/skills/gtmbrain/SKILL.md) |
+Use GTMbrain when you need to:
 
----
+- build the right prospect list
+- enrich the right rows before CRM or outbound
+- choose the right buyer
+- write short outbound emails or calls
+- diagnose whether the bottleneck is outbound or SEO
 
-## Quick Start
+## Choose Your Path
 
-The general pattern is:
+Start here.
 
-```bash
-# 1. Clone the repo
-git clone https://github.com/kathrynwu/GTMbrain.git
-cd GTMbrain
+| Job | Start here | Then go to |
+| --- | --- | --- |
+| local-business prospecting | [`openmart-prospecting`](./modules/openmart-prospecting/) | [`local-list-enriching`](./modules/local-list-enriching/) |
+| B2B / software-company prospecting | [`b2b-prospecting`](./modules/b2b-prospecting/) | [`b2b-enriching`](./modules/b2b-enriching/) |
+| local-business outbound email | [`local-emailing`](./modules/local-emailing/) | [`cold-call`](./modules/cold-call/) if phone should run too |
+| B2B outbound email | [`b2b-emailing`](./modules/b2b-emailing/) | [`b2b-cold-calling`](./modules/b2b-cold-calling/) if phone should run too |
+| local-business cold calling | [`cold-call`](./modules/cold-call/) | [`local-emailing`](./modules/local-emailing/) if email should run too |
+| B2B cold calling | [`b2b-cold-calling`](./modules/b2b-cold-calling/) | [`b2b-emailing`](./modules/b2b-emailing/) if email should run too |
+| SEO workflow | [`seo`](./modules/seo/) | page update or supporting page creation |
+| routing across modules | [`gtmbrain`](./.agents/skills/gtmbrain/SKILL.md) | the recommended module |
+| runnable CRM starter | [`kol-crm`](./modules/kol-crm/) | adapt the template |
 
-# 2. Pick a module
-cd modules/seo
-# or modules/openmart-prospecting
-# or modules/b2b-prospecting
-# or modules/b2b-enriching
-# or modules/local-emailing
-# or modules/cold-call
+Current naming quirk:
 
-# 3. Read the module README and playbook
-```
+- [`cold-call`](./modules/cold-call/) is the local cold-calling module for now,
+  even though the folder name still says `cold-call`
+
+## Default Flows
+
+### Local-business path
+
+1. [`openmart-prospecting`](./modules/openmart-prospecting/)
+2. [`local-list-enriching`](./modules/local-list-enriching/)
+3. [`local-emailing`](./modules/local-emailing/) and/or
+   [`cold-call`](./modules/cold-call/)
+
+### B2B / software-company path
+
+1. [`b2b-prospecting`](./modules/b2b-prospecting/)
+2. [`b2b-enriching`](./modules/b2b-enriching/)
+3. [`b2b-emailing`](./modules/b2b-emailing/) and/or
+   [`b2b-cold-calling`](./modules/b2b-cold-calling/)
+
+### SEO path
+
+1. [`seo`](./modules/seo/)
+
+Reusable operating backbone:
+
+`Source -> Merge -> Qualify -> Enrich -> Segment -> Prioritize -> Route -> Handoff -> Review`
+
+If you want the backbone first, start with
+[`modules/openmart-prospecting/STANDARD-PRACTICE.md`](./modules/openmart-prospecting/STANDARD-PRACTICE.md).
+
+## Read In Order
+
+If you are using the repo manually:
+
+1. pick one path from the table above
+2. read that module's `README.md`
+3. read that module's `PLAYBOOK.md`
+4. only then move to the next module in the path
+
+Useful direct links:
+
+- local-business prospecting:
+  [`modules/openmart-prospecting/PLAYBOOK.md`](./modules/openmart-prospecting/PLAYBOOK.md)
+- local-business enrichment:
+  [`modules/local-list-enriching/PLAYBOOK.md`](./modules/local-list-enriching/PLAYBOOK.md)
+- B2B prospecting:
+  [`modules/b2b-prospecting/PLAYBOOK.md`](./modules/b2b-prospecting/PLAYBOOK.md)
+- B2B ICP and discovery:
+  [`modules/b2b-prospecting/ICP-AND-DISCOVERY.md`](./modules/b2b-prospecting/ICP-AND-DISCOVERY.md)
+- B2B enrichment:
+  [`modules/b2b-enriching/PLAYBOOK.md`](./modules/b2b-enriching/PLAYBOOK.md)
+- local-business outbound email:
+  [`modules/local-emailing/PLAYBOOK.md`](./modules/local-emailing/PLAYBOOK.md)
+- local-business reporting:
+  [`modules/local-emailing/REPORTING.md`](./modules/local-emailing/REPORTING.md)
+- B2B outbound email:
+  [`modules/b2b-emailing/PLAYBOOK.md`](./modules/b2b-emailing/PLAYBOOK.md)
+- B2B reporting:
+  [`modules/b2b-emailing/REPORTING.md`](./modules/b2b-emailing/REPORTING.md)
+- local-business cold calling:
+  [`modules/cold-call/PLAYBOOK.md`](./modules/cold-call/PLAYBOOK.md)
+- B2B cold calling:
+  [`modules/b2b-cold-calling/PLAYBOOK.md`](./modules/b2b-cold-calling/PLAYBOOK.md)
+- SEO:
+  [`modules/seo/PLAYBOOK.md`](./modules/seo/PLAYBOOK.md)
+- assistant QA prompts:
+  [`TEST-CASES.md`](./TEST-CASES.md)
 
 If you want the runnable starter:
 
 ```bash
-cd modules/kol-crm/template
+git clone https://github.com/kathrynwu/GTMbrain.git
+cd GTMbrain/modules/kol-crm/template
 python3 -m http.server 4321
 ```
 
 Then open `http://localhost:4321`.
 
-Fast starts:
+## Use With Claude Code Or Codex
 
-- want a local-business prospect list:
-  - [`modules/openmart-prospecting/PLAYBOOK.md`](./modules/openmart-prospecting/PLAYBOOK.md)
-  - if you want the broader reusable process:
-    - [`modules/openmart-prospecting/STANDARD-PRACTICE.md`](./modules/openmart-prospecting/STANDARD-PRACTICE.md)
-- want a B2B prospect list:
-  - [`modules/b2b-prospecting/PLAYBOOK.md`](./modules/b2b-prospecting/PLAYBOOK.md)
-- already have approved local rows and need contacts:
-  - [`modules/local-list-enriching/PLAYBOOK.md`](./modules/local-list-enriching/PLAYBOOK.md)
-- already have approved B2B rows and need contacts:
-  - [`modules/b2b-enriching/PLAYBOOK.md`](./modules/b2b-enriching/PLAYBOOK.md)
-- need outbound copy:
-  - [`modules/local-emailing/PLAYBOOK.md`](./modules/local-emailing/PLAYBOOK.md)
-- need call scripts and objection handling:
-  - [`modules/cold-call/PLAYBOOK.md`](./modules/cold-call/PLAYBOOK.md)
-- need SEO workflow:
-  - [`modules/seo/PLAYBOOK.md`](./modules/seo/PLAYBOOK.md)
+### Claude Code
 
----
+Claude Code can use:
 
-## One Real Flow
+- project skills in [`.claude/skills/`](./.claude/skills/)
+- slash commands in [`.claude/commands/`](./.claude/commands/)
 
-If you do not know how the modules fit together, the default GTMbrain motion is:
-
-1. choose the prospecting path:
-   - [`openmart-prospecting`](./modules/openmart-prospecting/) for local-business lists
-   - [`b2b-prospecting`](./modules/b2b-prospecting/) for software-company or B2B lists
-2. choose the enrichment path:
-   - [`local-list-enriching`](./modules/local-list-enriching/) for approved local rows
-   - [`b2b-enriching`](./modules/b2b-enriching/) for approved B2B rows
-3. use [`local-emailing`](./modules/local-emailing/) or
-   [`cold-call`](./modules/cold-call/) depending on the contact path
-4. use [`seo`](./modules/seo/) if the bottleneck is organic acquisition instead
-   of outbound
-
-The reusable backbone is:
-
-`Source -> Merge -> Qualify -> Enrich -> Segment -> Prioritize -> Route -> Handoff -> Review`
-
-If you want that operating model directly, start here:
-
-- [`modules/openmart-prospecting/STANDARD-PRACTICE.md`](./modules/openmart-prospecting/STANDARD-PRACTICE.md)
-
----
-
-## How This Works with Claude Code and Codex
-
-This repo is meant to work well with a repo-aware assistant after clone.
-
-The general pattern is:
-
-1. start at the repo root
-2. let the assistant read [`CLAUDE.md`](./CLAUDE.md)
-3. ask a concrete workflow question
-4. let the matching module skill and playbook do the routing
-
-For Claude Code, there are two usable entry paths.
-
-**1. Natural-language path**
-
-Claude Code can auto-load matching project skills from
-[`./.claude/skills/`](./.claude/skills/) when the request is clear enough.
-
-Example prompts:
-
-- "I have approved local-business rows. What should I enrich before CRM sync?"
-- "I need a B2B list for VP Sales at Series B SaaS companies."
-- "Should I improve this SEO page or create a new one?"
-- "Write a short outbound email for roofers in Phoenix."
-
-**2. Explicit slash-command path**
-
-If the user wants a direct entrypoint, Claude Code can use the slash commands in
-[`./.claude/commands/`](./.claude/commands/):
+Good slash-command starts:
 
 - `/gtmbrain`
 - `/openmart-prospecting`
@@ -135,16 +134,29 @@ If the user wants a direct entrypoint, Claude Code can use the slash commands in
 - `/local-list-enriching`
 - `/b2b-enriching`
 - `/local-emailing`
-- `/seo`
+- `/b2b-emailing`
 - `/local-cold-calling`
+- `/b2b-cold-calling`
+- `/seo`
 
-So the split is:
+Good natural-language starts:
 
-- `.claude/skills/` for automatic project-skill loading
-- `.claude/commands/` for explicit slash-command entrypoints
+- `I need a local-business prospect list for med spas in Phoenix.`
+- `I need a B2B list for VP Sales at Series B SaaS companies.`
+- `I already have approved rows. What should I enrich before CRM sync?`
+- `Should this local segment be email-first or call-first?`
+- `Should this B2B segment be email-first or call-first?`
+- `This page has impressions. Should I improve it or make a new page?`
 
-Repo-native source-of-truth skills still live in
-[`.agents/skills/`](./.agents/skills/):
+### Codex
+
+Codex should start with:
+
+1. [`AGENTS.md`](./AGENTS.md)
+2. [`CLAUDE.md`](./CLAUDE.md)
+3. [`gtmbrain`](./.agents/skills/gtmbrain/SKILL.md)
+
+Canonical repo skills live in [`.agents/skills/`](./.agents/skills/):
 
 - [`gtmbrain`](./.agents/skills/gtmbrain/SKILL.md)
 - [`openmart-prospecting`](./.agents/skills/openmart-prospecting/SKILL.md)
@@ -152,95 +164,59 @@ Repo-native source-of-truth skills still live in
 - [`local-list-enriching`](./.agents/skills/local-list-enriching/SKILL.md)
 - [`b2b-enriching`](./.agents/skills/b2b-enriching/SKILL.md)
 - [`local-emailing`](./.agents/skills/local-emailing/SKILL.md)
-- [`seo`](./.agents/skills/seo/SKILL.md)
+- [`b2b-emailing`](./.agents/skills/b2b-emailing/SKILL.md)
 - [`local-cold-calling`](./.agents/skills/local-cold-calling/SKILL.md)
-
-The `.claude/skills/` files are thin Claude Code wrappers around those
-repo-native skills. The workflow logic still lives in the module playbooks and
-the canonical skills under `.agents/skills/`.
+- [`b2b-cold-calling`](./.agents/skills/b2b-cold-calling/SKILL.md)
+- [`seo`](./.agents/skills/seo/SKILL.md)
 
 Why there seem to be duplicate `SKILL.md` files:
 
 - `.agents/skills/.../SKILL.md` is the canonical repo-native skill
-- `.claude/skills/.../SKILL.md` is a thin Claude Code wrapper around that skill
-- repeated `PLAYBOOK.md` filenames across modules are intentional convention,
-  not duplicate content
+- `.claude/skills/.../SKILL.md` is a thin Claude Code wrapper
+- repeated `PLAYBOOK.md` names across modules are intentional convention
 
-If you do not know where to start, use
-[`gtmbrain`](./.agents/skills/gtmbrain/SKILL.md) first. It routes you with
-`A/B/C` options.
+## Core Modules
 
-Good questions:
+| Module | What it does | Primary use |
+| --- | --- | --- |
+| [`kol-crm`](./modules/kol-crm/) | runnable lightweight CRM starter | run and adapt |
+| [`openmart-prospecting`](./modules/openmart-prospecting/) | local-business ICPs, list building, local prospect workflows | start local prospecting |
+| [`local-list-enriching`](./modules/local-list-enriching/) | local-business enrichment, filtering, and CRM handoff | enrich approved local rows |
+| [`b2b-prospecting`](./modules/b2b-prospecting/) | B2B ICPs, buyer choice, trigger-based list building, and discovery framing | start B2B prospecting |
+| [`b2b-enriching`](./modules/b2b-enriching/) | B2B buyer enrichment and outbound handoff shape | enrich approved B2B rows |
+| [`local-emailing`](./modules/local-emailing/) | short local-business outbound email strategy, reporting, and campaign diagnosis | write local outbound emails |
+| [`b2b-emailing`](./modules/b2b-emailing/) | short B2B outbound email strategy, reporting, and campaign diagnosis | write B2B outbound emails |
+| [`cold-call`](./modules/cold-call/) | local-business scripts, objection handling, and call review rules | write or review local calls |
+| [`b2b-cold-calling`](./modules/b2b-cold-calling/) | B2B scripts, objection handling, and call review rules | write or review B2B calls |
+| [`seo`](./modules/seo/) | page diagnosis, keyword choice, and update logic | run SEO workflow |
 
-- "How should I use `openmart-prospecting` for my ICP?"
-- "How should I use `b2b-prospecting` for VP and Director buyers?"
-- "What should I enrich before pushing rows into the CRM?"
-- "Should I start with email or cold call for this segment?"
-- "Should I improve this SEO page or create a new one?"
-- "Help me iterate on the playbooks and figure out my GTM motion."
+## Launch Extras
 
-Good slash-command starts in Claude Code:
+If you are trying to use the repo immediately, these are the fastest supporting
+docs after the main playbooks:
 
-```text
-/gtmbrain I sell to local businesses and do not know whether to start with prospecting, SEO, or outbound.
-/gtmbrain I sell to software companies and need to know whether to start with b2b prospecting, enrichment, or outbound.
-/seo This page has 1800 impressions, 0.8% CTR, and avg position 5.9. What should I do?
-/local-emailing Write a first-touch email for plumbers in Dallas.
-/b2b-prospecting Help me define the right buyer and filters for Series B SaaS companies.
-```
+- [`modules/local-emailing/REPORTING.md`](./modules/local-emailing/REPORTING.md)
+  for weekly local keep, pause, rewrite, or scale decisions
+- [`modules/b2b-emailing/REPORTING.md`](./modules/b2b-emailing/REPORTING.md)
+  for weekly B2B keep, pause, rewrite, or scale decisions
+- [`modules/b2b-prospecting/ICP-AND-DISCOVERY.md`](./modules/b2b-prospecting/ICP-AND-DISCOVERY.md)
+  for one concrete B2B buyer and discovery pattern
+- [`TEST-CASES.md`](./TEST-CASES.md) for the assistant prompts this repo should
+  answer cleanly
 
-**Codex path**
-
-Codex does not need the Claude wrapper layer. The Codex-native path in this
-repo is:
-
-- start at [`AGENTS.md`](./AGENTS.md)
-- let Codex read [`CLAUDE.md`](./CLAUDE.md) for the full routing rules
-- use the canonical repo skills in [`.agents/skills/`](./.agents/skills/)
-- then read the matching module docs
-
-For Codex, the reliable entrypoint is the repo-native skill layer:
-
-- [`gtmbrain`](./.agents/skills/gtmbrain/SKILL.md)
-- [`openmart-prospecting`](./.agents/skills/openmart-prospecting/SKILL.md)
-- [`b2b-prospecting`](./.agents/skills/b2b-prospecting/SKILL.md)
-- [`local-list-enriching`](./.agents/skills/local-list-enriching/SKILL.md)
-- [`b2b-enriching`](./.agents/skills/b2b-enriching/SKILL.md)
-- [`local-emailing`](./.agents/skills/local-emailing/SKILL.md)
-- [`seo`](./.agents/skills/seo/SKILL.md)
-- [`local-cold-calling`](./.agents/skills/local-cold-calling/SKILL.md)
-
-Good Codex starts:
-
-```text
-Read AGENTS.md and use the gtmbrain skill to route me.
-Use the seo skill in .agents/skills/seo/SKILL.md on this page.
-Use the local-emailing skill to write a first-touch email for med spas in Miami.
-Use the openmart-prospecting skill to help me define the right ICP and filters.
-Use the b2b-prospecting skill to help me target the right VP or Director buyers.
-```
-
----
-
-## What Makes GTMbrain Different
-
-This repo is built around a few strong constraints:
+## Why GTMbrain Is Different
 
 - it is module-first, not prompt-first
 - the playbook holds the judgment
-- the skill is there to help navigate the workflow, not replace it
-- the workflows are narrow enough to steal and adapt
-- the repo tries to stay practical instead of pretending to be a giant platform
+- the skill helps route and reuse the workflow
+- the modules are narrow enough to steal and adapt
+- the repo is meant to be practical, not platform theater
 
 In plain English:
 
 - not random docs
 - not random prompts
 - not random automations
-
-The goal is to capture workflow shapes that another builder can actually use.
-
----
 
 ## Repository Structure
 
@@ -250,132 +226,38 @@ GTMbrain/
 ├── CLAUDE.md
 ├── AGENTS.md
 ├── DESIGN.md
+├── TEST-CASES.md
 ├── .agents/
 │   └── skills/
 │       ├── gtmbrain/
-│       ├── b2b-prospecting/
-│       ├── b2b-enriching/
 │       ├── openmart-prospecting/
 │       ├── local-list-enriching/
+│       ├── b2b-prospecting/
+│       ├── b2b-enriching/
 │       ├── local-emailing/
-│       ├── seo/
-│       └── local-cold-calling/
+│       ├── b2b-emailing/
+│       ├── local-cold-calling/
+│       ├── b2b-cold-calling/
+│       └── seo/
 ├── .claude/
 │   ├── skills/
-│   │   ├── gtmbrain/
-│   │   ├── b2b-prospecting/
-│   │   ├── b2b-enriching/
-│   │   ├── openmart-prospecting/
-│   │   ├── local-list-enriching/
-│   │   ├── local-emailing/
-│   │   ├── seo/
-│   │   └── local-cold-calling/
 │   └── commands/
-│       ├── gtmbrain.md
-│       ├── b2b-prospecting.md
-│       ├── b2b-enriching.md
-│       ├── openmart-prospecting.md
-│       ├── local-list-enriching.md
-│       ├── local-emailing.md
-│       ├── seo.md
-│       └── local-cold-calling.md
 ├── modules/
 │   ├── kol-crm/
-│   ├── b2b-prospecting/
-│   ├── b2b-enriching/
 │   ├── openmart-prospecting/
 │   ├── local-list-enriching/
+│   ├── b2b-prospecting/
+│   ├── b2b-enriching/
 │   ├── local-emailing/
-│   ├── seo/
-│   └── cold-call/
+│   ├── b2b-emailing/
+│   ├── cold-call/
+│   ├── b2b-cold-calling/
+│   └── seo/
 ├── packages/
 │   └── openmart/
 └── scripts/
     └── validate-modules.js
 ```
-
----
-
-## Module Catalog
-
-| Module | What It Does | Surfaces | Primary Action | Status |
-|--------|---------------|----------|----------------|--------|
-| [`kol-crm`](./modules/kol-crm/) | Tracks influencer sourcing, outreach, pricing, owner, and status | `Template` | Run and adapt | First release |
-| [`openmart-prospecting`](./modules/openmart-prospecting/) | Defines ICPs, builds local-business lists, and documents repeatable local prospecting workflows | `Playbook`, `Connector` | Read playbook | First release |
-| [`b2b-prospecting`](./modules/b2b-prospecting/) | Defines B2B ICPs, chooses the right buyer, and builds B2B prospect lists | `Playbook` | Read playbook | First release |
-| [`local-list-enriching`](./modules/local-list-enriching/) | Captures approval-first enrichment logic, field mapping, and CRM sync rules | `Playbook` | Read playbook | First release |
-| [`b2b-enriching`](./modules/b2b-enriching/) | Enriches approved B2B rows with the right buyer, contact path, and handoff shape | `Playbook` | Read playbook | First release |
-| [`local-emailing`](./modules/local-emailing/) | Captures short outbound email strategy, buyer-fit rules, and follow-up cadence | `Playbook` | Read playbook | First release |
-| [`seo`](./modules/seo/) | Captures repeatable SEO workflow judgment for page prioritization, keyword choice, and on-page improvement | `Playbook` | Read playbook | First release |
-| [`cold-call`](./modules/cold-call/) | Captures scripts, review criteria, objection handling, and outbound heuristics | `Playbook` | Read playbook | First release |
-
----
-
-## What Each Module Gives You Today
-
-### `kol-crm`
-
-- local-first browser starter
-- import and export CSV
-- pricing and last-contact tracking
-- owner and status workflow
-- sample data
-
-### `openmart-prospecting`
-
-- local-business ICP workflow
-- broad-to-tight query loop
-- approval and rejection logic
-- Openmart connector starter
-- sample prospect shape
-
-### `b2b-prospecting`
-
-- B2B ICP workflow
-- right-buyer rules
-- trigger-based prioritization
-- Apollo-first source guidance
-- cleaner handoff into B2B enrichment
-
-### `local-list-enriching`
-
-- field mapping for CRM sync
-- filtering rules before enrichment
-- owner, manager, and decision-maker enrichment logic
-- sample enriched row shape
-
-### `b2b-enriching`
-
-- right-buyer enrichment rules
-- sequencing-ready and call-ready field shapes
-- rerouting from noisy contacts to real buyers
-- context preservation before outbound or CRM handoff
-
-### `local-emailing`
-
-- short outbound email playbooks
-- value-first email examples
-- follow-up cadence
-- subject-line patterns
-
-### `seo`
-
-- GSC to Semrush workflow
-- CTR versus position diagnosis
-- keyword quality rules
-- page structure guidance
-- internal linking and refresh rules
-- example outputs
-
-### `cold-call`
-
-- 3-step cold-call framework
-- first-touch and follow-up call structure
-- objection library
-- gatekeeper handling
-- review rubric
-
----
 
 ## Not Here Yet
 
@@ -384,8 +266,6 @@ GTMbrain/
 - polished website marketing
 - full connector platform
 
----
-
 ## Contributing
 
 The right move is not "add more stuff."
@@ -393,18 +273,12 @@ The right move is not "add more stuff."
 The right move is:
 
 1. define one clear GTM workflow
-2. decide whether it should start as a `Template`, `Playbook`, `Connector`, or some mix
+2. decide whether it should start as a `Template`, `Playbook`, `Connector`, or
+   some mix
 3. make it clear enough that another builder can use it without a meeting
 
-Module contracts are validated in CI by
+Module contracts are validated by
 [`scripts/validate-modules.js`](./scripts/validate-modules.js).
-
-If you want to request a new module or report what worked:
-
-- open a `Module request`
-- or open `Workflow feedback`
-
----
 
 ## Current State
 
@@ -412,7 +286,7 @@ This repo is still early.
 
 Right now the goal is:
 
-- make the registry shape obvious
-- make each core module useful enough to try right away
-- let people use skills and playbooks together to figure out their GTM motion
+- make the entry path obvious
+- make each core module usable right away
+- let people use skills and playbooks together
 - add thinner follow-on modules without overbuilding

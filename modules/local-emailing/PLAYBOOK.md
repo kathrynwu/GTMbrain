@@ -1,7 +1,10 @@
 # Local Emailing Playbook
 
-Use this playbook when the segment is clear enough and the list has enough
-signal to send short, relevant outbound emails.
+Use this playbook when the motion is local-business outbound and the list is
+clear enough to send short, relevant emails.
+
+If the motion is software-company or B2B outbound, use
+[`../b2b-emailing/`](../b2b-emailing/).
 
 The goal is not to blast a generic campaign.
 
@@ -60,10 +63,9 @@ Make sure the buyer is the person who can actually move the deal.
 
 Examples:
 
-- software-company motions often need `VP` or `Director` buyers
 - local-business motions often need the owner
-- customer-facing workflow tools should often go to the person who owns the
-  outcome KPI, not a random ops title
+- some local-business motions work better with a general manager or operator
+  when the owner is not the day-to-day buyer
 
 If you target the wrong person, you can get polite replies with no buying
 authority. That is noise, not traction.
@@ -97,27 +99,16 @@ The scan pattern matters:
 - each new line should add one thing, not three
 - the email should still make sense when skimmed quickly on mobile
 
-## Default pattern by segment
+## Default local pattern
 
-Use these as the default pattern choices unless there is a strong reason to do
-something else.
-
-- local SMB: helpful-offer first
-- B2B software: trigger-based opener
-- enterprise or legacy: observation plus proof
+Use helpful-offer first as the default local-business pattern unless there is a
+strong reason to do something else.
 
 Why:
 
 - local SMB buyers respond better when the first message already feels useful
-- B2B software buyers often have clearer intent signals such as hiring,
-  expansion, funding, CRM changes, team build-out, or workflow changes
-- enterprise and legacy accounts usually need a more credible frame tied to a
-  visible operational burden and one proof point
-
-Another useful default:
-
-- when the sale needs more trust, start with credibility and curiosity before a
-  direct sell
+- local owners and managers usually care more about concrete help than
+  category-theory positioning
 
 ## Lead with help
 
@@ -139,18 +130,6 @@ The point is not to be cute.
 The point is to give the business a reason to respond before the full sales
 conversation starts.
 
-In more credibility-sensitive B2B motions, the first touch can also be lighter:
-
-- ask to grab a virtual coffee
-- say you want to learn how they handle the problem today
-- avoid sounding like `please buy from me` on touch one
-
-That only works when the message still has a reason to exist:
-
-- credible problem framing
-- relevant market context
-- a believable trust signal
-
 ## Personalization rules
 
 Good personalization:
@@ -160,7 +139,6 @@ Good personalization:
 - business category
 - website quality or missing website
 - ratings or review context if relevant
-- technology context if relevant
 - owner or manager name if you actually have it
 
 Strong personalization usually means:
@@ -173,12 +151,8 @@ Strong personalization usually means:
 Strong credibility usually means:
 
 - real customer proof
-- recognizable logos if you have them
-- real reputation
-- fundraising or other market proof if relevant
-- founder or personal credibility when stronger logos do not exist yet
-- school, prior employers, or another believable background signal when that is
-  the strongest proof available
+- a believable reputation signal
+- one trust signal that makes the note feel real
 
 Bad personalization:
 
@@ -241,7 +215,7 @@ Practical defaults:
 
 - call-first for reachable phone-heavy local service segments
 - email-first when verified email and usable context are already present
-- LinkedIn-first for upper-market, newer tech, and title-driven targets
+- enrich-first when the row is missing owner, manager, or business context
 
 ## What good looks like
 
@@ -258,7 +232,6 @@ Practical defaults:
 
 - long email
 - no useful offer
-- generic SaaS language
 - no segment signal
 - obvious mass-blast feel
 - polite replies from people with no authority
@@ -304,12 +277,10 @@ Bad data in this repo usually means:
 
 Do not over-read reply volume by itself.
 
-Polite interest without authority is not the same as pipeline progress.
-
 If replies are decent but meetings stay weak, the most likely explanations are:
 
-- the buyer does not really want this
-- the sequence needs more trust and familiarity before a meeting ask converts
+- the owner or manager does not really want this
+- the message is getting attention without enough urgency
 
-In those cases, treat the sequence as a way to get known first, not only as a
-direct conversion attempt.
+For the weekly review loop and customer-note discipline, read
+[`REPORTING.md`](./REPORTING.md).
