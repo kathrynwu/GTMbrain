@@ -1,4 +1,4 @@
-# Local Emailing Examples
+# Local Business Emailing Examples
 
 These are pattern examples, not scripts to spray unchanged.
 

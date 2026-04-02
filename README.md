@@ -27,36 +27,31 @@ Start here.
 
 | Job | Start here | Then go to |
 | --- | --- | --- |
-| local-business prospecting | [`local-business prospecting`](./modules/openmart-prospecting/) | [`local-list-enriching`](./modules/local-list-enriching/) |
-| B2B / software-company prospecting | [`b2b-prospecting`](./modules/b2b-prospecting/) | [`b2b-enriching`](./modules/b2b-enriching/) |
-| local-business outbound email | [`local-emailing`](./modules/local-emailing/) | [`cold-call`](./modules/cold-call/) if phone should run too |
-| B2B outbound email | [`b2b-emailing`](./modules/b2b-emailing/) | [`b2b-cold-calling`](./modules/b2b-cold-calling/) if phone should run too |
-| local-business cold calling | [`cold-call`](./modules/cold-call/) | [`local-emailing`](./modules/local-emailing/) if email should run too |
-| B2B cold calling | [`b2b-cold-calling`](./modules/b2b-cold-calling/) | [`b2b-emailing`](./modules/b2b-emailing/) if email should run too |
-| SEO workflow | [`seo`](./modules/seo/) | page update or supporting page creation |
-| routing across modules | [`gtmbrain`](./.agents/skills/gtmbrain/SKILL.md) | the recommended module |
-| runnable CRM starter | [`kol-crm`](./modules/kol-crm/) | adapt the template |
-
-Current naming quirk:
-
-- [`cold-call`](./modules/cold-call/) is the local cold-calling module for now,
-  even though the folder name still says `cold-call`
+| local-business prospecting | [`Local Business Prospecting`](./modules/openmart-prospecting/) | [`Local Business Enrichment`](./modules/local-list-enriching/) |
+| B2B / software-company prospecting | [`B2B Prospecting`](./modules/b2b-prospecting/) | [`B2B Enrichment`](./modules/b2b-enriching/) |
+| local-business outbound email | [`Local Business Emailing`](./modules/local-emailing/) | [`Local Business Cold Calling`](./modules/cold-call/) if phone should run too |
+| B2B outbound email | [`B2B Emailing`](./modules/b2b-emailing/) | [`B2B Cold Calling`](./modules/b2b-cold-calling/) if phone should run too |
+| local-business cold calling | [`Local Business Cold Calling`](./modules/cold-call/) | [`Local Business Emailing`](./modules/local-emailing/) if email should run too |
+| B2B cold calling | [`B2B Cold Calling`](./modules/b2b-cold-calling/) | [`B2B Emailing`](./modules/b2b-emailing/) if email should run too |
+| SEO workflow | [`SEO`](./modules/seo/) | page update or supporting page creation |
+| routing across modules | [`GTMbrain Router`](./.agents/skills/gtmbrain/SKILL.md) | the recommended module |
+| runnable CRM starter | [`KOL CRM Starter`](./modules/kol-crm/) | adapt the template |
 
 ## Default Flows
 
 ### Local-business path
 
-1. [`local-business prospecting`](./modules/openmart-prospecting/)
-2. [`local-list-enriching`](./modules/local-list-enriching/)
-3. [`local-emailing`](./modules/local-emailing/) and/or
-   [`cold-call`](./modules/cold-call/)
+1. [`Local Business Prospecting`](./modules/openmart-prospecting/)
+2. [`Local Business Enrichment`](./modules/local-list-enriching/)
+3. [`Local Business Emailing`](./modules/local-emailing/) and/or
+   [`Local Business Cold Calling`](./modules/cold-call/)
 
 ### B2B / software-company path
 
-1. [`b2b-prospecting`](./modules/b2b-prospecting/)
-2. [`b2b-enriching`](./modules/b2b-enriching/)
-3. [`b2b-emailing`](./modules/b2b-emailing/) and/or
-   [`b2b-cold-calling`](./modules/b2b-cold-calling/)
+1. [`B2B Prospecting`](./modules/b2b-prospecting/)
+2. [`B2B Enrichment`](./modules/b2b-enriching/)
+3. [`B2B Emailing`](./modules/b2b-emailing/) and/or
+   [`B2B Cold Calling`](./modules/b2b-cold-calling/)
 
 ### SEO path
 
@@ -158,16 +153,16 @@ Codex should start with:
 
 Canonical repo skills live in [`.agents/skills/`](./.agents/skills/):
 
-- [`gtmbrain`](./.agents/skills/gtmbrain/SKILL.md)
-- [`local-business prospecting`](./.agents/skills/openmart-prospecting/SKILL.md)
-- [`b2b-prospecting`](./.agents/skills/b2b-prospecting/SKILL.md)
-- [`local-list-enriching`](./.agents/skills/local-list-enriching/SKILL.md)
-- [`b2b-enriching`](./.agents/skills/b2b-enriching/SKILL.md)
-- [`local-emailing`](./.agents/skills/local-emailing/SKILL.md)
-- [`b2b-emailing`](./.agents/skills/b2b-emailing/SKILL.md)
-- [`local-cold-calling`](./.agents/skills/local-cold-calling/SKILL.md)
-- [`b2b-cold-calling`](./.agents/skills/b2b-cold-calling/SKILL.md)
-- [`seo`](./.agents/skills/seo/SKILL.md)
+- [`GTMbrain Router`](./.agents/skills/gtmbrain/SKILL.md)
+- [`Local Business Prospecting`](./.agents/skills/openmart-prospecting/SKILL.md)
+- [`B2B Prospecting`](./.agents/skills/b2b-prospecting/SKILL.md)
+- [`Local Business Enrichment`](./.agents/skills/local-list-enriching/SKILL.md)
+- [`B2B Enrichment`](./.agents/skills/b2b-enriching/SKILL.md)
+- [`Local Business Emailing`](./.agents/skills/local-emailing/SKILL.md)
+- [`B2B Emailing`](./.agents/skills/b2b-emailing/SKILL.md)
+- [`Local Business Cold Calling`](./.agents/skills/local-cold-calling/SKILL.md)
+- [`B2B Cold Calling`](./.agents/skills/b2b-cold-calling/SKILL.md)
+- [`SEO`](./.agents/skills/seo/SKILL.md)
 
 Why there seem to be duplicate `SKILL.md` files:
 
@@ -179,16 +174,16 @@ Why there seem to be duplicate `SKILL.md` files:
 
 | Module | What it does | Primary use |
 | --- | --- | --- |
-| [`kol-crm`](./modules/kol-crm/) | runnable lightweight CRM starter | run and adapt |
-| [`local-business prospecting`](./modules/openmart-prospecting/) | local-business ICPs, list building, local prospect workflows | start local prospecting |
-| [`local-list-enriching`](./modules/local-list-enriching/) | local-business enrichment, filtering, and CRM handoff | enrich approved local rows |
-| [`b2b-prospecting`](./modules/b2b-prospecting/) | B2B ICPs, buyer choice, trigger-based list building, and discovery framing | start B2B prospecting |
-| [`b2b-enriching`](./modules/b2b-enriching/) | B2B buyer enrichment and outbound handoff shape | enrich approved B2B rows |
-| [`local-emailing`](./modules/local-emailing/) | short local-business outbound email strategy, reporting, and campaign diagnosis | write local outbound emails |
-| [`b2b-emailing`](./modules/b2b-emailing/) | short B2B outbound email strategy, reporting, and campaign diagnosis | write B2B outbound emails |
-| [`cold-call`](./modules/cold-call/) | local-business scripts, objection handling, and call review rules | write or review local calls |
-| [`b2b-cold-calling`](./modules/b2b-cold-calling/) | B2B scripts, objection handling, and call review rules | write or review B2B calls |
-| [`seo`](./modules/seo/) | page diagnosis, keyword choice, and update logic | run SEO workflow |
+| [`KOL CRM Starter`](./modules/kol-crm/) | runnable lightweight CRM starter | run and adapt |
+| [`Local Business Prospecting`](./modules/openmart-prospecting/) | local-business ICPs, list building, local prospect workflows | start local prospecting |
+| [`Local Business Enrichment`](./modules/local-list-enriching/) | local-business enrichment, filtering, and CRM handoff | enrich approved local rows |
+| [`B2B Prospecting`](./modules/b2b-prospecting/) | B2B ICPs, buyer choice, trigger-based list building, and discovery framing | start B2B prospecting |
+| [`B2B Enrichment`](./modules/b2b-enriching/) | B2B buyer enrichment and outbound handoff shape | enrich approved B2B rows |
+| [`Local Business Emailing`](./modules/local-emailing/) | short local-business outbound email strategy, reporting, and campaign diagnosis | write local outbound emails |
+| [`B2B Emailing`](./modules/b2b-emailing/) | short B2B outbound email strategy, reporting, and campaign diagnosis | write B2B outbound emails |
+| [`Local Business Cold Calling`](./modules/cold-call/) | local-business scripts, objection handling, and call review rules | write or review local calls |
+| [`B2B Cold Calling`](./modules/b2b-cold-calling/) | B2B scripts, objection handling, and call review rules | write or review B2B calls |
+| [`SEO`](./modules/seo/) | page diagnosis, keyword choice, and update logic | run SEO workflow |
 
 ## Launch Extras
 
@@ -258,13 +253,6 @@ GTMbrain/
 └── scripts/
     └── validate-modules.js
 ```
-
-## Not Here Yet
-
-- multi-user backend
-- email sending
-- polished website marketing
-- full connector platform
 
 ## Contributing
 

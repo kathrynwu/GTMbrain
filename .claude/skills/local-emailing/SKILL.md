@@ -6,9 +6,10 @@ description: |
   fit, sequencing, and when email should beat calling.
 ---
 
-# Local Emailing
+# Local Business Emailing
 
-This is the Claude Code project-skill wrapper for the local-business emailing module.
+This is the Claude Code project-skill wrapper for the local-business emailing
+module.
 
 Read `.agents/skills/local-emailing/SKILL.md` first, then follow it.
 

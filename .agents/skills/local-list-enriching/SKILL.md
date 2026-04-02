@@ -6,7 +6,7 @@ description: |
   an approval-first enrichment flow for local-business outbound.
 ---
 
-# Local List Enriching
+# Local Business Enrichment
 
 Use this skill when the user is asking about:
 

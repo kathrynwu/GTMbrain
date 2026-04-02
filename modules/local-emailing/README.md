@@ -1,4 +1,4 @@
-# Local Emailing
+# Local Business Emailing
 
 Capture short local-business outbound email strategy, buyer-fit rules, and
 lightweight follow-up structure.

@@ -6,7 +6,7 @@ description: |
   buyer fit, sequencing, and when email should beat calling.
 ---
 
-# Local Emailing
+# Local Business Emailing
 
 Use this skill when the user is asking about:
 

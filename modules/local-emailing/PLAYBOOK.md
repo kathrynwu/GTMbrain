@@ -1,4 +1,4 @@
-# Local Emailing Playbook
+# Local Business Emailing Playbook
 
 Use this playbook when the motion is local-business outbound and the list is
 clear enough to send short, relevant emails.

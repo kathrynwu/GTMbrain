@@ -1,5 +1,5 @@
 {
-  "name": "KOL CRM",
+  "name": "KOL CRM Starter",
   "slug": "kol-crm",
   "job": "Track influencer sourcing, outreach, pricing, owner, and status.",
   "audience": [
@@ -55,7 +55,6 @@
     "agent adapters"
   ],
   "not_included_yet": [
-    "email sending",
     "outreach automation",
     "agent wrapper"
   ]

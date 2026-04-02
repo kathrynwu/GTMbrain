@@ -1,4 +1,4 @@
-# Local Cold Calling Playbook
+# Local Business Cold Calling Playbook
 
 This is a distilled repo-native version of the internal cold call playbook and
 walkthrough used to train local-business outbound.

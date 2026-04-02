@@ -79,13 +79,7 @@ The workflow clarity matters more than the framework. A builder should be able t
 ## Current scope
 
 This is usable now for one operator working locally in the browser.
-
-It is not yet:
-
-- multi-user
-- backed by a database
-- connected to email sending
-- built for shared team permissions
+It is intentionally scoped as a lightweight local starter.
 
 ## What to customize next
 

@@ -1,4 +1,4 @@
-# Local Cold Calling
+# Local Business Cold Calling
 
 Capture local-business scripts, review criteria, and tactical outbound
 heuristics.

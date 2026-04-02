@@ -6,9 +6,10 @@ description: |
   better list quality should shape local-business calling.
 ---
 
-# Local Cold Calling
+# Local Business Cold Calling
 
-This is the Claude Code project-skill wrapper for the local-business cold-call module.
+This is the Claude Code project-skill wrapper for the local-business cold-call
+module.
 
 Read `.agents/skills/local-cold-calling/SKILL.md` first, then follow it.
 

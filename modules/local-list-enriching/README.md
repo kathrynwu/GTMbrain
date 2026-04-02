@@ -1,4 +1,4 @@
-# Local List Enriching
+# Local Business Enrichment
 
 Capture local-business enrichment logic, approval-first filters, and CRM-ready
 field mapping.

@@ -1,4 +1,4 @@
-# Local List Enriching Playbook
+# Local Business Enrichment Playbook
 
 Use this playbook after you already have a decent local-business list.
 

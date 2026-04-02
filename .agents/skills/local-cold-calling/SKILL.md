@@ -6,7 +6,7 @@ description: |
   better list quality should shape local-business calling.
 ---
 
-# Local Cold Calling
+# Local Business Cold Calling
 
 Use this skill when the user is asking about:
 

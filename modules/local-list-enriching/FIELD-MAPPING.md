@@ -1,4 +1,4 @@
-# Local List Enriching Field Mapping
+# Local Business Enrichment Field Mapping
 
 Use this as the stable handoff shape between search, enrichment, and CRM sync.
 

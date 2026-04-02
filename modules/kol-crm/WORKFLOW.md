@@ -56,5 +56,4 @@ Contacted --------------------------------------> Closed
 
 - automatic state transitions
 - deliverability logic
-- email sending
 - negotiation automation

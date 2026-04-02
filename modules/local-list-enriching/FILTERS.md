@@ -1,4 +1,4 @@
-# Local List Enriching Filters
+# Local Business Enrichment Filters
 
 These are the first filters to apply before deeper enrichment.
 

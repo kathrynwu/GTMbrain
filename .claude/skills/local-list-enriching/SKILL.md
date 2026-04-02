@@ -6,9 +6,10 @@ description: |
   credits, or map enriched rows into a CRM-ready shape.
 ---
 
-# Local List Enriching
+# Local Business Enrichment
 
-This is the Claude Code project-skill wrapper for the enrichment module.
+This is the Claude Code project-skill wrapper for the local-business
+enrichment module.
 
 Read `.agents/skills/local-list-enriching/SKILL.md` first, then follow it.
 
