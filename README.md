@@ -1,7 +1,7 @@
 # GTMbrain
 
 Forkable GTM modules for local-business prospecting, B2B outbound, SEO, and a
-lightweight CRM starter.
+small starter app.
 
 This repo is built from real workflows. It is meant to be iterative:
 
@@ -9,6 +9,18 @@ This repo is built from real workflows. It is meant to be iterative:
 
 If you do not know where to start, use the
 [`GTMbrain Router`](./.agents/skills/gtmbrain/SKILL.md).
+
+## Quick Start
+
+```bash
+git clone https://github.com/kathrynwu/GTMbrain.git
+cd GTMbrain
+```
+
+Then either:
+
+- open the module you need from the table below
+- or start with [`GTMbrain Router`](./.agents/skills/gtmbrain/SKILL.md)
 
 ## Start Here
 
@@ -19,7 +31,7 @@ If you do not know where to start, use the
 | local-business outbound | [`Local Business Emailing`](./modules/local-emailing/) | [`Local Business Cold Calling`](./modules/cold-call/) |
 | B2B outbound | [`B2B Emailing`](./modules/b2b-emailing/) | [`B2B Cold Calling`](./modules/b2b-cold-calling/) |
 | SEO | [`SEO`](./modules/seo/) | improve page or create supporting page |
-| CRM starter | [`KOL CRM Starter`](./modules/kol-crm/) | adapt the template |
+| starter app | [`KOL CRM Starter`](./modules/kol-crm/) | adapt the template |
 | broad GTM question | [`GTMbrain Router`](./.agents/skills/gtmbrain/SKILL.md) | the recommended module |
 
 ## How To Iterate
@@ -104,10 +116,9 @@ Claude wrappers live in [`.claude/skills/`](./.claude/skills/) and
 - assistant prompt pack:
   [`TEST-CASES.md`](./TEST-CASES.md)
 
-If you want the runnable starter:
+If you want to run the starter app:
 
 ```bash
-git clone https://github.com/kathrynwu/GTMbrain.git
 cd GTMbrain/modules/kol-crm/template
 python3 -m http.server 4321
 ```
