@@ -3,6 +3,8 @@
 Capture B2B cold-call scripts, review criteria, and tactical calling
 heuristics.
 
+Use this when a software company is selling to another software company.
+
 ## Summary
 
 - **Surface:** `Playbook`
@@ -14,8 +16,8 @@ heuristics.
 
 - [`PLAYBOOK.md`](./PLAYBOOK.md)
 - [`REVIEW-RUBRIC.md`](./REVIEW-RUBRIC.md)
-- use [`../cold-call/`](../cold-call/) instead if the motion is local-business
-  calling
+- use [`../cold-call/`](../cold-call/) instead if the motion is selling to
+  local SMBs
 
 ## Focus
 

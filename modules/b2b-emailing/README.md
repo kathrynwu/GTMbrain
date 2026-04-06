@@ -3,6 +3,8 @@
 Capture short B2B outbound email strategy, buyer-fit rules, and lightweight
 follow-up structure.
 
+Use this when a software company is selling to another software company.
+
 ## Summary
 
 - **Surface:** `Playbook`

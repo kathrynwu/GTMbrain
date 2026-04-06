@@ -6,17 +6,22 @@ Read [`CLAUDE.md`](./CLAUDE.md) first.
 
 Use this repo as an iterative GTM system, not a pile of notes.
 
+Motion definitions:
+
+- `local SMB` = selling to local businesses
+- `B2B` = a software company selling to another software company
+
 ## Routing
 
 - broad question: start with `.agents/skills/gtmbrain/`
-- local-business prospecting: `modules/openmart-prospecting/`
-- local-business enrichment: `modules/local-list-enriching/`
-- local-business emailing: `modules/local-emailing/`
-- local-business calling: `modules/cold-call/`
-- B2B prospecting: `modules/b2b-prospecting/`
-- B2B enrichment: `modules/b2b-enriching/`
-- B2B emailing: `modules/b2b-emailing/`
-- B2B calling: `modules/b2b-cold-calling/`
+- local SMB prospecting: `modules/openmart-prospecting/`
+- local SMB enrichment: `modules/local-list-enriching/`
+- local SMB emailing: `modules/local-emailing/`
+- local SMB calling: `modules/cold-call/`
+- software-to-software B2B prospecting: `modules/b2b-prospecting/`
+- software-to-software B2B enrichment: `modules/b2b-enriching/`
+- software-to-software B2B emailing: `modules/b2b-emailing/`
+- software-to-software B2B calling: `modules/b2b-cold-calling/`
 - SEO: `modules/seo/`
 - CRM starter: `modules/kol-crm/`
 
@@ -26,7 +31,7 @@ Use this repo as an iterative GTM system, not a pile of notes.
 - keep the user moving through a clean loop:
   prospect -> enrich -> email/call -> report -> repeat
 - route to the smallest useful playbook, not the whole repo
-- keep local-business and B2B paths separate
+- keep local SMB and software-to-software B2B paths separate
 
 ## Good Codex Starts
 

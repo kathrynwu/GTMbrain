@@ -1,7 +1,9 @@
-# Local Business Emailing
+# Local SMB Emailing
 
-Capture short local-business outbound email strategy, buyer-fit rules, and
+Capture short local SMB outbound email strategy, buyer-fit rules, and
 lightweight follow-up structure.
+
+Use this when you sell to local SMBs.
 
 ## Summary
 
@@ -14,14 +16,14 @@ lightweight follow-up structure.
 
 - [`PLAYBOOK.md`](./PLAYBOOK.md)
 - [`../openmart-prospecting/README.md`](../openmart-prospecting/README.md) for
-  the upstream local-business path
-- use [`../b2b-emailing/`](../b2b-emailing/) instead if the motion is
-  software-company or B2B outbound
+  the upstream local SMB path
+- use [`../b2b-emailing/`](../b2b-emailing/) instead if a software company is
+  selling to another software company
 
 ## Focus
 
 - short first-touch emails
-- local-business personalization
+- local SMB personalization
 - lead-with-help offers
 - owner or manager buyer-fit before copy polish
 - follow-up cadence
@@ -37,12 +39,12 @@ lightweight follow-up structure.
 - how to structure a `3-4` touch cadence
 - how to protect deliverability before scaling volume
 - how to review weak campaigns and capture notes
-- concrete email shapes for local-business motions
+- concrete email shapes for local SMB motions
 
 ## Source material
 
 - internal operating guidance from Openmart
-- patterns seen from Openmart customers using local-business data in outbound
+- patterns seen from Openmart customers using local SMB data in outbound
 - examples inspired by teams like NewsBreak and operators selling workflow tools
 
 ## What comes next

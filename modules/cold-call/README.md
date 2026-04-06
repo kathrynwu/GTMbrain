@@ -1,7 +1,9 @@
-# Local Business Cold Calling
+# Local SMB Cold Calling
 
-Capture local-business scripts, review criteria, and tactical outbound
+Capture local SMB scripts, review criteria, and tactical outbound
 heuristics.
+
+Use this when you sell to local SMBs.
 
 ## Summary
 
@@ -14,8 +16,8 @@ heuristics.
 
 - [`PLAYBOOK.md`](./PLAYBOOK.md)
 - [`REVIEW-RUBRIC.md`](./REVIEW-RUBRIC.md)
-- use [`../b2b-cold-calling/`](../b2b-cold-calling/) instead if the motion is
-  software-company or B2B calling
+- use [`../b2b-cold-calling/`](../b2b-cold-calling/) instead if a software
+  company is selling to another software company
 
 ## Focus
 

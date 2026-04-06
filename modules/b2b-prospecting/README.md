@@ -1,7 +1,9 @@
 # B2B Prospecting
 
 Define ICPs, choose the right buyer, and build B2B prospect lists without
-mixing them into the local-business path.
+mixing them into the local SMB path.
+
+Use this when a software company is selling to another software company.
 
 ## Summary
 
@@ -48,12 +50,12 @@ Default buyers:
 
 - the buyer is a company operator, director, or VP
 - the motion is software-company prospecting
-- job titles and authority matter more than local-business shell data
+- job titles and authority matter more than local SMB shell data
 - you need to separate the account from the person who can actually buy
 
 ## Do not use this playbook when
 
-- the motion is local-business prospecting
+- the motion is selling to local SMBs
 - the list starts from business-shell search and owner finding
 
 For that path, use [`../openmart-prospecting/`](../openmart-prospecting/).

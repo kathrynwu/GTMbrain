@@ -16,6 +16,12 @@ Keep the repo iterative:
 
 `prospect -> enrich -> email/call or SEO -> report -> repeat`
 
+Repo lane definitions:
+
+- `local SMB` = selling to local businesses
+- `B2B` = a software company selling to another software company
+- if the lane is unclear, resolve that before routing deeper
+
 When answering playbook questions:
 
 1. start from the playbook `README.md`
@@ -41,12 +47,12 @@ Read in this order:
 3. `modules/kol-crm/schema/influencer.schema.json`
 4. `modules/kol-crm/template/`
 
-### `openmart-prospecting` (local-business prospecting)
+### `openmart-prospecting` (local SMB prospecting)
 
 Job:
 
 - define ICPs
-- build local-business prospect lists
+- build local SMB prospect lists
 - normalize data before CRM handoff
 - optionally enrich approved rows with Openmart APIs
 
@@ -60,10 +66,10 @@ Read in this order:
 6. `modules/openmart-prospecting/schema/prospect.schema.json`
 7. `packages/openmart/`
 
-Use this as the local-business path.
+Use this as the local SMB path.
 
-If the motion is software-company or B2B prospecting, use `b2b-prospecting`
-instead.
+If the motion is a software company selling to another software company, use
+`b2b-prospecting` instead.
 
 ### `b2b-prospecting`
 
@@ -71,7 +77,7 @@ Job:
 
 - define B2B ICPs
 - choose the right buyer
-- build software-company or company-buyer prospect lists
+- build software-company prospect lists
 - keep trigger and authority context before handoff
 
 Read in this order:
@@ -84,7 +90,7 @@ Read in this order:
 
 Job:
 
-- write short local-business outbound emails
+- write short local SMB outbound emails
 - choose personalization fields that are real
 - decide when local email-first beats local call-first
 
@@ -94,9 +100,10 @@ Read in this order:
 2. `modules/local-emailing/PLAYBOOK.md`
 3. `modules/openmart-prospecting/PLAYBOOK.md`
 
-Use this as the local-business emailing path.
+Use this as the local SMB emailing path.
 
-If the motion is software-company or B2B outbound, use `b2b-emailing` instead.
+If the motion is a software company selling to another software company, use
+`b2b-emailing` instead.
 
 ### `b2b-emailing`
 
@@ -116,7 +123,7 @@ Read in this order:
 
 Job:
 
-- enrich approved local-business rows
+- enrich approved local SMB rows
 - preserve workflow context before CRM sync
 - filter rows before spending credits or effort
 
@@ -129,10 +136,10 @@ Read in this order:
 5. `modules/local-list-enriching/schema/enriched-prospect.schema.json`
 6. `modules/openmart-prospecting/INTEGRATIONS.md`
 
-Use this as the local-business enrichment path.
+Use this as the local SMB enrichment path.
 
-If the motion is software-company or B2B enrichment, use `b2b-enriching`
-instead.
+If the motion is a software company selling to another software company, use
+`b2b-enriching` instead.
 
 ### `b2b-enriching`
 
@@ -154,7 +161,7 @@ Read in this order:
 
 Job:
 
-- write or review local-business cold-call scripts
+- write or review local SMB cold-call scripts
 - decide when calling beats email
 - improve meeting-booking discipline
 
@@ -165,10 +172,10 @@ Read in this order:
 3. `modules/cold-call/REVIEW-RUBRIC.md`
 4. `modules/openmart-prospecting/PLAYBOOK.md`
 
-Use this as the local-business calling path.
+Use this as the local SMB calling path.
 
-If the motion is software-company or B2B calling, use `b2b-cold-calling`
-instead.
+If the motion is a software company selling to another software company, use
+`b2b-cold-calling` instead.
 
 ### `b2b-cold-calling`
 
@@ -335,9 +342,9 @@ The Openmart playbook is playbook-first, connector-second.
 Important:
 
 - the SMB prospect list post is the main list-building source
-- the local-business sales posts are downstream outbound context
+- the local SMB sales posts are downstream outbound context
 - the API docs are real and public
-- the repo should make local-business selling easier by connecting:
+- the repo should make local SMB selling easier by connecting:
   - search
   - normalization
   - approval
@@ -351,7 +358,7 @@ When the user asks how to use Openmart:
 - then explain which endpoint fits where
 - avoid turning the answer into API trivia without a business workflow
 
-If the motion is software-company or B2B prospecting rather than local-business
+If the motion is software-to-software B2B prospecting rather than local SMB
 prospecting, route to `b2b-prospecting` instead of forcing Openmart into the
 answer.
 

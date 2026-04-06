@@ -1,7 +1,12 @@
-# Local Business Prospecting
+# Local SMB Prospecting
 
-Define ICPs, build local-business lists, and document repeatable local-business
+Define ICPs, build local SMB lists, and document repeatable local SMB
 prospecting workflows.
+
+Use this when you sell to local SMBs.
+
+If you are a software company selling to another software company, use
+[`../b2b-prospecting/`](../b2b-prospecting/) instead.
 
 ## Summary
 
@@ -12,18 +17,15 @@ prospecting workflows.
 
 ## What this playbook covers
 
-- local-business prospecting specifically
+- local SMB prospecting specifically
 - ICP definition workflow
 - query loop for broad-to-tight search
-- source choice for local-business motions
+- source choice for local SMB motions
 - real ICP patterns and approval logic
 - list quality rules
 - downstream outbound context after the list is clean
 - normalized prospect export shape
 - thin connector starter for boring API calls
-
-If the motion is software-company or B2B prospecting, use
-[`../b2b-prospecting/`](../b2b-prospecting/) instead.
 
 ## Included now
 
@@ -63,7 +65,7 @@ There are two valid ways to start:
 
 Use this when the goal is:
 
-- get an initial local-business list quickly
+- get an initial local SMB list quickly
 - validate a segment before building anything
 - work directly in the Openmart product first
 
@@ -115,7 +117,7 @@ Keep these layers separate:
 
 - [`../../docs/STANDARD-PRACTICE.md`](../../docs/STANDARD-PRACTICE.md) =
   generic prospecting and list-ops mechanics
-- [`PLAYBOOK.md`](./PLAYBOOK.md) = local-business judgment, source choice,
+- [`PLAYBOOK.md`](./PLAYBOOK.md) = local SMB judgment, source choice,
   quality rules, and downstream outbound context
 
 ## What comes next

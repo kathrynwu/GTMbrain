@@ -1,7 +1,9 @@
-# Local Business Enrichment
+# Local SMB Enrichment
 
-Capture local-business enrichment logic, approval-first filters, and CRM-ready
+Capture local SMB enrichment logic, approval-first filters, and CRM-ready
 field mapping.
+
+Use this when you sell to local SMBs.
 
 ## Summary
 
@@ -18,7 +20,7 @@ field mapping.
 
 ## Focus
 
-- enrich approved local-business rows, not the full raw list
+- enrich approved local SMB rows, not the full raw list
 - find owner, general manager, and decision-maker contact paths
 - keep enrichment inspectable
 - preserve workflow fields before CRM sync
@@ -26,14 +28,14 @@ field mapping.
 
 ## What this playbook covers
 
-- local-business enrichment specifically
-- what fields matter most for local-business outbound
+- local SMB enrichment specifically
+- what fields matter most for local SMB outbound
 - how to filter based on location count, website, reviews, and tech signals
 - how email verification should gate outbound readiness
 - how to separate raw search data from enriched decision-maker data
 - how to sync approved rows into CRM or an internal tool without losing context
 
-If the motion is software-company or B2B enrichment, use
+If a software company is selling to another software company, use
 [`../b2b-enriching/`](../b2b-enriching/) instead.
 
 ## Source material

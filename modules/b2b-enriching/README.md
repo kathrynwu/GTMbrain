@@ -3,6 +3,8 @@
 Enrich approved B2B rows with the right buyer, contact path, and context before
 outbound or CRM handoff.
 
+Use this when a software company is selling to another software company.
+
 ## Summary
 
 - **Surface:** `Playbook`
@@ -28,11 +30,11 @@ outbound or CRM handoff.
 ## Use this playbook when
 
 - the account is right but the buyer/contact path needs work
-- the motion is software-company or B2B outbound
+- the motion is software-company outbound
 - you need a clean handoff into email, call, or CRM
 
 ## Do not use this playbook when
 
-- the motion is local-business owner/manager enrichment
+- the motion is selling to local SMB owners or managers
 
 For that path, use [`../local-list-enriching/`](../local-list-enriching/).
