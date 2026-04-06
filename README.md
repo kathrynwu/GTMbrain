@@ -22,6 +22,42 @@ Then either:
 - open the module you need from the table below
 - or start with [`GTMbrain Router`](./.agents/skills/gtmbrain/SKILL.md)
 
+Example, if you want to create a B2B emailing strategy doc:
+
+1. Open this repo in Codex or Claude Code.
+2. Say:
+   `Read AGENTS.md and use the gtmbrain skill to route me for a B2B emailing strategy doc.`
+3. Then say:
+   `Use the b2b-prospecting skill first. Help me define the ICP, buyer, pain hypothesis, and why-now trigger.`
+4. Then say:
+   `Use the b2b-enriching skill. Tell me what account fields, contact fields, and personalization fields I need before outreach.`
+5. Then say:
+   `Use the b2b-emailing skill. Draft a B2B emailing strategy doc with an A/B/C recommendation, subject lines, first-touch, follow-ups, deliverability notes, and reporting metrics.`
+6. Iterate with follow-ups like:
+   `Rewrite this for RevOps.`
+   `Make the first-touch shorter.`
+   `Diagnose why reply rate is weak.`
+   `Should this stay email-first or switch to calling?`
+
+The agent should walk you through the modules step by step.
+
+The finished strategy doc should contain:
+
+- target segment and buyer
+- pain hypothesis and why-now trigger
+- list-quality requirements
+- personalization rules
+- subject-line pattern
+- first-touch email
+- follow-up cadence
+- CTA
+- deliverability rules
+- reporting plan
+
+If you want a one-line starter prompt, use:
+
+- `Use GTMbrain's B2B prospecting, enrichment, and emailing modules to help me build a complete B2B emailing strategy doc step by step.`
+
 ## Start Here
 
 | Motion | Start | Then |

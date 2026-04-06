@@ -1,0 +1,394 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Instrument+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap");
+
+:root {
+  color-scheme: light;
+  --ink: #182230;
+  --steel: #475467;
+  --canvas: #f4ede1;
+  --paper: #fcfaf5;
+  --panel: rgba(255, 252, 247, 0.92);
+  --line: rgba(24, 34, 48, 0.1);
+  --blue: #1450d2;
+  --mint: #0f9d7a;
+  --sand: #d97706;
+  --coral: #c2410c;
+  --shadow: 0 20px 60px rgba(24, 34, 48, 0.08);
+  --radius-lg: 28px;
+  --radius-md: 18px;
+  --radius-sm: 12px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  background:
+    radial-gradient(circle at top right, rgba(20, 80, 210, 0.12), transparent 28%),
+    radial-gradient(circle at left center, rgba(15, 157, 122, 0.08), transparent 30%),
+    linear-gradient(180deg, #f1e5d3 0%, var(--paper) 100%);
+  color: var(--ink);
+  font-family: "Instrument Sans", "Segoe UI", sans-serif;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+.eyebrow,
+.badge,
+.output-label,
+.detail-list,
+.field span {
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.app-shell {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 32px 24px 48px;
+}
+
+.hero,
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1.35fr 0.85fr;
+  gap: 20px;
+  padding: 28px;
+  border-radius: 32px;
+  margin-bottom: 20px;
+}
+
+.hero-copy h1,
+.panel h2,
+.detail-header h3 {
+  margin: 0;
+  font-family: "Space Grotesk", sans-serif;
+  letter-spacing: -0.04em;
+}
+
+.hero-copy h1 {
+  font-size: clamp(2.2rem, 4vw, 3.4rem);
+  line-height: 0.98;
+  margin-top: 10px;
+}
+
+.hero-copy p,
+.summary-card p,
+.output-card p,
+.detail-card p,
+.field input,
+.field textarea,
+.field select {
+  color: var(--steel);
+}
+
+.hero-copy p {
+  max-width: 62ch;
+  margin: 14px 0 0;
+  line-height: 1.65;
+}
+
+.hero-card,
+.summary-card,
+.output-card,
+.detail-card,
+.field input,
+.field select,
+.field textarea {
+  border: 1px solid var(--line);
+}
+
+.hero-card {
+  padding: 20px;
+  border-radius: 22px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.75), rgba(255, 248, 238, 0.92));
+}
+
+.hero-card ol {
+  margin: 14px 0 0;
+  padding-left: 20px;
+  line-height: 1.7;
+}
+
+.hero-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.eyebrow,
+.badge,
+.output-label,
+.field span {
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.eyebrow {
+  color: var(--steel);
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 10px;
+  border-radius: 999px;
+  color: var(--blue);
+  background: rgba(20, 80, 210, 0.08);
+  border: 1px solid rgba(20, 80, 210, 0.16);
+}
+
+.badge-muted {
+  color: var(--steel);
+  background: rgba(24, 34, 48, 0.04);
+  border-color: rgba(24, 34, 48, 0.08);
+}
+
+.workspace {
+  display: grid;
+  gap: 20px;
+}
+
+.panel {
+  border-radius: var(--radius-lg);
+  padding: 24px;
+}
+
+.panel-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: flex-start;
+  margin-bottom: 18px;
+}
+
+.panel h2 {
+  margin-top: 8px;
+  font-size: 1.5rem;
+}
+
+.form-grid,
+.summary-grid,
+.output-grid,
+.detail-grid {
+  display: grid;
+  gap: 16px;
+}
+
+.form-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.field {
+  display: grid;
+  gap: 8px;
+}
+
+.field-wide {
+  grid-column: span 2;
+}
+
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.84);
+  padding: 14px 16px;
+  outline: none;
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  border-color: rgba(20, 80, 210, 0.28);
+  box-shadow: 0 0 0 4px rgba(20, 80, 210, 0.08);
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.button {
+  appearance: none;
+  border: 1px solid rgba(24, 34, 48, 0.12);
+  background: rgba(255, 255, 255, 0.76);
+  color: var(--ink);
+  padding: 12px 16px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition:
+    transform 120ms ease,
+    box-shadow 120ms ease,
+    border-color 120ms ease;
+}
+
+.button:hover,
+.button:focus-visible {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 18px rgba(24, 34, 48, 0.08);
+  outline: none;
+}
+
+.button-primary {
+  color: white;
+  background: linear-gradient(135deg, var(--blue), #0f62fe);
+  border-color: transparent;
+}
+
+.button-ghost {
+  background: transparent;
+}
+
+.summary-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.summary-card {
+  padding: 20px;
+  border-radius: 20px;
+  background: rgba(255, 252, 247, 0.88);
+}
+
+.summary-card h2 {
+  font-size: 1.25rem;
+}
+
+.summary-card p {
+  margin-bottom: 0;
+  line-height: 1.6;
+}
+
+.output-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-bottom: 16px;
+}
+
+.output-card {
+  padding: 20px;
+  border-radius: 22px;
+  min-height: 210px;
+}
+
+.output-card p {
+  margin: 14px 0 0;
+  line-height: 1.7;
+  white-space: pre-wrap;
+}
+
+.accent-blue {
+  background: linear-gradient(180deg, rgba(20, 80, 210, 0.08), rgba(255, 255, 255, 0.82));
+}
+
+.accent-sand {
+  background: linear-gradient(180deg, rgba(217, 119, 6, 0.1), rgba(255, 255, 255, 0.82));
+}
+
+.accent-mint {
+  background: linear-gradient(180deg, rgba(15, 157, 122, 0.1), rgba(255, 255, 255, 0.82));
+}
+
+.accent-coral {
+  background: linear-gradient(180deg, rgba(194, 65, 12, 0.1), rgba(255, 255, 255, 0.82));
+}
+
+.detail-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.detail-card {
+  border-radius: 20px;
+  padding: 20px;
+  background: rgba(255, 252, 247, 0.88);
+}
+
+.detail-header {
+  margin-bottom: 14px;
+}
+
+.detail-header h3 {
+  margin-top: 8px;
+  font-size: 1.2rem;
+}
+
+.detail-list {
+  margin: 0;
+  padding-left: 20px;
+  line-height: 1.7;
+}
+
+.objection-list {
+  display: grid;
+  gap: 12px;
+}
+
+.objection-card {
+  padding: 14px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(24, 34, 48, 0.08);
+}
+
+.objection-card h4 {
+  margin: 0 0 8px;
+  font-size: 1rem;
+}
+
+.objection-card p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+@media (max-width: 980px) {
+  .hero,
+  .summary-grid,
+  .detail-grid,
+  .output-grid,
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .field-wide {
+    grid-column: span 1;
+  }
+}
+
+@media (max-width: 640px) {
+  .app-shell {
+    padding: 18px 14px 28px;
+  }
+
+  .hero,
+  .panel {
+    padding: 18px;
+    border-radius: 22px;
+  }
+
+  .panel-header {
+    flex-direction: column;
+  }
+
+  .button,
+  .form-actions {
+    width: 100%;
+  }
+}
