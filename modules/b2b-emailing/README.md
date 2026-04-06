@@ -3,7 +3,7 @@
 Capture short B2B outbound email strategy, buyer-fit rules, and lightweight
 follow-up structure.
 
-## Module summary
+## Summary
 
 - **Surface:** `Playbook`
 - **Audience:** outbound operator, GTM lead, growth engineer
@@ -31,7 +31,7 @@ follow-up structure.
 - when email-first beats B2B calling
 - sending setup and inbox health rules
 
-## What this module covers
+## What this playbook covers
 
 - how to write short B2B cold emails
 - what personalization is worth using

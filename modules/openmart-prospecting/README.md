@@ -3,14 +3,14 @@
 Define ICPs, build local-business lists, and document repeatable local-business
 prospecting workflows.
 
-## Module summary
+## Summary
 
 - **Surfaces:** `Playbook`, `Connector`
 - **Audience:** growth engineer, RevOps builder, outbound operator
 - **Primary action:** read the playbook first
 - **Status:** first release
 
-## What this module covers
+## What this playbook covers
 
 - local-business prospecting specifically
 - ICP definition workflow
@@ -44,7 +44,7 @@ If the motion is software-company or B2B prospecting, use
 
 ## Source playbooks
 
-This module is grounded in these Openmart posts:
+This playbook is grounded in these Openmart posts:
 
 - [How to build a high-quality SMB prospect list](https://www.openmart.com/blogs/how-to-build-a-high-quality-smb-prospect-list)
 - [How to sell to local business? (Part 1)](https://www.openmart.com/blogs/how-to-sell-to-local-business)
@@ -97,7 +97,7 @@ Start here:
 - CRM sync automation
 - agent wrapper
 
-## Try this module
+## Try this playbook
 
 If you want the shortest path:
 
@@ -127,7 +127,7 @@ Keep these layers separate:
 
 ## What comes next
 
-The normal next step after this module is one of:
+The normal next step after this playbook is one of:
 
 - [`../local-list-enriching/`](../local-list-enriching/) if the list is good
   enough to enrich
@@ -137,7 +137,7 @@ The normal next step after this module is one of:
 
 ## Real usage patterns
 
-This module now includes real ICP shapes and filtering logic for:
+This playbook now includes real ICP shapes and filtering logic for:
 
 - SMB SaaS selling into local operators
 - marketplaces pulling local supply
@@ -155,7 +155,7 @@ It also captures the common reality:
 
 ## Notes
 
-This module is playbook-first on purpose.
+This playbook is playbook-first on purpose.
 
 The hard part in prospecting is usually not the fetch call. It is the judgment:
 

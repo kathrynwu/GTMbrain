@@ -3,7 +3,7 @@
 Capture repeatable SEO workflow judgment for page prioritization, keyword
 choice, and on-page improvement.
 
-## Module summary
+## Summary
 
 - **Surface:** `Playbook`
 - **Audience:** growth engineer, content lead, solo operator
@@ -23,7 +23,7 @@ choice, and on-page improvement.
 - page structure and internal linking
 - refresh and measurement rules
 
-## What this module covers
+## What this playbook covers
 
 - how to decide between improving an existing page and creating a new one
 - how to pick keywords from GSC, Semrush, competitors, and PostHog

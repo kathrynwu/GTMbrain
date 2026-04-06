@@ -14,9 +14,9 @@ Keep the repo iterative:
 
 `prospect -> enrich -> email/call or SEO -> report -> repeat`
 
-When answering module questions:
+When answering playbook questions:
 
-1. start from the module `README.md`
+1. start from the playbook `README.md`
 2. read the playbook or workflow file
 3. read schema or sample data only if implementation matters
 4. answer in plain English first
@@ -24,7 +24,7 @@ When answering module questions:
 
 Do not answer generically if the repo already has a concrete workflow.
 
-## Current Modules
+## Current Playbooks
 
 ### `kol-crm`
 
@@ -335,7 +335,7 @@ For `b2b-cold-calling`, use the repo's 3-step framework with the right buyer:
 Make sure the buyer can actually move the deal before treating the segment as
 working.
 
-Prefer `A/B/C` recommendation-style answers when routing users across modules.
+Prefer `A/B/C` recommendation-style answers when routing users across playbooks.
 
 For repo-local skills, prefer the full pattern:
 
@@ -345,7 +345,7 @@ For repo-local skills, prefer the full pattern:
 
 ## Openmart Guidance
 
-The Openmart module is playbook-first, connector-second.
+The Openmart playbook is playbook-first, connector-second.
 
 Important:
 
@@ -387,12 +387,12 @@ Do not optimize for:
 
 Always read `DESIGN.md` before making visual or UI decisions.
 
-GTMbrain should feel like a curated registry of forkable GTM modules:
+GTMbrain should feel like a curated registry of forkable GTM playbooks:
 
 - technical field guide
 - restrained color
 - strong typography
-- explicit module surfaces
+- explicit playbook surfaces
 - short copy
 
 Do not drift into:
@@ -403,6 +403,6 @@ Do not drift into:
 
 When building UI:
 
-- keep `KOL CRM` as the obvious featured module
+- keep `KOL CRM` as the obvious featured starter
 - make `Template`, `Playbook`, `Connector`, and `Skill` visibly distinct
 - optimize for scan speed and forkability

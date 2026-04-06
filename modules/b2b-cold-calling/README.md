@@ -3,7 +3,7 @@
 Capture B2B cold-call scripts, review criteria, and tactical calling
 heuristics.
 
-## Module summary
+## Summary
 
 - **Surface:** `Playbook`
 - **Audience:** outbound operator, GTM lead, growth engineer
@@ -28,7 +28,7 @@ heuristics.
 - practical benchmarks
 - meeting-booking discipline
 
-## What this module covers
+## What this playbook covers
 
 - the 3-step B2B cold-call framework
 - a call review rubric

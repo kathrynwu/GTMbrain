@@ -3,7 +3,7 @@
 Capture local-business enrichment logic, approval-first filters, and CRM-ready
 field mapping.
 
-## Module summary
+## Summary
 
 - **Surface:** `Playbook`
 - **Audience:** growth engineer, RevOps builder, outbound operator
@@ -26,7 +26,7 @@ field mapping.
 - preserve workflow fields before CRM sync
 - filter with business quality signals before spending credits
 
-## What this module covers
+## What this playbook covers
 
 - local-business enrichment specifically
 - what fields matter most for local-business outbound
@@ -45,7 +45,7 @@ If the motion is software-company or B2B enrichment, use
 
 ## What comes next
 
-The normal next step after this module is:
+The normal next step after this playbook is:
 
 - [`../local-emailing/`](../local-emailing/) if the row is email-ready
 - [`../cold-call/`](../cold-call/) if the row is phone-ready

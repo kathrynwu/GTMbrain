@@ -3,7 +3,7 @@
 Capture local-business scripts, review criteria, and tactical outbound
 heuristics.
 
-## Module summary
+## Summary
 
 - **Surface:** `Playbook`
 - **Audience:** outbound operator, GTM lead, growth engineer
@@ -28,7 +28,7 @@ heuristics.
 - practical benchmarks
 - meeting-booking discipline
 
-## What this module now covers
+## What this playbook now covers
 
 - the 3-step cold-call framework:
   - build credibility

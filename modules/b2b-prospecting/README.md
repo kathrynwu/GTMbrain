@@ -3,7 +3,7 @@
 Define ICPs, choose the right buyer, and build B2B prospect lists without
 mixing them into the local-business path.
 
-## Module summary
+## Summary
 
 - **Surface:** `Playbook`
 - **Audience:** growth engineer, RevOps builder, outbound operator
@@ -17,7 +17,7 @@ mixing them into the local-business path.
 - [`LEAD-SOURCES.md`](./LEAD-SOURCES.md)
 - [`../openmart-prospecting/STANDARD-PRACTICE.md`](../openmart-prospecting/STANDARD-PRACTICE.md)
 
-## What this module covers
+## What this playbook covers
 
 - B2B ICP definition
 - company-level and buyer-level filters
@@ -46,14 +46,14 @@ Default buyers:
 - Salesforce Administrator
 - Head of Sales can matter, but is not the default first buyer
 
-## Use this module when
+## Use this playbook when
 
 - the buyer is a company operator, director, or VP
 - the motion is software-company prospecting
 - job titles and authority matter more than local-business shell data
 - you need to separate the account from the person who can actually buy
 
-## Do not use this module when
+## Do not use this playbook when
 
 - the motion is local-business prospecting
 - the list starts from business-shell search and owner finding
@@ -62,7 +62,7 @@ For that path, use [`../openmart-prospecting/`](../openmart-prospecting/).
 
 ## Qualification lens
 
-Use this module to qualify around:
+Use this playbook to qualify around:
 
 - `Budget`: do they spend real money or resources on the problem already
 - `Authority`: who are the real decision-makers and what is the buying path
@@ -71,7 +71,7 @@ Use this module to qualify around:
 
 ## What comes next
 
-The normal next step after this module is:
+The normal next step after this playbook is:
 
 - [`../b2b-enriching/`](../b2b-enriching/) if the list is approved and needs
   better buyer/contact data

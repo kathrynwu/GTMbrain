@@ -2,14 +2,14 @@
 
 Track influencer sourcing, outreach, pricing, owner, and status.
 
-## Module summary
+## Summary
 
 - **Surface:** `Template`
 - **Audience:** founder, growth operator, partnerships owner, RevOps builder
-- **Primary action:** fork or clone `GTMbrain`, then adapt this module to your own influencer pipeline
+- **Primary action:** fork or clone `GTMbrain`, then adapt this starter to your own influencer pipeline
 - **Status:** first release
 
-## What this module covers
+## What this starter covers
 
 - YouTube + Twitter influencer tracking
 - import CSV
@@ -39,7 +39,7 @@ Track influencer sourcing, outreach, pricing, owner, and status.
 
 ## Included now
 
-- [`module.json`](./module.json)
+- metadata file: [`module.json`](./module.json)
 - [`schema/influencer.schema.json`](./schema/influencer.schema.json)
 - [`WORKFLOW.md`](./WORKFLOW.md)
 - [`BUILDING.md`](./BUILDING.md)
@@ -49,7 +49,7 @@ Track influencer sourcing, outreach, pricing, owner, and status.
 
 ## Try it locally
 
-This module lives inside `GTMbrain`, so the action is to fork or clone the repo,
+This starter lives inside `GTMbrain`, so the action is to fork or clone the repo,
 then start here.
 
 From your machine:
@@ -74,12 +74,12 @@ browser if you want the fastest path.
 
 ## Notes
 
-This module is template-first on purpose. The job is to make the workflow easy to copy before layering on more automation.
+This starter is template-first on purpose. The job is to make the workflow easy to copy before layering on more automation.
 
 Today this is usable as a single-user local CRM starter. It is not yet a synced
 team product.
 
-If you describe this module publicly, the clean wording is:
+If you describe this starter publicly, the clean wording is:
 
 > Fork or clone `GTMbrain`, then start with `modules/kol-crm/`.
 

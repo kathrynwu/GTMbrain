@@ -20,10 +20,10 @@ Use this repo as an iterative GTM system, not a pile of notes.
 
 ## Rules
 
-- answer from repo-native module docs before inventing abstractions
+- answer from repo-native playbook docs before inventing abstractions
 - keep the user moving through a clean loop:
   prospect -> enrich -> email/call -> report -> repeat
-- route to the smallest useful module, not the whole repo
+- route to the smallest useful playbook, not the whole repo
 - keep local-business and B2B paths separate
 
 ## Good Codex Starts

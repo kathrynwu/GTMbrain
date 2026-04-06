@@ -3,7 +3,7 @@
 Enrich approved B2B rows with the right buyer, contact path, and context before
 outbound or CRM handoff.
 
-## Module summary
+## Summary
 
 - **Surface:** `Playbook`
 - **Audience:** growth engineer, RevOps builder, outbound operator
@@ -17,7 +17,7 @@ outbound or CRM handoff.
 - [`FIELD-MAPPING.md`](./FIELD-MAPPING.md)
 - [`../local-list-enriching/EMAIL-VERIFICATION.md`](../local-list-enriching/EMAIL-VERIFICATION.md)
 
-## What this module covers
+## What this playbook covers
 
 - enrich only approved B2B rows
 - reroute from the wrong buyer to the right buyer
@@ -25,13 +25,13 @@ outbound or CRM handoff.
 - define sequencing-ready and call-ready shapes
 - keep verification visible before outbound
 
-## Use this module when
+## Use this playbook when
 
 - the account is right but the buyer/contact path needs work
 - the motion is software-company or B2B outbound
 - you need a clean handoff into email, call, or CRM
 
-## Do not use this module when
+## Do not use this playbook when
 
 - the motion is local-business owner/manager enrichment
 

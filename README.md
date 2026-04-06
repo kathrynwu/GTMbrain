@@ -1,11 +1,15 @@
 # GTMbrain
 
-Forkable GTM modules for local-business prospecting, B2B outbound, SEO, and a
-small starter app.
+Forkable GTM playbooks for local-business prospecting, B2B outbound, SEO, and
+a small starter app.
 
 This repo is built from real workflows. It is meant to be iterative:
 
 `prospecting -> enrichment -> outbound or SEO -> reporting -> repeat`
+
+The goal is not just to produce lists or copy.
+
+The goal is to help you think through and write a clear GTM strategy.
 
 If you do not know where to start, use the
 [`GTMbrain Router`](./.agents/skills/gtmbrain/SKILL.md).
@@ -19,7 +23,7 @@ cd GTMbrain
 
 Then either:
 
-- open the module you need from the table below
+- open the playbook you need from the table below
 - or start with [`GTMbrain Router`](./.agents/skills/gtmbrain/SKILL.md)
 
 ## Start Here
@@ -32,18 +36,36 @@ Then either:
 | B2B outbound | [`B2B Emailing`](./modules/b2b-emailing/) | [`B2B Cold Calling`](./modules/b2b-cold-calling/) |
 | SEO | [`SEO`](./modules/seo/) | improve page or create supporting page |
 | starter app | [`KOL CRM Starter`](./modules/kol-crm/) | adapt the template |
-| broad GTM question | [`GTMbrain Router`](./.agents/skills/gtmbrain/SKILL.md) | the recommended module |
+| broad GTM question | [`GTMbrain Router`](./.agents/skills/gtmbrain/SKILL.md) | the recommended playbook |
 
 ## How To Iterate
 
 1. Pick one path.
-2. Read that module's `README.md`, then `PLAYBOOK.md`.
+2. Read that playbook's `README.md`, then `PLAYBOOK.md`.
 3. Produce one clean output:
    an approved list, enriched rows, an email sequence, a call script, or a
    page plan.
-4. Move to the next module only after the handoff is clean.
+4. Move to the next playbook only after the handoff is clean.
 5. Use the reporting docs to decide whether to keep, pause, rewrite, or scale.
 6. Repeat weekly.
+
+## What Each Playbook Should Produce
+
+Each playbook should leave you with one clearer part of your GTM strategy.
+
+| Playbook | Output |
+| --- | --- |
+| Local Business Prospecting | ICP, target segment, filters, reject rules, approved-row standard |
+| B2B Prospecting | ICP, buyer hierarchy, trigger rules, qualification lens |
+| Local Business Enrichment | outbound-ready row standard, required fields, CRM handoff shape |
+| B2B Enrichment | buyer rerouting rules, sequencing-ready row, call-ready row |
+| Local Business Emailing | channel choice, message angle, sequence structure, response standards |
+| B2B Emailing | buyer-fit messaging, credibility angle, sequence structure, keep/pause/rewrite rules |
+| Local Business Cold Calling | call-first logic, opener, qualification flow, objection handling |
+| B2B Cold Calling | buyer-first calling logic, opener, qualification flow, meeting-booking motion |
+| SEO | page strategy, improve-vs-new-page decision, keyword direction |
+
+If the output is still vague, the playbook has not done its job yet.
 
 Reusable backbone:
 
@@ -52,7 +74,7 @@ Reusable backbone:
 Start with the backbone here if needed:
 [`modules/openmart-prospecting/STANDARD-PRACTICE.md`](./modules/openmart-prospecting/STANDARD-PRACTICE.md)
 
-## Module Map
+## Playbook Map
 
 ### Local-business path
 
@@ -127,7 +149,7 @@ Then open `http://localhost:4321`.
 
 ## Repo Layout
 
-- `modules/` = the actual GTM workflows
+- `modules/` = where the playbooks live on disk
 - `.agents/skills/` = canonical repo-native skills
 - `.claude/skills/` and `.claude/commands/` = Claude Code wrappers
 - `packages/openmart/` = thin Openmart connector starter
