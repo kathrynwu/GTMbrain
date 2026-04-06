@@ -15,4 +15,4 @@ Use the repo-native module docs after that:
 
 1. `modules/b2b-prospecting/README.md`
 2. `modules/b2b-prospecting/PLAYBOOK.md`
-3. `modules/b2b-prospecting/LEAD-SOURCES.md`
+3. `docs/STANDARD-PRACTICE.md`

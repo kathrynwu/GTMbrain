@@ -13,9 +13,7 @@ mixing them into the local-business path.
 ## Start here
 
 - [`PLAYBOOK.md`](./PLAYBOOK.md)
-- [`ICP-AND-DISCOVERY.md`](./ICP-AND-DISCOVERY.md)
-- [`LEAD-SOURCES.md`](./LEAD-SOURCES.md)
-- [`../openmart-prospecting/STANDARD-PRACTICE.md`](../openmart-prospecting/STANDARD-PRACTICE.md)
+- [`../../docs/STANDARD-PRACTICE.md`](../../docs/STANDARD-PRACTICE.md)
 
 ## What this playbook covers
 
@@ -75,7 +73,7 @@ The normal next step after this playbook is:
 
 - [`../b2b-enriching/`](../b2b-enriching/) if the list is approved and needs
   better buyer/contact data
-- [`../b2b-emailing/`](../b2b-emailing/) if the B2B segment is already
-  clear enough for outbound
+- [`../b2b-emailing/`](../b2b-emailing/) if the B2B segment is already clear
+  enough for outbound
 - [`../b2b-cold-calling/`](../b2b-cold-calling/) if the motion should be
   phone-first

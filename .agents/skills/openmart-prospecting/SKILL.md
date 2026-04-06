@@ -24,18 +24,15 @@ If the motion is software-company or B2B prospecting, route to
 
 1. `modules/openmart-prospecting/README.md`
 2. `modules/openmart-prospecting/PLAYBOOK.md`
-3. `modules/openmart-prospecting/STANDARD-PRACTICE.md`
-4. `modules/openmart-prospecting/SMB-PROSPECTING.md` for SMB or local-business motions
-5. `modules/openmart-prospecting/LEAD-SOURCES.md`
-6. `modules/openmart-prospecting/QUERY-RECIPES.md`
-7. `modules/openmart-prospecting/INTEGRATIONS.md`
-8. `modules/openmart-prospecting/SELLING-LOCAL-BUSINESSES.md`
+3. `docs/STANDARD-PRACTICE.md`
+4. `modules/openmart-prospecting/QUERY-RECIPES.md`
+5. `modules/openmart-prospecting/INTEGRATIONS.md`
 
 If the question touches implementation:
 
-9. `modules/openmart-prospecting/schema/prospect.schema.json`
-10. `packages/openmart/README.md`
-11. `packages/openmart/client.example.js`
+6. `modules/openmart-prospecting/schema/prospect.schema.json`
+7. `packages/openmart/README.md`
+8. `packages/openmart/client.example.js`
 
 Treat this source as the main list-building guide:
 

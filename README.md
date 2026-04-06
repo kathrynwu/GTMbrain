@@ -46,7 +46,8 @@ Then either:
    an approved list, enriched rows, an email sequence, a call script, or a
    page plan.
 4. Move to the next playbook only after the handoff is clean.
-5. Use the reporting docs to decide whether to keep, pause, rewrite, or scale.
+5. Use the measurement and review sections in the playbook to decide whether to
+   keep, pause, rewrite, or scale.
 6. Repeat weekly.
 
 ## What Each Playbook Should Produce
@@ -72,7 +73,7 @@ Reusable backbone:
 `Source -> Merge -> Qualify -> Enrich -> Segment -> Prioritize -> Route -> Handoff -> Review`
 
 Start with the backbone here if needed:
-[`modules/openmart-prospecting/STANDARD-PRACTICE.md`](./modules/openmart-prospecting/STANDARD-PRACTICE.md)
+[`docs/STANDARD-PRACTICE.md`](./docs/STANDARD-PRACTICE.md)
 
 ## Playbook Map
 
@@ -129,12 +130,14 @@ Claude wrappers live in [`.claude/skills/`](./.claude/skills/) and
 
 ## Key Docs
 
-- local-business reporting:
-  [`modules/local-emailing/REPORTING.md`](./modules/local-emailing/REPORTING.md)
-- B2B reporting:
-  [`modules/b2b-emailing/REPORTING.md`](./modules/b2b-emailing/REPORTING.md)
-- B2B buyer and discovery pattern:
-  [`modules/b2b-prospecting/ICP-AND-DISCOVERY.md`](./modules/b2b-prospecting/ICP-AND-DISCOVERY.md)
+- shared prospecting backbone:
+  [`docs/STANDARD-PRACTICE.md`](./docs/STANDARD-PRACTICE.md)
+- local-business outbound playbook:
+  [`modules/local-emailing/PLAYBOOK.md`](./modules/local-emailing/PLAYBOOK.md)
+- B2B outbound playbook:
+  [`modules/b2b-emailing/PLAYBOOK.md`](./modules/b2b-emailing/PLAYBOOK.md)
+- B2B prospecting playbook:
+  [`modules/b2b-prospecting/PLAYBOOK.md`](./modules/b2b-prospecting/PLAYBOOK.md)
 - assistant prompt pack:
   [`TEST-CASES.md`](./TEST-CASES.md)
 
@@ -150,6 +153,7 @@ Then open `http://localhost:4321`.
 ## Repo Layout
 
 - `modules/` = where the playbooks live on disk
+- `docs/` = shared operating backbones and cross-playbook references
 - `.agents/skills/` = canonical repo-native skills
 - `.claude/skills/` and `.claude/commands/` = Claude Code wrappers
 - `packages/openmart/` = thin Openmart connector starter

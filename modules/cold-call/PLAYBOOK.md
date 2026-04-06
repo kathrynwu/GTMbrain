@@ -37,13 +37,11 @@ Know:
 
 If those are still weak, enrich the list before calling.
 
-## The 3 Steps
+## The 3 steps
 
-There are 3 steps to a successful cold call:
-
-1. building credibility
-2. building value
-3. booking the meeting
+1. build credibility
+2. build value
+3. book the meeting
 
 If you fail on one of these, the call usually dies.
 
@@ -53,9 +51,9 @@ You have about 6 seconds to earn attention.
 
 The opening needs 3 things:
 
-1. Conviction in your voice.
-2. Straight to the point.
-3. Clear, polished delivery.
+1. conviction in your voice
+2. straight-to-the-point delivery
+3. clear, polished wording
 
 That means:
 
@@ -66,19 +64,9 @@ That means:
 - avoid phrases like `um`, `like`, or `you know`
 - do not sound sneaky
 
-Prospects are deciding:
-
-- who is this
-- do I know them
-- do I want to keep talking
-
-Answer those fast.
-
 ### Opener template
 
 `Hi {name}, this is {rep} from {company}. I'm calling because we help {segment} with {pain}. Quick question for you.`
-
-Keep the opener short. Do not bury the reason for the call.
 
 Think of this as a handshake through the phone. If the opener feels weak, the
 rest of the call usually dies with it.
@@ -89,22 +77,14 @@ Building value means conveying 3 things:
 
 - you understand their business
 - you are credible in the category
-- your product is better than the status quo
-
-This is the basic rule:
-
-- people do not care how much you know until they know how much you care
+- your product is meaningfully better than the status quo
 
 The simplest way to do this is:
 
-1. Ask short questions that expose pain.
-2. Listen.
-3. Reflect back what you heard in plain English.
-4. Connect your offer to that pain in 1-2 sentences.
-
-Do not assume cheaper is enough.
-
-The offer needs to feel meaningfully better overall.
+1. ask short questions that expose pain
+2. listen
+3. reflect back what you heard in plain English
+4. connect your offer to that pain in `1-2` sentences
 
 ### Qualification prompts
 
@@ -130,33 +110,42 @@ The close should do 4 things:
 
 Time kills deals. Same day or within 24 hours is ideal.
 
-Tell the prospect what happens next and what you need from them, if anything.
-
 ### Close template
 
 `The next step is a short walkthrough so we can show exactly how this would work for {company}. Are you free later today, or would tomorrow morning be better?`
 
-Once they choose, send the invite immediately.
+## First-touch framework
 
-## Framework assets
+Use these as framework shapes, not scripts to repeat word for word.
 
-Use these companion files:
+Rule:
 
-- [`CALL-FRAMEWORKS.md`](./CALL-FRAMEWORKS.md)
-- [`OBJECTION-LIBRARY.md`](./OBJECTION-LIBRARY.md)
-- [`TALK-TRACKS.md`](./TALK-TRACKS.md)
+- mention the problem as the hook
+- then move into the value prop
 
-They cover:
+Prep, `60s`:
 
-- first-touch call flow
-- follow-up call flow
-- gatekeeper route
-- objection rebuttals
-- talk-track examples
+- check the website if it exists
+- check Google reviews if relevant
+- check basic business context
+- open the CRM page
+
+Pattern:
+
+1. opener:
+   `Hi {name}, it's {rep} with {company}, quick question about bringing in more {jobs_or_bookings}?`
+2. hook:
+   `A lot of {category} owners tell me they want more qualified local demand without adding a lot more admin work.`
+3. value:
+   `We help local teams get more qualified leads and respond faster without creating extra busywork for the owner or front desk.`
+4. discovery:
+   `How are you bringing in new {jobs_or_customers} today?`
+5. close:
+   `Worth a 15-minute compare? I'm free Tuesday at 10:00 or Wednesday at 3:00 PT.`
 
 ## Call length
 
-A strong cold call is usually 4-6 minutes.
+A strong cold call is usually `4-6` minutes.
 
 Do not oversell.
 
@@ -166,33 +155,49 @@ The cold call should:
 - create interest
 - earn the meeting
 
-## Objection handling rules
+## Objection handling
 
 Stay calm and short.
 
-Good pattern:
+Use the `A-R-P` model:
 
 1. acknowledge
 2. re-frame
-3. ask permission or one clarifying question
-4. tie back to the business problem
-5. re-close
+3. permission
 
-Example:
+Common rebuttals:
 
-- objection: `Send me something`
-- response: `Happy to. Usually when someone asks that, it means either the timing is bad or it isn't a priority yet. Which one is it for you?`
-
-See [`OBJECTION-LIBRARY.md`](./OBJECTION-LIBRARY.md) for common rebuttals.
+- `Send me an email`
+  `Happy to. So I send something useful, what is the main growth or lead problem you are trying to fix right now?`
+- `Already working with someone`
+  `Makes sense. Usually the question is whether the current setup is already getting you the result you want, or whether there is still a gap worth fixing. Which is it?`
+- `No budget`
+  `Understood. Usually local teams work with us when the result is worth more than the monthly cost. If the economics worked, would it still be worth a look?`
+- `Not interested`
+  `Fair enough. If I could show one practical way to improve {{lead_or_booking_problem}}, would a quick look next week be worth it?`
 
 ## Follow-up and gatekeeper handling
 
-Two patterns matter a lot:
+Follow-up calls must add new information each time.
 
-- follow-up calls must add new information each time
-- gatekeeper handling should stay respectful and direct
+Follow-up shape:
 
-See [`CALL-FRAMEWORKS.md`](./CALL-FRAMEWORKS.md).
+1. reference context
+2. add new value
+3. re-ask for the meeting
+
+Example:
+
+1. `Following up on the voicemail about bringing in more {jobs_or_bookings}.`
+2. `Had one idea specific to {business_name} that could be worth testing.`
+3. `Ten minutes tomorrow to walk through it?`
+
+Gatekeeper route:
+
+- ask confidently for the owner or manager by name
+- if questioned, give brief value for the business
+- politely ask for the best time or voicemail if blocked
+- respect beats deception
 
 ## Metrics to watch
 
@@ -219,7 +224,7 @@ Use this rule:
 - strong first 6 seconds
 - no filler
 - clear reason for the call
-- 1-2 real pain questions
+- `1-2` real pain questions
 - short value bridge
 - definite meeting close
 - clear next-step expectation
@@ -235,3 +240,22 @@ Use this rule:
 - no concrete next step
 - soft close with no calendar invite
 - great discovery but no booked meeting
+
+## Sample talk track
+
+These are reference examples. Do not repeat them word for word.
+
+1. opener:
+   `Hi {name}, it's {rep} with {company}, quick 30 seconds?`
+2. hook:
+   `The reason for my call is that a lot of local owners tell me they want more qualified demand without adding more admin or wasted follow-up time.`
+3. value:
+   `We help local businesses improve lead flow and response speed without creating more manual work for the owner or front desk.`
+4. discovery:
+   `How are you bringing in new jobs or customers today?`
+5. proof:
+   `A lot of the owners we talk to are really looking for one predictable way to drive more qualified business without adding more chaos.`
+6. CTA:
+   `Worth 15 minutes tomorrow at 10 or 2 to see if one of those ideas fits your business?`
+7. close:
+   `Great, I'll send the calendar invite now. Appreciate the candor.`

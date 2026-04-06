@@ -13,10 +13,7 @@
   "primary_action": "Read playbook",
   "status": "first-release",
   "required_paths": [
-    "PLAYBOOK.md",
-    "EXAMPLES.md",
-    "DELIVERABILITY.md",
-    "REPORTING.md"
+    "PLAYBOOK.md"
   ],
   "source_material": [
     "real workflow-automation outbound lessons",

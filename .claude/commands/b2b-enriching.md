@@ -10,7 +10,7 @@ Use the matching module files:
 - @modules/b2b-enriching/README.md
 - @modules/b2b-enriching/PLAYBOOK.md
 - @modules/b2b-enriching/FIELD-MAPPING.md
-- @modules/local-list-enriching/EMAIL-VERIFICATION.md
+- @modules/local-list-enriching/PLAYBOOK.md
 
 If key inputs are missing, ask for:
 

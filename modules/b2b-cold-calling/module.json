@@ -14,10 +14,7 @@
   "status": "first-release",
   "required_paths": [
     "PLAYBOOK.md",
-    "REVIEW-RUBRIC.md",
-    "CALL-FRAMEWORKS.md",
-    "OBJECTION-LIBRARY.md",
-    "TALK-TRACKS.md"
+    "REVIEW-RUBRIC.md"
   ],
   "source_material": [
     "internal cold call playbook",

@@ -18,6 +18,4 @@ Use the repo-native module docs after that:
 1. `modules/cold-call/README.md`
 2. `modules/cold-call/PLAYBOOK.md`
 3. `modules/cold-call/REVIEW-RUBRIC.md`
-4. `modules/cold-call/CALL-FRAMEWORKS.md`
-5. `modules/cold-call/OBJECTION-LIBRARY.md`
-6. `modules/cold-call/TALK-TRACKS.md`
+4. `modules/openmart-prospecting/PLAYBOOK.md`

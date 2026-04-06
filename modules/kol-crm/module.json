@@ -17,7 +17,6 @@
   "required_paths": [
     "schema/influencer.schema.json",
     "WORKFLOW.md",
-    "BUILDING.md",
     "sample-data/influencers.csv",
     "template/README.md",
     "template/index.html",

@@ -9,7 +9,6 @@ Use the matching module files:
 
 - @modules/seo/README.md
 - @modules/seo/PLAYBOOK.md
-- @modules/seo/EXAMPLES.md
 
 If key inputs are missing, ask for:
 

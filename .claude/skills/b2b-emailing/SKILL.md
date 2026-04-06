@@ -16,6 +16,4 @@ Use the repo-native module docs after that:
 
 1. `modules/b2b-emailing/README.md`
 2. `modules/b2b-emailing/PLAYBOOK.md`
-3. `modules/b2b-emailing/EXAMPLES.md`
-4. `modules/b2b-emailing/DELIVERABILITY.md`
-5. `modules/b2b-emailing/REPORTING.md`
+3. `modules/b2b-prospecting/PLAYBOOK.md`

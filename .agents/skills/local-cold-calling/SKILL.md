@@ -21,12 +21,8 @@ Use this skill when the user is asking about:
 
 1. `modules/cold-call/PLAYBOOK.md`
 2. `modules/cold-call/REVIEW-RUBRIC.md`
-3. `modules/cold-call/CALL-FRAMEWORKS.md`
-4. `modules/cold-call/OBJECTION-LIBRARY.md`
-5. `modules/cold-call/TALK-TRACKS.md`
-6. `modules/cold-call/README.md`
-7. `modules/openmart-prospecting/SELLING-LOCAL-BUSINESSES.md`
-8. `modules/openmart-prospecting/PLAYBOOK.md`
+3. `modules/cold-call/README.md`
+4. `modules/openmart-prospecting/PLAYBOOK.md`
 
 ## Workflow
 

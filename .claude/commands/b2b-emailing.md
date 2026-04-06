@@ -9,9 +9,7 @@ Use the matching module files:
 
 - @modules/b2b-emailing/README.md
 - @modules/b2b-emailing/PLAYBOOK.md
-- @modules/b2b-emailing/EXAMPLES.md
-- @modules/b2b-emailing/DELIVERABILITY.md
-- @modules/b2b-emailing/REPORTING.md
+- @modules/b2b-prospecting/PLAYBOOK.md
 
 If key inputs are missing, ask for:
 

@@ -15,7 +15,7 @@ outbound or CRM handoff.
 - [`../b2b-prospecting/PLAYBOOK.md`](../b2b-prospecting/PLAYBOOK.md)
 - [`PLAYBOOK.md`](./PLAYBOOK.md)
 - [`FIELD-MAPPING.md`](./FIELD-MAPPING.md)
-- [`../local-list-enriching/EMAIL-VERIFICATION.md`](../local-list-enriching/EMAIL-VERIFICATION.md)
+- [`../local-list-enriching/PLAYBOOK.md`](../local-list-enriching/PLAYBOOK.md)
 
 ## What this playbook covers
 

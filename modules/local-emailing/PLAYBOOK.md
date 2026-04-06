@@ -32,11 +32,6 @@ Useful defaults:
 - assume the buyer will skim this on a phone before deciding whether to keep
   reading
 
-Why:
-
-- specific workflow pain is usually more credible than generic ROI talk
-- a solved bottleneck is easier to believe than a vague improvement claim
-
 ## What buyers care about
 
 Common outcomes in this repo:
@@ -73,14 +68,6 @@ authority. That is noise, not traction.
 If the list is weak, fix the list before writing more copy.
 
 If the inbox setup is weak, fix that before scaling the campaign.
-
-Read [`DELIVERABILITY.md`](./DELIVERABILITY.md) when the real bottleneck is:
-
-- sender reputation
-- sending-domain setup
-- warm-up
-- sequencing platform choice
-- whether email should run alongside LinkedIn
 
 ## The right shape
 
@@ -122,7 +109,8 @@ They open with a helpful offer, for example:
 
 - help shoot a popular video and post it to TikTok
 - interview the business and feature it in local news
-- ask a concrete business question like catering pricing to start a real exchange
+- ask a concrete business question like catering pricing to start a real
+  exchange
 - offer a free sample that saves the SMB time
 
 The point is not to be cute.
@@ -172,6 +160,86 @@ Low-credibility email usually means:
 - no recognizable proof
 - no trust signal at all
 
+## Example patterns
+
+These are pattern examples, not scripts to spray unchanged.
+
+### Pattern 1: News angle
+
+Good when the first email should offer visibility or local reach up front.
+
+Subject: `Feature for {business_name} in {city}`
+
+Body:
+
+`Hi {owner_name}, saw {business_name} while looking at great {category} spots in {city}. I can feature you in a short local-news style interview so more nearby customers find you. Worth sending a couple ideas?`
+
+### Pattern 2: Short-form video angle
+
+Good when the motion has a local marketing wedge.
+
+Subject: `TikTok idea for {business_name}`
+
+Body:
+
+`Hi {owner_name}, I think {business_name} could get a strong local TikTok post around {angle}. I can help map the video and get a first version drafted so your team does not lose time on it. Want me to send one example?`
+
+### Pattern 3: Question-led opener
+
+Good when you want a lower-pressure start.
+
+Subject: `Quick question on {business_name}`
+
+Body:
+
+`Hi {owner_name}, quick question, what is your current catering price point for a {size} order? Asking because we are mapping how {category} operators in {city} position premium offers, and I may have one idea that could help you increase volume without adding much work. Open to it?`
+
+### Pattern 4: Observation plus relief
+
+Good when one visible business fact already implies the operational pain.
+
+Subject: `{short_observation}`
+
+Body:
+
+`Hi {name}, saw that {observation}. I imagine {operational_burden} is a lot to manage. We built {solution_type} for teams in that position, and it usually helps with {benefit_1} and {benefit_2}. Open to a quick look?`
+
+Stronger version:
+
+`Hi {name}, saw that {observation}. I imagine {operational_burden} is creating extra manual work. We help teams remove {specific_work_removed}, which usually leads to {specific_result}. Open to a quick compare?`
+
+### Pattern 5: Different-angle follow-up
+
+Good when the follow-up should feel fresh instead of sounding like another bump.
+
+Subject: `another angle`
+
+Body:
+
+`Hi {name}, have you tried approaching {problem} through {different_method}? A similar team moved {kpi} from {before} to {after} that way. PS. {short_personalization}.`
+
+## Subject-line rules
+
+Good subject lines:
+
+- mention the business
+- mention the city
+- mention the offer
+- stay short
+
+Examples:
+
+- `{business_name} x local feature`
+- `Idea for {business_name} in {city}`
+- `TikTok angle for {business_name}`
+- `Quick question for {owner_name}`
+
+Avoid:
+
+- generic clickbait
+- fake all-lowercase mass-email style
+- broad benefit statements with no business context
+
 ## Follow-up cadence
 
 Default cadence:
@@ -203,6 +271,12 @@ Bad follow-up moves:
 - adding more product detail each time
 - turning the later touches into long explanations
 
+Follow-up examples:
+
+- `Wanted to bump this in case the idea for {business_name} is useful. Happy to send one concrete example and keep it simple.`
+- `Another angle here, if the first idea is not the right fit, I can send a version focused on {benefit}. Worth it?`
+- `Last nudge from me. If this is not relevant right now, I can close the loop, but if you want one useful idea for {business_name}, I am happy to send it.`
+
 ## Channel choice
 
 Use this rule:
@@ -216,6 +290,46 @@ Practical defaults:
 - call-first for reachable phone-heavy local service segments
 - email-first when verified email and usable context are already present
 - enrich-first when the row is missing owner, manager, or business context
+
+## Deliverability setup
+
+Treat deliverability as part of the playbook, not a separate afterthought.
+
+Preferred tools in this repo:
+
+- verification: `ZeroBounce`
+- warm-up: `WarmupInbox`
+- sequencing: `Apollo` or `Openmart`
+
+Use Openmart here as part of the combined SMB motion across list building,
+owner finding, and sequencing. It is not the verifier or warm-up layer.
+
+Before volume goes out:
+
+- buy the sending domain
+- prefer a `.com` when practical
+- configure SPF
+- configure DKIM
+- configure DMARC
+- create the sending inboxes, usually `1-2` at the start
+- warm them up before real campaigns
+
+Warm-up rules:
+
+- start with low daily volume
+- a reasonable early ceiling is around `50` sends per inbox per day
+- warm inboxes gradually
+- do not jump to high volume on a fresh setup
+
+Do not send until the row has:
+
+- a usable email
+- verification status
+- what the company does
+- enough context to personalize credibly
+
+If the row also has a good LinkedIn path, it is often better to run email and
+LinkedIn in parallel instead of forcing one channel to do all the work.
 
 ## What good looks like
 
@@ -282,5 +396,49 @@ If replies are decent but meetings stay weak, the most likely explanations are:
 - the owner or manager does not really want this
 - the message is getting attention without enough urgency
 
-For the weekly review loop and customer-note discipline, read
-[`REPORTING.md`](./REPORTING.md).
+## Weekly review loop
+
+Review the campaign in this order:
+
+1. open rate
+2. response rate
+3. meetings
+4. pipeline
+5. segment notes
+6. customer notes
+
+Count a response as positive only when the buyer:
+
+- asks for a meeting
+- asks for more information with real intent
+- forwards internally to the right person
+- confirms the pain is real and wants a follow-up
+
+Do not count this as positive:
+
+- polite interest with no authority
+- curiosity from a junior title
+- vague replies that do not move the process forward
+
+## Customer notes and discovery
+
+Customer notes should capture what you actually heard:
+
+- buyer title
+- whether they have purchase authority
+- exact objections
+- current tool or vendor
+- current lead-generation process
+- what part of the process is hardest
+- how long the problem has existed
+- how it affects their goals
+- what they have already tried
+- why now
+- other decision-makers involved
+- timeline or urgency
+
+Do not reduce the note to your own biased summary.
+
+Useful discovery opener:
+
+`Our process includes two parts: first, a discovery call to see if we're a mutual fit. Next step is a customized demo. Does that sound good?`

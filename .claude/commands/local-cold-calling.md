@@ -10,9 +10,7 @@ Use the matching module files:
 - @modules/cold-call/README.md
 - @modules/cold-call/PLAYBOOK.md
 - @modules/cold-call/REVIEW-RUBRIC.md
-- @modules/cold-call/CALL-FRAMEWORKS.md
-- @modules/cold-call/OBJECTION-LIBRARY.md
-- @modules/cold-call/TALK-TRACKS.md
+- @modules/openmart-prospecting/PLAYBOOK.md
 
 If key inputs are missing, ask for:
 

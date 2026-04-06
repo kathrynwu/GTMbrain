@@ -13,7 +13,6 @@ choice, and on-page improvement.
 ## Start here
 
 - [`PLAYBOOK.md`](./PLAYBOOK.md)
-- [`EXAMPLES.md`](./EXAMPLES.md)
 
 ## Focus
 
@@ -32,6 +31,7 @@ choice, and on-page improvement.
 - what to change when CTR is low
 - what to change when position is low
 - what to refresh and what metrics matter most
+- worked examples for CTR, position, blog intent, and page briefs
 
 ## Source material
 

@@ -13,9 +13,7 @@
   "primary_action": "Read playbook",
   "status": "first-release",
   "required_paths": [
-    "PLAYBOOK.md",
-    "ICP-AND-DISCOVERY.md",
-    "LEAD-SOURCES.md"
+    "PLAYBOOK.md"
   ],
   "source_material": [
     "real outbound operating guidance from GTMbrain",

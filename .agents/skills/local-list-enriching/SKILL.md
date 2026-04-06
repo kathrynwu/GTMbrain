@@ -24,24 +24,21 @@ instead.
 1. `modules/local-list-enriching/README.md`
 2. `modules/local-list-enriching/PLAYBOOK.md`
 3. `modules/local-list-enriching/FIELD-MAPPING.md`
-4. `modules/local-list-enriching/FILTERS.md`
-5. `modules/local-list-enriching/EMAIL-VERIFICATION.md`
-6. `modules/openmart-prospecting/STANDARD-PRACTICE.md`
-7. `modules/openmart-prospecting/INTEGRATIONS.md`
-8. `modules/openmart-prospecting/PLAYBOOK.md`
-9. `modules/openmart-prospecting/SELLING-LOCAL-BUSINESSES.md`
+4. `docs/STANDARD-PRACTICE.md`
+5. `modules/openmart-prospecting/INTEGRATIONS.md`
+6. `modules/openmart-prospecting/PLAYBOOK.md`
 
 If the question touches data shape:
 
-10. `modules/local-list-enriching/schema/enriched-prospect.schema.json`
-11. `modules/local-list-enriching/sample-data/enriched-prospects.csv`
-12. `modules/openmart-prospecting/schema/prospect.schema.json`
-13. `modules/openmart-prospecting/sample-data/prospects.csv`
+7. `modules/local-list-enriching/schema/enriched-prospect.schema.json`
+8. `modules/local-list-enriching/sample-data/enriched-prospects.csv`
+9. `modules/openmart-prospecting/schema/prospect.schema.json`
+10. `modules/openmart-prospecting/sample-data/prospects.csv`
 
 If the question touches implementation:
 
-14. `packages/openmart/README.md`
-15. `packages/openmart/client.example.js`
+11. `packages/openmart/README.md`
+12. `packages/openmart/client.example.js`
 
 ## Workflow
 

@@ -14,9 +14,6 @@ heuristics.
 
 - [`PLAYBOOK.md`](./PLAYBOOK.md)
 - [`REVIEW-RUBRIC.md`](./REVIEW-RUBRIC.md)
-- [`CALL-FRAMEWORKS.md`](./CALL-FRAMEWORKS.md)
-- [`OBJECTION-LIBRARY.md`](./OBJECTION-LIBRARY.md)
-- [`TALK-TRACKS.md`](./TALK-TRACKS.md)
 - use [`../cold-call/`](../cold-call/) instead if the motion is local-business
   calling
 
@@ -32,17 +29,21 @@ heuristics.
 
 - the 3-step B2B cold-call framework
 - a call review rubric
-- step-by-step call frameworks
-- objection library
-- talk-track references
+- first-touch, follow-up, and gatekeeper frameworks
+- objection handling and talk-track references
 - opener rules for the first 6 seconds
 - qualification prompts
 - close and calendar-invite discipline
-- follow-up call guidance
-- gatekeeper handling
 - when to choose call-first, enrich-first, or email-first
 
 ## Source material
 
 - internal cold call playbook
 - B2B RevOps and outbound talk tracks
+
+## What comes next
+
+- [`../b2b-emailing/`](../b2b-emailing/) if email-first becomes the better
+  motion
+- [`../b2b-enriching/`](../b2b-enriching/) if the list still lacks the right
+  buyer, phone quality, or context

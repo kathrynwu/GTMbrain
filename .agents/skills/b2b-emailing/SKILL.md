@@ -21,13 +21,9 @@ Use this skill when the user is asking about:
 ## Read first
 
 1. `modules/b2b-emailing/PLAYBOOK.md`
-2. `modules/b2b-emailing/EXAMPLES.md`
-3. `modules/b2b-emailing/DELIVERABILITY.md`
-4. `modules/b2b-emailing/REPORTING.md`
-5. `modules/b2b-emailing/README.md`
-6. `modules/b2b-prospecting/PLAYBOOK.md`
-7. `modules/b2b-prospecting/ICP-AND-DISCOVERY.md`
-8. `modules/b2b-enriching/FIELD-MAPPING.md`
+2. `modules/b2b-emailing/README.md`
+3. `modules/b2b-prospecting/PLAYBOOK.md`
+4. `modules/b2b-enriching/FIELD-MAPPING.md`
 
 ## Workflow
 

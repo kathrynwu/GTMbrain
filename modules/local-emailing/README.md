@@ -13,9 +13,6 @@ lightweight follow-up structure.
 ## Start here
 
 - [`PLAYBOOK.md`](./PLAYBOOK.md)
-- [`EXAMPLES.md`](./EXAMPLES.md)
-- [`DELIVERABILITY.md`](./DELIVERABILITY.md)
-- [`REPORTING.md`](./REPORTING.md)
 - [`../openmart-prospecting/README.md`](../openmart-prospecting/README.md) for
   the upstream local-business path
 - use [`../b2b-emailing/`](../b2b-emailing/) instead if the motion is
@@ -30,6 +27,7 @@ lightweight follow-up structure.
 - follow-up cadence
 - when email-first beats local calling
 - sending setup and inbox health rules
+- weekly keep, pause, rewrite, or scale decisions
 
 ## What this playbook covers
 
@@ -38,11 +36,17 @@ lightweight follow-up structure.
 - when to offer help before asking for a meeting
 - how to structure a `3-4` touch cadence
 - how to protect deliverability before scaling volume
+- how to review weak campaigns and capture notes
 - concrete email shapes for local-business motions
-- weekly reporting and campaign diagnosis
 
 ## Source material
 
 - internal operating guidance from Openmart
 - patterns seen from Openmart customers using local-business data in outbound
 - examples inspired by teams like NewsBreak and operators selling workflow tools
+
+## What comes next
+
+- [`../cold-call/`](../cold-call/) if phone-first becomes the better motion
+- [`../local-list-enriching/`](../local-list-enriching/) if the row still
+  lacks owner, manager, or verified contact context

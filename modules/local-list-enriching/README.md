@@ -12,11 +12,9 @@ field mapping.
 
 ## Start here
 
-- [`../openmart-prospecting/STANDARD-PRACTICE.md`](../openmart-prospecting/STANDARD-PRACTICE.md)
+- [`../../docs/STANDARD-PRACTICE.md`](../../docs/STANDARD-PRACTICE.md)
 - [`PLAYBOOK.md`](./PLAYBOOK.md)
 - [`FIELD-MAPPING.md`](./FIELD-MAPPING.md)
-- [`FILTERS.md`](./FILTERS.md)
-- [`EMAIL-VERIFICATION.md`](./EMAIL-VERIFICATION.md)
 
 ## Focus
 
@@ -41,7 +39,8 @@ If the motion is software-company or B2B enrichment, use
 ## Source material
 
 - internal Openmart outbound and enrichment guidance
-- patterns from Openmart customers using enrichment inside Clay, CRM, and sales tools
+- patterns from Openmart customers using enrichment inside Clay, CRM, and sales
+  tools
 
 ## What comes next
 

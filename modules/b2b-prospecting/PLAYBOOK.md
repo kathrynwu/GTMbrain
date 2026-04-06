@@ -4,10 +4,7 @@ Use this playbook when the motion is B2B or software-company prospecting rather
 than local-business prospecting.
 
 For the reusable operating backbone, read
-[`../openmart-prospecting/STANDARD-PRACTICE.md`](../openmart-prospecting/STANDARD-PRACTICE.md).
-
-For one concrete ICP and discovery pattern, read
-[`ICP-AND-DISCOVERY.md`](./ICP-AND-DISCOVERY.md).
+[`../../docs/STANDARD-PRACTICE.md`](../../docs/STANDARD-PRACTICE.md).
 
 The goal is not to collect a giant list.
 
@@ -69,6 +66,52 @@ Common served segments:
 If the working list is full of junior titles, that is usually a buyer mistake,
 not traction.
 
+## Example ICP and pain pattern
+
+Use this concrete pattern when the product is sold to B2B teams that need
+better local or SMB data, cleaner enrichment, or faster TAM mapping.
+
+Best-fit companies:
+
+- mid-market, early-growth B2B SaaS companies
+- outbound team already exists
+- team is scaling from roughly `5` to `20+` reps
+- ACV above about `$5K`
+- relies on good SMB contact data for prospecting
+
+Common frustration:
+
+- weak SMB coverage
+- stale contact data
+- too much manual cleanup
+- too much work to map the full TAM
+
+The strongest pain is not abstract data quality. It is operational damage from
+bad data:
+
+- reps calling wrong numbers
+- lower connect rates
+- fewer demos
+- wasted sales time
+- higher CAC
+- weaker outbound ROI
+
+## Buyer and authority rules
+
+Primary budget or purchase authority usually sits with:
+
+- Head of Revenue Operations
+- Head of Sales Operations
+- Head of GTM Engineering
+- Salesforce Administrator
+
+Influencers often include:
+
+- CRO
+- VP Sales
+- VP Revenue Operations
+- SalesOps or RevOps team members
+
 ## What good B2B prospecting looks like
 
 - company fits the ICP
@@ -102,6 +145,19 @@ Examples:
 - there is a real signal they need the product now, or
 - there is a warm intro path
 
+## Source rules
+
+`Apollo` is the default starting point for software-company prospecting.
+
+Add another database only when it clearly improves contact coverage for the
+exact market you need:
+
+- better enterprise coverage
+- better regional coverage
+- better contact coverage for the same segment
+
+Do not turn source choice into a giant tool-comparison project.
+
 ## Source and filter loop
 
 1. start broad enough to prove the market exists
@@ -114,6 +170,25 @@ Do not hide weak buyer selection behind high reply volume.
 
 If junior contacts reply with polite interest, that is not proof that the
 segment is working.
+
+## Discovery and qualification notes
+
+Useful discovery opener:
+
+`Our process includes two parts: first, a discovery call to see if we're a mutual fit. Next step is a customized demo. Does that sound good?`
+
+Useful questions:
+
+- How are you generating leads today?
+- Walk me through the process.
+- What is the toughest part of the process for you?
+- How long has that been going on?
+- How does it affect your goals?
+- What goal are you trying to hit?
+- What have you done to solve it?
+- Why now?
+- Are there any other decision-makers involved?
+- How quickly are you ready to improve this?
 
 ## What to preserve
 
@@ -138,8 +213,6 @@ Common failure pattern:
 - get no conversion because they do not own the purchase
 
 That is not the ICP working. It is a noisy buyer path.
-
-The fix is not minor copy editing.
 
 The fix is:
 

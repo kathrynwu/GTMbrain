@@ -10,9 +10,7 @@ Use the matching module files:
 - @modules/b2b-cold-calling/README.md
 - @modules/b2b-cold-calling/PLAYBOOK.md
 - @modules/b2b-cold-calling/REVIEW-RUBRIC.md
-- @modules/b2b-cold-calling/CALL-FRAMEWORKS.md
-- @modules/b2b-cold-calling/OBJECTION-LIBRARY.md
-- @modules/b2b-cold-calling/TALK-TRACKS.md
+- @modules/b2b-prospecting/PLAYBOOK.md
 
 If key inputs are missing, ask for:
 
