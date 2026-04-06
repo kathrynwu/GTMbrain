@@ -1,5 +1,7 @@
 # GTMbrain Assistant Guide
 
+AI-only file. Humans can skip this and start with `README.md`.
+
 Use this file when working inside `GTMbrain`.
 
 Source of truth:

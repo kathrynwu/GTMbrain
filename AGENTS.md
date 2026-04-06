@@ -1,5 +1,7 @@
 # GTMbrain Agent Guide
 
+AI-only file. Humans can skip this and start with [`README.md`](./README.md).
+
 Read [`CLAUDE.md`](./CLAUDE.md) first.
 
 Use this repo as an iterative GTM system, not a pile of notes.
