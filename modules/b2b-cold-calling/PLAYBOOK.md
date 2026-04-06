@@ -21,6 +21,22 @@ Know:
 - why your offer is better
 - whether phone numbers are verified
 
+Default buyer path in this repo:
+
+- Head of Revenue Operations
+- Head of Sales Operations
+- Head of GTM Engineering
+- Salesforce Administrator
+
+Avoid junior-title calling as a default. It creates activity without authority.
+
+Pressure-test the call target with:
+
+- `Budget`
+- `Authority`
+- `Needs`
+- `Timing`
+
 If those are still weak, enrich the list before calling.
 
 ## The 3 Steps

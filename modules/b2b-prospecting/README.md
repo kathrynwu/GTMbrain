@@ -22,10 +22,29 @@ mixing them into the local-business path.
 - B2B ICP definition
 - company-level and buyer-level filters
 - right-buyer versus noisy-buyer rules
+- default ICP for mid-market, early-growth B2B SaaS
 - trigger-based prioritization
 - source choice for software and B2B prospecting
 - one concrete ICP and discovery pattern for selling data into B2B teams
 - clean handoff into enrichment, email, or calling
+
+## Default ICP in this repo
+
+Best-fit pattern:
+
+- mid-market, early-growth B2B SaaS
+- outbound team scaling from roughly `5` to `20+` reps
+- ACV above about `$5K`
+- already invests in outbound prospecting
+- relies on high-quality SMB contact data
+
+Default buyers:
+
+- Head of Revenue Operations
+- Head of Sales Operations
+- Head of GTM Engineering
+- Salesforce Administrator
+- Head of Sales can matter, but is not the default first buyer
 
 ## Use this module when
 
@@ -40,6 +59,15 @@ mixing them into the local-business path.
 - the list starts from business-shell search and owner finding
 
 For that path, use [`../openmart-prospecting/`](../openmart-prospecting/).
+
+## Qualification lens
+
+Use this module to qualify around:
+
+- `Budget`: do they spend real money or resources on the problem already
+- `Authority`: who are the real decision-makers and what is the buying path
+- `Needs`: what pain or use case are they actually trying to solve
+- `Timing`: why now, and how quickly could they move if the fit is real
 
 ## What comes next
 

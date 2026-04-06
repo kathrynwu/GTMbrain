@@ -52,6 +52,13 @@ Use this skill when the user is asking about:
    - `B` tighten the buyer or signal rules first
    - `C` route to `b2b-enriching`, `b2b-emailing`, or `b2b-cold-calling` if the list is already approved
 
+When the user has not supplied a clearer ICP, start from this repo default:
+
+- mid-market, early-growth B2B SaaS
+- outbound team scaling from `5` to `20+` reps
+- ACV above about `$5K`
+- buyers such as RevOps, SalesOps, GTM Engineering, or Salesforce Admin
+
 ## Output shape
 
 Default to giving:
@@ -71,6 +78,7 @@ Default to giving:
 
 - do not mix this with local-business shell prospecting
 - avoid junior or entry-level buyers as the default
+- use `Budget`, `Authority`, `Needs`, and `Timing` to pressure-test fit
 - if the account is right but the person is wrong, reroute rather than discard
 - prefer `Apollo` for software-company prospecting
 - make signals product-specific

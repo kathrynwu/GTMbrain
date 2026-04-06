@@ -12,8 +12,10 @@ It is one concrete buyer pattern from this repo.
 Best-fit companies:
 
 - mid-market, early-growth B2B SaaS companies
+- not SMBs and not large enterprises
 - outbound team already exists
 - team is scaling from roughly `5` to `20+` reps
+- ACV above about `$5K`
 - relies on good SMB contact data for prospecting
 
 Typical buyers:
@@ -31,6 +33,9 @@ Common downstream industries:
 - trades and home-services software
 - medical or insurance software for small practices
 - restaurant and hospitality software
+
+This is the default ICP because the pain is operational, measurable, and tied
+to outbound efficiency. It is a bad fit for junior-title outreach.
 
 ## Pain pattern
 
@@ -112,6 +117,21 @@ Before a demo, also ask:
 
 - Are there any other decision-makers involved?
 - How quickly are you ready to improve this?
+- Would you commit to working on this for a meaningful stretch if the fit is
+  real?
+
+## Qualification framework
+
+Use this lens to decide whether the account is actually qualified:
+
+- `Budget`: do they have money, tools, or internal resources already pointed at
+  the problem
+- `Authority`: who are the decision-makers and how does the buying process work
+- `Needs`: what pain or use case is strong enough to justify change
+- `Timing`: what time frame are they working against if this is a green light
+
+If one of these is obviously weak, the account may still be interesting, but it
+is not a clean qualified opportunity yet.
 
 ## Fit and no-fit rules
 

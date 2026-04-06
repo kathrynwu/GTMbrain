@@ -37,6 +37,38 @@ If you do not know the buyer, the safest rule in this repo is:
 If the account is right but the person is wrong, reroute to the right buyer.
 Do not discard the whole account.
 
+## Default ICP in this repo
+
+Start from this pattern unless the user gives a better one:
+
+- mid-market, early-growth B2B SaaS
+- outbound team scaling from roughly `5` to `20+` reps
+- ACV above about `$5K`
+- outbound motion already exists
+- SMB data quality matters to prospecting performance
+
+Primary buyers:
+
+- Head of Revenue Operations
+- Head of Sales Operations
+- Head of GTM Engineering
+- Salesforce Administrator
+
+Secondary buyer:
+
+- Head of Sales, when they clearly own the problem and the buying path
+
+Common served segments:
+
+- general SMB software
+- agencies selling to SMBs
+- trades and home-services software
+- medical or insurance software for small practices
+- restaurant and hospitality software
+
+If the working list is full of junior titles, that is usually a buyer mistake,
+not traction.
+
 ## What good B2B prospecting looks like
 
 - company fits the ICP
@@ -105,6 +137,8 @@ Common failure pattern:
 - get responses
 - get no conversion because they do not own the purchase
 
+That is not the ICP working. It is a noisy buyer path.
+
 The fix is not minor copy editing.
 
 The fix is:
@@ -120,6 +154,11 @@ This module is done when:
 - the company is approved
 - the buyer is plausible
 - the row has a real why-now signal or clear ICP fit
+- the account passes the qualification lens:
+  - `Budget`
+  - `Authority`
+  - `Needs`
+  - `Timing`
 - the next step is obvious:
   - enrich
   - email

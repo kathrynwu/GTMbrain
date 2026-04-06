@@ -58,12 +58,23 @@ Examples:
 
 - software-company motions often need `VP`, `Director`, `Head`, or the owner
   of the KPI
+- in this repo, strong default buyers are RevOps, SalesOps, GTM Engineering, or
+  Salesforce Admin
+- Head of Sales can matter, but is usually secondary unless they clearly own
+  the problem
 - junior replies can create noise without conversion
 - customer-facing workflow tools should often go to the person who owns the
   outcome KPI, not a random ops title
 
 If you target the wrong person, you can get polite replies with no buying
 authority. That is noise, not traction.
+
+Pressure-test the account before scaling the sequence:
+
+- `Budget`: do they already spend money or resources on the problem
+- `Authority`: is the buyer actually part of the decision path
+- `Needs`: is the pain real enough to justify change
+- `Timing`: is there a live reason they would move now
 
 If the list is weak, fix the list before writing more copy.
 
