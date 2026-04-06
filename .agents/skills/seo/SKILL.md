@@ -24,8 +24,7 @@ Use this skill when the user is asking about:
 
 1. `modules/seo/README.md`
 2. `modules/seo/PLAYBOOK.md`
-3. `modules/seo/EXAMPLES.md`
-4. `README.md`
+3. `README.md`
 
 ## Workflow
 

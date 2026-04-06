@@ -10,9 +10,7 @@ Use the matching module files:
 - @modules/local-list-enriching/README.md
 - @modules/local-list-enriching/PLAYBOOK.md
 - @modules/local-list-enriching/FIELD-MAPPING.md
-- @modules/local-list-enriching/FILTERS.md
-- @modules/local-list-enriching/EMAIL-VERIFICATION.md
-- @modules/openmart-prospecting/STANDARD-PRACTICE.md
+- @docs/STANDARD-PRACTICE.md
 
 If key inputs are missing, ask for:
 

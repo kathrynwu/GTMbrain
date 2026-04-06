@@ -144,6 +144,47 @@ Low-credibility email usually means:
 - no recognizable proof
 - no trust signal
 
+## Example patterns
+
+These are pattern examples, not scripts to spray unchanged.
+
+### Pattern 1: Trigger-based opener
+
+Good when the account shows a live signal such as hiring, expansion, or a new
+initiative.
+
+Subject: `{company_name} hiring`
+
+Body:
+
+`Hi {name}, noticed {company_name} is hiring for {role}. Have you already solved for {outcome}? We helped {peer_company} improve {kpi} in {timeframe}. Worth checking whether that is relevant for you too?`
+
+### Pattern 2: Observation plus relief
+
+Good when one visible account fact already implies the operational pain.
+
+Subject: `{short_observation}`
+
+Body:
+
+`Hi {name}, saw that {observation}. I imagine {operational_burden} is creating extra manual work. We help teams remove {specific_work_removed}, which usually leads to {specific_result}. Open to a quick compare?`
+
+### Pattern 3: Credibility-first opener
+
+Use this when the sale needs more trust before a direct ask will land.
+
+Body:
+
+`Hi {name}, I spend a lot of time talking with teams dealing with {problem}, and I wanted to learn how your team handles it today. Open to a quick virtual coffee sometime next week?`
+
+This works best when you can support it with:
+
+- recognizable customers
+- strong market reputation
+- fundraising or equivalent proof
+- founder credibility when customer proof is still early
+- personal background when that is the strongest available trust signal
+
 ## Follow-up cadence
 
 Default cadence:
@@ -183,6 +224,44 @@ Practical defaults:
 - email-first when verified email and usable context are already present
 - call-first for high-urgency segments where the buyer can be reached by phone
 - LinkedIn can run in parallel when the title path is strong
+
+## Deliverability setup
+
+Treat deliverability as part of the playbook, not a separate ops footnote.
+
+Preferred tools in this repo:
+
+- verification: `ZeroBounce`
+- warm-up: `WarmupInbox`
+- sequencing: `Apollo`
+
+Before volume goes out:
+
+- buy the sending domain
+- prefer a `.com` when practical
+- configure SPF
+- configure DKIM
+- configure DMARC
+- create the sending inboxes, usually `1-2` at the start
+- warm them up before real campaigns
+
+Warm-up rules:
+
+- start with low daily volume
+- a reasonable early ceiling is around `50` sends per inbox per day
+- warm inboxes gradually
+- do not jump to high volume on a fresh setup
+
+Do not send until the row has:
+
+- a usable email
+- verification status
+- what the company does
+- enough context to personalize credibly
+- the right buyer
+
+If the row also has a good LinkedIn path, it is often better to run email and
+LinkedIn in parallel instead of forcing one channel to do all the work.
 
 ## What good looks like
 
@@ -234,5 +313,45 @@ Do not over-read reply volume by itself.
 
 Polite interest without authority is not the same as pipeline progress.
 
-For the weekly review loop and customer-note discipline, read
-[`REPORTING.md`](./REPORTING.md).
+## Weekly review loop
+
+Review the campaign in this order:
+
+1. open rate
+2. response rate
+3. meetings
+4. pipeline
+5. segment notes
+6. customer notes
+
+Count a response as positive only when the buyer:
+
+- asks for a meeting
+- asks for more information with real intent
+- forwards internally to the right person
+- confirms the pain is real and wants a follow-up
+
+Do not count this as positive:
+
+- polite interest with no authority
+- curiosity from a junior title
+- vague replies that do not move the process forward
+
+## Customer notes
+
+Customer notes should capture what you actually heard:
+
+- buyer title
+- whether they have purchase authority
+- exact objections
+- current tool or vendor
+- current process
+- what part of the process is hardest
+- how long the problem has existed
+- how it affects their goals
+- what they have already tried
+- why now
+- other decision-makers involved
+- timeline or urgency
+
+Do not reduce the note to your own biased summary.

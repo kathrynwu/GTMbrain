@@ -17,6 +17,4 @@ Use the repo-native module docs after that:
 1. `modules/b2b-cold-calling/README.md`
 2. `modules/b2b-cold-calling/PLAYBOOK.md`
 3. `modules/b2b-cold-calling/REVIEW-RUBRIC.md`
-4. `modules/b2b-cold-calling/CALL-FRAMEWORKS.md`
-5. `modules/b2b-cold-calling/OBJECTION-LIBRARY.md`
-6. `modules/b2b-cold-calling/TALK-TRACKS.md`
+4. `modules/b2b-prospecting/PLAYBOOK.md`

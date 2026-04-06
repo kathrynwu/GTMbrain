@@ -2,7 +2,7 @@
 name: gtmbrain
 description: |
   Use when someone cloned GTMbrain and does not know where to start, wants a
-  recommendation across modules, or needs an A/B/C choice between CRM,
+  recommendation across playbooks, or needs an A/B/C choice between CRM,
   local prospecting, B2B prospecting, local enrichment, B2B enrichment,
   local emailing, B2B emailing, SEO, local cold calling, and B2B cold
   calling workflows.
@@ -13,19 +13,20 @@ description: |
 Use this skill when the user is asking broad questions like:
 
 - where should I start
-- which module should I use
+- which playbook should I use
 - what should I do next
 - should I use the CRM, local-business prospecting, enrichment, emailing, or cold calling
 - should I focus on SEO or outbound first
 - help me figure out my GTM motion
 - help me iterate on the playbooks
+- help me clarify the GTM strategy for my organization
 
 ## Read first
 
 1. `README.md`
 2. `CLAUDE.md`
 
-Then route into the matching module:
+Then route into the matching playbook path:
 
 - `modules/kol-crm/`
 - `modules/openmart-prospecting/`
@@ -72,8 +73,8 @@ Then route into the matching module:
    - `A` `seo` if they need keyword workflow, page structure, or page refresh rules
    - `B` `openmart-prospecting` for local-business prospecting or `b2b-prospecting` for software-company prospecting if they still do not know the ICP or use case they should write for
    - `C` `local-emailing` or `b2b-emailing` if traffic is not the current bottleneck and they need outbound now
-6. Route them to the smallest module that solves the current bottleneck.
-7. If the user is still figuring out the motion, use the modules as iterative
+6. Route them to the smallest playbook that solves the current bottleneck.
+7. If the user is still figuring out the motion, use the playbooks as iterative
    playbooks:
    - prospecting
    - enrichment
@@ -81,6 +82,13 @@ Then route into the matching module:
    - calling
    - SEO
    until the GTM motion is clearer.
+8. Tie the recommendation back to the strategy artifact the user should leave
+   with next, for example:
+   - ICP
+   - buyer map
+   - approved-row standard
+   - outbound sequence
+   - page plan
 
 ## Output shape
 
@@ -89,8 +97,9 @@ Default to giving:
 - current bottleneck
 - `RECOMMENDATION: Choose X because ...`
 - `A/B/C` choices
-- the exact module path to open
-- one sentence on why that module is the right next step
+- the exact playbook path to open
+- one sentence on why that playbook is the right next step
+- the strategy output they should produce next
 - how to iterate with the next playbook
 - `Reply with A, B, or C.`
 
@@ -99,5 +108,5 @@ Default to giving:
 - always recommend one option
 - keep the choice set to `A/B/C`
 - end with `Reply with A, B, or C.`
-- route to the smallest useful module, not the broadest one
-- do not dump the whole repo tree if one module is enough
+- route to the smallest useful playbook, not the broadest one
+- do not dump the whole repo tree if one playbook is enough

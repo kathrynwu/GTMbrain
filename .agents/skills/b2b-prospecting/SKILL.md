@@ -20,9 +20,7 @@ Use this skill when the user is asking about:
 
 1. `modules/b2b-prospecting/README.md`
 2. `modules/b2b-prospecting/PLAYBOOK.md`
-3. `modules/b2b-prospecting/ICP-AND-DISCOVERY.md`
-4. `modules/b2b-prospecting/LEAD-SOURCES.md`
-5. `modules/openmart-prospecting/STANDARD-PRACTICE.md`
+3. `docs/STANDARD-PRACTICE.md`
 
 ## Workflow
 

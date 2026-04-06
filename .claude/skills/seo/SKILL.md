@@ -17,4 +17,4 @@ Use the repo-native module docs after that:
 
 1. `modules/seo/README.md`
 2. `modules/seo/PLAYBOOK.md`
-3. `modules/seo/EXAMPLES.md`
+3. `README.md`

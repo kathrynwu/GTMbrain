@@ -21,14 +21,9 @@ Use this skill when the user is asking about:
 ## Read first
 
 1. `modules/local-emailing/PLAYBOOK.md`
-2. `modules/local-emailing/EXAMPLES.md`
-3. `modules/local-emailing/DELIVERABILITY.md`
-4. `modules/local-emailing/REPORTING.md`
-5. `modules/local-emailing/README.md`
-6. `modules/local-list-enriching/EMAIL-VERIFICATION.md`
-7. `modules/openmart-prospecting/SELLING-LOCAL-BUSINESSES.md`
-8. `modules/openmart-prospecting/PLAYBOOK.md`
-9. `modules/openmart-prospecting/INTEGRATIONS.md`
+2. `modules/local-emailing/README.md`
+3. `modules/local-list-enriching/PLAYBOOK.md`
+4. `modules/openmart-prospecting/PLAYBOOK.md`
 
 ## Workflow
 

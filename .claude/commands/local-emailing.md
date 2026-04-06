@@ -9,9 +9,7 @@ Use the matching module files:
 
 - @modules/local-emailing/README.md
 - @modules/local-emailing/PLAYBOOK.md
-- @modules/local-emailing/EXAMPLES.md
-- @modules/local-emailing/DELIVERABILITY.md
-- @modules/local-emailing/REPORTING.md
+- @modules/local-list-enriching/PLAYBOOK.md
 
 If key inputs are missing, ask for:
 

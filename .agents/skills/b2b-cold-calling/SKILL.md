@@ -21,12 +21,9 @@ Use this skill when the user is asking about:
 
 1. `modules/b2b-cold-calling/PLAYBOOK.md`
 2. `modules/b2b-cold-calling/REVIEW-RUBRIC.md`
-3. `modules/b2b-cold-calling/CALL-FRAMEWORKS.md`
-4. `modules/b2b-cold-calling/OBJECTION-LIBRARY.md`
-5. `modules/b2b-cold-calling/TALK-TRACKS.md`
-6. `modules/b2b-cold-calling/README.md`
-7. `modules/b2b-prospecting/PLAYBOOK.md`
-8. `modules/b2b-enriching/FIELD-MAPPING.md`
+3. `modules/b2b-cold-calling/README.md`
+4. `modules/b2b-prospecting/PLAYBOOK.md`
+5. `modules/b2b-enriching/FIELD-MAPPING.md`
 
 ## Workflow
 

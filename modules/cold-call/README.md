@@ -3,7 +3,7 @@
 Capture local-business scripts, review criteria, and tactical outbound
 heuristics.
 
-## Module summary
+## Summary
 
 - **Surface:** `Playbook`
 - **Audience:** outbound operator, GTM lead, growth engineer
@@ -14,9 +14,6 @@ heuristics.
 
 - [`PLAYBOOK.md`](./PLAYBOOK.md)
 - [`REVIEW-RUBRIC.md`](./REVIEW-RUBRIC.md)
-- [`CALL-FRAMEWORKS.md`](./CALL-FRAMEWORKS.md)
-- [`OBJECTION-LIBRARY.md`](./OBJECTION-LIBRARY.md)
-- [`TALK-TRACKS.md`](./TALK-TRACKS.md)
 - use [`../b2b-cold-calling/`](../b2b-cold-calling/) instead if the motion is
   software-company or B2B calling
 
@@ -28,29 +25,29 @@ heuristics.
 - practical benchmarks
 - meeting-booking discipline
 
-## What this module now covers
+## What this playbook covers
 
 - the 3-step cold-call framework:
   - build credibility
   - build value
   - book the meeting
 - a call review rubric
-- step-by-step call frameworks
-- objection library
-- talk-track references
+- first-touch, follow-up, and gatekeeper frameworks
+- objection handling and talk-track references
 - opener rules for the first 6 seconds
 - qualification prompts
-- objection-handling pattern
 - close and calendar-invite discipline
-- follow-up call guidance
-- gatekeeper handling
-- when to choose:
-  - call-first
-  - enrich-first
-  - email-first
+- when to choose call-first, enrich-first, or email-first
 
 ## Source material
 
 - internal cold call playbook
 - Loom walkthrough:
   - `https://www.loom.com/share/90e0a8ef61bc4f179c8299a111711787?sid=6a9cd470-106f-4ec2-bdae-8499a679f6f5`
+
+## What comes next
+
+- [`../local-emailing/`](../local-emailing/) if email-first becomes the better
+  channel
+- [`../local-list-enriching/`](../local-list-enriching/) if the list is still
+  too noisy to call

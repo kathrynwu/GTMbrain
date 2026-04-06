@@ -8,21 +8,13 @@
     "growth engineer"
   ],
   "surfaces": [
-    "Playbook",
-    "Template"
+    "Playbook"
   ],
-  "primary_action": "Read playbook or open template",
+  "primary_action": "Read playbook",
   "status": "first-release",
   "required_paths": [
     "PLAYBOOK.md",
-    "REVIEW-RUBRIC.md",
-    "CALL-FRAMEWORKS.md",
-    "OBJECTION-LIBRARY.md",
-    "TALK-TRACKS.md",
-    "template/README.md",
-    "template/index.html",
-    "template/styles.css",
-    "template/app.js"
+    "REVIEW-RUBRIC.md"
   ],
   "source_material": [
     "internal cold call playbook",

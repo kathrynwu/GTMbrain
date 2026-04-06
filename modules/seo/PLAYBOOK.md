@@ -205,3 +205,85 @@ not exactly that, the page copy usually needs adjustment.
 4. Internal-linking section
 5. FAQ
 6. Bottom CTA
+
+## Worked examples
+
+### Example 1: Existing page has impressions but low CTR
+
+Input:
+
+- page: product page about `google maps scraper`
+- impressions: `1,800`
+- CTR: `0.8%`
+- average position: `5.9`
+
+Interpretation:
+
+- the page is already visible enough
+- position is not the main problem
+- the snippet promise is weak or the page looks too thin
+
+Recommended motion:
+
+`RECOMMENDATION: Choose A because the page already has traction and the fastest lift is improving the existing page before creating anything new.`
+
+### Example 2: Existing page has low position
+
+Input:
+
+- page: category page targeting `local business database`
+- impressions: `900`
+- CTR: `1.9%`
+- average position: `13.4`
+
+Interpretation:
+
+- CTR is acceptable for the current rank
+- the main issue is that the page is not strong enough yet
+
+Recommended motion:
+
+`RECOMMENDATION: Choose A because the keyword is already attached to an existing page, but the page needs stronger sections and broader topical coverage.`
+
+### Example 3: Query has blog intent
+
+Input:
+
+- query: `how to build a local business prospect list`
+- current ranking pages: mostly tutorials and blog posts
+- product page already has a few impressions on related terms
+
+Interpretation:
+
+- the SERP is mostly informational
+- forcing a product page to rank alone is usually the wrong move
+
+Recommended motion:
+
+`RECOMMENDATION: Choose B because the SERP is blog-heavy, so you should create a supporting post and also use part of that content to strengthen the existing product page.`
+
+### Example 4: Keyword quality check
+
+Good keyword checks:
+
+- search volume is above `150+`
+- top results are category-relevant
+- related questions show real demand
+
+### Example 5: Sample page brief
+
+Target:
+
+- main keyword: `google maps scraper`
+- page type: product page
+- goal: attract high-intent users looking for local-business data extraction
+
+Suggested structure:
+
+1. hero with the core keyword in the `H1`
+2. pain point and use-case section using long-tail variations
+3. core content sections on what the tool does, what data users can export, who
+   uses it, and how it compares to manual workflows
+4. internal links to prospecting, enrichment, and outbound follow-through
+5. FAQ
+6. bottom CTA

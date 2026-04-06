@@ -2,14 +2,15 @@
 
 Track influencer sourcing, outreach, pricing, owner, and status.
 
-## Module summary
+## Summary
 
 - **Surface:** `Template`
 - **Audience:** founder, growth operator, partnerships owner, RevOps builder
-- **Primary action:** fork or clone `GTMbrain`, then adapt this module to your own influencer pipeline
+- **Primary action:** fork or clone `GTMbrain`, then adapt this starter to your
+  own influencer pipeline
 - **Status:** first release
 
-## What this module covers
+## What this starter covers
 
 - YouTube + Twitter influencer tracking
 - import CSV
@@ -21,12 +22,12 @@ Track influencer sourcing, outreach, pricing, owner, and status.
 
 ## Core workflow
 
-1. Source influencers.
-2. Import or add them.
-3. Qualify them by niche and reach.
-4. Track contact status.
-5. Track pricing and follow-up.
-6. Move them toward partnership or close them out.
+1. source influencers
+2. import or add them
+3. qualify them by niche and reach
+4. track contact status
+5. track pricing and follow-up
+6. move them toward partnership or close them out
 
 ## Status model
 
@@ -39,18 +40,17 @@ Track influencer sourcing, outreach, pricing, owner, and status.
 
 ## Included now
 
-- [`module.json`](./module.json)
+- metadata file: [`module.json`](./module.json)
 - [`schema/influencer.schema.json`](./schema/influencer.schema.json)
 - [`WORKFLOW.md`](./WORKFLOW.md)
-- [`BUILDING.md`](./BUILDING.md)
 - [`sample-data/influencers.csv`](./sample-data/influencers.csv)
 - [`template/`](./template/)
 - runnable starter inside [`template/index.html`](./template/index.html)
 
 ## Try it locally
 
-This module lives inside `GTMbrain`, so the action is to fork or clone the repo,
-then start here.
+This starter lives inside `GTMbrain`, so the action is to fork or clone the
+repo, then start here.
 
 From your machine:
 
@@ -74,23 +74,51 @@ browser if you want the fastest path.
 
 ## Notes
 
-This module is template-first on purpose. The job is to make the workflow easy to copy before layering on more automation.
+This starter is template-first on purpose. The job is to make the workflow easy
+to copy before layering on more automation.
 
 Today this is usable as a single-user local CRM starter. It is not yet a synced
 team product.
 
-If you describe this module publicly, the clean wording is:
+If you describe this starter publicly, the clean wording is:
 
 > Fork or clone `GTMbrain`, then start with `modules/kol-crm/`.
+
+## Safe extensions
+
+These are good places to customize:
+
+- add fields for your niche or campaign needs
+- add saved views and filters
+- add platform-specific metadata
+- add notes, tags, or campaign links
+- add reminders or follow-up queues
+
+Be careful with:
+
+- changing the status names
+- making `status` implicit instead of explicit
+- removing `owner`
+- removing `last_contact`
+- treating `pricing` as required before negotiation starts
+
+If you add complexity, keep these invariant:
+
+1. one row = one influencer record
+2. status is human-readable
+3. the next action is easy to understand
+4. imports stay simple
 
 ## Build on top of this
 
 If you want to adapt this CRM, start in this order:
 
 1. Read [`WORKFLOW.md`](./WORKFLOW.md) to understand the status logic.
-2. Read [`schema/influencer.schema.json`](./schema/influencer.schema.json) to see the required record shape.
-3. Read [`BUILDING.md`](./BUILDING.md) to understand what can change safely.
-4. Use [`sample-data/influencers.csv`](./sample-data/influencers.csv) as your first import fixture.
-5. Open [`template/index.html`](./template/index.html) to see the reference implementation.
+2. Read [`schema/influencer.schema.json`](./schema/influencer.schema.json) to
+   see the required record shape.
+3. Use [`sample-data/influencers.csv`](./sample-data/influencers.csv) as your
+   first import fixture.
+4. Open [`template/index.html`](./template/index.html) to see the reference
+   implementation.
 
 The important thing is not the exact UI. It is the workflow contract.

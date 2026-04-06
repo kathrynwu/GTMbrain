@@ -3,26 +3,23 @@
 Define ICPs, build local-business lists, and document repeatable local-business
 prospecting workflows.
 
-## Module summary
+## Summary
 
 - **Surfaces:** `Playbook`, `Connector`
 - **Audience:** growth engineer, RevOps builder, outbound operator
 - **Primary action:** read the playbook first
 - **Status:** first release
 
-## What this module covers
+## What this playbook covers
 
 - local-business prospecting specifically
 - ICP definition workflow
 - query loop for broad-to-tight search
+- source choice for local-business motions
 - real ICP patterns and approval logic
 - list quality rules
-- how Openmart supports the full SMB motion:
-  - list building
-  - owner finding
-  - sequencing after the row is ready
+- downstream outbound context after the list is clean
 - normalized prospect export shape
-- sample prospect output
 - thin connector starter for boring API calls
 
 If the motion is software-company or B2B prospecting, use
@@ -31,20 +28,16 @@ If the motion is software-company or B2B prospecting, use
 ## Included now
 
 - [`PLAYBOOK.md`](./PLAYBOOK.md)
-- [`STANDARD-PRACTICE.md`](./STANDARD-PRACTICE.md)
-- [`SMB-PROSPECTING.md`](./SMB-PROSPECTING.md)
-- [`LEAD-SOURCES.md`](./LEAD-SOURCES.md)
+- [`../../docs/STANDARD-PRACTICE.md`](../../docs/STANDARD-PRACTICE.md)
 - [`QUERY-RECIPES.md`](./QUERY-RECIPES.md)
 - [`INTEGRATIONS.md`](./INTEGRATIONS.md)
-- [`SELLING-LOCAL-BUSINESSES.md`](./SELLING-LOCAL-BUSINESSES.md)
-- [`BUILDING.md`](./BUILDING.md)
 - [`schema/prospect.schema.json`](./schema/prospect.schema.json)
 - [`sample-data/prospects.csv`](./sample-data/prospects.csv)
 - connector starter in [`../../packages/openmart/`](../../packages/openmart/)
 
 ## Source playbooks
 
-This module is grounded in these Openmart posts:
+This playbook is grounded in these Openmart posts:
 
 - [How to build a high-quality SMB prospect list](https://www.openmart.com/blogs/how-to-build-a-high-quality-smb-prospect-list)
 - [How to sell to local business? (Part 1)](https://www.openmart.com/blogs/how-to-sell-to-local-business)
@@ -97,71 +90,40 @@ Start here:
 - CRM sync automation
 - agent wrapper
 
-## Try this module
+## Try this playbook
 
 If you want the shortest path:
 
 1. Read [`PLAYBOOK.md`](./PLAYBOOK.md).
-2. Read [`STANDARD-PRACTICE.md`](./STANDARD-PRACTICE.md) for the generic
-   list-ops backbone.
-3. Read [`SMB-PROSPECTING.md`](./SMB-PROSPECTING.md) only when the motion is
-   specifically SMB or local-business prospecting.
-4. Read [`LEAD-SOURCES.md`](./LEAD-SOURCES.md) if the real question is where
-   the list should come from and how much cleanup each source creates.
-5. Decide whether you want the Openmart UX or the API.
-6. If you want the fastest first list, use [Openmart sign up](https://app.openmart.com/register).
-7. If you want the list inside your own tool, start with the API docs and [`../../packages/openmart/`](../../packages/openmart/).
-8. Look at [`QUERY-RECIPES.md`](./QUERY-RECIPES.md) and pick the nearest use case.
-9. Read [`INTEGRATIONS.md`](./INTEGRATIONS.md) if you want to plug Openmart into a sales tool or internal enrichment app.
-10. Read [`SELLING-LOCAL-BUSINESSES.md`](./SELLING-LOCAL-BUSINESSES.md) if the goal is outbound to local businesses.
-11. Use [`sample-data/prospects.csv`](./sample-data/prospects.csv) as the normalized output shape.
+2. Read [`../../docs/STANDARD-PRACTICE.md`](../../docs/STANDARD-PRACTICE.md)
+   for the generic list-ops backbone.
+3. Decide whether you want the Openmart UX or the API.
+4. If you want the fastest first list, use
+   [Openmart sign up](https://app.openmart.com/register).
+5. If you want the list inside your own tool, start with the API docs and
+   [`../../packages/openmart/`](../../packages/openmart/).
+6. Look at [`QUERY-RECIPES.md`](./QUERY-RECIPES.md) and pick the nearest use
+   case.
+7. Read [`INTEGRATIONS.md`](./INTEGRATIONS.md) if you want to plug Openmart
+   into a sales tool or internal enrichment app.
+8. Use [`sample-data/prospects.csv`](./sample-data/prospects.csv) as the
+   normalized output shape.
 
 ## Layering rule
 
 Keep these layers separate:
 
-- [`STANDARD-PRACTICE.md`](./STANDARD-PRACTICE.md) = generic prospecting and
-  list-ops mechanics
-- [`SMB-PROSPECTING.md`](./SMB-PROSPECTING.md) = SMB-specific quality, signals,
-  and owner-finder rules
+- [`../../docs/STANDARD-PRACTICE.md`](../../docs/STANDARD-PRACTICE.md) =
+  generic prospecting and list-ops mechanics
+- [`PLAYBOOK.md`](./PLAYBOOK.md) = local-business judgment, source choice,
+  quality rules, and downstream outbound context
 
 ## What comes next
 
-The normal next step after this module is one of:
+The normal next step after this playbook is one of:
 
 - [`../local-list-enriching/`](../local-list-enriching/) if the list is good
   enough to enrich
 - [`../local-emailing/`](../local-emailing/) if the list is already clean and
   email-ready
 - [`../cold-call/`](../cold-call/) if phone-first outbound is the right motion
-
-## Real usage patterns
-
-This module now includes real ICP shapes and filtering logic for:
-
-- SMB SaaS selling into local operators
-- marketplaces pulling local supply
-- lead gen agencies and outbound teams
-- vertical SaaS with stricter niche targeting
-- growth teams doing fast geo-based GTM tests
-
-It also captures the common reality:
-
-1. start broad
-2. inspect the results
-3. tighten non-chain, website, rating, or contactability
-4. export
-5. QA or enrich
-
-## Notes
-
-This module is playbook-first on purpose.
-
-The hard part in prospecting is usually not the fetch call. It is the judgment:
-
-- what counts as a good ICP
-- when a query is too broad or too narrow
-- what should be rejected before it hits the CRM
-- how the cleaned list should flow into local-business selling
-
-The connector exists to support that workflow, not replace it.

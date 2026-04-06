@@ -9,8 +9,7 @@ Use the matching module files:
 
 - @modules/b2b-prospecting/README.md
 - @modules/b2b-prospecting/PLAYBOOK.md
-- @modules/b2b-prospecting/LEAD-SOURCES.md
-- @modules/openmart-prospecting/STANDARD-PRACTICE.md
+- @docs/STANDARD-PRACTICE.md
 
 If key inputs are missing, ask for:
 

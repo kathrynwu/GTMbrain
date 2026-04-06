@@ -20,8 +20,7 @@ Use this skill when the user is asking about:
 2. `modules/b2b-enriching/PLAYBOOK.md`
 3. `modules/b2b-enriching/FIELD-MAPPING.md`
 4. `modules/b2b-prospecting/PLAYBOOK.md`
-5. `modules/openmart-prospecting/STANDARD-PRACTICE.md`
-6. `modules/local-list-enriching/EMAIL-VERIFICATION.md`
+5. `modules/local-list-enriching/PLAYBOOK.md`
 
 ## Workflow
 

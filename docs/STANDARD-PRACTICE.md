@@ -1,7 +1,7 @@
 # Standard Practice
 
-This is the reusable operating model behind the more concrete internal sales
-ops workflow.
+This is the reusable operating model behind the more concrete GTM playbooks in
+this repo.
 
 The exact weekdays, tools, owners, and upload destinations can change.
 
@@ -17,14 +17,14 @@ The standard practice should stay stable:
 8. `Handoff`
 9. `Review`
 
-## Working Definitions
+## Working definitions
 
 ### `unqualified`
 
-`Unqualified` means the team should **not contact the lead**.
+`Unqualified` means the team should not contact the lead.
 
-That lead can stay in the source data for audit or learning, but it should not
-move into:
+That lead can stay in source data for audit or learning, but it should not move
+into:
 
 - enrichment queue
 - sales handoff
@@ -52,7 +52,7 @@ Examples:
 - notebook exports
 - previous-week carryover
 
-The rule is simple:
+Rules:
 
 - new leads should enter through a repeatable intake path
 - source should always be preserved
@@ -77,20 +77,12 @@ Run a lightweight qualification pass immediately after ingest.
 
 Remove obvious bad-fit companies before deeper enrichment.
 
-If a row is `unqualified`, the practical meaning is simple:
-
-- do not contact it
-- do not enrich it unless the goal is audit or model improvement
-- do not send it downstream to sales
-
 Qualification should answer:
 
-- is this the right business type?
-- is this the right company profile?
-- is this too small to matter?
-- is this clearly irrelevant?
-
-Qualify before spending enrichment effort.
+- is this the right business type
+- is this the right company profile
+- is this too small to matter
+- is this clearly irrelevant
 
 Must-have versus nice-to-have is a useful working pattern:
 
@@ -113,14 +105,6 @@ High-value routing enrichments usually include:
 
 Do not fully enrich every row upfront.
 
-Useful SMB health signals:
-
-- recent reviews
-- paid-ad activity
-- updated hours
-- active website or social presence
-- visible promotions
-
 ## 5. Segment
 
 Split the cleaned list into working segments before prioritization.
@@ -134,12 +118,6 @@ Typical segment dimensions:
 - cold-callable vs email-only
 
 High-fit software should not sit in the same queue as weak legacy rows.
-
-In the current operating language:
-
-- `legacy` means established incumbent-style accounts such as traditional
-  software and Fortune 500 companies
-- `newer tech` means the more startup-like or venture-scale side of the market
 
 ## 6. Prioritize
 
@@ -195,12 +173,12 @@ Review by channel, not just by total lead count.
 
 Ask:
 
-- how many leads entered each motion?
-- how many were contacted?
-- how many replied?
-- how many booked?
-- which segments converted?
-- which segments wasted effort?
+- how many leads entered each motion
+- how many were contacted
+- how many replied
+- how many booked
+- which segments converted
+- which segments wasted effort
 
 Reporting should change next week's targeting.
 
@@ -209,13 +187,11 @@ List freshness rule:
 - refresh actively worked lists at least every `60` days
 - stale SMB lists decay fast enough that old data quietly lowers response rates
 
-If fields can be refreshed by API or CSV sync, do it.
-
-## Core Rules
+## Core rules
 
 - preserve company identity during merges
 - qualify before enrichment
-- enrich for routing, not for completeness
+- enrich for routing, not completeness
 - segment before prioritization
 - route before sales handoff
 - use contact path to determine channel
@@ -223,7 +199,7 @@ If fields can be refreshed by API or CSV sync, do it.
 - review weekly and adjust
 - refresh the list before blaming copy
 
-## What Is Specific Versus Reusable
+## What is specific versus reusable
 
 Specific execution details can change:
 
@@ -235,9 +211,9 @@ Specific execution details can change:
 
 The reusable process should stay:
 
-- `Source -> Merge -> Qualify -> Enrich -> Segment -> Prioritize -> Route -> Handoff -> Review`
+`Source -> Merge -> Qualify -> Enrich -> Segment -> Prioritize -> Route -> Handoff -> Review`
 
-## Still Missing Definitions To Make Explicit
+## Still missing definitions to make explicit
 
 Any team running this should define:
 

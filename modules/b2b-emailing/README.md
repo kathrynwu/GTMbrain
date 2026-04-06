@@ -3,7 +3,7 @@
 Capture short B2B outbound email strategy, buyer-fit rules, and lightweight
 follow-up structure.
 
-## Module summary
+## Summary
 
 - **Surface:** `Playbook`
 - **Audience:** outbound operator, GTM lead, growth engineer
@@ -13,9 +13,6 @@ follow-up structure.
 ## Start here
 
 - [`PLAYBOOK.md`](./PLAYBOOK.md)
-- [`EXAMPLES.md`](./EXAMPLES.md)
-- [`DELIVERABILITY.md`](./DELIVERABILITY.md)
-- [`REPORTING.md`](./REPORTING.md)
 - [`../b2b-prospecting/README.md`](../b2b-prospecting/README.md) for the
   upstream B2B path
 - [`../b2b-enriching/README.md`](../b2b-enriching/README.md) for the upstream
@@ -30,8 +27,9 @@ follow-up structure.
 - follow-up cadence
 - when email-first beats B2B calling
 - sending setup and inbox health rules
+- weekly keep, pause, rewrite, or scale decisions
 
-## What this module covers
+## What this playbook covers
 
 - how to write short B2B cold emails
 - what personalization is worth using
@@ -46,3 +44,10 @@ follow-up structure.
 - real workflow-automation outbound lessons
 - B2B buyer-fit and authority rules from GTMbrain
 - internal discovery notes for data and operations products
+
+## What comes next
+
+- [`../b2b-cold-calling/`](../b2b-cold-calling/) if phone-first becomes the
+  better motion
+- [`../b2b-enriching/`](../b2b-enriching/) if the row still lacks the right
+  buyer, title, or verified contact path

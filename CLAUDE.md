@@ -14,9 +14,9 @@ Keep the repo iterative:
 
 `prospect -> enrich -> email/call or SEO -> report -> repeat`
 
-When answering module questions:
+When answering playbook questions:
 
-1. start from the module `README.md`
+1. start from the playbook `README.md`
 2. read the playbook or workflow file
 3. read schema or sample data only if implementation matters
 4. answer in plain English first
@@ -24,7 +24,7 @@ When answering module questions:
 
 Do not answer generically if the repo already has a concrete workflow.
 
-## Current Modules
+## Current Playbooks
 
 ### `kol-crm`
 
@@ -37,8 +37,7 @@ Read in this order:
 1. `modules/kol-crm/README.md`
 2. `modules/kol-crm/WORKFLOW.md`
 3. `modules/kol-crm/schema/influencer.schema.json`
-4. `modules/kol-crm/BUILDING.md`
-5. `modules/kol-crm/template/`
+4. `modules/kol-crm/template/`
 
 ### `openmart-prospecting` (local-business prospecting)
 
@@ -53,12 +52,11 @@ Read in this order:
 
 1. `modules/openmart-prospecting/README.md`
 2. `modules/openmart-prospecting/PLAYBOOK.md`
-3. `modules/openmart-prospecting/STANDARD-PRACTICE.md`
+3. `docs/STANDARD-PRACTICE.md`
 4. `modules/openmart-prospecting/QUERY-RECIPES.md`
 5. `modules/openmart-prospecting/INTEGRATIONS.md`
-6. `modules/openmart-prospecting/SELLING-LOCAL-BUSINESSES.md`
-7. `modules/openmart-prospecting/schema/prospect.schema.json`
-8. `packages/openmart/`
+6. `modules/openmart-prospecting/schema/prospect.schema.json`
+7. `packages/openmart/`
 
 Use this as the local-business path.
 
@@ -78,9 +76,7 @@ Read in this order:
 
 1. `modules/b2b-prospecting/README.md`
 2. `modules/b2b-prospecting/PLAYBOOK.md`
-3. `modules/b2b-prospecting/ICP-AND-DISCOVERY.md`
-4. `modules/b2b-prospecting/LEAD-SOURCES.md`
-5. `modules/openmart-prospecting/STANDARD-PRACTICE.md`
+3. `docs/STANDARD-PRACTICE.md`
 
 ### `local-emailing`
 
@@ -94,10 +90,7 @@ Read in this order:
 
 1. `modules/local-emailing/README.md`
 2. `modules/local-emailing/PLAYBOOK.md`
-3. `modules/local-emailing/EXAMPLES.md`
-4. `modules/local-emailing/REPORTING.md`
-5. `modules/openmart-prospecting/SELLING-LOCAL-BUSINESSES.md`
-6. `modules/openmart-prospecting/PLAYBOOK.md`
+3. `modules/openmart-prospecting/PLAYBOOK.md`
 
 Use this as the local-business emailing path.
 
@@ -115,10 +108,7 @@ Read in this order:
 
 1. `modules/b2b-emailing/README.md`
 2. `modules/b2b-emailing/PLAYBOOK.md`
-3. `modules/b2b-emailing/EXAMPLES.md`
-4. `modules/b2b-emailing/REPORTING.md`
-5. `modules/b2b-prospecting/PLAYBOOK.md`
-6. `modules/b2b-prospecting/ICP-AND-DISCOVERY.md`
+3. `modules/b2b-prospecting/PLAYBOOK.md`
 
 ### `local-list-enriching`
 
@@ -133,10 +123,9 @@ Read in this order:
 1. `modules/local-list-enriching/README.md`
 2. `modules/local-list-enriching/PLAYBOOK.md`
 3. `modules/local-list-enriching/FIELD-MAPPING.md`
-4. `modules/local-list-enriching/FILTERS.md`
-5. `modules/openmart-prospecting/STANDARD-PRACTICE.md`
-6. `modules/local-list-enriching/schema/enriched-prospect.schema.json`
-7. `modules/openmart-prospecting/INTEGRATIONS.md`
+4. `docs/STANDARD-PRACTICE.md`
+5. `modules/local-list-enriching/schema/enriched-prospect.schema.json`
+6. `modules/openmart-prospecting/INTEGRATIONS.md`
 
 Use this as the local-business enrichment path.
 
@@ -157,7 +146,7 @@ Read in this order:
 2. `modules/b2b-enriching/PLAYBOOK.md`
 3. `modules/b2b-enriching/FIELD-MAPPING.md`
 4. `modules/b2b-prospecting/PLAYBOOK.md`
-5. `modules/local-list-enriching/EMAIL-VERIFICATION.md`
+5. `modules/local-list-enriching/PLAYBOOK.md`
 
 ### `cold-call`
 
@@ -172,10 +161,7 @@ Read in this order:
 1. `modules/cold-call/README.md`
 2. `modules/cold-call/PLAYBOOK.md`
 3. `modules/cold-call/REVIEW-RUBRIC.md`
-4. `modules/cold-call/CALL-FRAMEWORKS.md`
-5. `modules/cold-call/OBJECTION-LIBRARY.md`
-6. `modules/cold-call/TALK-TRACKS.md`
-7. `modules/openmart-prospecting/SELLING-LOCAL-BUSINESSES.md`
+4. `modules/openmart-prospecting/PLAYBOOK.md`
 
 Use this as the local-business calling path.
 
@@ -195,10 +181,7 @@ Read in this order:
 1. `modules/b2b-cold-calling/README.md`
 2. `modules/b2b-cold-calling/PLAYBOOK.md`
 3. `modules/b2b-cold-calling/REVIEW-RUBRIC.md`
-4. `modules/b2b-cold-calling/CALL-FRAMEWORKS.md`
-5. `modules/b2b-cold-calling/OBJECTION-LIBRARY.md`
-6. `modules/b2b-cold-calling/TALK-TRACKS.md`
-7. `modules/b2b-prospecting/ICP-AND-DISCOVERY.md`
+4. `modules/b2b-prospecting/PLAYBOOK.md`
 
 ### `seo`
 
@@ -335,7 +318,7 @@ For `b2b-cold-calling`, use the repo's 3-step framework with the right buyer:
 Make sure the buyer can actually move the deal before treating the segment as
 working.
 
-Prefer `A/B/C` recommendation-style answers when routing users across modules.
+Prefer `A/B/C` recommendation-style answers when routing users across playbooks.
 
 For repo-local skills, prefer the full pattern:
 
@@ -345,7 +328,7 @@ For repo-local skills, prefer the full pattern:
 
 ## Openmart Guidance
 
-The Openmart module is playbook-first, connector-second.
+The Openmart playbook is playbook-first, connector-second.
 
 Important:
 
@@ -387,12 +370,12 @@ Do not optimize for:
 
 Always read `DESIGN.md` before making visual or UI decisions.
 
-GTMbrain should feel like a curated registry of forkable GTM modules:
+GTMbrain should feel like a curated registry of forkable GTM playbooks:
 
 - technical field guide
 - restrained color
 - strong typography
-- explicit module surfaces
+- explicit playbook surfaces
 - short copy
 
 Do not drift into:
@@ -403,6 +386,6 @@ Do not drift into:
 
 When building UI:
 
-- keep `KOL CRM` as the obvious featured module
+- keep `KOL CRM` as the obvious featured starter
 - make `Template`, `Playbook`, `Connector`, and `Skill` visibly distinct
 - optimize for scan speed and forkability
