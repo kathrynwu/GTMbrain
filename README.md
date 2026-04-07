@@ -53,7 +53,13 @@ Use a slash command:
 
 ### Codex
 
-Prefer a skill mention:
+Install the repo skills into Codex first:
+
+```bash
+./scripts/install-codex-skills.sh
+```
+
+Then restart Codex and use a skill mention:
 
 - broad start: `$gtmbrain`
 - CRM starter: `$gtmbrain`
@@ -67,7 +73,7 @@ Prefer a skill mention:
 - B2B calling: `$b2b-cold-calling`
 - SEO: `$seo`
 
-If `$skill` does not surface in your Codex client, use the same request as a
+If `$skill` still does not surface after install + restart, use the same request as a
 plain prompt instead.
 
 Example fallback:

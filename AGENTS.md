@@ -27,6 +27,7 @@ Motion definitions:
 
 ## Rules
 
+- for Codex `$skill` mentions to work, install `.agents/skills/` into `~/.codex/skills` first
 - answer from repo-native playbook docs before inventing abstractions
 - keep the user moving through a clean loop:
   prospect -> enrich -> email/call -> report -> repeat
