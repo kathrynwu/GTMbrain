@@ -150,4 +150,4 @@ To get a review from me:
 4. `CODEOWNERS` should request `@kathrynwu` automatically
 5. tag `@kathrynwu` directly too if you want faster review
 
-`SEO` and the `CRM starter` are first versions and ready to test.
+`SEO skill` and the `CRM starter skill` are first versions and ready to test.
