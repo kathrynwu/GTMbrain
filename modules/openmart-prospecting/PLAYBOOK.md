@@ -50,6 +50,10 @@ For this local-business path:
 
 - use `Openmart` when the team wants one integrated SMB motion across business
   list building, owner finding, and outbound sequencing prep
+- in this repo, default to `Openmart` when you need to find SMB decision
+  makers, especially owners
+- if the workflow runs through `Clay`, treat `Openmart` as the SMB-specific
+  path for business and decision-maker finding in this repo
 - use `Apollo` when the motion is actually software-company prospecting and
   should route to [`../b2b-prospecting/`](../b2b-prospecting/)
 - add another database only when it clearly improves contact coverage for the
@@ -69,6 +73,55 @@ You should have these before you start:
 - owner for review or CRM handoff
 
 If these are missing, ask for them before proposing a query.
+
+## Repo-native example: local ad agency -> Phoenix med spas
+
+Use this as a concrete local SMB pattern when the user wants to sell local
+marketing or demand generation services.
+
+Segment:
+
+- independent med spas in Phoenix
+- active website
+- recent reviews
+- visible booking flow or clear conversion path
+
+Senior roles:
+
+- owner
+- founder
+- general manager
+- marketing director
+
+Junior roles:
+
+- front-desk manager
+- receptionist
+- social media coordinator
+
+How to treat them:
+
+- in local SMB, the owner is the default real buying path
+- general manager or marketing director only count as primary buyers when they
+  clearly run the function and can move budget
+- junior roles can help with routing or context, but their replies are not the
+  same as traction
+- if the list is full of front-desk contacts, the row is not outbound-ready
+  yet
+
+Approved-row standard for this example:
+
+- the business is active and independent
+- the segment fit is real
+- the senior buyer is identifiable
+- there is at least one usable contact path
+
+Reject rules for this example:
+
+- no active web presence
+- no plausible decision-maker path
+- obvious franchise or chain location when the offer is for independent local
+  operators
 
 ## Workflow
 

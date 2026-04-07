@@ -40,6 +40,35 @@ Pressure-test the call target with:
 
 If those are still weak, enrich the list before calling.
 
+## Repo-native example: data vendor -> mid-market SaaS RevOps
+
+Use this example when the offer improves contact quality, enrichment, or
+outbound workflow reliability.
+
+Senior roles:
+
+- Head of Revenue Operations
+- Head of Sales Operations
+- VP Revenue Operations
+
+Junior roles:
+
+- RevOps analyst
+- SalesOps analyst
+- SDR manager
+
+Special case:
+
+- Salesforce Administrator can be a real call target when they clearly own the
+  workflow and tool path
+
+Call rule for this example:
+
+- default to senior roles first
+- use junior contacts for discovery or rerouting when necessary
+- do not treat a good call with an analyst as equivalent to a real meeting with
+  the buyer
+
 ## The 3 steps
 
 1. build credibility

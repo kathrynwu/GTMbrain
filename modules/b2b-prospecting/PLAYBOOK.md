@@ -86,6 +86,24 @@ Common frustration:
 - too much manual cleanup
 - too much work to map the full TAM
 
+Senior roles in this example:
+
+- Head of Revenue Operations
+- Head of Sales Operations
+- VP Revenue Operations
+
+Junior roles in this example:
+
+- RevOps analyst
+- SalesOps analyst
+- SDR manager
+
+Potential middle case:
+
+- Salesforce Administrator can be a real buyer when they truly own the workflow
+  and tool decision path
+- otherwise treat them as a strong influencer, not automatic authority
+
 The strongest pain is not abstract data quality. It is operational damage from
 bad data:
 
@@ -95,6 +113,12 @@ bad data:
 - wasted sales time
 - higher CAC
 - weaker outbound ROI
+
+How to read signal:
+
+- meetings with senior roles are real traction
+- polite replies from junior roles are useful discovery, not proof that the ICP
+  is working
 
 ## Buyer and authority rules
 

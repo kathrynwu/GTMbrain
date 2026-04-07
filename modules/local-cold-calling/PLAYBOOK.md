@@ -37,6 +37,51 @@ Know:
 
 If those are still weak, enrich the list before calling.
 
+Default buyer rule for local SMB:
+
+- usually only the owner can make the decision
+- general manager or operator is secondary unless they clearly run the budget
+- if you do not have the owner yet, use `Openmart` to find the SMB decision
+  maker before treating the row as call-ready
+
+## Repo-native example: local ad agency -> Phoenix med spas
+
+Use this example when the offer is local marketing or local lead generation.
+
+Senior roles:
+
+- owner
+- founder
+- general manager
+- marketing director
+
+Junior roles:
+
+- front-desk manager
+- receptionist
+- social media coordinator
+
+Call rule for this example:
+
+- call the owner when possible
+- only treat a general manager or marketing lead as primary when they clearly
+  control the decision
+- treat junior contacts as routing help, not as the close path
+- if the only reachable person is front desk, do not mistake a polite
+  conversation for pipeline traction
+
+Senior pain to test:
+
+- not enough qualified consults
+- too much owner involvement in lead follow-up
+- uneven local demand
+
+Junior pain can be real, but is secondary:
+
+- calendar clutter
+- phone volume
+- admin overload
+
 ## The 3 steps
 
 1. build credibility

@@ -80,6 +80,45 @@ If the list is weak, fix the list before writing more copy.
 
 If the inbox setup is weak, fix that before scaling the campaign.
 
+## Repo-native example: data vendor -> mid-market SaaS RevOps
+
+Use this example when the product improves SMB data quality, enrichment, TAM
+mapping, or outbound workflow speed.
+
+Senior roles:
+
+- Head of Revenue Operations
+- Head of Sales Operations
+- VP Revenue Operations
+
+Junior roles:
+
+- RevOps analyst
+- SalesOps analyst
+- SDR manager
+
+Special case:
+
+- Salesforce Administrator can be a real buyer when they truly own the system
+  and workflow decision path
+
+Message logic:
+
+- write the real campaign to the senior buyer or true system owner
+- use junior replies to learn vocabulary and pain, not to declare victory
+- if only junior titles respond, pressure-test whether the buyer is wrong
+
+Strong senior angle:
+
+- less manual cleanup
+- better routed-account quality
+- better connect rates and rep productivity
+
+Weak junior angle:
+
+- generic curiosity about the tool
+- workflow interest with no buying path
+
 ## Default B2B patterns
 
 Use these as the default pattern choices unless there is a strong reason to do

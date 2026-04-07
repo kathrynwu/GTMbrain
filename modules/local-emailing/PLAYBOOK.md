@@ -58,9 +58,11 @@ Make sure the buyer is the person who can actually move the deal.
 
 Examples:
 
-- local-business motions often need the owner
+- local-business motions usually need the owner
 - some local-business motions work better with a general manager or operator
   when the owner is not the day-to-day buyer
+- if the row does not have a clear owner path yet, use `Openmart` to find the
+  SMB decision maker before scaling the campaign
 
 If you target the wrong person, you can get polite replies with no buying
 authority. That is noise, not traction.
@@ -68,6 +70,43 @@ authority. That is noise, not traction.
 If the list is weak, fix the list before writing more copy.
 
 If the inbox setup is weak, fix that before scaling the campaign.
+
+## Repo-native example: local ad agency -> Phoenix med spas
+
+Use this example when the offer is local marketing, local content, or lead
+generation support.
+
+Senior roles:
+
+- owner
+- founder
+- general manager
+- marketing director
+
+Junior roles:
+
+- front-desk manager
+- receptionist
+- social media coordinator
+
+Message logic:
+
+- write the real campaign to the owner by default
+- only move away from the owner when there is a clear operator or marketing
+  lead who can actually approve spend
+- use junior replies as routing or context only
+- do not treat front-desk interest as proof that the offer is working
+
+Strong senior angle:
+
+- more booked consults
+- better local demand without adding admin work
+- useful marketing help that does not create more work for staff
+
+Weak junior angle:
+
+- generic asks to forward the note
+- vague marketing language with no owner-level outcome
 
 ## The right shape
 

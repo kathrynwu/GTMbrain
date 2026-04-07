@@ -52,6 +52,31 @@ The enrichment fix is:
 - preserve the account context
 - keep the old note as learning, not as the active owner
 
+## Role-sensitive example: data vendor -> mid-market SaaS RevOps
+
+Active buyers:
+
+- Head of Revenue Operations
+- Head of Sales Operations
+- VP Revenue Operations
+
+Junior or partial-authority contacts:
+
+- RevOps analyst
+- SalesOps analyst
+- SDR manager
+
+Special case:
+
+- Salesforce Administrator can be primary only when they clearly own the
+  workflow and have real purchase influence
+
+Enrichment rule:
+
+- if the account is right but only a junior contact is enriched, keep the row
+  alive and reroute upward
+- preserve the junior note as context, not as the final owner
+
 ## Verification and routing
 
 At minimum, keep these visible:

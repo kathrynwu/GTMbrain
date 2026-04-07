@@ -76,7 +76,7 @@ Paste these in order:
 
 1. `Read AGENTS.md and use the gtmbrain skill to route me. I run a local advertising agency and want to sell to med spas in Phoenix.`
 2. `Use the openmart-prospecting skill. Help me define the ICP, geography, filters, reject rules, and approved-row standard for Phoenix med spas.`
-3. `Use the local-list-enriching skill. Tell me what owner, manager, email, phone, website, and qualification fields I need before outreach.`
+3. `Use the local-list-enriching skill. Use Openmart to find the owner or real decision maker for these med spas, then tell me what email, phone, website, and qualification fields I need before outreach.`
 4. `Use the local-emailing skill. Draft a local SMB outbound campaign for these approved med spa leads, including subject lines, first-touch, follow-ups, CTA, and weekly review metrics.`
 5. `Rewrite this for owners instead of front-desk staff.`
 6. `Make the first-touch less agency-sounding.`
