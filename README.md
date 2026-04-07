@@ -11,18 +11,12 @@ toward a clear GTM plan.
 
 `prospecting -> enrichment -> outbound or SEO -> reporting -> repeat`
 
-## Read This First
+You should not need to read the repo end to end yourself.
 
-There are two kinds of docs in this repo:
+Clone it, open it in Codex or Claude Code, and let the agent read the repo for
+you.
 
-| If you are... | Read | Why |
-| --- | --- | --- |
-| you or your teammate | `README.md`, then the module `README.md` and `PLAYBOOK.md` | these are the playbooks and outputs |
-| Codex or Claude | `AGENTS.md`, `CLAUDE.md`, `.agents/skills/`, `.claude/` | these are routing and instruction files for the AI |
-
-You usually do not need to read `AGENTS.md` or `CLAUDE.md` yourself.
-
-Tell Codex or Claude to read them for you.
+Your job is to pick the lane and paste the right starting prompt.
 
 ## What You Get
 
@@ -52,9 +46,10 @@ cd GTMbrain
 
 Then open the repo in Codex or Claude Code.
 
-### Fastest Skill Shortcuts
+### Start In Claude Code
 
-If you are using Claude Code, you can start with slash commands:
+This repo includes Claude-only slash commands from
+[`/.claude/commands/`](./.claude/commands/):
 
 - `/gtmbrain`
 - `/openmart-prospecting`
@@ -67,7 +62,14 @@ If you are using Claude Code, you can start with slash commands:
 - `/b2b-cold-calling`
 - `/seo`
 
-If you are using Codex, start with direct prompts:
+### Start In Codex
+
+Codex should use prompts, not slash commands.
+
+In this repo, slash commands live in [`.claude/commands/`](./.claude/commands/),
+so they are Claude-specific wrappers.
+
+Use one of these direct prompts in Codex instead:
 
 - `Read AGENTS.md and use the gtmbrain skill to route me.`
 - `Use the openmart-prospecting skill in .agents/skills/openmart-prospecting/SKILL.md.`
@@ -109,60 +111,66 @@ If you want a one-line starter prompt, use:
 - `Use GTMbrain's local SMB prospecting, enrichment, and emailing modules to help me build a complete local SMB outbound plan step by step.`
 - `Use GTMbrain's B2B prospecting, enrichment, and emailing modules to help me build a complete software-to-software B2B outbound plan step by step.`
 
-## Start Here
+## Copy One Of These Starts
 
 Pick one lane first.
 
 Do not mix the local SMB lane with the B2B lane.
 
-If you are not sure which lane you are in, start with
-[`GTMbrain Router`](./.agents/skills/gtmbrain/SKILL.md).
+If you are not sure which lane you are in:
+
+- Claude Code: `/gtmbrain`
+- Codex: `Read AGENTS.md and use the gtmbrain skill to route me.`
 
 ### Local SMB lane
 
 Use this lane when you sell to local SMBs such as med spas, roofers, dentists,
 restaurants, and other local operators.
 
-| If you need... | Open |
-| --- | --- |
-| a local SMB prospect list | [`modules/openmart-prospecting/`](./modules/openmart-prospecting/) |
-| local SMB enrichment | [`modules/local-list-enriching/`](./modules/local-list-enriching/) |
-| local SMB outbound | [`modules/local-emailing/`](./modules/local-emailing/) or [`modules/cold-call/`](./modules/cold-call/) |
+- Prospecting:
+  `Use the openmart-prospecting skill. Help me define the ICP, filters, reject rules, and approved-row standard for this local SMB campaign.`
+- Enrichment:
+  `Use the local-list-enriching skill. Tell me what owner, manager, contact, and qualification fields I need before outreach.`
+- Emailing:
+  `Use the local-emailing skill. Draft a local SMB outbound campaign for these approved leads.`
+- Calling:
+  `Use the local-cold-calling skill. Write a local SMB cold-call script for this segment and offer.`
 
 ### B2B lane
 
 Use this lane when a software company is selling to another software company.
 
-| If you need... | Open |
-| --- | --- |
-| a B2B prospect list | [`modules/b2b-prospecting/`](./modules/b2b-prospecting/) |
-| B2B enrichment | [`modules/b2b-enriching/`](./modules/b2b-enriching/) |
-| B2B outbound | [`modules/b2b-emailing/`](./modules/b2b-emailing/) or [`modules/b2b-cold-calling/`](./modules/b2b-cold-calling/) |
+- Prospecting:
+  `Use the b2b-prospecting skill. Help me define the ICP, buyer, trigger rules, and approved-row standard for this B2B motion.`
+- Enrichment:
+  `Use the b2b-enriching skill. Tell me what company, buyer, contact, and qualification fields I need before outreach.`
+- Emailing:
+  `Use the b2b-emailing skill. Draft a software-to-software B2B outbound campaign for these approved leads.`
+- Calling:
+  `Use the b2b-cold-calling skill. Write a B2B cold-call script for this segment and offer.`
 
 ### Other
 
-| If you need... | Open |
-| --- | --- |
-| help choosing where to start | [`GTMbrain Router`](./.agents/skills/gtmbrain/SKILL.md) |
-| SEO workflow | [`modules/seo/`](./modules/seo/) |
-| a starter CRM app | [`modules/kol-crm/`](./modules/kol-crm/) |
+- SEO:
+  `Use the seo skill. Help me decide whether to improve this page or create a new one.`
+- CRM starter:
+  `Read AGENTS.md and help me adapt the KOL CRM starter for my workflow.`
 
 ## How To Iterate
 
-1. Pick one lane and one path.
-2. Read that module's `README.md`, then `PLAYBOOK.md`.
-3. Produce one clear output:
+1. Pick one lane.
+2. Paste one starting prompt.
+3. Let Codex or Claude read the repo-native docs and route you.
+4. Leave with one clear output:
    an approved list, enriched rows, an email sequence, a call script, or a
    page plan.
-4. Move to the next module only after the handoff is clean.
 5. Repeat weekly.
 
-If you want the shared prospecting backbone first, read
-[`docs/STANDARD-PRACTICE.md`](./docs/STANDARD-PRACTICE.md).
+If you want deeper process, the agent will read the playbooks for you.
 
-## What Is Where
+## What The Agent Reads
 
-- `modules/` = playbooks you and the AI work through together
+- `modules/` = playbooks and outputs
 - `docs/` = shared GTM backbones and references
 - `AGENTS.md`, `CLAUDE.md`, `.agents/skills/`, `.claude/` = AI-only routing and instruction files
 - `packages/openmart/` = thin Openmart connector starter
