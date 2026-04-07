@@ -17,7 +17,7 @@ Motion definitions:
 - local SMB prospecting: `modules/openmart-prospecting/`
 - local SMB enrichment: `modules/local-list-enriching/`
 - local SMB emailing: `modules/local-emailing/`
-- local SMB calling: `modules/cold-call/`
+- local SMB calling: `modules/local-cold-calling/`
 - software-to-software B2B prospecting: `modules/b2b-prospecting/`
 - software-to-software B2B enrichment: `modules/b2b-enriching/`
 - software-to-software B2B emailing: `modules/b2b-emailing/`

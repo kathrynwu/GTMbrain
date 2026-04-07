@@ -49,5 +49,5 @@ If a software company is selling to another software company, use
 The normal next step after this playbook is:
 
 - [`../local-emailing/`](../local-emailing/) if the row is email-ready
-- [`../cold-call/`](../cold-call/) if the row is phone-ready
+- [`../local-cold-calling/`](../local-cold-calling/) if the row is phone-ready
 - back to review if the row still lacks a clear contact path

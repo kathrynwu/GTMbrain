@@ -1,16 +1,16 @@
 ---
 name: local-cold-calling
 description: |
-  Use when someone wants a local-business cold-calling plan, a call script,
+  Use when someone wants a local SMB cold-calling plan, a call script,
   qualification flow, objection handling, segment advice, or guidance on how
-  better list quality should shape local-business calling.
+  better list quality should shape local SMB calling.
 ---
 
-# Local Business Cold Calling
+# Local SMB Cold Calling
 
 Use this skill when the user is asking about:
 
-- cold calling local businesses
+- cold calling local SMBs
 - call scripts
 - qualification questions
 - objection handling
@@ -19,9 +19,9 @@ Use this skill when the user is asking about:
 
 ## Read first
 
-1. `modules/cold-call/PLAYBOOK.md`
-2. `modules/cold-call/REVIEW-RUBRIC.md`
-3. `modules/cold-call/README.md`
+1. `modules/local-cold-calling/PLAYBOOK.md`
+2. `modules/local-cold-calling/REVIEW-RUBRIC.md`
+3. `modules/local-cold-calling/README.md`
 4. `modules/openmart-prospecting/PLAYBOOK.md`
 
 ## Workflow
@@ -107,4 +107,4 @@ Default to giving:
 This repo's local-cold-calling path should stay local.
 
 Ground answers in the repo's 3-step framework and the user's segment. Do not
-pretend there is one universal script for every local-business segment.
+pretend there is one universal script for every local SMB segment.

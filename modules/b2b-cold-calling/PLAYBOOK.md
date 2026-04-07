@@ -3,7 +3,8 @@
 Use this playbook when the list is clean enough to call and the B2B segment is
 specific enough that a short phone conversation can create urgency.
 
-If the motion is local-business calling, use [`../cold-call/`](../cold-call/).
+If the motion is local SMB calling, use
+[`../local-cold-calling/`](../local-cold-calling/).
 
 The goal of the cold call is not to fully sell. The goal is to:
 

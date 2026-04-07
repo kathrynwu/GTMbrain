@@ -16,8 +16,8 @@ Use this when a software company is selling to another software company.
 
 - [`PLAYBOOK.md`](./PLAYBOOK.md)
 - [`REVIEW-RUBRIC.md`](./REVIEW-RUBRIC.md)
-- use [`../cold-call/`](../cold-call/) instead if the motion is selling to
-  local SMBs
+- use [`../local-cold-calling/`](../local-cold-calling/) instead if the motion
+  is selling to local SMBs
 
 ## Focus
 

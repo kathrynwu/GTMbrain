@@ -41,7 +41,7 @@ Then route into the matching playbook path:
 - `modules/b2b-enriching/`
 - `modules/local-emailing/`
 - `modules/b2b-emailing/`
-- `modules/cold-call/`
+- `modules/local-cold-calling/`
 - `modules/b2b-cold-calling/`
 - `modules/seo/`
 
@@ -69,7 +69,7 @@ Then route into the matching playbook path:
 4. If the user is asking about outbound after the list is clean:
    - for local SMB rows:
      - `A` `local-emailing`
-     - `B` `cold-call`
+     - `B` `local-cold-calling`
      - `C` both
    - for B2B rows:
      - `A` `b2b-emailing`

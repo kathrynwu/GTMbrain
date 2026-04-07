@@ -128,4 +128,4 @@ The normal next step after this playbook is one of:
   enough to enrich
 - [`../local-emailing/`](../local-emailing/) if the list is already clean and
   email-ready
-- [`../cold-call/`](../cold-call/) if phone-first outbound is the right motion
+- [`../local-cold-calling/`](../local-cold-calling/) if phone-first outbound is the right motion

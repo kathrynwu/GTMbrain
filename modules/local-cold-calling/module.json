@@ -1,7 +1,7 @@
 {
-  "name": "Local Business Cold Calling",
-  "slug": "cold-call",
-  "job": "Capture local-business scripts, review criteria, and tactical outbound heuristics.",
+  "name": "Local SMB Cold Calling",
+  "slug": "local-cold-calling",
+  "job": "Capture local SMB scripts, review criteria, and tactical outbound heuristics.",
   "audience": [
     "outbound operator",
     "gtm lead",
@@ -19,7 +19,7 @@
   "source_material": [
     "internal cold call playbook",
     "https://www.loom.com/share/90e0a8ef61bc4f179c8299a111711787?sid=6a9cd470-106f-4ec2-bdae-8499a679f6f5",
-    "local-business outbound heuristics"
+    "local SMB outbound heuristics"
   ],
   "inputs": [
     "segment",

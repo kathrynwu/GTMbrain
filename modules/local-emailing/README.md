@@ -49,6 +49,6 @@ Use this when you sell to local SMBs.
 
 ## What comes next
 
-- [`../cold-call/`](../cold-call/) if phone-first becomes the better motion
+- [`../local-cold-calling/`](../local-cold-calling/) if phone-first becomes the better motion
 - [`../local-list-enriching/`](../local-list-enriching/) if the row still
   lacks owner, manager, or verified contact context

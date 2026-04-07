@@ -1,7 +1,7 @@
-# Local Business Cold Calling Playbook
+# Local SMB Cold Calling Playbook
 
 This is a distilled repo-native version of the internal cold call playbook and
-walkthrough used to train local-business outbound.
+walkthrough used to train local SMB outbound.
 
 If the motion is software-company or B2B calling, use
 [`../b2b-cold-calling/`](../b2b-cold-calling/).
@@ -13,7 +13,7 @@ If the motion is software-company or B2B calling, use
   - `https://www.loom.com/share/90e0a8ef61bc4f179c8299a111711787?sid=6a9cd470-106f-4ec2-bdae-8499a679f6f5`
 - reference talk tracks and call-review notes
 
-Use this playbook when the list is clean enough to call and the local-business
+Use this playbook when the list is clean enough to call and the local SMB
 segment is specific enough that a short phone conversation can create urgency.
 
 The goal of the cold call is not to fully sell. The goal is to:

@@ -157,7 +157,7 @@ Read in this order:
 4. `modules/b2b-prospecting/PLAYBOOK.md`
 5. `modules/local-list-enriching/PLAYBOOK.md`
 
-### `cold-call`
+### `local-cold-calling`
 
 Job:
 
@@ -167,9 +167,9 @@ Job:
 
 Read in this order:
 
-1. `modules/cold-call/README.md`
-2. `modules/cold-call/PLAYBOOK.md`
-3. `modules/cold-call/REVIEW-RUBRIC.md`
+1. `modules/local-cold-calling/README.md`
+2. `modules/local-cold-calling/PLAYBOOK.md`
+3. `modules/local-cold-calling/REVIEW-RUBRIC.md`
 4. `modules/openmart-prospecting/PLAYBOOK.md`
 
 Use this as the local SMB calling path.
