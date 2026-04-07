@@ -135,3 +135,19 @@ If you are not sure:
 - `AGENTS.md`, `CLAUDE.md`, `.agents/skills/`, `.claude/` are for the agent
 - `modules/` and `docs/` are the repo-native playbooks the agent reads
 - starter CRM app: [`modules/kol-crm/`](./modules/kol-crm/)
+
+## Contribute
+
+Founders and GTM operators are welcome to add real examples, winning angles,
+reject rules, benchmarks, and workflow improvements.
+
+To get a review from me:
+
+1. make your change on a branch or fork
+2. open a pull request against `main`
+3. fill in the PR template:
+   what changed, which module it affects, and what real-world knowledge you added
+4. `CODEOWNERS` should request `@kathrynwu` automatically
+5. tag `@kathrynwu` directly too if you want faster review
+
+`SEO` and the `CRM starter` are first versions and ready to test.
