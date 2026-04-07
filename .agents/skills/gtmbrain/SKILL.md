@@ -62,6 +62,7 @@ Then route into the matching playbook path:
    - `A` start with `kol-crm` if they need a working starter they can adapt now
    - `B` start with `openmart-prospecting` for local SMB prospecting
    - `C` start with `b2b-prospecting` if they are a software company selling to another software company
+   - if the broad ask is really about organic traffic, route to `seo`
 3. If the user already has approved rows and needs enrichment:
    - `A` `local-list-enriching` for local SMB rows
    - `B` `b2b-enriching` for software-company B2B rows
@@ -86,6 +87,7 @@ Then route into the matching playbook path:
    - enrichment
    - emailing
    - calling
+   - CRM
    - SEO
    until the GTM motion is clearer.
 8. Tie the recommendation back to the strategy artifact the user should leave

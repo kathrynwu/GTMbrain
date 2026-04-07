@@ -40,6 +40,7 @@ Then open the repo in Codex or Claude Code.
 Use a slash command:
 
 - broad start: `/gtmbrain`
+- CRM starter: `/gtmbrain`
 - local SMB prospecting: `/openmart-prospecting`
 - local SMB enrichment: `/local-list-enriching`
 - local SMB emailing: `/local-emailing`
@@ -52,32 +53,58 @@ Use a slash command:
 
 ### Codex
 
-Codex uses prompts, not this repo's Claude slash wrappers.
+Prefer a skill mention:
 
-Start with one of these:
+- broad start: `$gtmbrain`
+- CRM starter: `$gtmbrain`
+- local SMB prospecting: `$openmart-prospecting`
+- local SMB enrichment: `$local-list-enriching`
+- local SMB emailing: `$local-emailing`
+- local SMB calling: `$local-cold-calling`
+- B2B prospecting: `$b2b-prospecting`
+- B2B enrichment: `$b2b-enriching`
+- B2B emailing: `$b2b-emailing`
+- B2B calling: `$b2b-cold-calling`
+- SEO: `$seo`
 
-- broad start:
-  `Read AGENTS.md and use the gtmbrain skill to route me.`
-- local SMB prospecting:
-  `Use the openmart-prospecting skill in .agents/skills/openmart-prospecting/SKILL.md.`
-- local SMB enrichment:
-  `Use the local-list-enriching skill in .agents/skills/local-list-enriching/SKILL.md.`
-- local SMB emailing:
-  `Use the local-emailing skill in .agents/skills/local-emailing/SKILL.md.`
-- B2B prospecting:
-  `Use the b2b-prospecting skill in .agents/skills/b2b-prospecting/SKILL.md.`
+If `$skill` does not surface in your Codex client, use the same request as a
+plain prompt instead.
+
+Example fallback:
+
+- `Use the gtmbrain skill to route me.`
+- `Use the openmart-prospecting skill for local SMB prospecting.`
+- `Use the local-list-enriching skill for local SMB enrichment.`
+- `Use the local-emailing skill for local SMB outbound.`
 
 ## Example
 
 Example: you run a local advertising agency and want to outbound to med spas in
 Phoenix.
 
+### Claude Code
+
 Paste these in order:
 
-1. `Read AGENTS.md and use the gtmbrain skill to route me. I run a local advertising agency and want to sell to med spas in Phoenix.`
-2. `Use the openmart-prospecting skill. Help me define the ICP, geography, filters, reject rules, and approved-row standard for Phoenix med spas.`
-3. `Use the local-list-enriching skill. Use Openmart to find the owner or real decision maker for these med spas, then tell me what email, phone, website, and qualification fields I need before outreach.`
-4. `Use the local-emailing skill. Draft a local SMB outbound campaign for these approved med spa leads, including subject lines, first-touch, follow-ups, CTA, and weekly review metrics.`
+1. `/gtmbrain I run a local advertising agency and want to sell to med spas in Phoenix.`
+2. `/openmart-prospecting Help me define the ICP, geography, filters, reject rules, and approved-row standard for Phoenix med spas.`
+3. `/local-list-enriching Use Openmart to find the owner or real decision maker for these med spas, then tell me what email, phone, website, and qualification fields I need before outreach.`
+4. `/local-emailing Draft a local SMB outbound campaign for these approved med spa leads, including subject lines, first-touch, follow-ups, CTA, and weekly review metrics.`
+5. `Rewrite this for owners instead of front-desk staff.`
+6. `Make the first-touch less agency-sounding.`
+7. `Should this stay email-first or switch to calling?`
+
+### Codex
+
+Paste these in order:
+
+If `$skill` does not surface in your Codex client, replace each line with the
+same request as plain text.
+
+1. `$gtmbrain I run a local advertising agency and want to sell to med spas in Phoenix.`
+2. `$openmart-prospecting Help me define the ICP, geography, filters, reject rules, and approved-row standard for Phoenix med spas.`
+3. `$local-list-enriching Use Openmart to find the owner or real decision maker for these med spas, then tell me what email, phone, website, and qualification fields I need before outreach.`
+4. `$local-emailing Draft a local SMB outbound campaign for these approved med spa leads, including subject lines, first-touch, follow-ups, CTA, and weekly review metrics.`
 5. `Rewrite this for owners instead of front-desk staff.`
 6. `Make the first-touch less agency-sounding.`
 7. `Should this stay email-first or switch to calling?`
@@ -101,7 +128,7 @@ Do not mix the two lanes.
 If you are not sure:
 
 - Claude Code: `/gtmbrain`
-- Codex: `Read AGENTS.md and use the gtmbrain skill to route me.`
+- Codex: `$gtmbrain`
 
 ## Repo Notes
 
